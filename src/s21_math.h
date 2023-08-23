@@ -5,12 +5,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define s21_NULL ((void *)0);
-typedef unsigned long s21_size_t;
-#define s21_nan 0.0 / 0.0
-#define s21_p_inf 1.0 / 0.0 // +infinity
-#define s21_m_inf -1.0 / 0.0 // -infinity
-#define s21_PI 3.141592653589793
+// #define s21_NULL ((void *)0);
+// typedef unsigned long s21_size_t;
+#define S21_NAN 0.0 / 0.0
+#define S21_INF_POS 1.0 / 0.0 // +infinity
+#define S21_INF_NEG -1.0 / 0.0 // -infinity
+#define S21_PI 3.141592653589793
+#define S21_LN2 0.69314718056
+#define S21_E 2.71828182845
+#define S21_IS_NAN(x) (x != x)
+#define S21_IS_INF(x) (x == S21_INF_NEG || x == S21_INF_POS)
 
 // Вычисляет абсолютное значение целого числа
 int s21_abs(int x);
