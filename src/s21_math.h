@@ -11,4 +11,4 @@ typedef unsigned long s21_size_t;
 // Вычисляет абсолютное значение целого числа
 int s21_abs(int x);
 
-#endif //S21_MATH_H
+#endif  // S21_MATH_H
