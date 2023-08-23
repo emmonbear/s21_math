@@ -8,8 +8,8 @@
 // #define s21_NULL ((void *)0);
 // typedef unsigned long s21_size_t;
 #define S21_NAN 0.0 / 0.0
-#define S21_INF_POS 1.0 / 0.0 // +infinity
-#define S21_INF_NEG -1.0 / 0.0 // -infinity
+#define S21_INF_POS 1.0 / 0.0   // +infinity
+#define S21_INF_NEG -1.0 / 0.0  // -infinity
 #define S21_PI 3.141592653589793
 #define S21_LN2 0.69314718056
 #define S21_E 2.71828182845
