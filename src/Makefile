@@ -15,8 +15,8 @@ all: $(LIB_NAME) gcov_report $(TARGET)
 
 $(LIB_NAME): $(OBJECTS) $(HEADER)
 	ar rcs $@ $(OBJECTS)
-	ranlib s21_math.a
-	rm -rf CORE/*.o
+	ranlib $(LIB_NAME)
+	rm -rf $(OBJECTS)
 
 $(TARGET): $(LIB_NAME) $(TEST_FILE)
 	$(CC) $(CFLAGS) $(TEST_FILE) $(LIB_NAME) -o $(TARGET) -lcheck -lsubunit -lm
@@ -24,7 +24,7 @@ $(TARGET): $(LIB_NAME) $(TEST_FILE)
 
 gcov_report: $(LIB_NAME) $(TEST_FILE)
 	$(CC) $(CFLAGS) $(GCOVFLAGS) $(TEST_FILE) $(SOURCES) -o report -lcheck -lsubunit -lm -lgcov
-	mkdir -p gcov_report
+	mkdir -p $(GCOV_REPORT_DIR)
 	./report
 	gcovr -r . --html --html-details -o gcov_report/coverage.html
 	rm -rf $(OBJECTS) *.gc*
@@ -34,13 +34,13 @@ clean:
 
 cpp:
 #cppcheck -q --enable=all --inconclusive --suppress=missingIncludeSystem
-	cppcheck CORE/*.c
+	cppcheck $(SOURCES) $(TEST_FILE)
 
 check:
-	clang-format -style=Google -n *.h CORE/*.c TESTS/*.c
+	clang-format -style=Google -i *.h $(SOURCES) $(TEST_FILE)
 
 valgrind:
 #valgrind --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all --log-file=1.txt ./test
-	valgrind --error-limit=no --show-leak-kinds=all ./test
+	valgrind --error-limit=no --show-leak-kinds=all ./$(TARGET)
 
 rebuld: clean all
