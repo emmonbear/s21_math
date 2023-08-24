@@ -17,11 +17,10 @@ START_TEST(test_abs) {
     int expected = abs(number[i]);
     if (result == expected) {
       SUCCESS++;
-      printf("\033[43m%d\033[0m\n", number[i]);
-      printf("my_func = %d\n", result);
-      printf("orig_func = %d\n", expected);
-    }
-    else {
+      // printf("\033[43m%d\033[0m\n", number[i]);
+      // printf("my_func = %d\n", result);
+      // printf("orig_func = %d\n", expected);
+    } else {
       FAIL++;
       printf("\033[43m%d\033[0m\n", number[i]);
       printf("my_func = %d\n", result);
@@ -94,11 +93,10 @@ START_TEST(test_fabs) {
     if (isnan(number[i])) {
       if (isnan(result) && isnan(expected)) {
         SUCCESS++;
-        printf("\033[43m%f\033[0m\n", number[i]);
-        printf("my_func = %f\n", result);
-        printf("orig_func = %f\n", expected);
-      }
-      else {
+        // printf("\033[43m%f\033[0m\n", number[i]);
+        // printf("my_func = %f\n", result);
+        // printf("orig_func = %f\n", expected);
+      } else {
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
@@ -108,11 +106,10 @@ START_TEST(test_fabs) {
     } else if (isinf(number[i])) {
       if (isinf(result) && isinf(expected)) {
         SUCCESS++;
-        printf("\033[43m%f\033[0m\n", number[i]);
-        printf("my_func = %f\n", result);
-        printf("orig_func = %f\n", expected);
-      }
-      else {
+        // printf("\033[43m%f\033[0m\n", number[i]);
+        // printf("my_func = %f\n", result);
+        // printf("orig_func = %f\n", expected);
+      } else {
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
@@ -122,11 +119,10 @@ START_TEST(test_fabs) {
     } else {
       if (result == expected) {
         SUCCESS++;
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
-        printf("result: %f\n", result);
-        printf("expected: %f\n", expected);
-      }
-      else {
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
         FAIL++;
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
@@ -198,8 +194,77 @@ START_TEST(test_ceil) {
     double expected = ceil(number[i]);
     double result = s21_ceil(number[i]);
     if (isnan(number[i])) {
-      if (isnan(result) && isnan(expected))
+      if (isnan(result) && isnan(expected)) {
         SUCCESS++;
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
+      else {
+        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      ck_assert_ldouble_nan(result);
+    } else if (isinf(number[i])) {
+      if (isinf(result) && isinf(expected)) {
+        SUCCESS++;
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
+      else {
+        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      ck_assert_ldouble_infinite(result);
+    } else {
+      if (result == expected) {
+        SUCCESS++;
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+      ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("\033[43mtest_ceil\033[0m\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_exp) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = 250.0;
+  double end = 250.0;
+  double step = 0.1;
+  int array_size = (int)((end - start) / step);
+  double number[array_size];
+  double current = start;
+  for (int i = 0; i < array_size; i++) {
+    number[i] = current;
+    current += step;
+  }
+  for (int i = 0; i < array_size; i++) {
+    double expected = ceil(number[i]);
+    double result = s21_ceil(number[i]);
+    if (isnan(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
       else {
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
@@ -208,8 +273,12 @@ START_TEST(test_ceil) {
       }
       // ck_assert_ldouble_nan(result);
     } else if (isinf(number[i])) {
-      if (isinf(result) && isinf(expected))
+      if (isinf(result) && isinf(expected)) {
         SUCCESS++;
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
       else {
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
@@ -220,11 +289,10 @@ START_TEST(test_ceil) {
     } else {
       if (result == expected) {
         SUCCESS++;
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
-        printf("result: %f\n", result);
-        printf("expected: %f\n", expected);
-      }
-      else {
+        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
         FAIL++;
         printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
         printf("result: %f\n", result);
@@ -233,7 +301,7 @@ START_TEST(test_ceil) {
       // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
     }
   }
-  printf("\033[43mtest_ceil\033[0m\n");
+  printf("\033[43mtest_exp\033[0m\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n", SUCCESS);
 }
@@ -254,6 +322,9 @@ Suite *s21_math_suite(void) {
   tcase_add_test(tc_abs, test_ceil);
   suite_add_tcase(suite, tc_ceil);
 
+  TCase *tc_exp = tcase_create("s21_exp");
+  tcase_add_test(tc_abs, test_exp);
+  suite_add_tcase(suite, tc_exp);
   return suite;
 }
 
