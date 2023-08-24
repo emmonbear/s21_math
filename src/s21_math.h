@@ -25,4 +25,8 @@ long double s21_fabs(double x);
 // Возвращает ближайшее целое число, не меньшее заданного значения
 long double s21_ceil(double x);
 
+// Возвращает значение e, возведенное в заданную степень
+long double exp(double x);
+
+
 #endif  // S21_MATH_H
