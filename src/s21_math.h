@@ -22,4 +22,7 @@ int s21_abs(int x);
 // Вычисляет абсолютное значение числа с плавающей точкой
 long double s21_fabs(double x);
 
+// Возвращает ближайшее целое число, не меньшее заданного значения
+long double s21_ceil(double x);
+
 #endif  // S21_MATH_H
