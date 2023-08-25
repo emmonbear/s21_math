@@ -29,6 +29,6 @@ long double s21_ceil(double x);
 long double s21_exp(double x);
 
 // Возводит число в заданную степень
-long double pow(double base, double exp);
+long double s21_pow(double base, double exp);
 
 #endif  // S21_MATH_H
