@@ -31,4 +31,7 @@ long double s21_exp(double x);
 // Возводит число в заданную степень
 long double s21_pow(double base, double exp);
 
+// Возвращает ближайшее целое число, не превышающее заданное значение
+long double s21_floor(double x);
+
 #endif  // S21_MATH_H
