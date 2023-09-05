@@ -17,18 +17,18 @@ START_TEST(test_abs) {
     int expected = abs(number[i]);
     if (result == expected) {
       SUCCESS++;
-      // printf("\033[43m%d\033[0m\n", number[i]);
+      // printf("%d\n", number[i]);
       // printf("my_func = %d\n", result);
       // printf("orig_func = %d\n", expected);
     } else {
       FAIL++;
-      printf("\033[43m%d\033[0m\n", number[i]);
+      printf("%d\n", number[i]);
       printf("my_func = %d\n", result);
       printf("orig_func = %d\n", expected);
     }
     ck_assert_int_eq(result, expected);
   }
-  printf("\033[43mtest_abs\033[0m\n");
+  printf("test_abs\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n", SUCCESS);
 }
@@ -93,11 +93,11 @@ START_TEST(test_fabs) {
     if (isnan(number[i])) {
       if (isnan(result) && isnan(expected)) {
         SUCCESS++;
-        // printf("\033[43m%f\033[0m\n", number[i]);
+        // printf("%f\n", number[i]);
         // printf("my_func = %f\n", result);
         // printf("orig_func = %f\n", expected);
       } else {
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
         FAIL++;
@@ -106,11 +106,11 @@ START_TEST(test_fabs) {
     } else if (isinf(number[i])) {
       if (isinf(result) && isinf(expected)) {
         SUCCESS++;
-        // printf("\033[43m%f\033[0m\n", number[i]);
+        // printf("%f\n", number[i]);
         // printf("my_func = %f\n", result);
         // printf("orig_func = %f\n", expected);
       } else {
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
         FAIL++;
@@ -119,21 +119,21 @@ START_TEST(test_fabs) {
     } else {
       if (result == expected) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
         FAIL++;
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
       }
       ck_assert_ldouble_eq_tol(result, expected, 1e-10);
     }
   }
-  printf("\033[43mtest_fabs\033[0m\n");
+  printf("test_fabs\n");
   printf("FAIL: %d\n", FAIL);
-  printf("SUCCESS: %d\n", SUCCESS);
+  printf("SUCCESS: %d\n\n", SUCCESS);
 }
 END_TEST
 
@@ -196,11 +196,11 @@ START_TEST(test_ceil) {
     if (isnan(number[i])) {
       if (isnan(result) && isnan(expected)) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
         FAIL++;
@@ -209,11 +209,11 @@ START_TEST(test_ceil) {
     } else if (isinf(number[i])) {
       if (isinf(result) && isinf(expected)) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
         FAIL++;
@@ -222,28 +222,131 @@ START_TEST(test_ceil) {
     } else {
       if (result == expected) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
         FAIL++;
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
       }
       ck_assert_ldouble_eq_tol(result, expected, 1e-10);
     }
   }
-  printf("\033[43mtest_ceil\033[0m\n");
+  printf("test_ceil\n");
   printf("FAIL: %d\n", FAIL);
-  printf("SUCCESS: %d\n", SUCCESS);
+  printf("SUCCESS: %d\n\n", SUCCESS);
 }
 END_TEST
 
-START_TEST(test_exp) {
+START_TEST(test_floor) {
   int FAIL = 0;
   int SUCCESS = 0;
-  double start = -10.0;
+  double number[] = {-1265454848484848.458754,
+                     -126545484848484.458752,
+                     -12654548484848.458754,
+                     -126545484848.4587545,
+                     -12654548484.4587544,
+                     -12654548484.458754,
+                     -126545484.4587544,
+                     -12654548.4587546,
+                     -126545484.45875,
+                     -12654548.45875,
+                     -1265454.45875,
+                     -126545.45875,
+                     -12654.85875,
+                     -12654.4587,
+                     -1265.4587,
+                     -126.4587,
+                     -12.4587,
+                     -1.4587,
+                     -0.958,
+                     -0.95,
+                     -0.9,
+                     -0.0,
+                     0.0,
+                     0.9,
+                     1.45,
+                     12.48,
+                     126.458754456,
+                     1265.458754456,
+                     12654.458754456,
+                     126545.458754456,
+                     1265454.458754456,
+                     12654548.458754456,
+                     126545484.458754456,
+                     12654548.458754456,
+                     126545484.458754456,
+                     126545484.458754456,
+                     126545484.458754456,
+                     12654548.458754456,
+                     126545484.458754456,
+                     1265454848.458754456,
+                     12654548484.458754,
+                     126545484848.458754,
+                     1265454848484.45875454,
+                     12654548484848.458754,
+                     126545484848484.458752,
+                     1265454848484848.458754,
+                     S21_INF_NEG,
+                     S21_INF_POS,
+                     S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  for (int i = 0; i < count; i++) {
+    double expected = floor(number[i]);
+    double result = s21_floor(number[i]);
+    if (isnan(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_nan(result);
+    } else if (isinf(number[i])) {
+      if (isinf(result) && isinf(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_infinite(result);
+    } else {
+      if (result == expected) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+      // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("test_floor\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_exp) {  // не обработаны значения 0.0 / 0.0, +inf, -inf
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = 5.0;
   double end = 10.0;
   double step = 0.1;
   int array_size = (int)((end - start) / step);
@@ -260,11 +363,11 @@ START_TEST(test_exp) {
     if (isnan(number[i])) {
       if (isnan(result) && isnan(expected)) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
-        printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        printf("number[%d] = %f\n", i, number[i]);
         printf("result: %f\n", result);
         printf("expected: %f\n", expected);
         FAIL++;
@@ -273,11 +376,11 @@ START_TEST(test_exp) {
     } else if (isinf(number[i])) {
       if (isinf(result) && isinf(expected)) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
         FAIL++;
@@ -286,19 +389,193 @@ START_TEST(test_exp) {
     } else {
       if (result == expected) {
         SUCCESS++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       } else {
         FAIL++;
-        // printf("\033[43mnumber[%d] = %f\033[0m\n", i, number[i]);
+        // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
         // printf("expected: %f\n", expected);
       }
       ck_assert_ldouble_eq_tol(result, expected, 1e-10);
     }
   }
-  printf("\033[43mtest_exp\033[0m\n");
+  printf("test_exp\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_pow) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = 0.0;
+  double end = 10.0;
+  double step = 1.0;
+  double start_exp = 1.0;
+  double end_exp = 10.0;
+  double step_exp = 0.5;
+  int array_size = (int)((end - start) / step);
+  int array_size_exp = (int)((end_exp - start_exp) / step_exp);
+  double number[array_size];
+  double exponent[array_size_exp];
+  double current = start;
+  double current_exp = start_exp;
+  for (int i = 0; i < array_size; i++) {
+    number[i] = current;
+    current += step;
+  }
+  for (int i = 0; i < array_size_exp; i++) {
+    exponent[i] = current_exp;
+    current_exp += step_exp;
+  }
+  for (int i = 0; i < array_size; i++) {
+    for (int j = 0; j < array_size_exp; j++) {
+      double expected = round(pow(number[i], exponent[j]) * 1e6) / 1e6;
+      double result = round(s21_pow(number[i], exponent[j]) * 1e6) / 1e6;
+      if (expected >= 999999999999999.0) break;
+      if (isnan(number[i])) {
+        if (isnan(result) && isnan(expected)) {
+          SUCCESS++;
+          // printf("number[%d] = %f\n", i, number[i]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+        } else {
+          printf("pow(%f, %f)\n", number[i], exponent[j]);
+          printf("result: %f\n", result);
+          printf("expected: %f\n", expected);
+          FAIL++;
+        }
+        // ck_assert_ldouble_nan(result);
+      } else if (isinf(number[i])) {
+        if (isinf(result) && isinf(expected)) {
+          SUCCESS++;
+          // printf("number[%d] = %f\n", i, number[i]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+        } else {
+          // printf("number[%d] = %f\n", i, number[i]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+          FAIL++;
+        }
+        // ck_assert_ldouble_infinite(result);
+      } else {
+        if (result == expected) {
+          SUCCESS++;
+          // printf("number[%d] = %f\n", i, number[i]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+        } else {
+          FAIL++;
+          printf("pow(%f, %f)\n", number[i], exponent[i]);
+          printf("result: %f\n", result);
+          printf("expected: %f\n", expected);
+        }
+        // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+      }
+    }
+  }
+  printf("test_pow\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_fmod) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = -10.0;
+  double end = 10.0;
+  double step = 1.0;
+  double start_exp = -10.0;
+  double end_exp = 10.0;
+  double step_exp = 1.0;
+  int array_size = (int)((end - start) / step);
+  int array_size_exp = (int)((end_exp - start_exp) / step_exp);
+  double number[array_size];
+  double exponent[array_size_exp];
+  double current = start;
+  double current_exp = start_exp;
+  for (int i = 0; i < array_size; i++) {
+    number[i] = current;
+    current += step;
+  }
+  for (int i = 0; i < array_size_exp; i++) {
+    exponent[i] = current_exp;
+    current_exp += step_exp;
+  }
+  for (int i = 0; i < array_size; i++) {
+    for (int j = 0; j < array_size_exp; j++) {
+      double expected = round(fmod(number[i], exponent[j]) * 1e6) / 1e6;
+      double result = round(s21_fmod(number[i], exponent[j]) * 1e6) / 1e6;
+      if (expected >= 999999999999999.0) break;
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else if (result == expected) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("fmod(%f, %f)\n", number[i], exponent[j]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+      // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("test_fmod\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_fmod_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double number[] = {12.35, S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  double exponent[] = {S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count_exp = sizeof(exponent) / sizeof(exponent[0]);
+  for (int i = 0; i < count; i++) {
+    for (int j = 0; j < count_exp; j++) {
+      double expected = round(fmod(number[i], exponent[j]) * 1e6) / 1e6;
+      double result = round(s21_fmod(number[i], exponent[j]) * 1e6) / 1e6;
+      if ((isnan(number[i])) || (isnan(exponent[j])) || (isinf(number[i]))) {
+        if (isnan(result) && isnan(expected)) {
+          SUCCESS++;
+          // printf("fmod(%f, %f)\n", number[i], exponent[j]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+        } else {
+          printf("fmod(%f, %f)\n", number[i], exponent[j]);
+          printf("result: %f\n", result);
+          printf("expected: %f\n", expected);
+          FAIL++;
+        }
+        // ck_assert_ldouble_nan(result);
+      } else {
+        if (result == expected) {
+          SUCCESS++;
+          // printf("fmod(%f, %f)\n", number[i], exponent[j]);
+          // printf("result: %f\n", result);
+          // printf("expected: %f\n", expected);
+        } else {
+          FAIL++;
+          printf("fmod(%f, %f)\n", number[i], exponent[j]);
+          printf("result: %f\n", result);
+          printf("expected: %f\n", expected);
+        }
+      }
+    }
+  }
+  printf("test_fmod_1\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n", SUCCESS);
 }
@@ -312,16 +589,30 @@ Suite *s21_math_suite(void) {
   suite_add_tcase(suite, tc_abs);
 
   TCase *tc_fabs = tcase_create("s21_fabs");
-  tcase_add_test(tc_abs, test_fabs);
+  tcase_add_test(tc_fabs, test_fabs);
   suite_add_tcase(suite, tc_fabs);
 
   TCase *tc_ceil = tcase_create("s21_ceil");
-  tcase_add_test(tc_abs, test_ceil);
+  tcase_add_test(tc_ceil, test_ceil);
   suite_add_tcase(suite, tc_ceil);
 
   TCase *tc_exp = tcase_create("s21_exp");
-  tcase_add_test(tc_abs, test_exp);
+  tcase_add_test(tc_exp, test_exp);
   suite_add_tcase(suite, tc_exp);
+
+  TCase *tc_pow = tcase_create("s21_pow");
+  tcase_add_test(tc_pow, test_pow);
+  suite_add_tcase(suite, tc_pow);
+
+  TCase *tc_floor = tcase_create("s21_floor");
+  tcase_add_test(tc_floor, test_floor);
+  suite_add_tcase(suite, tc_floor);
+
+  TCase *tc_fmod = tcase_create("s21_fmod");
+  tcase_add_test(tc_fmod, test_fmod);
+  tcase_add_test(tc_fmod, test_fmod_1);
+  suite_add_tcase(suite, tc_fmod);
+
   return suite;
 }
 
