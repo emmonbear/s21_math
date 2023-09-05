@@ -37,4 +37,7 @@ long double s21_floor(double x);
 // Остаток операции деления с плавающей точкой
 long double s21_fmod(double x, double y);
 
+// Вычисляет синус
+long double s21_sin(double x);
+
 #endif  // S21_MATH_H
