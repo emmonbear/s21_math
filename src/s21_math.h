@@ -15,6 +15,7 @@
 #define S21_E 2.71828182845
 #define S21_IS_NAN(x) (x != x)
 #define S21_IS_INF(x) (x == S21_INF_NEG || x == S21_INF_POS)
+#define S21_EPS = 1e-100
 
 // Вычисляет абсолютное значение целого числа
 int s21_abs(int x);
