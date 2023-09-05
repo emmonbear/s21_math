@@ -34,4 +34,7 @@ long double s21_pow(double base, double exp);
 // Возвращает ближайшее целое число, не превышающее заданное значение
 long double s21_floor(double x);
 
+// Остаток операции деления с плавающей точкой
+long double s21_fmod(double x, double y);
+
 #endif  // S21_MATH_H
