@@ -41,6 +41,8 @@ long double s21_fmod(double x, double y);
 // Вычисляет синус
 long double s21_sin(double x);
 
+// Вычисляет косинус
+long double s21_cos(double x);
 
 // Дополнительные функции
 
