@@ -41,4 +41,13 @@ long double s21_fmod(double x, double y);
 // Вычисляет синус
 long double s21_sin(double x);
 
+
+// Дополнительные функции
+
+// Вычисление факториала
+long double s21_factorial(double n);
+
+// Возведение в int - степень
+double s21_fast_pow(double base, int exp);
+
 #endif  // S21_MATH_H
