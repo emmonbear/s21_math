@@ -52,4 +52,7 @@ long double s21_factorial(double n);
 // Возведение в int - степень
 double s21_fast_pow(double base, int exp);
 
+// Вычисляет тангенс
+long double s21_tan(double x);
+
 #endif  // S21_MATH_H
