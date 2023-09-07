@@ -44,6 +44,12 @@ long double s21_sin(double x);
 // Вычисляет косинус
 long double s21_cos(double x);
 
+// Вычисляет тангенс
+long double s21_tan(double x);
+
+// Вычисляет квадратный корень
+long double s21_sqrt(double x);
+
 // Дополнительные функции
 
 // Вычисление факториала
@@ -51,8 +57,5 @@ long double s21_factorial(double n);
 
 // Возведение в int - степень
 double s21_fast_pow(double base, int exp);
-
-// Вычисляет тангенс
-long double s21_tan(double x);
 
 #endif  // S21_MATH_H
