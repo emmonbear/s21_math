@@ -581,7 +581,7 @@ START_TEST(test_fmod_1) {
 }
 END_TEST
 
-START_TEST(test_sin) {  
+START_TEST(test_sin) {
   int FAIL = 0;
   int SUCCESS = 0;
   double start = -1.0;
@@ -645,7 +645,7 @@ START_TEST(test_sin) {
 }
 END_TEST
 
-START_TEST(test_cos) {  
+START_TEST(test_cos) {
   int FAIL = 0;
   int SUCCESS = 0;
   double start = -1.0;
@@ -709,7 +709,7 @@ START_TEST(test_cos) {
 }
 END_TEST
 
-START_TEST(test_tan) {  
+START_TEST(test_tan) {
   int FAIL = 0;
   int SUCCESS = 0;
   double start = -1.0;
@@ -773,6 +773,70 @@ START_TEST(test_tan) {
 }
 END_TEST
 
+START_TEST(test_sqrt) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = -10.0;
+  double end = 10.0;
+  double step = 0.01;
+  int array_size = (int)((end - start) / step);
+  double number[array_size];
+  double current = start;
+  for (int i = 0; i < array_size; i++) {
+    number[i] = current;
+    current += step;
+  }
+  for (int i = 0; i < array_size; i++) {
+    double expected = round(sqrt(number[i]) * 1e6) / 1e6;
+    double result = round(s21_sqrt(number[i]) * 1e6) / 1e6;
+    if (expected >= 999999999999999.0) break;
+    if (isnan(number[i]) || number[i] < 0) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_nan(result);
+    } else if (isinf(number[i])) {
+      if (isinf(result) && isinf(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_infinite(result);
+    } else {
+      if (result == expected) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+      // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("test_sqrt\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
 Suite *s21_math_suite(void) {
   Suite *suite = suite_create("s21_string");
 
@@ -816,6 +880,10 @@ Suite *s21_math_suite(void) {
   TCase *tc_tan = tcase_create("s21_tan");
   tcase_add_test(tc_tan, test_tan);
   suite_add_tcase(suite, tc_tan);
+
+  TCase *tc_sqrt = tcase_create("s21_sqrt");
+  tcase_add_test(tc_sqrt, test_sqrt);
+  suite_add_tcase(suite, tc_sqrt);
 
   return suite;
 }
