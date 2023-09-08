@@ -50,6 +50,9 @@ long double s21_tan(double x);
 // Вычисляет квадратный корень
 long double s21_sqrt(double x);
 
+// Вычисляет натуральный логарифм
+long double s21_log(double x);
+
 // Дополнительные функции
 
 // Вычисление факториала
