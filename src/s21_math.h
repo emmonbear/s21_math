@@ -53,6 +53,9 @@ long double s21_sqrt(double x);
 // Вычисляет натуральный логарифм
 long double s21_log(double x);
 
+// Вычисляет арксинус
+long double s21_asin(double x);
+
 // Дополнительные функции
 
 // Вычисление факториала
