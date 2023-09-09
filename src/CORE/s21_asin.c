@@ -1,18 +1,28 @@
 #include "../s21_math.h"
 
 long double s21_asin(double x) {
-  long double result = 0;
-  long double temp = x;
-  if ((x < -1) || (x > 1)) result = S21_NAN;
-  x = s21_fmod(x, 2 * S21_PI);
-  while (x > S21_PI) x -= 2 * S21_PI;
-  while (x < -S21_PI) x += 2 * S21_PI;
-  int n = 0;
-  while (s21_fabs(temp) > S21_EPS) {
-    temp = ((s21_factorial(2 * n)) / (s21_fast_pow(2, (2 * n)) * s21_fast_pow(s21_factorial(n), 2))) * ((s21_fast_pow(x, ((2 * n) + 1))) / ((2 * n) + 1));
-    // if (n > 1000000) temp = S21_EPS / 10;
-    result += temp;
-    n++;
+  if (x > 1 || x < -1) {
+    return S21_NAN * (-1);
+  } else if (S21_IS_INF(x) || S21_IS_NAN(x)) {
+    return S21_NAN;
   }
-  return result;
+  long double res = x;
+  long double temp = x;
+  long double num_den = 1.0;
+  if (x == 1)
+    res = S21_PI / 2;
+  else if (x == -1.0)
+    res = S21_PI / -2;
+  else {
+    for (long double expon = 3, num = 1, denom = 2; s21_fabs(temp) > S21_EPS;
+         expon += 2, num += 2, denom += 2) {
+      num_den *= num / denom;
+      temp = num_den * (s21_fast_pow(x, (int)expon) / expon);
+      res += temp;
+      if (num > 100000) {
+        temp = S21_EPS / 10;
+      }
+    }
+  }
+  return res;
 }
