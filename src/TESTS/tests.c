@@ -709,6 +709,62 @@ START_TEST(test_cos) {
 }
 END_TEST
 
+START_TEST(test_cos_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double number[] = {1, -1, S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  for (int i = 0; i < count; i++) {
+    double expected = round(cos(number[i]) * 1e6) / 1e6;
+    double result = round(s21_cos(number[i]) * 1e6) / 1e6;
+    if (expected >= 999999999999999.0) break;
+    if (isnan(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_nan(result);
+    } else if (isinf(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_infinite(result);
+    } else {
+      if (result == expected) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
+      // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("test_cos_1\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
 START_TEST(test_tan) {
   int FAIL = 0;
   int SUCCESS = 0;
@@ -901,9 +957,9 @@ END_TEST
 START_TEST(test_asin) {
   int FAIL = 0;
   int SUCCESS = 0;
-  double start = -1.0;
+  double start = -1.1;
   double end = 1.0;
-  double step = 0.1;
+  double step = 0.0001;
   int array_size = (int)((end - start) / step);
   double number[array_size];
   double current = start;
@@ -917,20 +973,8 @@ START_TEST(test_asin) {
     // double expected = asin(number[i]);
     // double result = s21_asin(number[i]);
     if (expected >= 999999999999999.0) break;
-    if (number[i] < 0) {
+    if ((number[i] < -1) || number[i] > 1) {
       if (isnan(result) && isnan(expected)) {
-        SUCCESS++;
-        // printf("number[%d] = %f\n", i, number[i]);
-        // printf("result: %f\n", result);
-        // printf("expected: %f\n", expected);
-      } else {
-        printf("number[%d] = %f\n", i, number[i]);
-        printf("result: %f\n", result);
-        printf("expected: %f\n", expected);
-        FAIL++;
-      }
-    } else if (number[i] == 0) {
-      if (isinf(result) && isinf(expected)) {
         SUCCESS++;
         // printf("number[%d] = %f\n", i, number[i]);
         // printf("result: %f\n", result);
@@ -944,9 +988,9 @@ START_TEST(test_asin) {
     } else {
       if ((result == expected)) {
         SUCCESS++;
-        printf("number[%d] = %f\n", i, number[i]);
-        printf("result: %f\n", result);
-        printf("expected: %f\n", expected);
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
       } else {
         FAIL++;
         printf("number[%d] = %f\n", i, number[i]);
@@ -956,6 +1000,61 @@ START_TEST(test_asin) {
     }
   }
   printf("test_asin\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_asin_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double number[] = {1, -1, S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  for (int i = 0; i < count; i++) {
+    double expected = round(asin(number[i]) * 1e6) / 1e6;
+    double result = round(s21_asin(number[i]) * 1e6) / 1e6;
+    // double expected = asin(number[i]);
+    // double result = s21_asin(number[i]);
+    if (expected >= 999999999999999.0) break;
+    if ((number[i] < -1) || number[i] > 1) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+    } else if (number[i] == S21_NAN) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+    } else {
+      if ((result == expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+    }
+  }
+  printf("test_asin_1\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n\n", SUCCESS);
 }
@@ -1054,6 +1153,7 @@ Suite *s21_math_suite(void) {
 
   TCase *tc_cos = tcase_create("s21_cos");
   tcase_add_test(tc_cos, test_cos);
+  tcase_add_test(tc_cos, test_cos_1);
   suite_add_tcase(suite, tc_cos);
 
   TCase *tc_tan = tcase_create("s21_tan");
@@ -1071,6 +1171,7 @@ Suite *s21_math_suite(void) {
 
   TCase *tc_asin = tcase_create("s21_asin");
   tcase_add_test(tc_asin, test_asin);
+  tcase_add_test(tc_asin, test_asin_1);
   suite_add_tcase(suite, tc_asin);
 
   return suite;
