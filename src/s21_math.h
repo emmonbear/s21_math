@@ -59,6 +59,9 @@ long double s21_asin(double x);
 // Вычисляет арккосинус
 long double s21_acos(double x);
 
+// Вычисляет арктангенс
+long double s21_atan(double x);
+
 // Дополнительные функции
 
 // Вычисление факториала
