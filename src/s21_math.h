@@ -56,6 +56,9 @@ long double s21_log(double x);
 // Вычисляет арксинус
 long double s21_asin(double x);
 
+// Вычисляет арккосинус
+long double s21_acos(double x);
+
 // Дополнительные функции
 
 // Вычисление факториала
