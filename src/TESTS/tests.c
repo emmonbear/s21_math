@@ -410,7 +410,7 @@ END_TEST
 START_TEST(test_pow) {
   int FAIL = 0;
   int SUCCESS = 0;
-  double start = 0.0;
+  double start = -10.0;
   double end = 10.0;
   double step = 1.0;
   double start_exp = 1.0;
@@ -478,6 +478,35 @@ START_TEST(test_pow) {
     }
   }
   printf("test_pow\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_pow_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double numbers [] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
+  double exp [] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
+  int count = sizeof(numbers) / sizeof(numbers[0]);
+  for (int i = 0; i < count; i++) {
+    for (int j = 0; j < count; j++) {
+      // double expected = round(pow(numbers[i], exp[j]) * 1e6) / 1e6;
+      double result = round(s21_pow(numbers[i], exp[j]) * 1e6) / 1e6;
+      if (exp[j] == S21_INF_NEG) {
+        if (result == 0) SUCCESS++;
+        else FAIL++;
+      } else if (exp[j] == S21_INF_POS) {
+          if (isinf(result)) SUCCESS++;
+          else FAIL++;
+      } else if ((exp[j] == S21_NAN) || numbers[i] == S21_NAN) {
+          if (isnan(result)) SUCCESS++;
+          else FAIL++;
+      }
+      
+    }
+  }
+  printf("test_pow_1\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n\n", SUCCESS);
 }
@@ -640,6 +669,62 @@ START_TEST(test_sin) {
     }
   }
   printf("test_sin\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_sin_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double number[] = {1, -1, S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  for (int i = 0; i < count; i++) {
+    double expected = round(sin(number[i]) * 1e6) / 1e6;
+    double result = round(s21_sin(number[i]) * 1e6) / 1e6;
+    if (expected >= 999999999999999.0) break;
+    if (isnan(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_nan(result);
+    } else if (isinf(number[i])) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+      // ck_assert_ldouble_infinite(result);
+    } else {
+      if (result == expected) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      }
+      // ck_assert_ldouble_eq_tol(result, expected, 1e-10);
+    }
+  }
+  printf("test_sin_1\n");
   printf("FAIL: %d\n", FAIL);
   printf("SUCCESS: %d\n\n", SUCCESS);
 }
@@ -1219,6 +1304,110 @@ START_TEST(test_acos_1) {
 }
 END_TEST
 
+START_TEST(test_atan) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double start = -1.1;
+  double end = 1.0;
+  double step = 0.01;
+  int array_size = (int)((end - start) / step);
+  double number[array_size];
+  double current = start;
+  for (int i = 0; i < array_size; i++) {
+    number[i] = current;
+    current += step;
+  }
+  for (int i = 0; i < array_size; i++) {
+    double expected = round(atan(number[i]) * 1e6) / 1e6;
+    double result = round(s21_atan(number[i]) * 1e6) / 1e6;
+    // double expected = asin(number[i]);
+    // double result = s21_asin(number[i]);
+    if (expected >= 999999999999999.0) break;
+    if ((result == expected)) {
+      SUCCESS++;
+      // printf("number[%d] = %f\n", i, number[i]);
+      // printf("result: %f\n", result);
+      // printf("expected: %f\n", expected);
+    } else {
+      FAIL++;
+      printf("number[%d] = %f\n", i, number[i]);
+      printf("result: %f\n", result);
+      printf("expected: %f\n", expected);
+    }
+  }
+  printf("test_atan\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
+START_TEST(test_atan_1) {
+  int FAIL = 0;
+  int SUCCESS = 0;
+  double number[] = {1, -1, S21_INF_NEG, S21_INF_POS, S21_NAN};
+  int count = sizeof(number) / sizeof(number[0]);
+  for (int i = 0; i < count; i++) {
+    double expected = round(atan(number[i]) * 1e6) / 1e6;
+    double result = round(s21_atan(number[i]) * 1e6) / 1e6;
+    // double expected = asin(number[i]);
+    // double result = s21_asin(number[i]);
+    if (expected >= 999999999999999.0) break;
+    if (number[i] == S21_NAN) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+    } else if(number[i] == S21_INF_POS) {
+      if (isinf(result) && isinf(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+    } else if (number[i] == S21_INF_NEG) {
+      if (isnan(result) && isnan(expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+        FAIL++;
+      }
+    } else {
+      if ((result == expected)) {
+        SUCCESS++;
+        // printf("number[%d] = %f\n", i, number[i]);
+        // printf("result: %f\n", result);
+        // printf("expected: %f\n", expected);
+      } else {
+        FAIL++;
+        printf("number[%d] = %f\n", i, number[i]);
+        printf("result: %f\n", result);
+        printf("expected: %f\n", expected);
+      }
+    }
+  }
+  printf("test_atan_1\n");
+  printf("FAIL: %d\n", FAIL);
+  printf("SUCCESS: %d\n\n", SUCCESS);
+}
+END_TEST
+
 Suite *s21_math_suite(void) {
   Suite *suite = suite_create("s21_string");
 
@@ -1240,6 +1429,7 @@ Suite *s21_math_suite(void) {
 
   TCase *tc_pow = tcase_create("s21_pow");
   tcase_add_test(tc_pow, test_pow);
+  tcase_add_test(tc_pow, test_pow_1);
   suite_add_tcase(suite, tc_pow);
 
   TCase *tc_floor = tcase_create("s21_floor");
@@ -1253,6 +1443,7 @@ Suite *s21_math_suite(void) {
 
   TCase *tc_sin = tcase_create("s21_sin");
   tcase_add_test(tc_sin, test_sin);
+  tcase_add_test(tc_sin, test_sin_1);
   suite_add_tcase(suite, tc_sin);
 
   TCase *tc_cos = tcase_create("s21_cos");
@@ -1277,11 +1468,16 @@ Suite *s21_math_suite(void) {
   tcase_add_test(tc_asin, test_asin);
   tcase_add_test(tc_asin, test_asin_1);
   suite_add_tcase(suite, tc_asin);
-  
+
   TCase *tc_acos = tcase_create("s21_acos");
   tcase_add_test(tc_acos, test_acos);
   tcase_add_test(tc_acos, test_acos_1);
   suite_add_tcase(suite, tc_acos);
+
+  TCase *tc_atan = tcase_create("s21_atan");
+  tcase_add_test(tc_atan, test_atan);
+  tcase_add_test(tc_atan, test_atan_1);
+  suite_add_tcase(suite, tc_atan);
 
   return suite;
 }
