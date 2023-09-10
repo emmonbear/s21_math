@@ -486,24 +486,29 @@ END_TEST
 START_TEST(test_pow_1) {
   int FAIL = 0;
   int SUCCESS = 0;
-  double numbers [] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
-  double exp [] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
+  double numbers[] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
+  double exp[] = {0, 2, S21_NAN, S21_INF_NEG, S21_INF_POS};
   int count = sizeof(numbers) / sizeof(numbers[0]);
   for (int i = 0; i < count; i++) {
     for (int j = 0; j < count; j++) {
       // double expected = round(pow(numbers[i], exp[j]) * 1e6) / 1e6;
       double result = round(s21_pow(numbers[i], exp[j]) * 1e6) / 1e6;
       if (exp[j] == S21_INF_NEG) {
-        if (result == 0) SUCCESS++;
-        else FAIL++;
+        if (result == 0)
+          SUCCESS++;
+        else
+          FAIL++;
       } else if (exp[j] == S21_INF_POS) {
-          if (isinf(result)) SUCCESS++;
-          else FAIL++;
+        if (isinf(result))
+          SUCCESS++;
+        else
+          FAIL++;
       } else if ((exp[j] == S21_NAN) || numbers[i] == S21_NAN) {
-          if (isnan(result)) SUCCESS++;
-          else FAIL++;
+        if (isnan(result))
+          SUCCESS++;
+        else
+          FAIL++;
       }
-      
     }
   }
   printf("test_pow_1\n");
@@ -1364,7 +1369,7 @@ START_TEST(test_atan_1) {
         printf("expected: %f\n", expected);
         FAIL++;
       }
-    } else if(number[i] == S21_INF_POS) {
+    } else if (number[i] == S21_INF_POS) {
       if (isinf(result) && isinf(expected)) {
         SUCCESS++;
         // printf("number[%d] = %f\n", i, number[i]);
