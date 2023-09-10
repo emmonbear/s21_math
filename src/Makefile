@@ -33,14 +33,12 @@ clean:
 	@rm -rf $(OBJECTS) $(LIB_NAME) $(TARGET) *.gc* $(GCOV_REPORT_DIR) report
 
 cpp:
-#cppcheck -q --enable=all --inconclusive --suppress=missingIncludeSystem
 	cppcheck $(SOURCES) $(TEST_FILE)
 
 check:
-	clang-format -style=Google -i *.h $(SOURCES) $(TEST_FILE)
+	clang-format -style=Google -n *.h $(SOURCES) $(TEST_FILE)
 
 valgrind:
-#valgrind --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all --log-file=1.txt ./test
 	valgrind --error-limit=no --show-leak-kinds=all ./$(TARGET)
 
 rebuld: clean all
