@@ -1,0 +1,18 @@
+{
+    "files.associations": {
+        "s21_tests.h": "c",
+        "check.h": "c",
+        "common.h": "c",
+        "s21_test_acos.h": "c",
+        "s21_test_asin.h": "c",
+        "s21_test_ceil.h": "c",
+        "s21_test_cos.h": "c",
+        "s21_test_exp.h": "c",
+        "s21_test_fabs.h": "c",
+        "s21_test_floor.h": "c",
+        "s21_test_fmod.h": "c",
+        "s21_test_sin.h": "c",
+        "s21_test_sqrt.h": "c",
+        "cstdlib": "c"
+    }
+}
