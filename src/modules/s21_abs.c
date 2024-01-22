@@ -1,7 +1,7 @@
 /**
  * @file s21_abs.c
  * @author kossadda (https://github.com/kossadda)
- * @brief Implementation of function abs from math.h library.
+ * @brief Implementation of function abs from math.h library
  * @version 1.0
  * @date 2024-01-22
  * 
@@ -17,7 +17,7 @@
  * @param x number whose absolute value must be determined.
  * @return int - result of calculation.
  */
-int abs(int x)
+int s21_abs(int x)
 {
     int shift = GET_SHIFT(x);
 
