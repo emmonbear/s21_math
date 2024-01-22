@@ -25,7 +25,7 @@ GCOV_FLAGS = -fprofile-arcs -ftest-coverage
 
 # target names
 LIBRARY = $(PROJECT_NAME).a
-TARGET = exe
+TARGET = test
 
 # main header
 MAIN_H = $(shell find ./ -maxdepth 1 -name "*.h")
@@ -38,9 +38,9 @@ MODULES_O = $(MODULES_C:%.c=%.o)
 
 # list of files and directories in the modules
 TEST_DIRS = $(shell find $(TEST_DIR) -type d)
-TEST_C = $(notdir $(shell find $(TEST_DIRS) -type f -name "*.c"))
+TEST_C = $(notdir $(shell find $(TEST_DIR) -type f -name "*.c"))
 TEST_H = $(shell find $(TEST_DIR) -type f -name "*.h")
-TEST_O = $(addprefix $(TEST_OBJ_DIR)/, $(TEST_C:%.c=%.o))
+TEST_O = $(addprefix $(TEST_OBJ_DIR)/, $(notdir $(TEST_C:%.c=%.o)))
 
 # list of all files for clang-format and cppcheck
 C_FILES = $(MODULES_C) $(TEST_C)
@@ -57,16 +57,14 @@ $(LIBRARY): $(OBJ_DIR) $(MODULES_O) $(MODULES_H) $(MAIN_H)
 	ar rcs $@ $(addprefix $(OBJ_DIR)/, $(MODULES_O))
 	ranlib $(LIBRARY)
 
-test: $(TEST_OBJ_DIR) $(MODULES_O) $(TEST_O) $(MODULES_H) $(MAIN_H) $(TEST_H)
-# gcc $(TEST_OBJ_DIR)/*.o -o $@ $(LDFLAGS)
-
-1:
-	echo $(TEST_H)
+$(TARGET): $(LIBRARY) $(TEST_OBJ_DIR) $(TEST_O)
+	$(CC) $(TEST_O) $(LIBRARY) $(LDFLAGS) -o $@
+	./$@
 
 %.o: %.c $(H_FILES)
 	$(CC) $(CFLAGS) -c -o $(addprefix $(OBJ_DIR)/, $@) $<
 
-$(TEST_OBJ_DIR)/%.o : %.c $(TESTS_H)
+$(TEST_OBJ_DIR)/%.o : %.c $(TEST_H)
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 $(GCOV_OBJ_DIR)/%.o : %.c $(ALL_H)
