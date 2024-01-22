@@ -1,7 +1,7 @@
 /**
  * @file s21_test_ceil.h
  * @author kossadda (https://github.com/kossadda)
- * @brief Header file for s21_ceil module.
+ * @brief Header file for s21_ceil test module
  * @version 1.0
  * @date 2024-01-21
  * 

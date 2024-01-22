@@ -1,7 +1,7 @@
 /**
  * @file s21_test_abs.h
  * @author kossadda (https://github.com/kossadda)
- * @brief Header file for s21_abs module.
+ * @brief Header file for s21_abs test module
  * @version 1.0
  * @date 2024-01-21
  * 

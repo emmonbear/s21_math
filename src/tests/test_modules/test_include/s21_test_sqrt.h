@@ -1,7 +1,7 @@
 /**
  * @file s21_test_sqrt.h
  * @author kossadda (https://github.com/kossadda)
- * @brief Header file for s21_sqrt module.
+ * @brief Header file for s21_sqrt test module
  * @version 1.0
  * @date 2024-01-21
  * 

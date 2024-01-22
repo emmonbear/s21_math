@@ -1,7 +1,7 @@
 /**
  * @file s21_test_exp.h
  * @author kossadda (https://github.com/kossadda)
- * @brief Header file for s21_exp module.
+ * @brief Header file for s21_exp test test module
  * @version 1.0
  * @date 2024-01-21
  * 

@@ -1,7 +1,7 @@
 /**
  * @file s21_test_pow.c
  * @author kossadda (https://github.com/kossadda)
- * @brief A set of tests to check the functionality of s21_pow.
+ * @brief A set of tests to check the functionality of s21_pow
  * @version 1.0
  * @date 2024-01-21
  * 

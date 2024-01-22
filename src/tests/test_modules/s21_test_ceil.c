@@ -1,7 +1,7 @@
 /**
  * @file s21_test_ceil.c
  * @author kossadda (https://github.com/kossadda)
- * @brief A set of tests to check the functionality of s21_ceil.
+ * @brief A set of tests to check the functionality of s21_ceil
  * @version 1.0
  * @date 2024-01-21
  * 

@@ -1,7 +1,7 @@
 /**
  * @file s21_test_acos.h
  * @author kossadda (https://github.com/kossadda)
- * @brief Header file for s21_acos module.
+ * @brief Header file for s21_acos test module
  * @version 1.0
  * @date 2024-01-21
  * 

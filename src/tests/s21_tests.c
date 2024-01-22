@@ -1,5 +1,15 @@
+/**
+ * @file s21_tests.c
+ * @author kossadda (https://github.com/kossadda)
+ * @brief Module for assembling all test modules
+ * @version 1.0
+ * @date 2024-01-22
+ * 
+ * @copyright Copyright (c) 2024
+ * 
+ */
+
 #include "s21_tests.h"
-#include <stdlib.h>
 #include <stdio.h>
 
 static int test_suite(Suite *test);
