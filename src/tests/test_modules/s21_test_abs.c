@@ -13,7 +13,12 @@
 
 START_TEST(s21_abs_1)
 {
+    int value = 0;
 
+    int original_func = abs(value);
+    int implementation = s21_abs(value);
+
+    ck_assert_int_eq(original_func, implementation);
 }
 
 START_TEST(s21_abs_2)

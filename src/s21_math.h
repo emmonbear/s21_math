@@ -11,5 +11,6 @@
 #ifndef S21_MATH_H_
 #define S21_MATH_H_
 
+#include "./modules/include/s21_abs.h"
 
 #endif // S21_MATH_H_

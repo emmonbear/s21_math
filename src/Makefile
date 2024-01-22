@@ -15,7 +15,7 @@ REPORT_DIR = ./report
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11 -g
 
 # additional libraries for linking
-LDFLAGS = -lm -lcheck -lsubunit
+LDFLAGS = -lcheck -lsubunit -lgcov -lm
 
 # additional libraries for linking gcov
 LDGCOV = $(LDFLAGS) -lgcov
@@ -25,7 +25,7 @@ GCOV_FLAGS = -fprofile-arcs -ftest-coverage
 
 # target names
 LIBRARY = $(PROJECT_NAME).a
-TARGET = test
+TARGET = exe
 
 # main header
 MAIN_H = $(shell find ./ -maxdepth 1 -name "*.h")
@@ -34,14 +34,13 @@ MAIN_H = $(shell find ./ -maxdepth 1 -name "*.h")
 MODULES_DIRS = $(shell find $(MODULES_DIR) -type d)
 MODULES_C = $(notdir $(shell find $(MODULES_DIR) -type f -name "*.c"))
 MODULES_H = $(shell find $(MODULES_DIR) -type f -name "*.h")
-MODULES_O = $(MODULES_C:%.c=%.o)
-
+MODULES_O = $(MODULES_C:%.c=%.o) 
 
 # list of files and directories in the modules
 TEST_DIRS = $(shell find $(TEST_DIR) -type d)
 TEST_C = $(notdir $(shell find $(TEST_DIRS) -type f -name "*.c"))
-TEST_H = $(shell find $(TEST_DIRS) -type f -name "*.h")
-TEST_O = $(addprefix $(TEST_OBJ_DIR)/, $(notdir $(TEST_C:%.c=%.h)))
+TEST_H = $(shell find $(TEST_DIR) -type f -name "*.h")
+TEST_O = $(addprefix $(TEST_OBJ_DIR)/, $(TEST_C:%.c=%.o))
 
 # list of all files for clang-format and cppcheck
 C_FILES = $(MODULES_C) $(TEST_C)
@@ -55,17 +54,23 @@ vpath %.o $(OBJ_DIR)
 all: dvi $(TARGET)
 
 $(LIBRARY): $(OBJ_DIR) $(MODULES_O) $(MODULES_H) $(MAIN_H)
-	ar rc $@ $(addprefix $(OBJ_DIR)/, $(MODULES_O))
+	ar rcs $@ $(addprefix $(OBJ_DIR)/, $(MODULES_O))
 	ranlib $(LIBRARY)
+
+test: $(TEST_OBJ_DIR) $(MODULES_O) $(TEST_O) $(MODULES_H) $(MAIN_H) $(TEST_H)
+# gcc $(TEST_OBJ_DIR)/*.o -o $@ $(LDFLAGS)
+
+1:
+	echo $(TEST_H)
 
 %.o: %.c $(H_FILES)
 	$(CC) $(CFLAGS) -c -o $(addprefix $(OBJ_DIR)/, $@) $<
 
+$(TEST_OBJ_DIR)/%.o : %.c $(TESTS_H)
+	$(CC) $(CFLAGS) -c -o $@ $<
+
 $(GCOV_OBJ_DIR)/%.o : %.c $(ALL_H)
 	$(CC) $(CFLAGS) $(GCOV_FLAGS) -o $@ $<
-
-$(TEST_OBJ_DIR)/%.o : %.c $(ALL_H) $(ALL_TESTS_H)
-	$(CC) $(CFLAGS) -o $@ $<
 
 # create directories
 $(OBJ_DIR):
