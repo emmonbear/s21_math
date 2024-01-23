@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_floor.h"
+#include "./test_include/s21_test_floor.h"
 
 START_TEST(s21_floor_1)
 {

@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_sqrt.h"
+#include "./test_include/s21_test_sqrt.h"
 
 START_TEST(s21_sqrt_1)
 {

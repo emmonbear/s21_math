@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_asin.h"
+#include "./test_include/s21_test_asin.h"
 
 START_TEST(s21_asin_1)
 {

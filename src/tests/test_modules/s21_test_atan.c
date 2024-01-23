@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_atan.h"
+#include "./test_include/s21_test_atan.h"
 
 START_TEST(s21_atan_1)
 {

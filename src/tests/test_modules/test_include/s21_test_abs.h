@@ -12,8 +12,9 @@
 #ifndef S21_TESTS_ABS_H_
 #define S21_TESTS_ABS_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_abs_first_case(void);
+Suite *s21_abs_second_case(void);
 
 #endif // S21_TESTS_ABS_H_

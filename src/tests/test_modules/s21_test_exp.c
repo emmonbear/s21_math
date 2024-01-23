@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_exp.h"
+#include "./test_include/s21_test_exp.h"
 
 START_TEST(s21_exp_1)
 {

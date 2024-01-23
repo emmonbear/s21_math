@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_ceil.h"
+#include "./test_include/s21_test_ceil.h"
 
 START_TEST(s21_ceil_1)
 {

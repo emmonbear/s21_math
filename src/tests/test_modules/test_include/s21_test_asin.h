@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_ASIN_H_
 #define S21_TESTS_ASIN_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_asin_first_case(void);
 

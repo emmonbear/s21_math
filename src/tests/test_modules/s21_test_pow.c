@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_pow.h"
+#include "./test_include/s21_test_pow.h"
 
 START_TEST(s21_pow_1)
 {

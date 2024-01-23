@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_fmod.h"
+#include "./test_include/s21_test_fmod.h"
 
 START_TEST(s21_fmod_1)
 {

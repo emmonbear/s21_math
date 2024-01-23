@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_FMOD_H_
 #define S21_TESTS_FMOD_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_fmod_first_case(void);
 

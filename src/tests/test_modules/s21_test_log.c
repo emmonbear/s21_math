@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_log.h"
+#include "./test_include/s21_test_log.h"
 
 START_TEST(s21_log_1)
 {

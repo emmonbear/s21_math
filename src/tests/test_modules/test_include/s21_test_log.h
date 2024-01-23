@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_LOG_H_
 #define S21_TESTS_LOG_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_log_first_case(void);
 

@@ -12,8 +12,9 @@
 #ifndef S21_TESTS_FABS_H_
 #define S21_TESTS_FABS_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_fabs_first_case(void);
+Suite *s21_fabs_second_case(void);
 
 #endif // S21_TESTS_FABS_H_

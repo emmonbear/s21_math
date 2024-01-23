@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_POW_H_
 #define S21_TESTS_POW_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_pow_first_case(void);
 

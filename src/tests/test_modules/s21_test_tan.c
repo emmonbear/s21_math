@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_tan.h"
+#include "./test_include/s21_test_tan.h"
 
 START_TEST(s21_tan_1)
 {

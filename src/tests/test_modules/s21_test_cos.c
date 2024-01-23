@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_cos.h"
+#include "./test_include/s21_test_cos.h"
 
 START_TEST(s21_cos_1)
 {

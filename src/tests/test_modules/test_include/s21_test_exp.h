@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_EXP_H_
 #define S21_TESTS_EXP_H_
 
-#include "../common.h"
+#include "./../common.h"
 
 Suite *s21_exp_first_case(void);
 

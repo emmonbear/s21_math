@@ -9,7 +9,7 @@
  * 
  */
 
-#include "test_include/s21_test_acos.h"
+#include "./test_include/s21_test_acos.h"
 
 START_TEST(s21_acos_1)
 {
