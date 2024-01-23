@@ -1,5 +1,7 @@
 PROJECT_NAME = s21_math
 
+############################# VARIABLES #############################
+
 # compiler
 CC = gcc
 
@@ -10,6 +12,7 @@ TEST_OBJ_DIR = ./obj/tests
 MODULES_DIR = ./modules
 TEST_DIR = ./tests
 REPORT_DIR = ./report
+DVI_DIR = ./../docs
 
 # main flags for compiler
 CFLAGS = -Wall -Werror -Wextra -pedantic -std=c11 -g
@@ -22,6 +25,12 @@ LDGCOV = $(LDFLAGS) -lgcov
 
 # flags for gcov
 GCOV_FLAGS = -fprofile-arcs -ftest-coverage
+
+# flags for valgrind test
+VAL = --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all -s
+
+# flags for cppcheck test
+CPPCHECK = --enable=all --suppress=missingIncludeSystem
 
 # target names
 LIBRARY = $(PROJECT_NAME).a
@@ -50,7 +59,8 @@ ALL_FILES = $(C_FILES) $(H_FILES)
 vpath %.c $(MODULES_DIRS) : $(TEST_DIRS)
 vpath %.o $(OBJ_DIR)
 
-# targets
+############################## TARGETS ##############################
+
 all: dvi $(TARGET)
 
 $(LIBRARY): $(OBJ_DIR) $(MODULES_O) $(MODULES_H) $(MAIN_H)
@@ -83,26 +93,28 @@ $(TEST_OBJ_DIR):
 $(REPORT_DIR):
 	mkdir -p $(REPORT_DIR)
 
-debug:
-	$(CC) $(CFLAGS) $(LDFLAGS) main.c -o main
+debug: $(LIBRARY)
+	@$(CC) main.c $(LIBRARY) -o main
+	@./main
 
 dvi:
-	rm -rf ./../docs
+	rm -rf $(DVI_DIR)
 	doxygen Doxyfile
+	xdg-open $(DVI_DIR)/html/index.html
 
 rebuild: clean all
 
-clang:
+clang_check:
 	clang-format -style=Google -n $(ALL_FILES)
 
-check:
+clang_fix:
 	clang-format -style=Google -i $(ALL_FILES)
 
 cppcheck:
-	cppcheck --enable=all --suppress=missingIncludeSystem $(ALL_FILES)
+	cppcheck $(CPPCHECK) $(ALL_FILES)
 
 valgrind:
-	valgrind --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all -s ./$(TARGET)
+	valgrind $(VAL) ./$(TARGET)
 
 install:
 	sudo apt install cppcheck
@@ -112,6 +124,8 @@ install:
 clean:
 	rm -rf $(OBJ_DIR)
 	rm -rf $(REPORT_DIR)
+	rm -rf $(DVI_DIR)
+	rm -f $(TARGET)
 	rm -f *.a *.o
 	rm -f *.c.gcov *.gcno *.gcov *.gcda output.info
 	rm -f main
