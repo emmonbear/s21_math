@@ -16,5 +16,6 @@
 
 Suite *s21_fabs_first_case(void);
 Suite *s21_fabs_second_case(void);
+Suite *s21_fabs_edge_case(void);
 
 #endif // S21_TESTS_FABS_H_

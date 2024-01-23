@@ -33,6 +33,7 @@ int main(void)
     Suite *(*s21_fabs[])(void) = {
         s21_fabs_first_case,
         s21_fabs_second_case,
+        s21_fabs_edge_case,
     };
 
     // Suite *(*s21_floor[])(void) = {

@@ -211,6 +211,26 @@ START_TEST(s21_fabs_20)
     ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
 }
 
+START_TEST(s21_fabs_21)
+{
+    double value = S21_NAN;
+
+    long double original_func = fabs(value);
+    long double implementation = s21_fabs(value);
+
+    ck_assert_int_eq(S21_IS_NAN(original_func), S21_IS_NAN(implementation));
+}
+
+START_TEST(s21_fabs_22)
+{
+    double value = S21_INF;
+
+    long double original_func = fabs(value);
+    long double implementation = s21_fabs(value);
+
+    ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
+}
+
 Suite *s21_fabs_first_case(void)
 {
     Suite *math = suite_create("s21_math (s21_fabs first case)");
@@ -246,6 +266,18 @@ Suite *s21_fabs_second_case(void)
     tcase_add_test(tc_fabs, s21_fabs_18);
     tcase_add_test(tc_fabs, s21_fabs_19);
     tcase_add_test(tc_fabs, s21_fabs_20);
+    suite_add_tcase(math, tc_fabs);
+
+    return math;
+}
+
+Suite *s21_fabs_edge_case(void)
+{
+    Suite *math = suite_create("s21_math (s21_fabs edge case)");
+
+    TCase *tc_fabs = tcase_create("test_fabs");
+    tcase_add_test(tc_fabs, s21_fabs_21);
+    tcase_add_test(tc_fabs, s21_fabs_22);
     suite_add_tcase(math, tc_fabs);
 
     return math;
