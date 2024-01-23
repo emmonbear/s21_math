@@ -1,4 +1,4 @@
-# s21_math  
+# s21_math task
 
 Implementation of your own version of the math.h library.  
 
@@ -6,11 +6,11 @@ The russian version of the task can be found in the repository.
 
 ## Contents
 0. [Preamble](#preamble)
-1. [Chapter I](#chapter-i) \
+1. [Chapter I](#chapter-i) <br>
    1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) \
+2. [Chapter II](#chapter-ii) <br>
    2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) \
+3. [Chapter III](#chapter-iii) <br>
    3.1. [Part 1](#part-1-implementing-the-mathh-library-functions)
 
 
