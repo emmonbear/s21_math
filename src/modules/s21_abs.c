@@ -9,7 +9,7 @@
  * 
  */
 
-#include "include/s21_abs.h"
+#include "./include/s21_abs.h"
 
 /**
  * @brief Computes absolute value of an integer value.
