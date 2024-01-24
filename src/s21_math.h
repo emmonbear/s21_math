@@ -13,5 +13,7 @@
 
 #include "./modules/include/s21_abs.h"
 #include "./modules/include/s21_fabs.h"
+#include "./modules/include/s21_ceil.h"
+#include "./modules/include/s21_floor.h"
 
 #endif // S21_MATH_H_
