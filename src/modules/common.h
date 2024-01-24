@@ -40,4 +40,7 @@ enum bit_constants {
     MANTISS_SIZE =   52,
 };
 
+long double factorial(unsigned int n);
+double fast_pow(double base, unsigned int exp);
+
 #endif // MAIN_COMMON_H_
