@@ -27,12 +27,8 @@ long double s21_floor(double x)
     uint64_t mantissa = bits.ulong & MANTISS_MASK;
 
     if (exponent < 0) {
-        if (x <= ZERO){
-            if(sign == BIT_SET) {
-                bits.dbl = NEGATIVE_ZERO;
-            } else {
-                bits.dbl = ZERO;
-            }
+        if (!x) {
+            bits.dbl = ZERO;
         } else {
             bits.dbl = -1.0;
         }
