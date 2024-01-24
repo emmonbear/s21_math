@@ -15,5 +15,7 @@
 #include "./../common.h"
 
 Suite *s21_floor_first_case(void);
+Suite *s21_floor_second_case(void);
+Suite *s21_floor_edge_case(void);
 
 #endif // S21_TESTS_FLOOR_H_
