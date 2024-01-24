@@ -231,6 +231,17 @@ START_TEST(s21_fabs_22)
     ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
 }
 
+START_TEST(s21_fabs_23)
+{
+    double value = -S21_INF;
+
+    long double original_func = fabs(value);
+    long double implementation = s21_fabs(value);
+
+    ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
+}
+
+
 Suite *s21_fabs_first_case(void)
 {
     Suite *math = suite_create("s21_math (s21_fabs first case)");
@@ -278,6 +289,7 @@ Suite *s21_fabs_edge_case(void)
     TCase *tc_fabs = tcase_create("test_fabs");
     tcase_add_test(tc_fabs, s21_fabs_21);
     tcase_add_test(tc_fabs, s21_fabs_22);
+    tcase_add_test(tc_fabs, s21_fabs_23);
     suite_add_tcase(math, tc_fabs);
 
     return math;

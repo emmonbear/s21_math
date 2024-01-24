@@ -15,5 +15,7 @@
 #include "./../common.h"
 
 Suite *s21_ceil_first_case(void);
+Suite *s21_ceil_second_case(void);
+Suite *s21_ceil_edge_case(void);
 
 #endif // S21_TESTS_CEIL_H_
