@@ -27,12 +27,10 @@ long double s21_ceil(double x)
     uint64_t mantissa = bits.ulong & MANTISS_MASK;
 
     if (exponent < 0) {
-        if (x <= ZERO){
-            if(sign == BIT_SET) {
-                bits.dbl = NEGATIVE_ZERO;
-            } else {
-                bits.dbl = ZERO;
-            }
+        if(!x && sign) {
+            bits.dbl = NEGATIVE_ZERO;
+        } else if (!x) {
+            bits.dbl = ZERO;
         } else {
             bits.dbl = 1.0;
         }
