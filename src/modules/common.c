@@ -12,38 +12,38 @@
 #include "./common.h"
 
 /**
- * @brief Calculate the factorial of n
+ * @brief Calculate the factorial of n and immediately divides the member of the series.
  * 
- * @param n count of iterations
- * @return long double 
+ * @param[in] value taylor series member.
+ * @param[in] n count of iterations.
+ * @return long double - result of calculation.
  */
-long double factorial(unsigned int n)
+long double factorial(long double value, unsigned int n)
 {
-    long double result = 1;
-
     for(unsigned int i = 1; i <= n; i++) {
-        result *= i;
+        value /= i;
     }
 
-    return result;
+    return value;
 }
 
 /**
- * @brief Algorithm for fast integer base to degree exp
+ * @brief Algorithm for fast integer base to degree exp.
  * 
- * @param base a number raised to the degree exp
- * @param exp exponent
+ * @param[in] base a number raised to the degree exp.
+ * @param[in] exp exponent.
  * @return double - result of calculation.
  */
-double fast_pow(double base, unsigned int exp)
+long double fast_pow(long double base, unsigned int exp)
 {
-    double result = 1.0;
-    double current_pow = base;
+    long double result = 1.0;
+    long double current_pow = base;
 
     while (exp > 0) {
         if (exp & 1) {
             result *= current_pow;
         }
+        
         current_pow *= current_pow;
         exp /= 2;
     }
