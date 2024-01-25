@@ -26,31 +26,36 @@ int main(void)
     int failed_count = 0;
 
     Suite *(*s21_abs[])(void) = {
-        s21_abs_first_case,
+        s21_abs_first_case ,
         s21_abs_second_case,
     };
 
     Suite *(*s21_fabs[])(void) = {
-        s21_fabs_first_case,
+        s21_fabs_first_case ,
         s21_fabs_second_case,
-        s21_fabs_edge_case,
+        s21_fabs_edge_case  ,
     };
 
     Suite *(*s21_floor[])(void) = {
-        s21_floor_first_case,
+        s21_floor_first_case ,
         s21_floor_second_case,
-        s21_floor_edge_case,
+        s21_floor_edge_case  ,
     };
 
     Suite *(*s21_ceil[])(void) = {
-        s21_ceil_first_case,
+        s21_ceil_first_case ,
         s21_ceil_second_case,
-        s21_ceil_edge_case,
+        s21_ceil_edge_case  ,
     };
 
-    // Suite *(*s21_exp[])(void) = {
-    //     s21_exp_first_case,
-    // };
+    Suite *(*s21_exp[])(void) = {
+        s21_exp_first_case ,
+        s21_exp_second_case,
+        s21_exp_third_case ,
+        s21_exp_fourth_case,
+        s21_exp_fifth_case ,
+        s21_exp_edge_case  ,
+    };
 
     // Suite *(*s21_fmod[])(void) = {
     //     s21_fmod_first_case,
@@ -153,18 +158,18 @@ int main(void)
     printf("*************************************************************************\n");
 
     
-    // printf("\n\n _______________________________________________________________________\n");
-    // printf("|                                                                       |\n");
-    // printf("|                             S21_EXP TESTS                             |\n");
-    // printf("|_______________________________________________________________________|\n\n\n");
-    // for(size_t i = 0; i < sizeof(s21_exp)/sizeof(s21_exp[0]); i++) {
-    //     printf("*************************************************************************\n");
-    //     failed_count = test_suite(s21_exp[i]());
-    //     if (failed_count) {
-    //         i = sizeof(s21_exp)/sizeof(s21_exp[0]);
-    //     }
-    // }
-    // printf("*************************************************************************\n");
+    printf("\n\n _______________________________________________________________________\n");
+    printf("|                                                                       |\n");
+    printf("|                             S21_EXP TESTS                             |\n");
+    printf("|_______________________________________________________________________|\n\n\n");
+    for(size_t i = 0; i < sizeof(s21_exp)/sizeof(s21_exp[0]); i++) {
+        printf("*************************************************************************\n");
+        failed_count = test_suite(s21_exp[i]());
+        if (failed_count) {
+            i = sizeof(s21_exp)/sizeof(s21_exp[0]);
+        }
+    }
+    printf("*************************************************************************\n");
 
 
     // printf("\n\n _______________________________________________________________________\n");

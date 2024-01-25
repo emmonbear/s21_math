@@ -15,5 +15,10 @@
 #include "./../common.h"
 
 Suite *s21_exp_first_case(void);
+Suite *s21_exp_second_case(void);
+Suite *s21_exp_third_case(void);
+Suite *s21_exp_fourth_case(void);
+Suite *s21_exp_fifth_case(void);
+Suite *s21_exp_edge_case(void);
 
 #endif // S21_TESTS_EXP_H_
