@@ -27,7 +27,7 @@ long double s21_floor(double x)
     uint64_t mantissa = bits.ulong & MANTISS_MASK;
 
     if (exponent < 0) {
-        if (!x) {
+        if (x > 0) {
             bits.dbl.d = ZERO;
         } else {
             bits.dbl.d = -1.0;
@@ -39,10 +39,10 @@ long double s21_floor(double x)
             bits.dbl.d = x;
         } else {
             if (sign == BIT_SET) {
-                mantissa -= (uint64_t)1 << (MANTISS_SIZE - exponent);
+                mantissa += (uint64_t)1 << (MANTISS_SIZE - exponent);
                 if (mantissa & OVERFLOW_MASK) {
-                    mantissa = MANTISS_MASK;
-                    exponent--;
+                    mantissa = 0;
+                    exponent++;
                 }
             }
             mantissa &= ~mask;

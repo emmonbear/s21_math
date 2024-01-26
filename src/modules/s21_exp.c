@@ -33,7 +33,7 @@ long double s21_exp(double x)
             result = x;
         }
     } else {
-        for(double n = 1; taylor_member > 1.0e-100; ++n) {
+        for(double n = 1; s21_fabs(taylor_member) > 1.0e-100; ++n) {
             taylor_member = factorial(fast_pow(x, n), n);
             result += taylor_member;
         }

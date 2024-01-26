@@ -18,6 +18,6 @@
 #include <math.h>
 #include <stdlib.h>
 
-#define COMPARE_ACCURACY 1.0e+6     ///< Comparable accuracy of calculation results during testing.
+#define COMPARE_ACCURACY 1.0e-6     ///< Comparable accuracy of calculation results during testing.
 
 #endif // COMMON_H_

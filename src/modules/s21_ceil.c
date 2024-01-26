@@ -27,12 +27,14 @@ long double s21_ceil(double x)
     uint64_t mantissa = bits.ulong & MANTISS_MASK;
 
     if (exponent < 0) {
-        if(!x && sign) {
-            bits.dbl.d = NEGATIVE_ZERO;
-        } else if (!x) {
-            bits.dbl.d = ZERO;
-        } else {
+        if(x > 0) {
             bits.dbl.d = 1.0;
+        } else {
+            if(sign) {
+                bits.dbl.d = NEGATIVE_ZERO;
+            } else {
+                bits.dbl.d = ZERO;
+            }
         }
     } else {
         uint64_t mask = MANTISS_MASK >> exponent;
