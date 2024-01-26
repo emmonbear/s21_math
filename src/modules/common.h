@@ -21,22 +21,23 @@
 #define S21_IS_INF(x) (x == S21_INF || x == -S21_INF)       ///< Check value is infinity (inf).
 #define GET_SHIFT(x) (sizeof(x) * 8 - 1);                   ///< Returns the number of bits of the specified type depending on the processor architecture.
 
-#define ZERO 0.0                            ///< Zero value.
-#define NEGATIVE_ZERO -0.0                  ///< Zero whose sign bit is set.
-#define EXP_MASK 0x7fffffffffffffff         ///< Mask for exponent bits for double.
-#define MANTISS_MASK 0xfffffffffffff        ///< Mask for mantissa bits for double.
-#define OVERFLOW_MASK 0x10000000000000      ///< Number overflow check mask.
-#define INF_BITS 0x7FF                      ///< Mask to check infinity in exponent.
+#define ZERO 0.0                                ///< Zero value.
+#define NEGATIVE_ZERO -0.0                      ///< Zero whose sign bit is set.
+#define EXP_MASK 0x7fffffffffffffff             ///< Mask for exponent bits for double.
+#define MANTISS_MASK 0xfffffffffffff            ///< Mask for mantissa bits for double.
+#define OVERFLOW_MASK 0x10000000000000          ///< Number overflow check mask.
+#define INF_BITS 0x7FF                          ///< Mask to check infinity in exponent.
+#define NAN_MASK 0xFFF8000000000000             ///< Mask to check double for NaN.
 
-#define TAYLOR_PRECISION 1.0e-100           ///< Limiting accuracy of the constituent Taylor series.
+#define TAYLOR_PRECISION 1.0e-100               ///< Limiting accuracy of the constituent Taylor series.
 
 /**
  * @brief Union structure assigned to work with double bits.
  */
-union double_int {
-    double dbl;             ///< Double whose bits need to be worked on.
-    uint64_t ulong;         ///< A commensurate int having the same bit composition as the double.
-};
+typedef union {
+    union ieee754_double dbl;   ///< Union containing the double in question with fields.
+    uint64_t ulong;             ///< A commensurate int having the same bit composition as the double.
+} double_int;
 
 /**
  * @brief Constants for working with bits.

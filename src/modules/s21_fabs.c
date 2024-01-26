@@ -20,11 +20,11 @@
 long double s21_fabs(double x)
 {
     long double result = x;
-    union ieee754_double bits = {x};
+    double_int bits = {{x}};
 
-    if(bits.ieee.negative) {
-        bits.ieee.negative = 0;
-        result = bits.d;
+    if(bits.dbl.ieee.negative) {
+        bits.dbl.ieee.negative = 0;
+        result = bits.dbl.d;
     }
 
     return result;

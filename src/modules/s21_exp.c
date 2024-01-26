@@ -22,12 +22,12 @@ long double s21_exp(double x)
 {
     long double result = 1;
     long double taylor_member = x;
-    union ieee754_double bits = {x};
+    double_int bits = {{x}};
 
-    if(S21_IS_NAN(x)) {
+    if(bits.ulong == NAN_MASK) {
         result = S21_NAN;
-    } else if(bits.ieee.exponent == INF_BITS) {
-        if(bits.ieee.negative) {
+    } else if(bits.dbl.ieee.exponent == INF_BITS) {
+        if(bits.dbl.ieee.negative) {
             result = ZERO;
         } else {
             result = x;
