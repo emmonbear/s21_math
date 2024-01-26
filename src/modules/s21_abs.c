@@ -14,7 +14,7 @@
 /**
  * @brief Computes absolute value of an integer value.
  * 
- * @param x number whose absolute value must be determined.
+ * @param[in] x number whose absolute value must be determined.
  * @return int - result of calculation.
  */
 int s21_abs(int x)

@@ -14,7 +14,7 @@
 /**
  * @brief Returns the nearest integer not greater than the given value.
  * 
- * @param x number whose value needs to be rounded.
+ * @param[in] x number whose value needs to be rounded.
  * @return long double - result of calculation.
  */
 long double s21_floor(double x)

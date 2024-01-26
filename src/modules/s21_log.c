@@ -14,7 +14,7 @@
 /**
  * @brief Computes natural logarithm
  * 
- * @param x A value used in the calculation of the logarithm of x to the base of e
+ * @param[in] x A value used in the calculation of the logarithm of x to the base of e
  * @return long double 
  */
 long double s21_log(double x)

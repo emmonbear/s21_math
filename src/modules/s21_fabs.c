@@ -14,7 +14,7 @@
 /**
  * @brief Computes absolute value of a floating-point value.
  * 
- * @param x number whose absolute value must be determined.
+ * @param[in] x number whose absolute value must be determined.
  * @return long double - result of calculation.
  */
 long double s21_fabs(double x)

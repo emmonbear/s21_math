@@ -13,7 +13,7 @@
 /**
  * @brief Print double bits
  * 
- * @param x double whose bits are output
+ * @param[in] x double whose bits are output
  */
 void print_bits_double(double x)
 {
@@ -33,8 +33,8 @@ void print_bits_double(double x)
 /**
  * @brief Print uint bits
  * 
- * @param x uint whose bits are output
- * @param size count bits __LITTLE_ENDIAN
+ * @param[in] x uint whose bits are output
+ * @param[in] size count bits __LITTLE_ENDIAN
  */
 void print_bits(unsigned int x, int size)
 {
