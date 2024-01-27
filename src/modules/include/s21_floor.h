@@ -4,9 +4,9 @@
  * @brief Header file for s21_floor module
  * @version 1.0
  * @date 2024-01-24
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #ifndef S21_FLOOR_H_
@@ -16,4 +16,4 @@
 
 long double s21_floor(double x);
 
-#endif // S21_FLOOR_H_
+#endif  // S21_FLOOR_H_

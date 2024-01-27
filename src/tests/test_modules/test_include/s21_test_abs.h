@@ -4,9 +4,9 @@
  * @brief Header file for s21_abs test module
  * @version 1.0
  * @date 2024-01-21
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #ifndef S21_TESTS_ABS_H_
@@ -17,4 +17,4 @@
 Suite *s21_abs_first_case(void);
 Suite *s21_abs_second_case(void);
 
-#endif // S21_TESTS_ABS_H_
+#endif  // S21_TESTS_ABS_H_

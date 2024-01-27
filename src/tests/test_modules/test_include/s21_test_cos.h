@@ -4,9 +4,9 @@
  * @brief Header file for s21_cos test module
  * @version 1.0
  * @date 2024-01-21
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #ifndef S21_TESTS_COS_H_
@@ -16,4 +16,4 @@
 
 Suite *s21_cos_first_case(void);
 
-#endif // S21_TESTS_COS_H_
+#endif  // S21_TESTS_COS_H_
