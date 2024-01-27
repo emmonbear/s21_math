@@ -149,7 +149,7 @@ $(TEST_OBJ_DIR)/%.o : %.c $(TEST_H)
 
 #====================================== CHECKS TARGETS ======================================================#
 debug: $(LIBRARY)
-	@$(CC) main.c $(LIBRARY) -o main
+	@$(CC) main.c $(LIBRARY) -o main -lm
 	@./main
 
 clang_check:
