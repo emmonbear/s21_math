@@ -180,4 +180,6 @@ install:
 	sudo apt-get install check
 	sudo apt install doxygen
 	sudo apt-get install graphviz
+	sudo apt-get install texlive
+
 #============================================================================================================#
