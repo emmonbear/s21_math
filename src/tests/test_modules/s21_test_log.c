@@ -11,29 +11,63 @@
 
 #include "./test_include/s21_test_log.h"
 
+/// @brief For negative numbers, the result will be indeterminate
 START_TEST(s21_log_1)
 {
+    double value = -21.0;
 
+    long double original_func = log(value);
+    long double implementation = s21_log(value);
+
+    ck_assert_int_eq(S21_IS_NAN(original_func), 
+        S21_IS_NAN(implementation));
 }
 
+/// @brief Logarithm of 1 equals 0
 START_TEST(s21_log_2)
 {
+    double value = 1.0;
 
+    long double original_func = log(value);
+    long double implementation = s21_log(value);
+
+    ck_assert_double_eq_tol(original_func,
+        implementation, COMPARE_ACCURACY);
 }
 
+/// @brief Logarithm of NaN equals NaN
 START_TEST(s21_log_3)
 {
+    double value = S21_NAN;
 
+    long double original_func = log(value);
+    long double implementation = s21_log(value);
+
+    ck_assert_int_eq(S21_IS_NAN(original_func),
+        S21_IS_NAN(implementation));
 }
 
+/// @brief Logarithm of +inf equals +inf
 START_TEST(s21_log_4)
 {
+    double value = S21_INF_POS;
 
+    long double original_func = log(value);
+    long double implementation = s21_log(value);
+
+    ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
 }
 
+/// @brief Logarithm of -inf equals NaN
 START_TEST(s21_log_5)
 {
+    double value = S21_INF_NEG;
 
+    long double original_func = log(value);
+    long double implementation = s21_log(value);
+
+    ck_assert_int_eq(S21_IS_NAN(original_func),
+        S21_IS_NAN(implementation));
 }
 
 START_TEST(s21_log_6)
