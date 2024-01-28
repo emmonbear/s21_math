@@ -16,5 +16,6 @@
 
 void print_bits_double(double x);
 void print_bits(unsigned int x, int size);
+void s21_test_print(long double original_func, long double implementation);
 
 #endif // S21_DEBUG_H_

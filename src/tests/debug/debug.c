@@ -49,3 +49,18 @@ void print_bits(unsigned int x, int size)
     }
     putchar(' ');
 }
+
+/**
+ * @brief Function for printing the obtained results.
+ * 
+ * @param[in] original_func result of calculating the original function.
+ * @param[in] implementation result of calculating the implementation function.
+ */
+void s21_test_print(long double original_func, long double implementation)
+{
+    printf(" original func = %Lf | binary: ", original_func);
+    print_bits_double(original_func);
+    printf("implementation = %Lf | binary: ", implementation);
+    print_bits_double(implementation);
+    printf("\033[0;33m-------------------------------------------------------------------------\033[0m\n");
+}

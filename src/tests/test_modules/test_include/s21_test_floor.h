@@ -15,8 +15,6 @@
 #include "./../common.h"
 
 void s21_test_floor(double x);
-void s21_test_floor_nan(double x);
-void s21_test_floor_inf(double x);
 void s21_test_floor_print(long double original_func, long double implementation);
 
 Suite *s21_floor_first_case(void);

@@ -16,7 +16,7 @@ START_TEST(s21_log_1)
 {
     double value = -21.0;
 
-    s21_test_log_nan(value);
+    s21_test_log(value);
 }
 
 /// @brief \f[ log(1.0) = 0.0 \f]
@@ -32,7 +32,7 @@ START_TEST(s21_log_3)
 {
     double value = S21_NAN;
 
-    s21_test_log_nan(value);
+    s21_test_log(value);
 }
 
 /// @brief \f[ log(inf) = inf \f]
@@ -40,7 +40,7 @@ START_TEST(s21_log_4)
 {
     double value = S21_INF_POS;
 
-    s21_test_log_inf(value);
+    s21_test_log(value);
 }
 
 /// @brief \f[ log(-inf) = -inf \f]
@@ -48,7 +48,7 @@ START_TEST(s21_log_5)
 {
     double value = S21_INF_NEG;
 
-    s21_test_log_nan(value);
+    s21_test_log(value);
 }
 
 // START_TEST(s21_log_6)
@@ -114,80 +114,30 @@ void s21_test_log(double value)
     long double implementation = s21_log(value);
 
     printf("Input value: %lf\n", value);
-    
-    if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
+
+    long double first = 0;
+    long double second = 0;
+
+    if(S21_IS_INF(original_func)) {
+        first = S21_IS_INF(original_func);
+        second = S21_IS_INF(implementation);
+    } else if(S21_IS_NAN(original_func)) {
+        first = S21_IS_NAN(original_func);
+        second = S21_IS_NAN(implementation);
+    } else {
+        first = original_func;
+        second = implementation;
+    }
+
+    if(fabsl(first - second) > COMPARE_ACCURACY) {
         printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     } else {
         printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     }
 
     #ifdef DEBUG
-        s21_test_log_print(original_func, implementation);
+    s21_test_print(original_func, implementation);
     #endif
 
-    ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
-}
-
-/**
- * @brief Quickly check the nan functionality of the module s21_log.
- * 
- * @param[in] value a value used in the calculation of the logarithm of x to the base of e.
- */
-void s21_test_log_nan(double value)
-{
-    long double original_func = log(value);
-    long double implementation = s21_log(value);
-
-    printf("Input value: %lf\n", value);    
-
-    if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
-    } else {
-        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
-    }
-
-    #if defined(DEBUG)
-        s21_test_log_print(original_func, implementation);
-    #endif
-
-    ck_assert_int_eq(S21_IS_NAN(original_func), S21_IS_NAN(implementation));
-}
-/**
- * @brief Quickly check the inf functionality of the module s21_log.
- * 
- * @param[in] value a value used in the calculation of the logarithm of x to the base of e.
- */
-void s21_test_log_inf(double value)
-{
-    long double original_func = log(value);
-    long double implementation = s21_log(value);
-
-    printf("Input value: %lf\n", value);
-
-    if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
-    } else {
-        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
-    }
-
-    #if defined(DEBUG)
-        s21_test_log_print(original_func, implementation);
-    #endif
-
-    ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
-}
-
-/**
- * @brief Function for printing the obtained results.
- * 
- * @param[in] original_func result of calculating the original function.
- * @param[in] implementation result of calculating the implementation function.
- */
-void s21_test_log_print(long double original_func, long double implementation)
-{
-    printf(" original func = %Lf | binary: ", original_func);
-    print_bits_double(original_func);
-    printf("implementation = %Lf | binary: ", implementation);
-    print_bits_double(implementation);
-    printf("\033[0;33m-------------------------------------------------------------------------\n\033[0m");
+    ck_assert_double_eq_tol(first, second, COMPARE_ACCURACY);
 }
