@@ -10,6 +10,9 @@
  */
 
 #include "./include/s21_pow.h"
+#include "./include/s21_exp.h"
+#include "./include/s21_fabs.h"
+#include <math.h>
 
 /**
  * @brief Raises a number to a given power.
@@ -20,7 +23,9 @@
  */
 long double s21_pow(double base, double exp)
 {
-    long double result = base = exp;
-
+    long double result = s21_exp(log(s21_fabs(base)) * exp);
+    
     return result;
 }
+// 26516484577291355.904297
+// 26516484577291374.580078
