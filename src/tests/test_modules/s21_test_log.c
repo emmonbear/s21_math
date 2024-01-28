@@ -11,7 +11,7 @@
 
 #include "./test_include/s21_test_log.h"
 
-/// @brief \f[ exp(-21.0) = -nan \f]
+/// @brief \f[ log(-21.0) = -nan \f]
 START_TEST(s21_log_1)
 {
     double value = -21.0;
@@ -19,7 +19,7 @@ START_TEST(s21_log_1)
     s21_test_log_nan(value);
 }
 
-/// @brief \f[ exp(1.0) = 0.0 \f]
+/// @brief \f[ log(1.0) = 0.0 \f]
 START_TEST(s21_log_2)
 {
     double value = 1.0;
@@ -27,7 +27,7 @@ START_TEST(s21_log_2)
     s21_test_log(value);
 }
 
-/// @brief \f[ exp(NaN) = -nan \f]
+/// @brief \f[ log(NaN) = -nan \f]
 START_TEST(s21_log_3)
 {
     double value = S21_NAN;
@@ -35,7 +35,7 @@ START_TEST(s21_log_3)
     s21_test_log_nan(value);
 }
 
-/// @brief \f[ exp(inf) = inf \f]
+/// @brief \f[ log(inf) = inf \f]
 START_TEST(s21_log_4)
 {
     double value = S21_INF_POS;
@@ -43,7 +43,7 @@ START_TEST(s21_log_4)
     s21_test_log_inf(value);
 }
 
-/// @brief \f[ exp(-inf) = -inf \f]
+/// @brief \f[ log(-inf) = -inf \f]
 START_TEST(s21_log_5)
 {
     double value = S21_INF_NEG;
@@ -113,15 +113,15 @@ void s21_test_log(double value)
     long double original_func = log(value);
     long double implementation = s21_log(value);
 
-    printf("Input value       = %lf\n", value);
+    printf("Input value: %lf\n", value);
     
     if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     } else {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     }
 
-    #if defined(DEBUG)
+    #ifdef DEBUG
         s21_test_log_print(original_func, implementation);
     #endif
 
@@ -138,12 +138,12 @@ void s21_test_log_nan(double value)
     long double original_func = log(value);
     long double implementation = s21_log(value);
 
-    printf("Input value       = %lf\n", value);
+    printf("Input value: %lf\n", value);
 
     if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     } else {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     }
 
     #if defined(DEBUG)
@@ -162,12 +162,12 @@ void s21_test_log_inf(double value)
     long double original_func = log(value);
     long double implementation = s21_log(value);
 
-    printf("Input value       = %lf\n", value);
+    printf("Input value: %lf\n", value);
 
     if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     } else {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     }
 
     #if defined(DEBUG)

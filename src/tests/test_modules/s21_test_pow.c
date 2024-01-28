@@ -139,15 +139,17 @@ void s21_test_pow(double base, double exp)
     long double original_func = pow(base, exp);
     long double implementation = pow(base, exp);
 
-    printf("Input value       = %lf^%lf\n", base, exp);
+    printf("Input value: %lf^%lf\n", base, exp);
     
     if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     } else {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");   
     }
     
+    #ifdef DEBUG
     s21_test_pow_print(original_func, implementation);
+    #endif
 
     ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
 }
@@ -163,15 +165,17 @@ void s21_test_pow_nan(double base, double exp)
     long double original_func = pow(base, exp);
     long double implementation = pow(base, exp);
 
-    printf("Input value       = %lf^%lf\n", base, exp);
+    printf("Input value: %lf^%lf\n", base, exp);
 
     if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     } else {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     }
 
+    #ifdef DEBUG
     s21_test_pow_print(original_func, implementation);
+    #endif
 
     ck_assert_int_eq(S21_IS_NAN(original_func), S21_IS_NAN(implementation));
 }
@@ -186,15 +190,17 @@ void s21_test_pow_inf(double base, double exp)
     long double original_func = pow(base, exp);
     long double implementation = pow(base, exp);
 
-    printf("Input value       = %lf^%lf\n", base, exp);
+    printf("Input value: %lf^%lf\n", base, exp);
 
     if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     } else {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     }
 
+    #ifdef DEBUG
     s21_test_pow_print(original_func, implementation);
+    #endif
 
     ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
 }

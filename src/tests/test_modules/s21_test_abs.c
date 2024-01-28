@@ -233,15 +233,17 @@ void s21_test_abs(int value)
     int original_func = abs(value);
     int implementation = s21_abs(value);
 
-    printf("Input value       = %d\n", value);
+    printf("Input value: %d\n", value);
     
     if(original_func == implementation) {
-        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
     } else {
-        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
     }
 
+    #ifdef DEBUG
     s21_test_abs_print(original_func, implementation);
+    #endif
 
     ck_assert_int_eq(original_func, implementation);
 }
