@@ -17,5 +17,6 @@
 #include "./modules/include/s21_fabs.h"
 #include "./modules/include/s21_floor.h"
 #include "./modules/include/s21_log.h"
+#include "./modules/include/s21_pow.h"
 
 #endif  // S21_MATH_H_

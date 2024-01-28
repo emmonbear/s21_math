@@ -236,9 +236,9 @@ void s21_test_abs(int value)
     printf("Input value: %d\n", value);
     
     if(original_func == implementation) {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     } else {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     }
 
     #ifdef DEBUG
@@ -256,9 +256,9 @@ void s21_test_abs(int value)
  */
 void s21_test_abs_print(int original_func, int implementation)
 {
-    printf("original function = %d | binary: ", original_func);
+    printf(" original func = %d | binary: ", original_func);
     print_bits(original_func, 31);
-    printf("\nimplementation    = %d | binary: ", implementation);
+    printf("\nimplementation = %d | binary: ", implementation);
     print_bits(implementation, 31);
     printf("\033[0;33m\n-------------------------------------------------------------------------\n\033[0m");
 }

@@ -109,10 +109,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_abs)/sizeof(s21_abs[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_abs[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_abs)/sizeof(s21_abs[0]);
-        }
+        failed_count += test_suite(s21_abs[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -123,10 +120,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_fabs)/sizeof(s21_fabs[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_fabs[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_fabs)/sizeof(s21_fabs[0]);
-        }
+        failed_count += test_suite(s21_fabs[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -137,10 +131,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_floor)/sizeof(s21_floor[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_floor[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_floor)/sizeof(s21_floor[0]);
-        }
+        failed_count += test_suite(s21_floor[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -151,10 +142,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_ceil)/sizeof(s21_ceil[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_ceil[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_ceil)/sizeof(s21_ceil[0]);
-        }
+        failed_count += test_suite(s21_ceil[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -165,10 +153,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_exp)/sizeof(s21_exp[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_exp[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_exp)/sizeof(s21_exp[0]);
-        }
+        failed_count += test_suite(s21_exp[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -179,7 +164,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_fmod)/sizeof(s21_fmod[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_fmod[i]());
+    //     failed_count += test_suite(s21_fmod[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_fmod)/sizeof(s21_fmod[0]);
     //     }
@@ -193,10 +178,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_log)/sizeof(s21_log[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_log[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_log)/sizeof(s21_log[0]);
-        }
+        failed_count += test_suite(s21_log[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -207,7 +189,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_sqrt)/sizeof(s21_sqrt[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_sqrt[i]());
+    //     failed_count += test_suite(s21_sqrt[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_sqrt)/sizeof(s21_sqrt[0]);
     //     }
@@ -221,10 +203,7 @@ int main(void)
     printf("|_______________________________________________________________________|\n\n\n\033[0m");
     for(size_t i = 0; i < sizeof(s21_pow)/sizeof(s21_pow[0]); i++) {
         printf("\033[0;33m*************************************************************************\n\033[0m");
-        failed_count = test_suite(s21_pow[i](), &passed_count);
-        if (failed_count) {
-            i = sizeof(s21_pow)/sizeof(s21_pow[0]);
-        }
+        failed_count += test_suite(s21_pow[i](), &passed_count);
     }
     printf("\033[0;33m*************************************************************************\n\033[0m");
 
@@ -235,7 +214,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_sin)/sizeof(s21_sin[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_sin[i]());
+    //     failed_count += test_suite(s21_sin[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_sin)/sizeof(s21_sin[0]);
     //     }
@@ -249,7 +228,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_cos)/sizeof(s21_cos[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_cos[i]());
+    //     failed_count += test_suite(s21_cos[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_cos)/sizeof(s21_cos[0]);
     //     }
@@ -263,7 +242,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_tan)/sizeof(s21_tan[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_tan[i]());
+    //     failed_count += test_suite(s21_tan[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_tan)/sizeof(s21_tan[0]);
     //     }
@@ -277,7 +256,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_asin)/sizeof(s21_asin[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_asin[i]());
+    //     failed_count += test_suite(s21_asin[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_asin)/sizeof(s21_asin[0]);
     //     }
@@ -291,7 +270,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_acos)/sizeof(s21_acos[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_acos[i]());
+    //     failed_count += test_suite(s21_acos[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_acos)/sizeof(s21_acos[0]);
     //     }
@@ -305,7 +284,7 @@ int main(void)
     // printf("|_______________________________________________________________________|\n\n\n\033[0m");
     // for(size_t i = 0; i < sizeof(s21_atan)/sizeof(s21_atan[0]); i++) {
     //     printf("\033[0;33m*************************************************************************\n\033[0m");
-    //     failed_count = test_suite(s21_atan[i]());
+    //     failed_count += test_suite(s21_atan[i]());
     //     if (failed_count) {
     //         i = sizeof(s21_atan)/sizeof(s21_atan[0]);
     //     }
@@ -327,7 +306,8 @@ int main(void)
 /**
  * @brief Function for testing the specified Suite.
  * 
- * @param test input Suite test.
+ * @param[out] test input Suite test.
+ * @param[out] passed_count counter of successfully passed tests.
  * 
  * @return int - error code.
  * @retval EXIT_SUCCESS = 0 - if the tests pass successfully.
@@ -342,5 +322,5 @@ static int test_suite(Suite *test, int *passed_count)
     *passed_count += srunner_ntests_run(suite_runner) - failed_count;
     srunner_free(suite_runner);
 
-    return (failed_count) ? EXIT_FAILURE : EXIT_SUCCESS;
+    return failed_count;
 }

@@ -278,9 +278,9 @@ void s21_test_floor(double value)
     printf("Input value: %lf\n", value);
 
     if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     } else {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     }
     
     #ifdef DEBUG
@@ -303,9 +303,9 @@ void s21_test_floor_nan(double value)
     printf("Input value: %lf\n", value);
 
     if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     } else {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     }
 
     #ifdef DEBUG
@@ -327,9 +327,9 @@ void s21_test_floor_inf(double value)
     printf("Input value: %lf\n", value);
     
     if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     } else {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     }
 
     #ifdef DEBUG
@@ -347,9 +347,9 @@ void s21_test_floor_inf(double value)
  */
 void s21_test_floor_print(long double original_func, long double implementation)
 {
-    printf("original_function = %Lf | binary: ", original_func);
+    printf(" original func = %Lf | binary: ", original_func);
     print_bits_double(original_func);
-    printf("implementation    = %Lf | binary: ", implementation);
+    printf("implementation = %Lf | binary: ", implementation);
     print_bits_double(implementation);
-    printf("\033[0;33m-------------------------------------------------------------------------\n\033[0m");
+    printf("\033[0;33m-------------------------------------------------------------------------\033[0m\n");
 }

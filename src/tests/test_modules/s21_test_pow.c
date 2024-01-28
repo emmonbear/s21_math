@@ -137,14 +137,14 @@ Suite *s21_pow_first_case(void)
 void s21_test_pow(double base, double exp)
 {
     long double original_func = pow(base, exp);
-    long double implementation = pow(base, exp);
+    long double implementation = s21_pow(base, exp);
 
     printf("Input value: %lf^%lf\n", base, exp);
     
     if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     } else {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");   
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");   
     }
     
     #ifdef DEBUG
@@ -168,9 +168,9 @@ void s21_test_pow_nan(double base, double exp)
     printf("Input value: %lf^%lf\n", base, exp);
 
     if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     } else {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     }
 
     #ifdef DEBUG
@@ -193,9 +193,9 @@ void s21_test_pow_inf(double base, double exp)
     printf("Input value: %lf^%lf\n", base, exp);
 
     if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
-        printf("Test result: \033[0;32mTEST PASSED!\n\n\033[0m");
+        printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     } else {
-        printf("Test result: \033[0;31mTEST FAILED!\n\n\033[0m"); 
+        printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n"); 
     }
 
     #ifdef DEBUG
@@ -213,10 +213,10 @@ void s21_test_pow_inf(double base, double exp)
  */
 void s21_test_pow_print(long double original_func, long double implementation)
 {
-    printf("original_function = %Lf | binary: ", original_func);
+    printf(" original func = %Lf | binary: ", original_func);
     print_bits_double(original_func);
-    printf("implementation    = %Lf | binary: ", implementation);
+    printf("implementation = %Lf | binary: ", implementation);
     print_bits_double(implementation);
-    printf("\033[0;33m-------------------------------------------------------------------------\n\033[0m");
+    printf("\033[0;33m-------------------------------------------------------------------------\033[0m\n");
 }
 
