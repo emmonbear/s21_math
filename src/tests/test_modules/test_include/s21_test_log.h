@@ -13,7 +13,15 @@
 #define S21_TESTS_LOG_H_
 
 #include "./../common.h"
+#include "./../../debug/debug.h"
+
+#define DEBUG 1 ///< output of results in case of an error
 
 Suite *s21_log_first_case(void);
+
+void s21_test_log_nan(double x);
+void s21_test_log(double x);
+void s21_test_log_inf(double x);
+void s21_test_log_print(long double original_func, long double implementation);
 
 #endif  // S21_TESTS_LOG_H_
