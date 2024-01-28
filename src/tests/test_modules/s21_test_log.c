@@ -120,8 +120,10 @@ void s21_test_log(double value)
     } else {
         printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
     }
-    
-    s21_test_log_print(original_func, implementation);
+
+    #if defined(DEBUG)
+        s21_test_log_print(original_func, implementation);
+    #endif
 
     ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
 }
@@ -144,7 +146,9 @@ void s21_test_log_nan(double value)
         printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
     }
 
-    s21_test_log_print(original_func, implementation);
+    #if defined(DEBUG)
+        s21_test_log_print(original_func, implementation);
+    #endif
 
     ck_assert_int_eq(S21_IS_NAN(original_func), S21_IS_NAN(implementation));
 }
@@ -166,7 +170,9 @@ void s21_test_log_inf(double value)
         printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
     }
 
-    s21_test_log_print(original_func, implementation);
+    #if defined(DEBUG)
+        s21_test_log_print(original_func, implementation);
+    #endif
 
     ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
 }

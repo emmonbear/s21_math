@@ -15,8 +15,6 @@
 #include "./../common.h"
 #include "./../../debug/debug.h"
 
-#define DEBUG 1 ///< output of results in case of an error
-
 Suite *s21_log_first_case(void);
 
 void s21_test_log_nan(double x);

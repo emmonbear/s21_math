@@ -12,6 +12,8 @@
 #ifndef COMMON_H_
 #define COMMON_H_
 
+// #define DEBUG 1 ///< output of results in case of an error
+
 #include <check.h>
 #include <math.h>
 #include <stdlib.h>
