@@ -1,99 +1,82 @@
-# s21_math task
-
-Implementation of your own version of the math.h library.  
-
-The russian version of the task can be found in the repository.
+# s21_math 
 
 ## Contents
-0. [Preamble](#preamble)
-1. [Chapter I](#chapter-i) <br>
-   1.1. [Introduction](#introduction)
-2. [Chapter II](#chapter-ii) <br>
-   2.1. [Information](#information)
-3. [Chapter III](#chapter-iii) <br>
-   3.1. [Part 1](#part-1-implementing-the-mathh-library-functions)
+1. [About the project](#about-the-project)
+2. [Development team](#development-team)
+3. [Completed tasks](#completed-tasks)
+4. [Implementation features](#implementation-features)
+5. [Building the project](#building-the-project)
+6. [Feedback](#feedback)
 
+## About the project
 
-## Preamble  
+This project is part of the School 21 project database from Sber. As part of this project, the standard library of this language, math.h, was implemented in C.
 
-![s21_math](misc/eng/s21_math.png)
+## Development team
 
-Planet Earth, USA, New York State, 1956.
+Composition of the team that implemented the project: <br>
+**kossadda** (https://github.com/kossadda) <br>
+**emmonbea** (https://github.com/emmonbear) <br>
 
-I love English breakfast: crispy slice of bread and beans, juicy sausages with scrambled eggs, and The New York Times. It would have been an ordinary spring morning if I hadn't stumbled upon a little column in the newspaper written by a Stanford University professor, that caught my attention. William Shockley, who is famous in small circles of the physical science community, the inventor of the transistor, had posted a job opening in a laboratory for mass production of the latest transistors and dinistors.
-Without thinking long, I called the number mentioned in the paper:
+## Completed tasks
 
-*- Good evening, William, I'm calling about the vacancy you left in the newspaper, do you have a minute?*
+As part of the project, 15 functions of the math.h library were implemented. List of functions:
 
-*-- Yes, of course, I'm very glad I didn't waste my money for nothing and at least someone called! I must point out right away all the specifics of our future collaboration: production will take place at our site in Mountain View, near Palo Alto, a place with a rural lifestyle, but I hope it’s not a problem, Mr...?*
+| #  | Function Signature                           | Description                                                                    |
+|----|----------------------------------------------|--------------------------------------------------------------------------------|
+| 1  | `int abs(double x)`                          | Calculates the absolute value of an integer.                                   |
+| 2  | `long double fabs(double x)`                 | Calculates the absolute value of a floating point number.                      |
+| 3  | `long double floor(double x)`                | Returns the nearest integer not exceeding the specified floating point number. |
+| 4  | `long double ceil(double x)`                 | Returns the nearest integer not less than the specified floating point number. |
+| 5  | `long double exp(double x)`                  | Returns the value of e raised to the specified power.                          |
+| 6  | `long double fmod(double x, double y)`       | The remainder of the division operation by a floating point number.            |
+| 7  | `long double log(double x)`                  | Calculates the natural logarithm of a floating point number.                   |
+| 8  | `long double sqrt(double x)`                 | Calculates the square root of a floating point number.                         |
+| 9  | `long double pow(double base, double exp)`   | Raises a number to a given power.                                              |
+| 10 | `long double sin(double x)`                  | Calculates the sine of a floating point number.                                |
+| 11 | `long double cos(double x)`                  | Calculates the cosine of a floating point number.                              |
+| 12 | `long double tan(double x)`                  | Calculates the tangent of a floating point number.                             |
+| 13 | `long double asin(double x)`                 | Calculates the arcsine of a floating point number.                             |
+| 14 | `long double atan(double x)`                 | Calculates the arctangent of a floating point number.                          |
+| 15 | `long double acos(double x)`                 | Calculates the arc cosine of a floating point number.                          |
 
-*- Last, Mr. J. Last from MIT. I am aware of that, and it does not bother me a bit, so when can I come for my interview?*
+## Implementation features
 
-*-- Good, very good! I don't have time to be constantly in touch and interview people from other cities right now, so send me to the address left in the paper the result of the work, that I'll give you now...*
+While writing the project, it was decided to implement the function by working with individual bits of floating point numbers. This method is aimed at a more detailed study of the architecture of the language and the method of storing floating point numbers in computer memory.
 
-*- I'm all ears...*
+> We are talking about the IEEE Standard for Floating-Point Arithmetic (IEEE 754).
+>
+> The standard describes:
+> - format of floating point numbers: mantissa, exponent (exponent), number sign;
+> - representation of positive and negative zero, positive and negative infinities, as well as non-number (English: Not-a-Number, NaN);
+> - methods used to convert numbers when performing mathematical operations;
+> - exceptional situations: division by zero, overflow, underflow, working with denormalized numbers and others;
+> - operations: arithmetic and others.
 
-*-- Our case requires powerful mathematical tools that can be described in machine programming language - all sorts of mathematical operations and functions: trigonometric, logarithmic, exponential, and others of your choice. It doesn't matter how, but you have to do it...* \
-*Now if you’ll excuse me, I have to say goodbye, I have a second line, I'm waiting for your answer! Thank you!*
+To work with bits, the standard library ieee754.h was used, containing the union structure of floating point numbers (single, double and extended precision). This structure allows us to directly access the necessary fields (sign, mantissa, exponent) and perform the necessary bit operations to obtain the number values required within a given algorithm.
 
-*- Have a nice day!*
+## Building the project
 
-Well, I have to do it, I feel in my bones that a transistor revolution in mathematical computing is coming and I have to be on the front line!
+The following main goals for working with the project have been added to the Makefile:
 
-## Chapter I  
+| #  | Command         | Description                                                              |
+|----|-----------------|--------------------------------------------------------------------------|
+| 1  | `all`           | Generates documentation for the project and starts testing modules.      |
+| 2  | `s21_math`      | Assembles modules into a static library.                                 |
+| 3  | `test`          | Tests modules.                                                           |
+| 4  | `gcov_report`   | Tests modules and generates a coverage report in html format.            |
+| 5  | `dvi`           | Generates documentation in html and manual format for the functionality. |
+| 6  | `rebuild`       | Rebuilding the project.                                                  |
+| 7  | `clang_check`   | Testing modules for compliance with Google style.                        |
+| 8  | `valgrind`      | Testing modules for working with memory through Valgrind.                |
+| 9  | `install`       | Installs the necessary dependencies for testing the project.             |
+| 10 | `clean`         | Cleans the repository from generated files.                              |
 
-## Introduction
+## Feedback
 
-In this project you will develop your own version of the standard math.h library in the C programming language. This library implements basic mathematical operations, which are then used in various algorithms. As part of the project you will learn the basics of computational methods and solidify knowledge of structured programming.
+If you have any questions regarding the features or other aspects of the project that interest you, please contact us by email:
 
-## Chapter II
+moskaleviluak@icloud.com <br>
+gabilov1997@gmail.com <br>
 
-## Information
-
-C mathematical operations are a group of functions in the standard library of the C programming language implementing basic mathematical functions. All functions use floating-point numbers in one manner or another. Different C standards provide different, albeit backwards-compatible, sets of functions. Any functions that operate on angles use radians as the unit of angle.
-
-### Overview of some "math.h" functions
-
-| No. | Function | Description |
-| --- | -------- | ----------- |
-| 1 | `int abs(int x)` | computes absolute value of an integer value |
-| 2 | `long double acos(double x)` | computes arc cosine |
-| 3 | `long double asin(double x)` | computes arc sine |
-| 4 | `long double atan(double x)` | computes arc tangent |
-| 5 | `long double ceil(double x)` | returns the nearest integer not less than the given value |
-| 6 | `long double cos(double x)` | computes cosine |
-| 7 | `long double exp(double x)` | returns e raised to the given power |
-| 8 | `long double fabs(double x)` | computes absolute value of a floating-point value |
-| 9 | `long double floor(double x)` | returns the nearest integer not greater than the given value |
-| 10 | `long double fmod(double x, double y)` | remainder of the floating-point division operation |
-| 11 | `long double log(double x)` | computes natural logarithm |
-| 12 | `long double pow(double base, double exp)` | raises a number to the given power |
-| 13 | `long double sin(double x)` | computes sine |
-| 14 | `long double sqrt(double x)` | computes square root |
-| 15 | `long double tan(double x)` | computes tangent |  
-
-
-## Chapter III
-
-## Part 1. Implementing the math.h library functions
-
-The functions of the math.h library must be implemented (only those directly described [above](#overview-of-some-mathh-functions)):
-
-- The library must be developed in C language of C11 standard using gcc compiler
-- The library code must be located in the src folder on the develop branch
-- Do not use outdated and legacy language constructions and library functions. Pay attention to the legacy and obsolete marks in the official documentation on the language and the libraries used. Use the POSIX.1-2017 standard.
-- When writing code it is necessary to follow the Google style
-- Make it as a static library (with the s21_math.h header file)
-- The library must be developed according to the principles of structured programming; code duplication must be avoided
-- Use prefix s21_ before each function
-- Prepare full coverage of library functions code with unit-tests with the Check library  
-- Unit-tests must check the results of your implementation by comparing them with the implementation of the standard math.h library
-- Unit tests must cover at least 80% of each function (checked using gcov)
-- Provide a Makefile for building the library and tests (with the targets all, clean, test, s21_math.a, gcov_report)
-- The gcov_report target should generate a gcov report in the form of an html page. Unit tests must be run with gcov flags to do this  
-- It is forbidden to copy the implementation of the standard math.h library and to use it anywhere, except unit-tests
-- You must follow the logic of the standard library (in terms of checks, working with memory and behavior in emergency situations - tests will help you with that)
-- The total verifiable accuracy is 16 significant digits
-- Verifiable accuracy of the fractional part is up to 6 decimal places.
-
-💡 [Tap here](https://forms.yandex.ru/cloud/64181327c769f101564293de/) **to leave your feedback on the project**. Pedago Team really tries to make your educational experience better.
+Thank you for your attention. We hope that you will like this project.
