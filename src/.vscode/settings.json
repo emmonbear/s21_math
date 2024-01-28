@@ -7,6 +7,8 @@
         "check.h": "c",
         "s21_math.h": "c",
         "math.h": "c",
-        "s21_log.h": "c"
+        "s21_log.h": "c",
+        "debug.h": "c",
+        "s21_abs.h": "c"
     }
 }

@@ -7,15 +7,19 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${fileDirname}/debug/debug.c",
-                "${fileDirname}/main.c",
-                "${fileDirname}/*.a",
+                "${workspaceFolder}/debug/debug.c",
+                // "${workspaceFolder}/main.c",
+                "${workspaceFolder}/tests/s21_tests.c",
+                "${workspaceFolder}/tests/test_modules/*.c",
+                "${workspaceFolder}/modules/*.c",
                 "-o",
-                "${fileDirname}/${fileBasenameNoExtension}",
-                "-lm"
+                "${workspaceFolder}/test",
+                "-lm",
+                "-lcheck",
+                "-lsubunit"
             ],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}"
             },
             "problemMatcher": [
                 "$gcc"
