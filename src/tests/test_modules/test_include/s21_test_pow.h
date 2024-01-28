@@ -14,6 +14,8 @@
 
 #include "./../common.h"
 
+void s21_test_pow(double base, double exp);
+
 Suite *s21_pow_first_case(void);
 
 #endif  // S21_TESTS_POW_H_
