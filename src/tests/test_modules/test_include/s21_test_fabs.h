@@ -14,6 +14,11 @@
 
 #include "./../common.h"
 
+void s21_test_fabs(double x);
+void s21_test_fabs_nan(double x);
+void s21_test_fabs_inf(double x);
+void s21_test_fabs_print(long double original_func, long double implementation);
+
 Suite *s21_fabs_first_case(void);
 Suite *s21_fabs_second_case(void);
 Suite *s21_fabs_edge_case(void);

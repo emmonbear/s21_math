@@ -14,6 +14,9 @@
 
 #include "./../common.h"
 
+void s21_test_abs(int value);
+void s21_test_abs_print(int original_func, int implementation);
+
 Suite *s21_abs_first_case(void);
 Suite *s21_abs_second_case(void);
 

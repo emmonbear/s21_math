@@ -14,6 +14,11 @@
 
 #include "./../common.h"
 
+void s21_test_ceil(double x);
+void s21_test_ceil_nan(double x);
+void s21_test_ceil_inf(double x);
+void s21_test_ceil_print(long double original_func, long double implementation);
+
 Suite *s21_ceil_first_case(void);
 Suite *s21_ceil_second_case(void);
 Suite *s21_ceil_edge_case(void);

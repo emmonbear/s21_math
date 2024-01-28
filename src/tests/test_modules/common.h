@@ -17,6 +17,7 @@
 #include <stdlib.h>
 
 #include "./../../s21_math.h"
+#include "./../../debug/debug.h"
 
 #define COMPARE_ACCURACY \
   1.0e-6  ///< Comparable accuracy of calculation results during testing.

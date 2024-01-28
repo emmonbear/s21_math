@@ -102,19 +102,6 @@ START_TEST(s21_pow_10)
 }
 
 /**
- * @brief Quickly check the functionality of the module s21_pow.
- * 
- * @param[in] base number whose absolute value must be determined.
- * @param[in] exp the degree to which it is raised base.
- */
-void s21_test_pow(double base, double exp) {
-    long double original_func = pow(base, exp);
-    long double implementation = pow(base, exp);
-
-    ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
-}
-
-/**
  * @brief First set of tests.
  * 
  * @return Suite* 
@@ -138,3 +125,92 @@ Suite *s21_pow_first_case(void)
 
     return math;
 }
+
+//------------------------------------------------------------------------------
+
+/**
+ * @brief Quickly check the functionality of the module s21_pow.
+ * 
+ * @param[in] base number whose absolute value must be determined.
+ * @param[in] exp the degree to which it is raised base.
+ */
+void s21_test_pow(double base, double exp)
+{
+    long double original_func = pow(base, exp);
+    long double implementation = pow(base, exp);
+
+    printf("Input value       = %lf^%lf\n", base, exp);
+    
+    if(fabsl(original_func - implementation) > COMPARE_ACCURACY) {
+        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+    } else {
+        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+    }
+    
+    s21_test_pow_print(original_func, implementation);
+
+    ck_assert_double_eq_tol(original_func, implementation, COMPARE_ACCURACY);
+}
+
+/**
+ * @brief Quickly check the nan functionality of the module s21_pow.
+ * 
+ * @param[in] base number whose absolute value must be determined.
+ * @param[in] exp the degree to which it is raised base.
+ */
+void s21_test_pow_nan(double base, double exp)
+{
+    long double original_func = pow(base, exp);
+    long double implementation = pow(base, exp);
+
+    printf("Input value       = %lf^%lf\n", base, exp);
+
+    if(S21_IS_NAN(original_func) == S21_IS_NAN(implementation)) {
+        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+    } else {
+        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+    }
+
+    s21_test_pow_print(original_func, implementation);
+
+    ck_assert_int_eq(S21_IS_NAN(original_func), S21_IS_NAN(implementation));
+}
+/**
+ * @brief Quickly check the inf functionality of the module s21_pow.
+ * 
+ * @param[in] base number whose absolute value must be determined.
+ * @param[in] exp the degree to which it is raised base.
+ */
+void s21_test_pow_inf(double base, double exp)
+{
+    long double original_func = pow(base, exp);
+    long double implementation = pow(base, exp);
+
+    printf("Input value       = %lf^%lf\n", base, exp);
+
+    if(S21_IS_INF(original_func) == S21_IS_INF(implementation)) {
+        printf("\033[0;32m                               TEST PASSED!                                \033[0m\n");
+    } else {
+        printf("\033[0;31m                               TEST FAILED!                                \033[0m\n"); 
+    }
+
+    s21_test_pow_print(original_func, implementation);
+
+    ck_assert_int_eq(S21_IS_INF(original_func), S21_IS_INF(implementation));
+}
+
+/**
+ * @brief Function for printing the obtained results.
+ * 
+ * @param[in] original_func result of calculating the original function.
+ * @param[in] implementation result of calculating the implementation function.
+ */
+void s21_test_pow_print(long double original_func, long double implementation)
+{
+    printf("original_function = %Lf | binary: ", original_func);
+    print_bits_double(original_func);
+    printf("implementation    = %Lf | binary: ", implementation);
+    print_bits_double(implementation);
+    printf("\033[0;33m-------------------------------------------------------------------------\n\033[0m");
+}
+

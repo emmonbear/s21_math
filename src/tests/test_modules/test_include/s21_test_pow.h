@@ -15,6 +15,9 @@
 #include "./../common.h"
 
 void s21_test_pow(double base, double exp);
+void s21_test_pow_nan(double base, double exp);
+void s21_test_pow_inf(double base, double exp);
+void s21_test_pow_print(long double original_func, long double implementation);
 
 Suite *s21_pow_first_case(void);
 

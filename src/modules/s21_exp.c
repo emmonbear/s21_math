@@ -13,10 +13,10 @@
 #include "./include/s21_fabs.h"
 
 /**
- * @brief Returns e raised to the given power
+ * @brief Returns e raised to the given power.
  * 
- * @param[in] x Euler exponent
- * @return long double - result of calculation
+ * @param[in] x Euler exponent.
+ * @return long double - result of calculation.
  */
 long double s21_exp(double x)
 {
