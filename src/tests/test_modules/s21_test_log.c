@@ -77,13 +77,33 @@ START_TEST(s21_log_5)
 // }
 
 /**
- * @brief First set of tests.
+ * @brief Edge set of tests.
  * 
  * @return Suite* 
  */
-Suite *s21_log_first_case(void)
+Suite *s21_log_edge_case(void)
 {
-    Suite *math = suite_create("s21_math (s21_log first case)");
+    Suite *math = suite_create("s21_math (s21_log edge case)");
+
+    TCase *tc_log = tcase_create("test_log");
+    tcase_add_test(tc_log, s21_log_1);
+    tcase_add_test(tc_log, s21_log_2);
+    tcase_add_test(tc_log, s21_log_3);
+    tcase_add_test(tc_log, s21_log_4);
+    tcase_add_test(tc_log, s21_log_5);
+    // tcase_add_test(tc_log, s21_log_6);
+    // tcase_add_test(tc_log, s21_log_7);
+    // tcase_add_test(tc_log, s21_log_8);
+    // tcase_add_test(tc_log, s21_log_9);
+    // tcase_add_test(tc_log, s21_log_10);
+    suite_add_tcase(math, tc_log);
+
+    return math;
+}
+
+Suite *s21_log_second_case(void)
+{
+    Suite *math = suite_create("s21_math (s21_log second case)");
 
     TCase *tc_log = tcase_create("test_log");
     tcase_add_test(tc_log, s21_log_1);

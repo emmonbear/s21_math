@@ -63,7 +63,8 @@ int main(void)
     // };
 
     Suite *(*s21_log[])(void) = {
-        s21_log_first_case,
+        s21_log_edge_case,
+        s21_log_second_case,
     };
 
     // Suite *(*s21_sqrt[])(void) = {
