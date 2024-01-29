@@ -15,7 +15,6 @@
 #include "./../common.h"
 
 void s21_test_log(double x);
-void s21_test_log_print(long double original_func, long double implementation);
 
 Suite *s21_log_edge_case(void);
 Suite *s21_log_second_case(void);

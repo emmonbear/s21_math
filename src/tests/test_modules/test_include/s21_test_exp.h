@@ -15,7 +15,6 @@
 #include "./../common.h"
 
 void s21_test_exp(double x);
-void s21_test_exp_print(long double original_func, long double implementation);
 
 Suite *s21_exp_first_case(void);
 Suite *s21_exp_second_case(void);

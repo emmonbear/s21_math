@@ -711,13 +711,13 @@ void s21_test_log(double value)
     if(fabsl(first - second) > COMPARE_ACCURACY) {
         printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n");
     #ifdef DEBUG
-        s21_test_print(original_func, implementation);
+        // s21_test_print(original_func, implementation);
     #endif
     } else {
         printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
     }
 
-    s21_test_print(original_func, implementation);
+    // s21_test_print(original_func, implementation);
 
 
     ck_assert_double_eq_tol(first, second, COMPARE_ACCURACY);

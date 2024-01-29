@@ -260,5 +260,5 @@ void s21_test_abs_print(int original_func, int implementation)
     print_bits(original_func, 31);
     printf("\nimplementation = %d | binary: ", implementation);
     print_bits(implementation, 31);
-    printf("\033[0;33m\n-------------------------------------------------------------------------\n\033[0m");
+    printf("\033[0;33m\n----------------------------------------------------------------------------------------\n\033[0m");
 }

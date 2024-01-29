@@ -12,8 +12,8 @@
 #ifndef COMMON_H_
 #define COMMON_H_
 
-// #define DEBUG ///< Uncomment to display the bits
-#define DEBUG_ERRORS ///< Uncomment to display bits of unsuccessful tests
+#define DEBUG ///< Uncomment to display the bits
+// #define DEBUG_ERRORS ///< Uncomment to display bits of unsuccessful tests
 
 #include <check.h>
 #include <math.h>
@@ -25,14 +25,6 @@
 #define COMPARE_ACCURACY \
   1.0e-6  ///< Comparable accuracy of calculation results during testing.
 
-// void s21_test_nan(long double original_func, long double implementation);
-// void s21_test_inf(long double original_func, long double implementation);
 void s21_test_print(long double original_func, long double implementation);
-
-enum checking_mode {
-  DEFAULT   = 0,
-  CHECK_INF = 1,
-  CHECK_NAN = 2,
-};
 
 #endif  // COMMON_H_

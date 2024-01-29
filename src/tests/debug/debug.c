@@ -62,5 +62,5 @@ void s21_test_print(long double original_func, long double implementation)
     print_bits_double(original_func);
     printf("implementation = %Lf | binary: ", implementation);
     print_bits_double(implementation);
-    printf("\033[0;33m-------------------------------------------------------------------------\033[0m\n");
+    printf("\033[0;33m----------------------------------------------------------------------------------------\033[0m\n");
 }
