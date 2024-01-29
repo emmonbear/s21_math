@@ -12,6 +12,7 @@
 #define S21_LOG_H_
 
 #include "./../common.h"
+#include "./s21_fabs.h"
 
 long double s21_log(double x);
 

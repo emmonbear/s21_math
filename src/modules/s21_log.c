@@ -37,7 +37,7 @@ long double s21_log(double x)
     } else if(x == S21_INF_POS) {
         result = S21_INF_POS;
     } else {
-        result = 1.0;
+       result = x;
     }
     return result;
 }
