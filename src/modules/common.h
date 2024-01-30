@@ -14,10 +14,8 @@
 
 #include <ieee754.h>
 #include <stdint.h>
-///@todo Добавить битовое представление S21_NAN
+
 #define S21_NAN 0.0 / 0.0  ///< Value is Not a Number (NaN).
-///@todo Заменить S21_INF на новые S21_INF_POS/S21_INF_NEG
-///@todo Добавить битовое представление S21_INF_POS и S21_INF_NEG
 #define S21_INF 1.0 / 0.0  ///< Value is infinity (inf).
 
 #define S21_INF_POS 1.0 / 0.0   ///< Value is infinity (inf).
@@ -37,9 +35,16 @@
 #define OVERFLOW_MASK 0x10000000000000  ///< Number overflow check mask.
 #define INF_BITS 0x7FF                  ///< Mask to check infinity in exponent.
 #define NAN_MASK 0xFFF8000000000000     ///< Mask to check double for NaN.
+#define NEG_INF_MASK 0xFFF0000000000000 ///< Mask to check double for negative infinity.
+#define POS_INF_MASK 0x7FF0000000000000 ///< Mask to check double for positive infinity.
+
+#define BITS_NAN(x) (x.ulong == NAN_MASK)           ///< Check value is Not a Number with bits.
+#define BITS_INF(x) (x.dbl.ieee.exponent == INF_BITS)   ///< Check value is negative inf with bits.
+#define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)   ///< Check value is positive infinity with bits.
+#define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)   ///< Check value is positive infinity with bits.
 
 #define TAYLOR_PRECISION \
-  1.0e-100  ///< Limiting accuracy of the constituent Taylor series.
+  1.0e-17  ///< Limiting accuracy of the constituent Taylor series.
 
 /**
  * @brief Union structure assigned to work with double bits.
