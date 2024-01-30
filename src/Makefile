@@ -161,14 +161,23 @@ cppcheck:
 	$@ $(CPPCHECK) $(ALL_FILES)
 
 valgrind: $(TARGET)
+	@printf '\033[33m\n                   _            _           _   _            _   _             \n'
+	@printf '                  | |          (_)         | | | |          | | (_)            \n'
+	@printf '       __   ____ _| | __ _ _ __ _ _ __   __| | | |_ ___  ___| |_ _ _ __   __ _ \n'
+	@printf '       \ \ / / _` | |/ _` | '\''__| | '\''_ \ / _` | | __/ _ \/ __| __| | '\''_ \ / _` |\n'
+	@printf '        \ V / (_| | | (_| | |  | | | | | (_| | | ||  __/\__ \ |_| | | | | (_| |\n'
+	@printf '         \_/ \__,_|_|\__, |_|  |_|_| |_|\__,_|  \__\___||___/\__|_|_| |_|\__, |\n'
+	@printf '                      __/ |                                               __/ |\n'
+	@printf '                     |___/                                               |___/ \n\033[0m\n'
+
 	@$@ $(VAL) ./$(TARGET) > val.txt 2>&1 && \
 	{ \
-		echo; \
-		echo "#########################################################################"; \
-		echo "#                        Valgrind test results:                         #"; \
-		echo "#                       Passed tests $$(grep "ERROR SUMMARY: 0" -c val.txt) from $$(grep "ERROR SUMMARY:" -c val.txt)                       #"; \
-		echo "#########################################################################"; \
-		echo; \
+		printf "\033[33m\n"; \
+		printf "########################################################################################\n\n"; \
+		printf "                                Valgrind test results:                          \n"; \
+		printf "                               Passed tests $$(grep "ERROR SUMMARY: 0" -c val.txt) from $$(grep "ERROR SUMMARY:" -c val.txt)                       \n\n"; \
+		printf "########################################################################################\n"; \
+		printf "\033[0m\n"; \
 	}
 #==============================================================================#
 
@@ -181,5 +190,4 @@ install:
 	sudo apt install doxygen
 	sudo apt-get install graphviz
 	sudo apt-get install texlive
-
 #==============================================================================#
