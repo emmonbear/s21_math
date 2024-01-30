@@ -35,107 +35,152 @@ int main(void)
     greetings();
 
 
+#define ABS_TEST
+#ifdef ABS_TEST
     Suite *(*s21_abs[])(void) = {
         s21_abs_first_case ,
         s21_abs_second_case,
     };
     test_function(s21_abs, sizeof(s21_abs)/sizeof(s21_abs[0]), "S21_ABS", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_fabs[])(void) = {
-    //     s21_fabs_first_case ,
-    //     s21_fabs_second_case,
-    //     s21_fabs_edge_case  ,
-    // };
-    // test_function(s21_fabs, sizeof(s21_fabs)/sizeof(s21_fabs[0]), "S21_FABS", &passed_count, &failed_count);
+#ifdef FABS_TEST
+#define FABS_TEST
+    Suite *(*s21_fabs[])(void) = {
+        s21_fabs_first_case ,
+        s21_fabs_second_case,
+        s21_fabs_edge_case  ,
+    };
+    test_function(s21_fabs, sizeof(s21_fabs)/sizeof(s21_fabs[0]), "S21_FABS", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_floor[])(void) = {
-    //     s21_floor_first_case ,
-    //     s21_floor_second_case,
-    //     s21_floor_edge_case  ,
-    // };
-    // test_function(s21_floor, sizeof(s21_floor)/sizeof(s21_floor[0]), "S21_FLOOR", &passed_count, &failed_count);
+#ifdef FLOOR_TEST
+#define FLOOR_TEST
+    Suite *(*s21_floor[])(void) = {
+        s21_floor_first_case ,
+        s21_floor_second_case,
+        s21_floor_edge_case  ,
+    };
+    test_function(s21_floor, sizeof(s21_floor)/sizeof(s21_floor[0]), "S21_FLOOR", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_ceil[])(void) = {
-    //     s21_ceil_first_case ,
-    //     s21_ceil_second_case,
-    //     s21_ceil_edge_case  ,
-    // };
-    // test_function(s21_ceil, sizeof(s21_ceil)/sizeof(s21_ceil[0]), "S21_CEIL", &passed_count, &failed_count);
+#ifdef CEIL_TEST
+#define CEIL_TEST
+    Suite *(*s21_ceil[])(void) = {
+        s21_ceil_first_case ,
+        s21_ceil_second_case,
+        s21_ceil_edge_case  ,
+    };
+    test_function(s21_ceil, sizeof(s21_ceil)/sizeof(s21_ceil[0]), "S21_CEIL", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_exp[])(void) = {
-    //     s21_exp_first_case ,
-    //     s21_exp_second_case,
-    //     s21_exp_third_case ,
-    //     s21_exp_fourth_case,
-    //     s21_exp_fifth_case ,
-    //     s21_exp_edge_case  ,
-    // };
-    // test_function(s21_exp, sizeof(s21_exp)/sizeof(s21_exp[0]), "S21_EXP", &passed_count, &failed_count);
+#ifdef EXP_TEST
+#define EXP_TEST
+    Suite *(*s21_exp[])(void) = {
+        s21_exp_first_case ,
+        s21_exp_second_case,
+        s21_exp_third_case ,
+        s21_exp_fourth_case,
+        s21_exp_fifth_case ,
+        s21_exp_edge_case  ,
+    };
+    test_function(s21_exp, sizeof(s21_exp)/sizeof(s21_exp[0]), "S21_EXP", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_fmod[])(void) = {
-    //     s21_fmod_first_case,
-    // };
-    // test_function(s21_fmod, sizeof(s21_fmod)/sizeof(s21_fmod[0]), "S21_FMOD", &passed_count, &failed_count);
+#ifdef FMOD_TEST
+#define FMOD_TEST
+    Suite *(*s21_fmod[])(void) = {
+        s21_fmod_first_case,
+    };
+    test_function(s21_fmod, sizeof(s21_fmod)/sizeof(s21_fmod[0]), "S21_FMOD", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_log[])(void) = {
-    //     s21_log_edge_case,
-    //     // s21_log_second_case,
-    // };
-    // test_function(s21_log, sizeof(s21_log)/sizeof(s21_log[0]), "S21_LOG", &passed_count, &failed_count);
+#ifdef LOG_TEST
+#define LOG_TEST
+    Suite *(*s21_log[])(void) = {
+        s21_log_edge_case,
+        // s21_log_second_case,
+    };
+    test_function(s21_log, sizeof(s21_log)/sizeof(s21_log[0]), "S21_LOG", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_sqrt[])(void) = {
-    //     s21_sqrt_first_case,
-    // };
-    // test_function(s21_sqrt, sizeof(s21_sqrt)/sizeof(s21_sqrt[0]), "S21_SQRT", &passed_count, &failed_count);
+#ifdef SQRT_TEST
+#define SQRT_TEST
+    Suite *(*s21_sqrt[])(void) = {
+        s21_sqrt_first_case,
+    };
+    test_function(s21_sqrt, sizeof(s21_sqrt)/sizeof(s21_sqrt[0]), "S21_SQRT", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_pow[])(void) = {
-    //     s21_pow_first_case,
-    // };
-    // test_function(s21_pow, sizeof(s21_pow)/sizeof(s21_pow[0]), "S21_POW", &passed_count, &failed_count);
-    
-
-    // Suite *(*s21_sin[])(void) = {
-    //     s21_sin_first_case,
-    // };
-    // test_function(s21_sin, sizeof(s21_sin)/sizeof(s21_sin[0]), "S21_SIN", &passed_count, &failed_count);
+#ifdef POW_TEST
+#define POW_TEST
+    Suite *(*s21_pow[])(void) = {
+        s21_pow_first_case,
+    };
+    test_function(s21_pow, sizeof(s21_pow)/sizeof(s21_pow[0]), "S21_POW", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_cos[])(void) = {
-    //     s21_cos_first_case,
-    // };
-    // test_function(s21_cos, sizeof(s21_cos)/sizeof(s21_cos[0]), "S21_COS", &passed_count, &failed_count);
+#ifdef SIN_TEST
+#define SIN_TEST
+    Suite *(*s21_sin[])(void) = {
+        s21_sin_first_case,
+    };
+    test_function(s21_sin, sizeof(s21_sin)/sizeof(s21_sin[0]), "S21_SIN", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_tan[])(void) = {
-    //     s21_tan_first_case,
-    // };
-    // test_function(s21_tan, sizeof(s21_tan)/sizeof(s21_tan[0]), "S21_TAN", &passed_count, &failed_count);
+#ifdef COS_TEST
+#define COS_TEST
+    Suite *(*s21_cos[])(void) = {
+        s21_cos_first_case,
+    };
+    test_function(s21_cos, sizeof(s21_cos)/sizeof(s21_cos[0]), "S21_COS", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_asin[])(void) = {
-    //     s21_asin_first_case,
-    // };
-    // test_function(s21_asin, sizeof(s21_asin)/sizeof(s21_asin[0]), "S21_ASIN", &passed_count, &failed_count);
+#ifdef TAN_TEST
+#define TAN_TEST
+    Suite *(*s21_tan[])(void) = {
+        s21_tan_first_case,
+    };
+    test_function(s21_tan, sizeof(s21_tan)/sizeof(s21_tan[0]), "S21_TAN", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_acos[])(void) = {
-    //     s21_acos_first_case,
-    // };
-    // test_function(s21_acos, sizeof(s21_acos)/sizeof(s21_acos[0]), "S21_ACOS", &passed_count, &failed_count);
+#ifdef ASIN_TEST
+#define ASIN_TEST
+    Suite *(*s21_asin[])(void) = {
+        s21_asin_first_case,
+    };
+    test_function(s21_asin, sizeof(s21_asin)/sizeof(s21_asin[0]), "S21_ASIN", &passed_count, &failed_count);
+#endif
 
 
-    // Suite *(*s21_atan[])(void) = {
-    //     s21_atan_first_case,
-    // };
-    // test_function(s21_atan, sizeof(s21_atan)/sizeof(s21_atan[0]), "S21_ATAN", &passed_count, &failed_count);
+#ifdef ACOS_TEST
+#define ACOS_TEST
+    Suite *(*s21_acos[])(void) = {
+        s21_acos_first_case,
+    };
+    test_function(s21_acos, sizeof(s21_acos)/sizeof(s21_acos[0]), "S21_ACOS", &passed_count, &failed_count);
+#endif
+
+
+#ifdef ATAN_TEST
+#define ATAN_TEST
+    Suite *(*s21_atan[])(void) = {
+        s21_atan_first_case,
+    };
+    test_function(s21_atan, sizeof(s21_atan)/sizeof(s21_atan[0]), "S21_ATAN", &passed_count, &failed_count);
+#endif
 
 
     conclusion(passed_count, failed_count);
