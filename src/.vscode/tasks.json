@@ -7,7 +7,7 @@
             "args": [
                 "-fdiagnostics-color=always",
                 "-g",
-                "${workspaceFolder}/debug/debug.c",
+                "${workspaceFolder}/tests/debug/debug.c",
                 // "${workspaceFolder}/main.c",
                 "${workspaceFolder}/tests/s21_tests.c",
                 "${workspaceFolder}/tests/test_modules/*.c",
