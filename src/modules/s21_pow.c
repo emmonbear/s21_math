@@ -23,9 +23,33 @@
  */
 long double s21_pow(double base, double exp)
 {
-    long double result = s21_exp(log(s21_fabs(base)) * exp);
+    double_int base_bits = {{base}};
+    double_int exp_bits = {{exp}};
+    long double result = 0;
+
+    if(BITS_NAN(base_bits) || BITS_NAN(exp_bits)) {
+        result = S21_NAN;
+    } else if(s21_fabs(base) < 1.0 && BITS_INF(exp_bits)) {
+        if(BITS_NEG_INF(exp_bits)) {
+            result = S21_INF;
+        } else {
+            result = 0.0;
+        }
+    } else if(s21_fabs(base) == 1.0 && BITS_INF(exp_bits)) {
+        result = 1.0;
+    } else if(BITS_NEG_INF(exp_bits)) {
+        result = 0.0;
+    } else if(BITS_POS_INF(exp_bits)) {
+        result = S21_INF;
+    } else if(BITS_NEG_INF(base_bits)) {
+        if(exp_bits.dbl.ieee.negative) {
+            result = 0.0;
+        } else {
+            result = S21_INF;
+        }
+    } else {
+        result = s21_exp(log(base) * exp);
+    }
     
     return result;
 }
-// 26516484577291355.904297
-// 26516484577291374.580078

@@ -35,7 +35,7 @@ long double s21_exp(double x)
     } else if(x < -27.0) {
         result = 0;
     } else {
-        for(double n = 1; s21_fabs(taylor_member) > 1.0e-100; ++n) {
+        for(double n = 1; s21_fabs(taylor_member) > TAYLOR_PRECISION; ++n) {
             taylor_member = factorial(fast_pow(x, n), n);
             result += taylor_member;
         }
