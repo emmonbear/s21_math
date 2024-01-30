@@ -35,8 +35,8 @@ int main(void)
     greetings();
 
 
-#define ABS_TEST
 #ifdef ABS_TEST
+#define ABS_TEST
     Suite *(*s21_abs[])(void) = {
         s21_abs_first_case ,
         s21_abs_second_case,
@@ -120,8 +120,8 @@ int main(void)
 #endif
 
 
-#ifdef POW_TEST
 #define POW_TEST
+#ifdef POW_TEST
     Suite *(*s21_pow[])(void) = {
         s21_pow_first_case,
     };

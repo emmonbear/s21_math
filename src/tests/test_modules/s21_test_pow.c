@@ -101,6 +101,573 @@ START_TEST(s21_pow_10)
     s21_test_pow(base, exp);
 }
 
+/// @brief \f[ 1.7345^2.1531 = 3.273152 \f]
+START_TEST(s21_pow_11)
+{
+    double base = 1.7345;
+    double exp = 2.1531;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.7345^2.1531 = -nan \f]
+START_TEST(s21_pow_12)
+{
+    double base = -1.7345;
+    double exp = 2.1531;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.7345^-2.1531 = 0.305516 \f]
+START_TEST(s21_pow_13)
+{
+    double base = 1.7345;
+    double exp = -2.1531;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.7345^-2.1531 = -nan \f]
+START_TEST(s21_pow_14)
+{
+    double base = -1.7345;
+    double exp = -2.1531;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 25.0004321^4.4444406 = 1633408.051937 \f]
+START_TEST(s21_pow_15)
+{
+    double base = 25.0004321;
+    double exp = 4.4444406;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -25.0004321^4.4444406 = -nan \f]
+START_TEST(s21_pow_16)
+{
+    double base = -25.0004321;
+    double exp = 4.4444406;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 25.0004321^-4.4444406 = 0.000001 \f]
+START_TEST(s21_pow_17)
+{
+    double base = 25.0004321;
+    double exp = -4.4444406;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -25.0004321^-4.4444406 = -nan \f]
+START_TEST(s21_pow_18)
+{
+    double base = -25.0004321;
+    double exp = -4.4444406;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 0.417275^123.523423 = 0.000000 \f]
+START_TEST(s21_pow_19)
+{
+    double base = 0.417275;
+    double exp = 123.523423;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -0.417275^123.523423 = -nan \f]
+START_TEST(s21_pow_20)
+{
+    double base = -0.417275;
+    double exp = 123.523423;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 0.417275^-23.523423 = 135890.441136 \f]
+START_TEST(s21_pow_21)
+{
+    double base = 0.417275;
+    double exp = -13.523423;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -0.417275^-123.523423 = -nan \f]
+START_TEST(s21_pow_22)
+{
+    double base = -0.417275;
+    double exp = -123.523423;
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.543^-inf = 0.000000 \f]
+START_TEST(s21_pow_23)
+{
+    double base = -1.543;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.543^-inf = 0.000000 \f]
+START_TEST(s21_pow_24)
+{
+    double base = 1.543;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^-inf = 0.000000 \f]
+START_TEST(s21_pow_25)
+{
+    double base = S21_INF;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^-inf = 0.000000 \f]
+START_TEST(s21_pow_26)
+{
+    double base = -S21_INF;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.543^inf = inf \f]
+START_TEST(s21_pow_27)
+{
+    double base = -1.543;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.543^inf= inf \f]
+START_TEST(s21_pow_28)
+{
+    double base = 1.543;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^inf = inf \f]
+START_TEST(s21_pow_29)
+{
+    double base = S21_INF;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^inf = inf \f]
+START_TEST(s21_pow_30)
+{
+    double base = -S21_INF;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -0.52366^inf = 0.000000 \f]
+START_TEST(s21_pow_31)
+{
+    double base = -0.52366;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 0.52366^inf = 0.000000 \f]
+START_TEST(s21_pow_32)
+{
+    double base = 0.52366;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -0.52366^-inf = inf \f]
+START_TEST(s21_pow_33)
+{
+    double base = -0.52366;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 0.52366^-inf = inf \f]
+START_TEST(s21_pow_34)
+{
+    double base = 0.52366;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1^-inf = 1.000000 \f]
+START_TEST(s21_pow_35)
+{
+    double base = 1;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1^-inf = 1.000000 \f]
+START_TEST(s21_pow_36)
+{
+    double base = -1;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^-1.5677 = 0.000000 \f]
+START_TEST(s21_pow_37)
+{
+    double base = -S21_INF;
+    double exp = -1.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^-0.5677 = 0.000000 \f]
+START_TEST(s21_pow_38)
+{
+    double base = -S21_INF;
+    double exp = -0.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^0.5677 = inf \f]
+START_TEST(s21_pow_39)
+{
+    double base = -S21_INF;
+    double exp = 0.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^1.5677 = inf \f]
+START_TEST(s21_pow_40)
+{
+    double base = -S21_INF;
+    double exp = 1.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^-1.5677 = 0.000000 \f]
+START_TEST(s21_pow_41)
+{
+    double base = S21_INF;
+    double exp = -1.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^-0.5677 = 0.000000 \f]
+START_TEST(s21_pow_42)
+{
+    double base = S21_INF;
+    double exp = -0.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^0.5677 = inf \f]
+START_TEST(s21_pow_43)
+{
+    double base = S21_INF;
+    double exp = 0.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^1.5677 = inf \f]
+START_TEST(s21_pow_44)
+{
+    double base = S21_INF;
+    double exp = 1.5677; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 0.7857342^NaN = -nan \f]
+START_TEST(s21_pow_45)
+{
+    double base = 0.7857342;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -0.7857342^NaN = -nan \f]
+START_TEST(s21_pow_46)
+{
+    double base = -0.7857342;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 11.7857342^NaN = -nan \f]
+START_TEST(s21_pow_47)
+{
+    double base = 11.7857342;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -11.7857342^NaN = -nan \f]
+START_TEST(s21_pow_48)
+{
+    double base = -11.7857342;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ inf^NaN = -nan \f]
+START_TEST(s21_pow_49)
+{
+    double base = S21_INF;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -inf^NaN = -nan \f]
+START_TEST(s21_pow_50)
+{
+    double base = -S21_INF;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^0.7857342 = -nan \f]
+START_TEST(s21_pow_51)
+{
+    double base = S21_NAN;
+    double exp = 0.7857342; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^-0.7857342 = -nan \f]
+START_TEST(s21_pow_52)
+{
+    double base = S21_NAN;
+    double exp = -0.7857342; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^1.7857342 = -nan \f]
+START_TEST(s21_pow_53)
+{
+    double base = S21_NAN;
+    double exp = 1.7857342; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^-1.7857342 = -nan \f]
+START_TEST(s21_pow_54)
+{
+    double base = S21_NAN;
+    double exp = -1.7857342; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^inf = -nan \f]
+START_TEST(s21_pow_55)
+{
+    double base = S21_NAN;
+    double exp = S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^-inf = -nan \f]
+START_TEST(s21_pow_56)
+{
+    double base = S21_NAN;
+    double exp = -S21_INF; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ NaN^NaN = -nan \f]
+START_TEST(s21_pow_57)
+{
+    double base = S21_NAN;
+    double exp = S21_NAN; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 8.4326^4.823611 = 29273.730974 \f]
+START_TEST(s21_pow_58)
+{
+    double base = 8.4326;
+    double exp = 4.823611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -8.4326^4.823611 = -nan \f]
+START_TEST(s21_pow_59)
+{
+    double base = -8.4326;
+    double exp = 4.823611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 8.4326^-4.823611 = 0.000034 \f]
+START_TEST(s21_pow_60)
+{
+    double base = 8.4326;
+    double exp = -4.823611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -8.4326^-4.823611 = -nan \f]
+START_TEST(s21_pow_61)
+{
+    double base = -8.4326;
+    double exp = -4.823611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 14656.32867462^0.223611 = 8.542187 \f]
+START_TEST(s21_pow_62)
+{
+    double base = 14656.32867462;
+    double exp = 0.223611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 14656.32867462^-0.223611 = -nan \f]
+START_TEST(s21_pow_63)
+{
+    double base = -14656.32867462;
+    double exp = 0.223611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -14656.32867462^0.223611 = -nan \f]
+START_TEST(s21_pow_64)
+{
+    double base = -14656.32867462;
+    double exp = 0.223611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -14656.32867462^-0.223611 = -nan \f]
+START_TEST(s21_pow_65)
+{
+    double base = -14656.32867462;
+    double exp = -0.223611; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.0100101^100.002031 = 2.707575 \f]
+START_TEST(s21_pow_66)
+{
+    double base = 1.0100101;
+    double exp = 100.002031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.0100101^100.002031 = -nan \f]
+START_TEST(s21_pow_67)
+{
+    double base = -1.0100101;
+    double exp = 100.002031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.0100101^-100.002031 = 0.369334 \f]
+START_TEST(s21_pow_68)
+{
+    double base = 1.0100101;
+    double exp = -100.002031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.0100101^-100.002031 = -nan \f]
+START_TEST(s21_pow_69)
+{
+    double base = -1.0100101;
+    double exp = -100.002031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.0043234^1000.0222031 = 74.752058 \f]
+START_TEST(s21_pow_70)
+{
+    double base = 1.0043234;
+    double exp = 1000.0222031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.0043234^1000.0222031 = -nan \f]
+START_TEST(s21_pow_71)
+{
+    double base = -1.0043234;
+    double exp = 1000.0222031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ 1.0043234^-1000.0222031 = 0.013378 \f]
+START_TEST(s21_pow_72)
+{
+    double base = 1.0043234;
+    double exp = -1000.0222031; 
+
+    s21_test_pow(base, exp);
+}
+
+/// @brief \f[ -1.0043234^-1000.0222031 = -nan \f]
+START_TEST(s21_pow_73)
+{
+    double base = -1.0043234;
+    double exp = -1000.0222031; 
+
+    s21_test_pow(base, exp);
+}
+
 /**
  * @brief First set of tests.
  * 
@@ -121,6 +688,69 @@ Suite *s21_pow_first_case(void)
     tcase_add_test(tc_pow, s21_pow_8);
     tcase_add_test(tc_pow, s21_pow_9);
     tcase_add_test(tc_pow, s21_pow_10);
+    tcase_add_test(tc_pow, s21_pow_11);
+    tcase_add_test(tc_pow, s21_pow_12);
+    tcase_add_test(tc_pow, s21_pow_13);
+    tcase_add_test(tc_pow, s21_pow_14);
+    tcase_add_test(tc_pow, s21_pow_15);
+    tcase_add_test(tc_pow, s21_pow_16);
+    tcase_add_test(tc_pow, s21_pow_17);
+    tcase_add_test(tc_pow, s21_pow_18);
+    tcase_add_test(tc_pow, s21_pow_19);
+    tcase_add_test(tc_pow, s21_pow_20);
+    tcase_add_test(tc_pow, s21_pow_21);
+    tcase_add_test(tc_pow, s21_pow_22);
+    tcase_add_test(tc_pow, s21_pow_23);
+    tcase_add_test(tc_pow, s21_pow_24);
+    tcase_add_test(tc_pow, s21_pow_25);
+    tcase_add_test(tc_pow, s21_pow_26);
+    tcase_add_test(tc_pow, s21_pow_27);
+    tcase_add_test(tc_pow, s21_pow_28);
+    tcase_add_test(tc_pow, s21_pow_29);
+    tcase_add_test(tc_pow, s21_pow_30);
+    tcase_add_test(tc_pow, s21_pow_31);
+    tcase_add_test(tc_pow, s21_pow_32);
+    tcase_add_test(tc_pow, s21_pow_33);
+    tcase_add_test(tc_pow, s21_pow_34);
+    tcase_add_test(tc_pow, s21_pow_35);
+    tcase_add_test(tc_pow, s21_pow_36);
+    tcase_add_test(tc_pow, s21_pow_37);
+    tcase_add_test(tc_pow, s21_pow_38);
+    tcase_add_test(tc_pow, s21_pow_39);
+    tcase_add_test(tc_pow, s21_pow_40);
+    tcase_add_test(tc_pow, s21_pow_41);
+    tcase_add_test(tc_pow, s21_pow_42);
+    tcase_add_test(tc_pow, s21_pow_43);
+    tcase_add_test(tc_pow, s21_pow_44);
+    tcase_add_test(tc_pow, s21_pow_45);
+    tcase_add_test(tc_pow, s21_pow_46);
+    tcase_add_test(tc_pow, s21_pow_47);
+    tcase_add_test(tc_pow, s21_pow_48);
+    tcase_add_test(tc_pow, s21_pow_49);
+    tcase_add_test(tc_pow, s21_pow_50);
+    tcase_add_test(tc_pow, s21_pow_51);
+    tcase_add_test(tc_pow, s21_pow_52);
+    tcase_add_test(tc_pow, s21_pow_53);
+    tcase_add_test(tc_pow, s21_pow_54);
+    tcase_add_test(tc_pow, s21_pow_55);
+    tcase_add_test(tc_pow, s21_pow_56);
+    tcase_add_test(tc_pow, s21_pow_57);
+    tcase_add_test(tc_pow, s21_pow_58);
+    tcase_add_test(tc_pow, s21_pow_59);
+    tcase_add_test(tc_pow, s21_pow_60);
+    tcase_add_test(tc_pow, s21_pow_61);
+    tcase_add_test(tc_pow, s21_pow_62);
+    tcase_add_test(tc_pow, s21_pow_63);
+    tcase_add_test(tc_pow, s21_pow_64);
+    tcase_add_test(tc_pow, s21_pow_65);
+    tcase_add_test(tc_pow, s21_pow_66);
+    tcase_add_test(tc_pow, s21_pow_67);
+    tcase_add_test(tc_pow, s21_pow_68);
+    tcase_add_test(tc_pow, s21_pow_69);
+    tcase_add_test(tc_pow, s21_pow_70);
+    tcase_add_test(tc_pow, s21_pow_71);
+    tcase_add_test(tc_pow, s21_pow_72);
+    tcase_add_test(tc_pow, s21_pow_73);
     suite_add_tcase(math, tc_pow);
 
     return math;
