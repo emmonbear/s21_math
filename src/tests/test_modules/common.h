@@ -19,7 +19,7 @@
 #include <math.h>
 #include <stdlib.h>
 
-#include "./../../debug/debug.h"
+#include "./../debug/debug.h"
 #include "./../../s21_math.h"
 
 #define COMPARE_ACCURACY \

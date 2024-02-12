@@ -21,7 +21,6 @@
  */
 long double s21_exp(double x) {
   long double result = 1;
-  long double taylor_member = x;
   double_int bits = {{x}};
 
   if (bits.ulong == NAN_MASK) {
@@ -35,9 +34,11 @@ long double s21_exp(double x) {
   } else if (x < -27.0) {
     result = 0;
   } else {
-    for (double n = 1; s21_fabs(taylor_member) > TAYLOR_PRECISION; ++n) {
-      taylor_member = factorial(fast_pow(x, n), n);
-      result += taylor_member;
+    long double member = x;
+
+    for (int cnt = 1; s21_fabs(member) > PRECISION; ++cnt) {
+      member = factorial(fast_pow(x, cnt), cnt);
+      result += member;
     }
   }
 
