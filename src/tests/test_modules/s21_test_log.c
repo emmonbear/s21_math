@@ -11,802 +11,802 @@
 
 #include "./test_include/s21_test_log.h"
 
-/// @brief \f[ log(0.0001) = -9.210340 \f]
+/// @brief \f[ log(0.000001) = -13.815511 \f]
 START_TEST(s21_log_0)
 {
-    double value = 0.0001;
+    double value = 0.000001;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00241) = -6.028129 \f]
+/// @brief \f[ log(0.0000025) = -12.899220 \f]
 START_TEST(s21_log_1)
 {
-    double value = 0.00241;
+    double value = 0.0000025;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00472) = -5.355946 \f]
+/// @brief \f[ log(0.0000040) = -12.429216 \f]
 START_TEST(s21_log_2)
 {
-    double value = 0.00472;
+    double value = 0.0000040;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00703) = -4.957569 \f]
+/// @brief \f[ log(0.0000055) = -12.110762 \f]
 START_TEST(s21_log_3)
 {
-    double value = 0.00703;
+    double value = 0.0000055;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00934) = -4.673449 \f]
+/// @brief \f[ log(0.0000070) = -11.869600 \f]
 START_TEST(s21_log_4)
 {
-    double value = 0.00934;
+    double value = 0.0000070;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.01165) = -4.452449 \f]
+/// @brief \f[ log(0.0000085) = -11.675444 \f]
 START_TEST(s21_log_5)
 {
-    double value = 0.01165;
+    double value = 0.0000085;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.01396) = -4.271559 \f]
+/// @brief \f[ log(0.0000100) = -11.512925 \f]
 START_TEST(s21_log_6)
 {
-    double value = 0.01396;
+    double value = 0.0000100;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.01627) = -4.118432 \f]
+/// @brief \f[ log(0.0000115) = -11.373164 \f]
 START_TEST(s21_log_7)
 {
-    double value = 0.01627;
+    double value = 0.0000115;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.01858) = -3.985670 \f]
+/// @brief \f[ log(0.0000130) = -11.250561 \f]
 START_TEST(s21_log_8)
 {
-    double value = 0.01858;
+    double value = 0.0000130;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.02089) = -3.868485 \f]
+/// @brief \f[ log(0.0000145) = -11.141362 \f]
 START_TEST(s21_log_9)
 {
-    double value = 0.02089;
+    double value = 0.0000145;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.02320) = -3.763603 \f]
+/// @brief \f[ log(0.0000160) = -11.042922 \f]
 START_TEST(s21_log_10)
 {
-    double value = 0.02320;
+    double value = 0.0000160;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.02551) = -3.668685 \f]
+/// @brief \f[ log(0.0000175) = -10.953310 \f]
 START_TEST(s21_log_11)
 {
-    double value = 0.02551;
+    double value = 0.0000175;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.02782) = -3.582000 \f]
+/// @brief \f[ log(0.0000190) = -10.871072 \f]
 START_TEST(s21_log_12)
 {
-    double value = 0.02782;
+    double value = 0.0000190;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.03013) = -3.502234 \f]
+/// @brief \f[ log(0.0000205) = -10.795086 \f]
 START_TEST(s21_log_13)
 {
-    double value = 0.03013;
+    double value = 0.0000205;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.03244) = -3.428363 \f]
+/// @brief \f[ log(0.0000220) = -10.724468 \f]
 START_TEST(s21_log_14)
 {
-    double value = 0.03244;
+    double value = 0.0000220;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.03475) = -3.359576 \f]
+/// @brief \f[ log(0.0000235) = -10.658510 \f]
 START_TEST(s21_log_15)
 {
-    double value = 0.03475;
+    double value = 0.0000235;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.03706) = -3.295217 \f]
+/// @brief \f[ log(0.0000250) = -10.596635 \f]
 START_TEST(s21_log_16)
 {
-    double value = 0.03706;
+    double value = 0.0000250;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.03937) = -3.234751 \f]
+/// @brief \f[ log(0.0000265) = -10.538366 \f]
 START_TEST(s21_log_17)
 {
-    double value = 0.03937;
+    double value = 0.0000265;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.04168) = -3.177734 \f]
+/// @brief \f[ log(0.0000280) = -10.483306 \f]
 START_TEST(s21_log_18)
 {
-    double value = 0.04168;
+    double value = 0.0000280;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.04399) = -3.123793 \f]
+/// @brief \f[ log(0.0000295) = -10.431120 \f]
 START_TEST(s21_log_19)
 {
-    double value = 0.04399;
+    double value = 0.0000295;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.04630) = -3.072613 \f]
+/// @brief \f[ log(0.0000310) = -10.381523 \f]
 START_TEST(s21_log_20)
 {
-    double value = 0.04630;
+    double value = 0.0000310;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.04861) = -3.023926 \f]
+/// @brief \f[ log(0.0000325) = -10.334270 \f]
 START_TEST(s21_log_21)
 {
-    double value = 0.04861;
+    double value = 0.0000325;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.05092) = -2.977500 \f]
+/// @brief \f[ log(0.0000340) = -10.289150 \f]
 START_TEST(s21_log_22)
 {
-    double value = 0.05092;
+    double value = 0.0000340;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.05323) = -2.933133 \f]
+/// @brief \f[ log(0.0000355) = -10.245978 \f]
 START_TEST(s21_log_23)
 {
-    double value = 0.05323;
+    double value = 0.0000355;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.05554) = -2.890652 \f]
+/// @brief \f[ log(0.0000370) = -10.204593 \f]
 START_TEST(s21_log_24)
 {
-    double value = 0.05554;
+    double value = 0.0000370;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.05785) = -2.849902 \f]
+/// @brief \f[ log(0.0000385) = -10.164852 \f]
 START_TEST(s21_log_25)
 {
-    double value = 0.05785;
+    double value = 0.0000385;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.06016) = -2.810748 \f]
+/// @brief \f[ log(0.0000400) = -10.126631 \f]
 START_TEST(s21_log_26)
 {
-    double value = 0.06016;
+    double value = 0.0000400;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.06247) = -2.773069 \f]
+/// @brief \f[ log(0.0000415) = -10.089817 \f]
 START_TEST(s21_log_27)
 {
-    double value = 0.06247;
+    double value = 0.0000415;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.06478) = -2.736758 \f]
+/// @brief \f[ log(0.0000430) = -10.054310 \f]
 START_TEST(s21_log_28)
 {
-    double value = 0.06478;
+    double value = 0.0000430;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.06709) = -2.701720 \f]
+/// @brief \f[ log(0.0000445) = -10.020021 \f]
 START_TEST(s21_log_29)
 {
-    double value = 0.06709;
+    double value = 0.0000445;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.06940) = -2.667868 \f]
+/// @brief \f[ log(0.0000460) = -9.986869 \f]
 START_TEST(s21_log_30)
 {
-    double value = 0.06940;
+    double value = 0.0000460;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.07171) = -2.635125 \f]
+/// @brief \f[ log(0.0000475) = -9.954781 \f]
 START_TEST(s21_log_31)
 {
-    double value = 0.07171;
+    double value = 0.0000475;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.07402) = -2.603420 \f]
+/// @brief \f[ log(0.0000490) = -9.923690 \f]
 START_TEST(s21_log_32)
 {
-    double value = 0.07402;
+    double value = 0.0000490;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.07633) = -2.572689 \f]
+/// @brief \f[ log(0.0000505) = -9.893537 \f]
 START_TEST(s21_log_33)
 {
-    double value = 0.07633;
+    double value = 0.0000505;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.07864) = -2.542875 \f]
+/// @brief \f[ log(0.0000520) = -9.864267 \f]
 START_TEST(s21_log_34)
 {
-    double value = 0.07864;
+    double value = 0.0000520;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.08095) = -2.513924 \f]
+/// @brief \f[ log(0.0000535) = -9.835829 \f]
 START_TEST(s21_log_35)
 {
-    double value = 0.08095;
+    double value = 0.0000535;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.08326) = -2.485787 \f]
+/// @brief \f[ log(0.0000550) = -9.808177 \f]
 START_TEST(s21_log_36)
 {
-    double value = 0.08326;
+    double value = 0.0000550;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.08557) = -2.458421 \f]
+/// @brief \f[ log(0.0000565) = -9.781270 \f]
 START_TEST(s21_log_37)
 {
-    double value = 0.08557;
+    double value = 0.0000565;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.08788) = -2.431783 \f]
+/// @brief \f[ log(0.0000580) = -9.755068 \f]
 START_TEST(s21_log_38)
 {
-    double value = 0.08788;
+    double value = 0.0000580;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.09019) = -2.405837 \f]
+/// @brief \f[ log(0.0000595) = -9.729534 \f]
 START_TEST(s21_log_39)
 {
-    double value = 0.09019;
+    double value = 0.0000595;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.09250) = -2.380547 \f]
+/// @brief \f[ log(0.0000610) = -9.704637 \f]
 START_TEST(s21_log_40)
 {
-    double value = 0.09250;
+    double value = 0.0000610;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.09481) = -2.355880 \f]
+/// @brief \f[ log(0.0000625) = -9.680344 \f]
 START_TEST(s21_log_41)
 {
-    double value = 0.09481;
+    double value = 0.0000625;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.09712) = -2.331808 \f]
+/// @brief \f[ log(0.0000640) = -9.656627 \f]
 START_TEST(s21_log_42)
 {
-    double value = 0.09712;
+    double value = 0.0000640;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.09943) = -2.308301 \f]
+/// @brief \f[ log(0.0000655) = -9.633460 \f]
 START_TEST(s21_log_43)
 {
-    double value = 0.09943;
+    double value = 0.0000655;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.10174) = -2.285335 \f]
+/// @brief \f[ log(0.0000670) = -9.610818 \f]
 START_TEST(s21_log_44)
 {
-    double value = 0.10174;
+    double value = 0.0000670;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.10405) = -2.262884 \f]
+/// @brief \f[ log(0.0000685) = -9.588677 \f]
 START_TEST(s21_log_45)
 {
-    double value = 0.10405;
+    double value = 0.0000685;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.10636) = -2.240926 \f]
+/// @brief \f[ log(0.0000700) = -9.567015 \f]
 START_TEST(s21_log_46)
 {
-    double value = 0.10636;
+    double value = 0.0000700;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.10867) = -2.219440 \f]
+/// @brief \f[ log(0.0000715) = -9.545813 \f]
 START_TEST(s21_log_47)
 {
-    double value = 0.10867;
+    double value = 0.0000715;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.11098) = -2.198405 \f]
+/// @brief \f[ log(0.0000730) = -9.525051 \f]
 START_TEST(s21_log_48)
 {
-    double value = 0.11098;
+    double value = 0.0000730;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.11329) = -2.177804 \f]
+/// @brief \f[ log(0.0000745) = -9.504711 \f]
 START_TEST(s21_log_49)
 {
-    double value = 0.11329;
+    double value = 0.0000745;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.11560) = -2.157619 \f]
+/// @brief \f[ log(0.0000760) = -9.484777 \f]
 START_TEST(s21_log_50)
 {
-    double value = 0.11560;
+    double value = 0.0000760;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.11791) = -2.137834 \f]
+/// @brief \f[ log(0.0000775) = -9.465233 \f]
 START_TEST(s21_log_51)
 {
-    double value = 0.11791;
+    double value = 0.0000775;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.12022) = -2.118432 \f]
+/// @brief \f[ log(0.0000790) = -9.446063 \f]
 START_TEST(s21_log_52)
 {
-    double value = 0.12022;
+    double value = 0.0000790;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.12253) = -2.099399 \f]
+/// @brief \f[ log(0.0000805) = -9.427253 \f]
 START_TEST(s21_log_53)
 {
-    double value = 0.12253;
+    double value = 0.0000805;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.12484) = -2.080722 \f]
+/// @brief \f[ log(0.0000820) = -9.408791 \f]
 START_TEST(s21_log_54)
 {
-    double value = 0.12484;
+    double value = 0.0000820;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.12715) = -2.062388 \f]
+/// @brief \f[ log(0.0000835) = -9.390664 \f]
 START_TEST(s21_log_55)
 {
-    double value = 0.12715;
+    double value = 0.0000835;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.12946) = -2.044383 \f]
+/// @brief \f[ log(0.0000850) = -9.372859 \f]
 START_TEST(s21_log_56)
 {
-    double value = 0.12946;
+    double value = 0.0000850;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.13177) = -2.026697 \f]
+/// @brief \f[ log(0.0000865) = -9.355366 \f]
 START_TEST(s21_log_57)
 {
-    double value = 0.13177;
+    double value = 0.0000865;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.13408) = -2.009319 \f]
+/// @brief \f[ log(0.0000880) = -9.338174 \f]
 START_TEST(s21_log_58)
 {
-    double value = 0.13408;
+    double value = 0.0000880;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.13639) = -1.992237 \f]
+/// @brief \f[ log(0.0000895) = -9.321272 \f]
 START_TEST(s21_log_59)
 {
-    double value = 0.13639;
+    double value = 0.0000895;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.13870) = -1.975442 \f]
+/// @brief \f[ log(0.0000910) = -9.304651 \f]
 START_TEST(s21_log_60)
 {
-    double value = 0.13870;
+    double value = 0.0000910;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.14101) = -1.958924 \f]
+/// @brief \f[ log(0.0000925) = -9.288302 \f]
 START_TEST(s21_log_61)
 {
-    double value = 0.14101;
+    double value = 0.0000925;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.14332) = -1.942675 \f]
+/// @brief \f[ log(0.0000940) = -9.272216 \f]
 START_TEST(s21_log_62)
 {
-    double value = 0.14332;
+    double value = 0.0000940;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.14563) = -1.926686 \f]
+/// @brief \f[ log(0.0000955) = -9.256384 \f]
 START_TEST(s21_log_63)
 {
-    double value = 0.14563;
+    double value = 0.0000955;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.14794) = -1.910948 \f]
+/// @brief \f[ log(0.0000970) = -9.240800 \f]
 START_TEST(s21_log_64)
 {
-    double value = 0.14794;
+    double value = 0.0000970;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.15025) = -1.895455 \f]
+/// @brief \f[ log(0.0000985) = -9.225454 \f]
 START_TEST(s21_log_65)
 {
-    double value = 0.15025;
+    double value = 0.0000985;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.15256) = -1.880197 \f]
+/// @brief \f[ log(0.0001000) = -9.210340 \f]
 START_TEST(s21_log_66)
 {
-    double value = 0.15256;
+    double value = 0.0001000;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.15487) = -1.865169 \f]
+/// @brief \f[ log(0.0001015) = -9.195452 \f]
 START_TEST(s21_log_67)
 {
-    double value = 0.15487;
+    double value = 0.0001015;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.15718) = -1.850364 \f]
+/// @brief \f[ log(0.0001030) = -9.180782 \f]
 START_TEST(s21_log_68)
 {
-    double value = 0.15718;
+    double value = 0.0001030;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.15949) = -1.835774 \f]
+/// @brief \f[ log(0.0001045) = -9.166323 \f]
 START_TEST(s21_log_69)
 {
-    double value = 0.15949;
+    double value = 0.0001045;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.16180) = -1.821394 \f]
+/// @brief \f[ log(0.0001060) = -9.152071 \f]
 START_TEST(s21_log_70)
 {
-    double value = 0.16180;
+    double value = 0.0001060;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.16411) = -1.807218 \f]
+/// @brief \f[ log(0.0001075) = -9.138020 \f]
 START_TEST(s21_log_71)
 {
-    double value = 0.16411;
+    double value = 0.0001075;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.16642) = -1.793241 \f]
+/// @brief \f[ log(0.0001090) = -9.124163 \f]
 START_TEST(s21_log_72)
 {
-    double value = 0.16642;
+    double value = 0.0001090;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.16873) = -1.779455 \f]
+/// @brief \f[ log(0.0001105) = -9.110495 \f]
 START_TEST(s21_log_73)
 {
-    double value = 0.16873;
+    double value = 0.0001105;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.17104) = -1.765858 \f]
+/// @brief \f[ log(0.0001120) = -9.097012 \f]
 START_TEST(s21_log_74)
 {
-    double value = 0.17104;
+    double value = 0.0001120;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.17335) = -1.752443 \f]
+/// @brief \f[ log(0.0001135) = -9.083708 \f]
 START_TEST(s21_log_75)
 {
-    double value = 0.17335;
+    double value = 0.0001135;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.17566) = -1.739205 \f]
+/// @brief \f[ log(0.0001150) = -9.070578 \f]
 START_TEST(s21_log_76)
 {
-    double value = 0.17566;
+    double value = 0.0001150;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.17797) = -1.726140 \f]
+/// @brief \f[ log(0.0001165) = -9.057619 \f]
 START_TEST(s21_log_77)
 {
-    double value = 0.17797;
+    double value = 0.0001165;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.18028) = -1.713244 \f]
+/// @brief \f[ log(0.0001180) = -9.044826 \f]
 START_TEST(s21_log_78)
 {
-    double value = 0.18028;
+    double value = 0.0001180;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.18259) = -1.700512 \f]
+/// @brief \f[ log(0.0001195) = -9.032194 \f]
 START_TEST(s21_log_79)
 {
-    double value = 0.18259;
+    double value = 0.0001195;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.18490) = -1.687940 \f]
+/// @brief \f[ log(0.0001210) = -9.019720 \f]
 START_TEST(s21_log_80)
 {
-    double value = 0.18490;
+    double value = 0.0001210;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.18721) = -1.675524 \f]
+/// @brief \f[ log(0.0001225) = -9.007400 \f]
 START_TEST(s21_log_81)
 {
-    double value = 0.18721;
+    double value = 0.0001225;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.18952) = -1.663261 \f]
+/// @brief \f[ log(0.0001240) = -8.995229 \f]
 START_TEST(s21_log_82)
 {
-    double value = 0.18952;
+    double value = 0.0001240;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.19183) = -1.651146 \f]
+/// @brief \f[ log(0.0001255) = -8.983205 \f]
 START_TEST(s21_log_83)
 {
-    double value = 0.19183;
+    double value = 0.0001255;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.19414) = -1.639176 \f]
+/// @brief \f[ log(0.0001270) = -8.971323 \f]
 START_TEST(s21_log_84)
 {
-    double value = 0.19414;
+    double value = 0.0001270;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.19645) = -1.627347 \f]
+/// @brief \f[ log(0.0001285) = -8.959582 \f]
 START_TEST(s21_log_85)
 {
-    double value = 0.19645;
+    double value = 0.0001285;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.19876) = -1.615657 \f]
+/// @brief \f[ log(0.0001300) = -8.947976 \f]
 START_TEST(s21_log_86)
 {
-    double value = 0.19876;
+    double value = 0.0001300;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.20107) = -1.604102 \f]
+/// @brief \f[ log(0.0001315) = -8.936504 \f]
 START_TEST(s21_log_87)
 {
-    double value = 0.20107;
+    double value = 0.0001315;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.20338) = -1.592679 \f]
+/// @brief \f[ log(0.0001330) = -8.925161 \f]
 START_TEST(s21_log_88)
 {
-    double value = 0.20338;
+    double value = 0.0001330;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.20569) = -1.581385 \f]
+/// @brief \f[ log(0.0001345) = -8.913946 \f]
 START_TEST(s21_log_89)
 {
-    double value = 0.20569;
+    double value = 0.0001345;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.20800) = -1.570217 \f]
+/// @brief \f[ log(0.0001360) = -8.902856 \f]
 START_TEST(s21_log_90)
 {
-    double value = 0.20800;
+    double value = 0.0001360;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.21031) = -1.559173 \f]
+/// @brief \f[ log(0.0001375) = -8.891887 \f]
 START_TEST(s21_log_91)
 {
-    double value = 0.21031;
+    double value = 0.0001375;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.21262) = -1.548249 \f]
+/// @brief \f[ log(0.0001390) = -8.881037 \f]
 START_TEST(s21_log_92)
 {
-    double value = 0.21262;
+    double value = 0.0001390;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.21493) = -1.537443 \f]
+/// @brief \f[ log(0.0001405) = -8.870303 \f]
 START_TEST(s21_log_93)
 {
-    double value = 0.21493;
+    double value = 0.0001405;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.21724) = -1.526753 \f]
+/// @brief \f[ log(0.0001420) = -8.859684 \f]
 START_TEST(s21_log_94)
 {
-    double value = 0.21724;
+    double value = 0.0001420;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.21955) = -1.516175 \f]
+/// @brief \f[ log(0.0001435) = -8.849176 \f]
 START_TEST(s21_log_95)
 {
-    double value = 0.21955;
+    double value = 0.0001435;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.22186) = -1.505709 \f]
+/// @brief \f[ log(0.0001450) = -8.838777 \f]
 START_TEST(s21_log_96)
 {
-    double value = 0.22186;
+    double value = 0.0001450;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.22417) = -1.495351 \f]
+/// @brief \f[ log(0.0001465) = -8.828485 \f]
 START_TEST(s21_log_97)
 {
-    double value = 0.22417;
+    double value = 0.0001465;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.22648) = -1.485099 \f]
+/// @brief \f[ log(0.0001480) = -8.818298 \f]
 START_TEST(s21_log_98)
 {
-    double value = 0.22648;
+    double value = 0.0001480;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.22879) = -1.474951 \f]
+/// @brief \f[ log(0.0001495) = -8.808214 \f]
 START_TEST(s21_log_99)
 {
-    double value = 0.22879;
+    double value = 0.0001495;
 
     s21_test_log(value);
 }
@@ -819,2394 +819,2394 @@ START_TEST(s21_log_100)
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00232) = -6.066188 \f]
+/// @brief \f[ log(0.0029) = -5.843045 \f]
 START_TEST(s21_log_101)
 {
-    double value = 0.00232;
+    double value = 0.0029;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00264) = -5.936976 \f]
+/// @brief \f[ log(0.0038) = -5.572754 \f]
 START_TEST(s21_log_102)
 {
-    double value = 0.00264;
+    double value = 0.0038;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00296) = -5.822566 \f]
+/// @brief \f[ log(0.0047) = -5.360193 \f]
 START_TEST(s21_log_103)
 {
-    double value = 0.00296;
+    double value = 0.0047;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00328) = -5.719912 \f]
+/// @brief \f[ log(0.0056) = -5.184989 \f]
 START_TEST(s21_log_104)
 {
-    double value = 0.00328;
+    double value = 0.0056;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00360) = -5.626821 \f]
+/// @brief \f[ log(0.0065) = -5.035953 \f]
 START_TEST(s21_log_105)
 {
-    double value = 0.00360;
+    double value = 0.0065;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00392) = -5.541664 \f]
+/// @brief \f[ log(0.0074) = -4.906275 \f]
 START_TEST(s21_log_106)
 {
-    double value = 0.00392;
+    double value = 0.0074;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00424) = -5.463192 \f]
+/// @brief \f[ log(0.0083) = -4.791500 \f]
 START_TEST(s21_log_107)
 {
-    double value = 0.00424;
+    double value = 0.0083;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00456) = -5.390433 \f]
+/// @brief \f[ log(0.0092) = -4.688552 \f]
 START_TEST(s21_log_108)
 {
-    double value = 0.00456;
+    double value = 0.0092;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00488) = -5.322610 \f]
+/// @brief \f[ log(0.0101) = -4.595220 \f]
 START_TEST(s21_log_109)
 {
-    double value = 0.00488;
+    double value = 0.0101;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00520) = -5.259097 \f]
+/// @brief \f[ log(0.0110) = -4.509860 \f]
 START_TEST(s21_log_110)
 {
-    double value = 0.00520;
+    double value = 0.0110;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00552) = -5.199377 \f]
+/// @brief \f[ log(0.0119) = -4.431217 \f]
 START_TEST(s21_log_111)
 {
-    double value = 0.00552;
+    double value = 0.0119;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00584) = -5.143024 \f]
+/// @brief \f[ log(0.0128) = -4.358310 \f]
 START_TEST(s21_log_112)
 {
-    double value = 0.00584;
+    double value = 0.0128;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00616) = -5.089679 \f]
+/// @brief \f[ log(0.0137) = -4.290359 \f]
 START_TEST(s21_log_113)
 {
-    double value = 0.00616;
+    double value = 0.0137;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.00648) = -5.039035 \f]
+/// @brief \f[ log(0.0146) = -4.226734 \f]
 START_TEST(s21_log_114)
 {
-    double value = 0.00648;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00680) = -4.990833 \f]
-START_TEST(s21_log_115)
-{
-    double value = 0.00680;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00712) = -4.944848 \f]
-START_TEST(s21_log_116)
-{
-    double value = 0.00712;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00744) = -4.900884 \f]
-START_TEST(s21_log_117)
-{
-    double value = 0.00744;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00776) = -4.858773 \f]
-START_TEST(s21_log_118)
-{
-    double value = 0.00776;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00808) = -4.818363 \f]
-START_TEST(s21_log_119)
-{
-    double value = 0.00808;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00840) = -4.779524 \f]
-START_TEST(s21_log_120)
-{
-    double value = 0.00840;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00872) = -4.742136 \f]
-START_TEST(s21_log_121)
-{
-    double value = 0.00872;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00904) = -4.706096 \f]
-START_TEST(s21_log_122)
-{
-    double value = 0.00904;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00936) = -4.671310 \f]
-START_TEST(s21_log_123)
-{
-    double value = 0.00936;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00968) = -4.637693 \f]
-START_TEST(s21_log_124)
-{
-    double value = 0.00968;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01000) = -4.605170 \f]
-START_TEST(s21_log_125)
-{
-    double value = 0.01000;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01032) = -4.573672 \f]
-START_TEST(s21_log_126)
-{
-    double value = 0.01032;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01064) = -4.543135 \f]
-START_TEST(s21_log_127)
-{
-    double value = 0.01064;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01096) = -4.513503 \f]
-START_TEST(s21_log_128)
-{
-    double value = 0.01096;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01128) = -4.484724 \f]
-START_TEST(s21_log_129)
-{
-    double value = 0.01128;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01160) = -4.456750 \f]
-START_TEST(s21_log_130)
-{
-    double value = 0.01160;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01192) = -4.429538 \f]
-START_TEST(s21_log_131)
-{
-    double value = 0.01192;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01224) = -4.403046 \f]
-START_TEST(s21_log_132)
-{
-    double value = 0.01224;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01256) = -4.377238 \f]
-START_TEST(s21_log_133)
-{
-    double value = 0.01256;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01288) = -4.352080 \f]
-START_TEST(s21_log_134)
-{
-    double value = 0.01288;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01320) = -4.327538 \f]
-START_TEST(s21_log_135)
-{
-    double value = 0.01320;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01352) = -4.303585 \f]
-START_TEST(s21_log_136)
-{
-    double value = 0.01352;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01384) = -4.280192 \f]
-START_TEST(s21_log_137)
-{
-    double value = 0.01384;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01416) = -4.257334 \f]
-START_TEST(s21_log_138)
-{
-    double value = 0.01416;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01448) = -4.234987 \f]
-START_TEST(s21_log_139)
-{
-    double value = 0.01448;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01480) = -4.213128 \f]
-START_TEST(s21_log_140)
-{
-    double value = 0.01480;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01512) = -4.191737 \f]
-START_TEST(s21_log_141)
-{
-    double value = 0.01512;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01544) = -4.170794 \f]
-START_TEST(s21_log_142)
-{
-    double value = 0.01544;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01576) = -4.150280 \f]
-START_TEST(s21_log_143)
-{
-    double value = 0.01576;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01608) = -4.130179 \f]
-START_TEST(s21_log_144)
-{
-    double value = 0.01608;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01640) = -4.110474 \f]
-START_TEST(s21_log_145)
-{
-    double value = 0.01640;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01672) = -4.091150 \f]
-START_TEST(s21_log_146)
-{
-    double value = 0.01672;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01704) = -4.072192 \f]
-START_TEST(s21_log_147)
-{
-    double value = 0.01704;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01736) = -4.053587 \f]
-START_TEST(s21_log_148)
-{
-    double value = 0.01736;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01768) = -4.035321 \f]
-START_TEST(s21_log_149)
-{
-    double value = 0.01768;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01800) = -4.017384 \f]
-START_TEST(s21_log_150)
-{
-    double value = 0.01800;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01832) = -3.999762 \f]
-START_TEST(s21_log_151)
-{
-    double value = 0.01832;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01864) = -3.982445 \f]
-START_TEST(s21_log_152)
-{
-    double value = 0.01864;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01896) = -3.965424 \f]
-START_TEST(s21_log_153)
-{
-    double value = 0.01896;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01928) = -3.948687 \f]
-START_TEST(s21_log_154)
-{
-    double value = 0.01928;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01960) = -3.932226 \f]
-START_TEST(s21_log_155)
-{
-    double value = 0.01960;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01992) = -3.916031 \f]
-START_TEST(s21_log_156)
-{
-    double value = 0.01992;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02024) = -3.900094 \f]
-START_TEST(s21_log_157)
-{
-    double value = 0.02024;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02056) = -3.884408 \f]
-START_TEST(s21_log_158)
-{
-    double value = 0.02056;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02088) = -3.868964 \f]
-START_TEST(s21_log_159)
-{
-    double value = 0.02088;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02120) = -3.853754 \f]
-START_TEST(s21_log_160)
-{
-    double value = 0.02120;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02152) = -3.838773 \f]
-START_TEST(s21_log_161)
-{
-    double value = 0.02152;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02184) = -3.824012 \f]
-START_TEST(s21_log_162)
-{
-    double value = 0.02184;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02216) = -3.809466 \f]
-START_TEST(s21_log_163)
-{
-    double value = 0.02216;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02248) = -3.795129 \f]
-START_TEST(s21_log_164)
-{
-    double value = 0.02248;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02280) = -3.780995 \f]
-START_TEST(s21_log_165)
-{
-    double value = 0.02280;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02312) = -3.767057 \f]
-START_TEST(s21_log_166)
-{
-    double value = 0.02312;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02344) = -3.753311 \f]
-START_TEST(s21_log_167)
-{
-    double value = 0.02344;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02376) = -3.739752 \f]
-START_TEST(s21_log_168)
-{
-    double value = 0.02376;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02408) = -3.726374 \f]
-START_TEST(s21_log_169)
-{
-    double value = 0.02408;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02440) = -3.713172 \f]
-START_TEST(s21_log_170)
-{
-    double value = 0.02440;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02472) = -3.700143 \f]
-START_TEST(s21_log_171)
-{
-    double value = 0.02472;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02504) = -3.687281 \f]
-START_TEST(s21_log_172)
-{
-    double value = 0.02504;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02536) = -3.674582 \f]
-START_TEST(s21_log_173)
-{
-    double value = 0.02536;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02568) = -3.662043 \f]
-START_TEST(s21_log_174)
-{
-    double value = 0.02568;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02600) = -3.649659 \f]
-START_TEST(s21_log_175)
-{
-    double value = 0.02600;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02632) = -3.637426 \f]
-START_TEST(s21_log_176)
-{
-    double value = 0.02632;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02664) = -3.625341 \f]
-START_TEST(s21_log_177)
-{
-    double value = 0.02664;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02696) = -3.613401 \f]
-START_TEST(s21_log_178)
-{
-    double value = 0.02696;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02728) = -3.601601 \f]
-START_TEST(s21_log_179)
-{
-    double value = 0.02728;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02760) = -3.589940 \f]
-START_TEST(s21_log_180)
-{
-    double value = 0.02760;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02792) = -3.578412 \f]
-START_TEST(s21_log_181)
-{
-    double value = 0.02792;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02824) = -3.567016 \f]
-START_TEST(s21_log_182)
-{
-    double value = 0.02824;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02856) = -3.555748 \f]
-START_TEST(s21_log_183)
-{
-    double value = 0.02856;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02888) = -3.544606 \f]
-START_TEST(s21_log_184)
-{
-    double value = 0.02888;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02920) = -3.533587 \f]
-START_TEST(s21_log_185)
-{
-    double value = 0.02920;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02952) = -3.522687 \f]
-START_TEST(s21_log_186)
-{
-    double value = 0.02952;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.02984) = -3.511906 \f]
-START_TEST(s21_log_187)
-{
-    double value = 0.02984;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03016) = -3.501239 \f]
-START_TEST(s21_log_188)
-{
-    double value = 0.03016;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03048) = -3.490685 \f]
-START_TEST(s21_log_189)
-{
-    double value = 0.03048;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03080) = -3.480241 \f]
-START_TEST(s21_log_190)
-{
-    double value = 0.03080;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03112) = -3.469905 \f]
-START_TEST(s21_log_191)
-{
-    double value = 0.03112;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03144) = -3.459674 \f]
-START_TEST(s21_log_192)
-{
-    double value = 0.03144;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03176) = -3.449548 \f]
-START_TEST(s21_log_193)
-{
-    double value = 0.03176;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03208) = -3.439522 \f]
-START_TEST(s21_log_194)
-{
-    double value = 0.03208;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03240) = -3.429597 \f]
-START_TEST(s21_log_195)
-{
-    double value = 0.03240;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03272) = -3.419769 \f]
-START_TEST(s21_log_196)
-{
-    double value = 0.03272;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03304) = -3.410036 \f]
-START_TEST(s21_log_197)
-{
-    double value = 0.03304;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03336) = -3.400398 \f]
-START_TEST(s21_log_198)
-{
-    double value = 0.03336;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.03368) = -3.390851 \f]
-START_TEST(s21_log_199)
-{
-    double value = 0.03368;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.003) = -5.809143 \f]
-START_TEST(s21_log_200)
-{
-    double value = 0.003;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00312) = -5.769922 \f]
-START_TEST(s21_log_201)
-{
-    double value = 0.00312;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00324) = -5.732182 \f]
-START_TEST(s21_log_202)
-{
-    double value = 0.00324;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00336) = -5.695814 \f]
-START_TEST(s21_log_203)
-{
-    double value = 0.00336;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00348) = -5.660723 \f]
-START_TEST(s21_log_204)
-{
-    double value = 0.00348;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00360) = -5.626821 \f]
-START_TEST(s21_log_205)
-{
-    double value = 0.00360;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00372) = -5.594032 \f]
-START_TEST(s21_log_206)
-{
-    double value = 0.00372;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00384) = -5.562283 \f]
-START_TEST(s21_log_207)
-{
-    double value = 0.00384;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00396) = -5.531511 \f]
-START_TEST(s21_log_208)
-{
-    double value = 0.00396;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00408) = -5.501658 \f]
-START_TEST(s21_log_209)
-{
-    double value = 0.00408;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00420) = -5.472671 \f]
-START_TEST(s21_log_210)
-{
-    double value = 0.00420;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00432) = -5.444500 \f]
-START_TEST(s21_log_211)
-{
-    double value = 0.00432;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00444) = -5.417101 \f]
-START_TEST(s21_log_212)
-{
-    double value = 0.00444;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00456) = -5.390433 \f]
-START_TEST(s21_log_213)
-{
-    double value = 0.00456;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00468) = -5.364457 \f]
-START_TEST(s21_log_214)
-{
-    double value = 0.00468;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00480) = -5.339139 \f]
-START_TEST(s21_log_215)
-{
-    double value = 0.00480;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00492) = -5.314447 \f]
-START_TEST(s21_log_216)
-{
-    double value = 0.00492;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00504) = -5.290349 \f]
-START_TEST(s21_log_217)
-{
-    double value = 0.00504;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00516) = -5.266819 \f]
-START_TEST(s21_log_218)
-{
-    double value = 0.00516;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00528) = -5.243829 \f]
-START_TEST(s21_log_219)
-{
-    double value = 0.00528;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00540) = -5.221356 \f]
-START_TEST(s21_log_220)
-{
-    double value = 0.00540;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00552) = -5.199377 \f]
-START_TEST(s21_log_221)
-{
-    double value = 0.00552;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00564) = -5.177871 \f]
-START_TEST(s21_log_222)
-{
-    double value = 0.00564;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00576) = -5.156818 \f]
-START_TEST(s21_log_223)
-{
-    double value = 0.00576;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00588) = -5.136199 \f]
-START_TEST(s21_log_224)
-{
-    double value = 0.00588;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00600) = -5.115996 \f]
-START_TEST(s21_log_225)
-{
-    double value = 0.00600;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00612) = -5.096193 \f]
-START_TEST(s21_log_226)
-{
-    double value = 0.00612;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00624) = -5.076775 \f]
-START_TEST(s21_log_227)
-{
-    double value = 0.00624;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00636) = -5.057727 \f]
-START_TEST(s21_log_228)
-{
-    double value = 0.00636;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00648) = -5.039035 \f]
-START_TEST(s21_log_229)
-{
-    double value = 0.00648;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00660) = -5.020686 \f]
-START_TEST(s21_log_230)
-{
-    double value = 0.00660;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00672) = -5.002667 \f]
-START_TEST(s21_log_231)
-{
-    double value = 0.00672;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00684) = -4.984968 \f]
-START_TEST(s21_log_232)
-{
-    double value = 0.00684;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00696) = -4.967576 \f]
-START_TEST(s21_log_233)
-{
-    double value = 0.00696;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00708) = -4.950481 \f]
-START_TEST(s21_log_234)
-{
-    double value = 0.00708;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00720) = -4.933674 \f]
-START_TEST(s21_log_235)
-{
-    double value = 0.00720;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00732) = -4.917145 \f]
-START_TEST(s21_log_236)
-{
-    double value = 0.00732;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00744) = -4.900884 \f]
-START_TEST(s21_log_237)
-{
-    double value = 0.00744;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00756) = -4.884884 \f]
-START_TEST(s21_log_238)
-{
-    double value = 0.00756;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00768) = -4.869136 \f]
-START_TEST(s21_log_239)
-{
-    double value = 0.00768;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00780) = -4.853632 \f]
-START_TEST(s21_log_240)
-{
-    double value = 0.00780;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00792) = -4.838364 \f]
-START_TEST(s21_log_241)
-{
-    double value = 0.00792;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00804) = -4.823326 \f]
-START_TEST(s21_log_242)
-{
-    double value = 0.00804;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00816) = -4.808511 \f]
-START_TEST(s21_log_243)
-{
-    double value = 0.00816;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00828) = -4.793912 \f]
-START_TEST(s21_log_244)
-{
-    double value = 0.00828;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00840) = -4.779524 \f]
-START_TEST(s21_log_245)
-{
-    double value = 0.00840;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00852) = -4.765339 \f]
-START_TEST(s21_log_246)
-{
-    double value = 0.00852;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00864) = -4.751353 \f]
-START_TEST(s21_log_247)
-{
-    double value = 0.00864;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00876) = -4.737559 \f]
-START_TEST(s21_log_248)
-{
-    double value = 0.00876;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00888) = -4.723954 \f]
-START_TEST(s21_log_249)
-{
-    double value = 0.00888;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00900) = -4.710531 \f]
-START_TEST(s21_log_250)
-{
-    double value = 0.00900;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00912) = -4.697285 \f]
-START_TEST(s21_log_251)
-{
-    double value = 0.00912;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00924) = -4.684213 \f]
-START_TEST(s21_log_252)
-{
-    double value = 0.00924;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00936) = -4.671310 \f]
-START_TEST(s21_log_253)
-{
-    double value = 0.00936;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00948) = -4.658571 \f]
-START_TEST(s21_log_254)
-{
-    double value = 0.00948;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00960) = -4.645992 \f]
-START_TEST(s21_log_255)
-{
-    double value = 0.00960;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00972) = -4.633570 \f]
-START_TEST(s21_log_256)
-{
-    double value = 0.00972;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00984) = -4.621300 \f]
-START_TEST(s21_log_257)
-{
-    double value = 0.00984;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.00996) = -4.609178 \f]
-START_TEST(s21_log_258)
-{
-    double value = 0.00996;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01008) = -4.597202 \f]
-START_TEST(s21_log_259)
-{
-    double value = 0.01008;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01020) = -4.585368 \f]
-START_TEST(s21_log_260)
-{
-    double value = 0.01020;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01032) = -4.573672 \f]
-START_TEST(s21_log_261)
-{
-    double value = 0.01032;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01044) = -4.562111 \f]
-START_TEST(s21_log_262)
-{
-    double value = 0.01044;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01056) = -4.550682 \f]
-START_TEST(s21_log_263)
-{
-    double value = 0.01056;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01068) = -4.539382 \f]
-START_TEST(s21_log_264)
-{
-    double value = 0.01068;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01080) = -4.528209 \f]
-START_TEST(s21_log_265)
-{
-    double value = 0.01080;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01092) = -4.517159 \f]
-START_TEST(s21_log_266)
-{
-    double value = 0.01092;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01104) = -4.506230 \f]
-START_TEST(s21_log_267)
-{
-    double value = 0.01104;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01116) = -4.495419 \f]
-START_TEST(s21_log_268)
-{
-    double value = 0.01116;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01128) = -4.484724 \f]
-START_TEST(s21_log_269)
-{
-    double value = 0.01128;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01140) = -4.474142 \f]
-START_TEST(s21_log_270)
-{
-    double value = 0.01140;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01152) = -4.463671 \f]
-START_TEST(s21_log_271)
-{
-    double value = 0.01152;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01164) = -4.453308 \f]
-START_TEST(s21_log_272)
-{
-    double value = 0.01164;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01176) = -4.443051 \f]
-START_TEST(s21_log_273)
-{
-    double value = 0.01176;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01188) = -4.432899 \f]
-START_TEST(s21_log_274)
-{
-    double value = 0.01188;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01200) = -4.422849 \f]
-START_TEST(s21_log_275)
-{
-    double value = 0.01200;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01212) = -4.412898 \f]
-START_TEST(s21_log_276)
-{
-    double value = 0.01212;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01224) = -4.403046 \f]
-START_TEST(s21_log_277)
-{
-    double value = 0.01224;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01236) = -4.393290 \f]
-START_TEST(s21_log_278)
-{
-    double value = 0.01236;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01248) = -4.383628 \f]
-START_TEST(s21_log_279)
-{
-    double value = 0.01248;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01260) = -4.374058 \f]
-START_TEST(s21_log_280)
-{
-    double value = 0.01260;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01272) = -4.364580 \f]
-START_TEST(s21_log_281)
-{
-    double value = 0.01272;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01284) = -4.355190 \f]
-START_TEST(s21_log_282)
-{
-    double value = 0.01284;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01296) = -4.345888 \f]
-START_TEST(s21_log_283)
-{
-    double value = 0.01296;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01308) = -4.336671 \f]
-START_TEST(s21_log_284)
-{
-    double value = 0.01308;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01320) = -4.327538 \f]
-START_TEST(s21_log_285)
-{
-    double value = 0.01320;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01332) = -4.318489 \f]
-START_TEST(s21_log_286)
-{
-    double value = 0.01332;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01344) = -4.309520 \f]
-START_TEST(s21_log_287)
-{
-    double value = 0.01344;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01356) = -4.300631 \f]
-START_TEST(s21_log_288)
-{
-    double value = 0.01356;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01368) = -4.291820 \f]
-START_TEST(s21_log_289)
-{
-    double value = 0.01368;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01380) = -4.283087 \f]
-START_TEST(s21_log_290)
-{
-    double value = 0.01380;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01392) = -4.274429 \f]
-START_TEST(s21_log_291)
-{
-    double value = 0.01392;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01404) = -4.265845 \f]
-START_TEST(s21_log_292)
-{
-    double value = 0.01404;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01416) = -4.257334 \f]
-START_TEST(s21_log_293)
-{
-    double value = 0.01416;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01428) = -4.248895 \f]
-START_TEST(s21_log_294)
-{
-    double value = 0.01428;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01440) = -4.240527 \f]
-START_TEST(s21_log_295)
-{
-    double value = 0.01440;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01452) = -4.232228 \f]
-START_TEST(s21_log_296)
-{
-    double value = 0.01452;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01464) = -4.223998 \f]
-START_TEST(s21_log_297)
-{
-    double value = 0.01464;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01476) = -4.215834 \f]
-START_TEST(s21_log_298)
-{
-    double value = 0.01476;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.01488) = -4.207737 \f]
-START_TEST(s21_log_299)
-{
-    double value = 0.01488;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.004) = -5.521461 \f]
-START_TEST(s21_log_300)
-{
-    double value = 0.004;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.0063) = -5.067206 \f]
-START_TEST(s21_log_301)
-{
-    double value = 0.0063;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.0086) = -4.755993 \f]
-START_TEST(s21_log_302)
-{
-    double value = 0.0086;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.0109) = -4.518992 \f]
-START_TEST(s21_log_303)
-{
-    double value = 0.0109;
-
-    s21_test_log(value);
-}
-
-/// @brief \f[ log(0.0132) = -4.327538 \f]
-START_TEST(s21_log_304)
-{
-    double value = 0.0132;
+    double value = 0.0146;
 
     s21_test_log(value);
 }
 
 /// @brief \f[ log(0.0155) = -4.166915 \f]
-START_TEST(s21_log_305)
+START_TEST(s21_log_115)
 {
     double value = 0.0155;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0178) = -4.028557 \f]
-START_TEST(s21_log_306)
+/// @brief \f[ log(0.0164) = -4.110474 \f]
+START_TEST(s21_log_116)
 {
-    double value = 0.0178;
+    double value = 0.0164;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0201) = -3.907035 \f]
-START_TEST(s21_log_307)
+/// @brief \f[ log(0.0173) = -4.057049 \f]
+START_TEST(s21_log_117)
 {
-    double value = 0.0201;
+    double value = 0.0173;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0224) = -3.798694 \f]
-START_TEST(s21_log_308)
+/// @brief \f[ log(0.0182) = -4.006334 \f]
+START_TEST(s21_log_118)
 {
-    double value = 0.0224;
+    double value = 0.0182;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0247) = -3.700952 \f]
-START_TEST(s21_log_309)
+/// @brief \f[ log(0.0191) = -3.958067 \f]
+START_TEST(s21_log_119)
 {
-    double value = 0.0247;
+    double value = 0.0191;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0270) = -3.611918 \f]
-START_TEST(s21_log_310)
+/// @brief \f[ log(0.0200) = -3.912023 \f]
+START_TEST(s21_log_120)
 {
-    double value = 0.0270;
+    double value = 0.0200;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0293) = -3.530168 \f]
-START_TEST(s21_log_311)
+/// @brief \f[ log(0.0209) = -3.868006 \f]
+START_TEST(s21_log_121)
 {
-    double value = 0.0293;
+    double value = 0.0209;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0316) = -3.454598 \f]
-START_TEST(s21_log_312)
+/// @brief \f[ log(0.0218) = -3.825845 \f]
+START_TEST(s21_log_122)
 {
-    double value = 0.0316;
+    double value = 0.0218;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0339) = -3.384340 \f]
-START_TEST(s21_log_313)
+/// @brief \f[ log(0.0227) = -3.785390 \f]
+START_TEST(s21_log_123)
 {
-    double value = 0.0339;
+    double value = 0.0227;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0236) = -3.746509 \f]
+START_TEST(s21_log_124)
+{
+    double value = 0.0236;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0245) = -3.709082 \f]
+START_TEST(s21_log_125)
+{
+    double value = 0.0245;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0254) = -3.673006 \f]
+START_TEST(s21_log_126)
+{
+    double value = 0.0254;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0263) = -3.638186 \f]
+START_TEST(s21_log_127)
+{
+    double value = 0.0263;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0272) = -3.604538 \f]
+START_TEST(s21_log_128)
+{
+    double value = 0.0272;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0281) = -3.571986 \f]
+START_TEST(s21_log_129)
+{
+    double value = 0.0281;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0290) = -3.540459 \f]
+START_TEST(s21_log_130)
+{
+    double value = 0.0290;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0299) = -3.509897 \f]
+START_TEST(s21_log_131)
+{
+    double value = 0.0299;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0308) = -3.480241 \f]
+START_TEST(s21_log_132)
+{
+    double value = 0.0308;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0317) = -3.451439 \f]
+START_TEST(s21_log_133)
+{
+    double value = 0.0317;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0326) = -3.423443 \f]
+START_TEST(s21_log_134)
+{
+    double value = 0.0326;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0335) = -3.396210 \f]
+START_TEST(s21_log_135)
+{
+    double value = 0.0335;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0344) = -3.369699 \f]
+START_TEST(s21_log_136)
+{
+    double value = 0.0344;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0353) = -3.343872 \f]
+START_TEST(s21_log_137)
+{
+    double value = 0.0353;
 
     s21_test_log(value);
 }
 
 /// @brief \f[ log(0.0362) = -3.318696 \f]
-START_TEST(s21_log_314)
+START_TEST(s21_log_138)
 {
     double value = 0.0362;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0385) = -3.257097 \f]
-START_TEST(s21_log_315)
+/// @brief \f[ log(0.0371) = -3.294138 \f]
+START_TEST(s21_log_139)
 {
-    double value = 0.0385;
+    double value = 0.0371;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0408) = -3.199073 \f]
-START_TEST(s21_log_316)
+/// @brief \f[ log(0.0380) = -3.270169 \f]
+START_TEST(s21_log_140)
 {
-    double value = 0.0408;
+    double value = 0.0380;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0431) = -3.144232 \f]
-START_TEST(s21_log_317)
+/// @brief \f[ log(0.0389) = -3.246761 \f]
+START_TEST(s21_log_141)
 {
-    double value = 0.0431;
+    double value = 0.0389;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0454) = -3.092243 \f]
-START_TEST(s21_log_318)
+/// @brief \f[ log(0.0398) = -3.223888 \f]
+START_TEST(s21_log_142)
 {
-    double value = 0.0454;
+    double value = 0.0398;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0477) = -3.042824 \f]
-START_TEST(s21_log_319)
+/// @brief \f[ log(0.0407) = -3.201527 \f]
+START_TEST(s21_log_143)
 {
-    double value = 0.0477;
+    double value = 0.0407;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0500) = -2.995732 \f]
-START_TEST(s21_log_320)
+/// @brief \f[ log(0.0416) = -3.179655 \f]
+START_TEST(s21_log_144)
 {
-    double value = 0.0500;
+    double value = 0.0416;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0523) = -2.950759 \f]
-START_TEST(s21_log_321)
+/// @brief \f[ log(0.0425) = -3.158251 \f]
+START_TEST(s21_log_145)
 {
-    double value = 0.0523;
+    double value = 0.0425;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0546) = -2.907721 \f]
-START_TEST(s21_log_322)
+/// @brief \f[ log(0.0434) = -3.137296 \f]
+START_TEST(s21_log_146)
 {
-    double value = 0.0546;
+    double value = 0.0434;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0443) = -3.116771 \f]
+START_TEST(s21_log_147)
+{
+    double value = 0.0443;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0452) = -3.096658 \f]
+START_TEST(s21_log_148)
+{
+    double value = 0.0452;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0461) = -3.076942 \f]
+START_TEST(s21_log_149)
+{
+    double value = 0.0461;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0470) = -3.057608 \f]
+START_TEST(s21_log_150)
+{
+    double value = 0.0470;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0479) = -3.038640 \f]
+START_TEST(s21_log_151)
+{
+    double value = 0.0479;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0488) = -3.020025 \f]
+START_TEST(s21_log_152)
+{
+    double value = 0.0488;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0497) = -3.001750 \f]
+START_TEST(s21_log_153)
+{
+    double value = 0.0497;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0506) = -2.983804 \f]
+START_TEST(s21_log_154)
+{
+    double value = 0.0506;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0515) = -2.966173 \f]
+START_TEST(s21_log_155)
+{
+    double value = 0.0515;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0524) = -2.948849 \f]
+START_TEST(s21_log_156)
+{
+    double value = 0.0524;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0533) = -2.931819 \f]
+START_TEST(s21_log_157)
+{
+    double value = 0.0533;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0542) = -2.915074 \f]
+START_TEST(s21_log_158)
+{
+    double value = 0.0542;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0551) = -2.898606 \f]
+START_TEST(s21_log_159)
+{
+    double value = 0.0551;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0560) = -2.882404 \f]
+START_TEST(s21_log_160)
+{
+    double value = 0.0560;
 
     s21_test_log(value);
 }
 
 /// @brief \f[ log(0.0569) = -2.866460 \f]
-START_TEST(s21_log_323)
+START_TEST(s21_log_161)
 {
     double value = 0.0569;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0592) = -2.826834 \f]
-START_TEST(s21_log_324)
+/// @brief \f[ log(0.0578) = -2.850767 \f]
+START_TEST(s21_log_162)
 {
-    double value = 0.0592;
+    double value = 0.0578;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0615) = -2.788718 \f]
-START_TEST(s21_log_325)
+/// @brief \f[ log(0.0587) = -2.835316 \f]
+START_TEST(s21_log_163)
 {
-    double value = 0.0615;
+    double value = 0.0587;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0638) = -2.752002 \f]
-START_TEST(s21_log_326)
+/// @brief \f[ log(0.0596) = -2.820100 \f]
+START_TEST(s21_log_164)
 {
-    double value = 0.0638;
+    double value = 0.0596;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0661) = -2.716587 \f]
-START_TEST(s21_log_327)
+/// @brief \f[ log(0.0605) = -2.805112 \f]
+START_TEST(s21_log_165)
 {
-    double value = 0.0661;
+    double value = 0.0605;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0684) = -2.682382 \f]
-START_TEST(s21_log_328)
+/// @brief \f[ log(0.0614) = -2.790345 \f]
+START_TEST(s21_log_166)
 {
-    double value = 0.0684;
+    double value = 0.0614;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0707) = -2.649310 \f]
-START_TEST(s21_log_329)
+/// @brief \f[ log(0.0623) = -2.775794 \f]
+START_TEST(s21_log_167)
 {
-    double value = 0.0707;
+    double value = 0.0623;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0730) = -2.617296 \f]
-START_TEST(s21_log_330)
+/// @brief \f[ log(0.0632) = -2.761451 \f]
+START_TEST(s21_log_168)
 {
-    double value = 0.0730;
+    double value = 0.0632;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0753) = -2.586275 \f]
-START_TEST(s21_log_331)
+/// @brief \f[ log(0.0641) = -2.747311 \f]
+START_TEST(s21_log_169)
 {
-    double value = 0.0753;
+    double value = 0.0641;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0650) = -2.733368 \f]
+START_TEST(s21_log_170)
+{
+    double value = 0.0650;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0659) = -2.719617 \f]
+START_TEST(s21_log_171)
+{
+    double value = 0.0659;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0668) = -2.706052 \f]
+START_TEST(s21_log_172)
+{
+    double value = 0.0668;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0677) = -2.692669 \f]
+START_TEST(s21_log_173)
+{
+    double value = 0.0677;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0686) = -2.679463 \f]
+START_TEST(s21_log_174)
+{
+    double value = 0.0686;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0695) = -2.666429 \f]
+START_TEST(s21_log_175)
+{
+    double value = 0.0695;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0704) = -2.653562 \f]
+START_TEST(s21_log_176)
+{
+    double value = 0.0704;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0713) = -2.640859 \f]
+START_TEST(s21_log_177)
+{
+    double value = 0.0713;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0722) = -2.628315 \f]
+START_TEST(s21_log_178)
+{
+    double value = 0.0722;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0731) = -2.615927 \f]
+START_TEST(s21_log_179)
+{
+    double value = 0.0731;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0740) = -2.603690 \f]
+START_TEST(s21_log_180)
+{
+    double value = 0.0740;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0749) = -2.591601 \f]
+START_TEST(s21_log_181)
+{
+    double value = 0.0749;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0758) = -2.579657 \f]
+START_TEST(s21_log_182)
+{
+    double value = 0.0758;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0767) = -2.567854 \f]
+START_TEST(s21_log_183)
+{
+    double value = 0.0767;
 
     s21_test_log(value);
 }
 
 /// @brief \f[ log(0.0776) = -2.556188 \f]
-START_TEST(s21_log_332)
+START_TEST(s21_log_184)
 {
     double value = 0.0776;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0799) = -2.526979 \f]
+/// @brief \f[ log(0.0785) = -2.544657 \f]
+START_TEST(s21_log_185)
+{
+    double value = 0.0785;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0794) = -2.533257 \f]
+START_TEST(s21_log_186)
+{
+    double value = 0.0794;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0803) = -2.521986 \f]
+START_TEST(s21_log_187)
+{
+    double value = 0.0803;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0812) = -2.510840 \f]
+START_TEST(s21_log_188)
+{
+    double value = 0.0812;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0821) = -2.499817 \f]
+START_TEST(s21_log_189)
+{
+    double value = 0.0821;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0830) = -2.488915 \f]
+START_TEST(s21_log_190)
+{
+    double value = 0.0830;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0839) = -2.478130 \f]
+START_TEST(s21_log_191)
+{
+    double value = 0.0839;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0848) = -2.467460 \f]
+START_TEST(s21_log_192)
+{
+    double value = 0.0848;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0857) = -2.456902 \f]
+START_TEST(s21_log_193)
+{
+    double value = 0.0857;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0866) = -2.446455 \f]
+START_TEST(s21_log_194)
+{
+    double value = 0.0866;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0875) = -2.436116 \f]
+START_TEST(s21_log_195)
+{
+    double value = 0.0875;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0884) = -2.425883 \f]
+START_TEST(s21_log_196)
+{
+    double value = 0.0884;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0893) = -2.415754 \f]
+START_TEST(s21_log_197)
+{
+    double value = 0.0893;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0902) = -2.405726 \f]
+START_TEST(s21_log_198)
+{
+    double value = 0.0902;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(0.0911) = -2.395797 \f]
+START_TEST(s21_log_199)
+{
+    double value = 0.0911;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.2123) = 0.192519 \f]
+START_TEST(s21_log_200)
+{
+    double value = 1.2123;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.3354) = 0.289231 \f]
+START_TEST(s21_log_201)
+{
+    double value = 1.3354;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.4585) = 0.377409 \f]
+START_TEST(s21_log_202)
+{
+    double value = 1.4585;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.5816) = 0.458437 \f]
+START_TEST(s21_log_203)
+{
+    double value = 1.5816;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.7047) = 0.533389 \f]
+START_TEST(s21_log_204)
+{
+    double value = 1.7047;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.8278) = 0.603113 \f]
+START_TEST(s21_log_205)
+{
+    double value = 1.8278;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1.9509) = 0.668291 \f]
+START_TEST(s21_log_206)
+{
+    double value = 1.9509;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.0740) = 0.729479 \f]
+START_TEST(s21_log_207)
+{
+    double value = 2.0740;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.1971) = 0.787138 \f]
+START_TEST(s21_log_208)
+{
+    double value = 2.1971;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.3202) = 0.841653 \f]
+START_TEST(s21_log_209)
+{
+    double value = 2.3202;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.4433) = 0.893350 \f]
+START_TEST(s21_log_210)
+{
+    double value = 2.4433;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.5664) = 0.942504 \f]
+START_TEST(s21_log_211)
+{
+    double value = 2.5664;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.6895) = 0.989355 \f]
+START_TEST(s21_log_212)
+{
+    double value = 2.6895;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.8126) = 1.034109 \f]
+START_TEST(s21_log_213)
+{
+    double value = 2.8126;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2.9357) = 1.076946 \f]
+START_TEST(s21_log_214)
+{
+    double value = 2.9357;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.0588) = 1.118023 \f]
+START_TEST(s21_log_215)
+{
+    double value = 3.0588;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.1819) = 1.157479 \f]
+START_TEST(s21_log_216)
+{
+    double value = 3.1819;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.3050) = 1.195436 \f]
+START_TEST(s21_log_217)
+{
+    double value = 3.3050;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.4281) = 1.232006 \f]
+START_TEST(s21_log_218)
+{
+    double value = 3.4281;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.5512) = 1.267286 \f]
+START_TEST(s21_log_219)
+{
+    double value = 3.5512;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.6743) = 1.301363 \f]
+START_TEST(s21_log_220)
+{
+    double value = 3.6743;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.7974) = 1.334317 \f]
+START_TEST(s21_log_221)
+{
+    double value = 3.7974;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3.9205) = 1.366219 \f]
+START_TEST(s21_log_222)
+{
+    double value = 3.9205;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.0436) = 1.397135 \f]
+START_TEST(s21_log_223)
+{
+    double value = 4.0436;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.1667) = 1.427124 \f]
+START_TEST(s21_log_224)
+{
+    double value = 4.1667;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.2898) = 1.456240 \f]
+START_TEST(s21_log_225)
+{
+    double value = 4.2898;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.4129) = 1.484532 \f]
+START_TEST(s21_log_226)
+{
+    double value = 4.4129;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.5360) = 1.512046 \f]
+START_TEST(s21_log_227)
+{
+    double value = 4.5360;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.6591) = 1.538822 \f]
+START_TEST(s21_log_228)
+{
+    double value = 4.6591;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.7822) = 1.564901 \f]
+START_TEST(s21_log_229)
+{
+    double value = 4.7822;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4.9053) = 1.590316 \f]
+START_TEST(s21_log_230)
+{
+    double value = 4.9053;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.0284) = 1.615102 \f]
+START_TEST(s21_log_231)
+{
+    double value = 5.0284;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.1515) = 1.639288 \f]
+START_TEST(s21_log_232)
+{
+    double value = 5.1515;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.2746) = 1.662903 \f]
+START_TEST(s21_log_233)
+{
+    double value = 5.2746;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.3977) = 1.685973 \f]
+START_TEST(s21_log_234)
+{
+    double value = 5.3977;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.5208) = 1.708523 \f]
+START_TEST(s21_log_235)
+{
+    double value = 5.5208;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.6439) = 1.730575 \f]
+START_TEST(s21_log_236)
+{
+    double value = 5.6439;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.7670) = 1.752152 \f]
+START_TEST(s21_log_237)
+{
+    double value = 5.7670;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(5.8901) = 1.773273 \f]
+START_TEST(s21_log_238)
+{
+    double value = 5.8901;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.0132) = 1.793957 \f]
+START_TEST(s21_log_239)
+{
+    double value = 6.0132;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.1363) = 1.814222 \f]
+START_TEST(s21_log_240)
+{
+    double value = 6.1363;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.2594) = 1.834084 \f]
+START_TEST(s21_log_241)
+{
+    double value = 6.2594;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.3825) = 1.853560 \f]
+START_TEST(s21_log_242)
+{
+    double value = 6.3825;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.5056) = 1.872663 \f]
+START_TEST(s21_log_243)
+{
+    double value = 6.5056;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.6287) = 1.891409 \f]
+START_TEST(s21_log_244)
+{
+    double value = 6.6287;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.7518) = 1.909809 \f]
+START_TEST(s21_log_245)
+{
+    double value = 6.7518;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.8749) = 1.927877 \f]
+START_TEST(s21_log_246)
+{
+    double value = 6.8749;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(6.9980) = 1.945624 \f]
+START_TEST(s21_log_247)
+{
+    double value = 6.9980;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.1211) = 1.963062 \f]
+START_TEST(s21_log_248)
+{
+    double value = 7.1211;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.2442) = 1.980201 \f]
+START_TEST(s21_log_249)
+{
+    double value = 7.2442;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.3673) = 1.997051 \f]
+START_TEST(s21_log_250)
+{
+    double value = 7.3673;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.4904) = 2.013622 \f]
+START_TEST(s21_log_251)
+{
+    double value = 7.4904;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.6135) = 2.029923 \f]
+START_TEST(s21_log_252)
+{
+    double value = 7.6135;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.7366) = 2.045962 \f]
+START_TEST(s21_log_253)
+{
+    double value = 7.7366;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.8597) = 2.061748 \f]
+START_TEST(s21_log_254)
+{
+    double value = 7.8597;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(7.9828) = 2.077289 \f]
+START_TEST(s21_log_255)
+{
+    double value = 7.9828;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.1059) = 2.092592 \f]
+START_TEST(s21_log_256)
+{
+    double value = 8.1059;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.2290) = 2.107665 \f]
+START_TEST(s21_log_257)
+{
+    double value = 8.2290;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.3521) = 2.122513 \f]
+START_TEST(s21_log_258)
+{
+    double value = 8.3521;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.4752) = 2.137144 \f]
+START_TEST(s21_log_259)
+{
+    double value = 8.4752;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.5983) = 2.151565 \f]
+START_TEST(s21_log_260)
+{
+    double value = 8.5983;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.7214) = 2.165780 \f]
+START_TEST(s21_log_261)
+{
+    double value = 8.7214;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.8445) = 2.179796 \f]
+START_TEST(s21_log_262)
+{
+    double value = 8.8445;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(8.9676) = 2.193618 \f]
+START_TEST(s21_log_263)
+{
+    double value = 8.9676;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.0907) = 2.207252 \f]
+START_TEST(s21_log_264)
+{
+    double value = 9.0907;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.2138) = 2.220702 \f]
+START_TEST(s21_log_265)
+{
+    double value = 9.2138;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.3369) = 2.233974 \f]
+START_TEST(s21_log_266)
+{
+    double value = 9.3369;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.4600) = 2.247072 \f]
+START_TEST(s21_log_267)
+{
+    double value = 9.4600;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.5831) = 2.260001 \f]
+START_TEST(s21_log_268)
+{
+    double value = 9.5831;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.7062) = 2.272765 \f]
+START_TEST(s21_log_269)
+{
+    double value = 9.7062;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.8293) = 2.285368 \f]
+START_TEST(s21_log_270)
+{
+    double value = 9.8293;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(9.9524) = 2.297814 \f]
+START_TEST(s21_log_271)
+{
+    double value = 9.9524;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.0755) = 2.310107 \f]
+START_TEST(s21_log_272)
+{
+    double value = 10.0755;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.1986) = 2.322250 \f]
+START_TEST(s21_log_273)
+{
+    double value = 10.1986;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.3217) = 2.334248 \f]
+START_TEST(s21_log_274)
+{
+    double value = 10.3217;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.4448) = 2.346104 \f]
+START_TEST(s21_log_275)
+{
+    double value = 10.4448;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.5679) = 2.357821 \f]
+START_TEST(s21_log_276)
+{
+    double value = 10.5679;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.6910) = 2.369402 \f]
+START_TEST(s21_log_277)
+{
+    double value = 10.6910;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.8141) = 2.380851 \f]
+START_TEST(s21_log_278)
+{
+    double value = 10.8141;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(10.9372) = 2.392170 \f]
+START_TEST(s21_log_279)
+{
+    double value = 10.9372;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.0603) = 2.403362 \f]
+START_TEST(s21_log_280)
+{
+    double value = 11.0603;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.1834) = 2.414431 \f]
+START_TEST(s21_log_281)
+{
+    double value = 11.1834;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.3065) = 2.425378 \f]
+START_TEST(s21_log_282)
+{
+    double value = 11.3065;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.4296) = 2.436206 \f]
+START_TEST(s21_log_283)
+{
+    double value = 11.4296;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.5527) = 2.446919 \f]
+START_TEST(s21_log_284)
+{
+    double value = 11.5527;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.6758) = 2.457518 \f]
+START_TEST(s21_log_285)
+{
+    double value = 11.6758;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.7989) = 2.468006 \f]
+START_TEST(s21_log_286)
+{
+    double value = 11.7989;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(11.9220) = 2.478385 \f]
+START_TEST(s21_log_287)
+{
+    double value = 11.9220;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.0451) = 2.488658 \f]
+START_TEST(s21_log_288)
+{
+    double value = 12.0451;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.1682) = 2.498826 \f]
+START_TEST(s21_log_289)
+{
+    double value = 12.1682;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.2913) = 2.508892 \f]
+START_TEST(s21_log_290)
+{
+    double value = 12.2913;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.4144) = 2.518857 \f]
+START_TEST(s21_log_291)
+{
+    double value = 12.4144;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.5375) = 2.528724 \f]
+START_TEST(s21_log_292)
+{
+    double value = 12.5375;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.6606) = 2.538495 \f]
+START_TEST(s21_log_293)
+{
+    double value = 12.6606;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.7837) = 2.548171 \f]
+START_TEST(s21_log_294)
+{
+    double value = 12.7837;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.9068) = 2.557754 \f]
+START_TEST(s21_log_295)
+{
+    double value = 12.9068;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(13.0299) = 2.567247 \f]
+START_TEST(s21_log_296)
+{
+    double value = 13.0299;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(13.1530) = 2.576650 \f]
+START_TEST(s21_log_297)
+{
+    double value = 13.1530;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(13.2761) = 2.585965 \f]
+START_TEST(s21_log_298)
+{
+    double value = 13.2761;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(13.3992) = 2.595195 \f]
+START_TEST(s21_log_299)
+{
+    double value = 13.3992;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(12.1) = 2.493205 \f]
+START_TEST(s21_log_300)
+{
+    double value = 12.1;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(133.222) = 4.892017 \f]
+START_TEST(s21_log_301)
+{
+    double value = 133.222;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(254.344) = 5.538688 \f]
+START_TEST(s21_log_302)
+{
+    double value = 254.344;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(375.466) = 5.928168 \f]
+START_TEST(s21_log_303)
+{
+    double value = 375.466;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(496.588) = 6.207761 \f]
+START_TEST(s21_log_304)
+{
+    double value = 496.588;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(617.710) = 6.426019 \f]
+START_TEST(s21_log_305)
+{
+    double value = 617.710;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(738.832) = 6.605071 \f]
+START_TEST(s21_log_306)
+{
+    double value = 738.832;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(859.954) = 6.756879 \f]
+START_TEST(s21_log_307)
+{
+    double value = 859.954;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(981.076) = 6.888650 \f]
+START_TEST(s21_log_308)
+{
+    double value = 981.076;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1102.198) = 7.005062 \f]
+START_TEST(s21_log_309)
+{
+    double value = 1102.198;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1223.320) = 7.109324 \f]
+START_TEST(s21_log_310)
+{
+    double value = 1223.320;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1344.442) = 7.203734 \f]
+START_TEST(s21_log_311)
+{
+    double value = 1344.442;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1465.564) = 7.289995 \f]
+START_TEST(s21_log_312)
+{
+    double value = 1465.564;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1586.686) = 7.369403 \f]
+START_TEST(s21_log_313)
+{
+    double value = 1586.686;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1707.808) = 7.442966 \f]
+START_TEST(s21_log_314)
+{
+    double value = 1707.808;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1828.930) = 7.511486 \f]
+START_TEST(s21_log_315)
+{
+    double value = 1828.930;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(1950.052) = 7.575611 \f]
+START_TEST(s21_log_316)
+{
+    double value = 1950.052;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2071.174) = 7.635871 \f]
+START_TEST(s21_log_317)
+{
+    double value = 2071.174;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2192.296) = 7.692705 \f]
+START_TEST(s21_log_318)
+{
+    double value = 2192.296;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2313.418) = 7.746481 \f]
+START_TEST(s21_log_319)
+{
+    double value = 2313.418;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2434.540) = 7.797513 \f]
+START_TEST(s21_log_320)
+{
+    double value = 2434.540;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2555.662) = 7.846067 \f]
+START_TEST(s21_log_321)
+{
+    double value = 2555.662;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2676.784) = 7.892371 \f]
+START_TEST(s21_log_322)
+{
+    double value = 2676.784;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2797.906) = 7.936627 \f]
+START_TEST(s21_log_323)
+{
+    double value = 2797.906;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(2919.028) = 7.979006 \f]
+START_TEST(s21_log_324)
+{
+    double value = 2919.028;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3040.150) = 8.019662 \f]
+START_TEST(s21_log_325)
+{
+    double value = 3040.150;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3161.272) = 8.058730 \f]
+START_TEST(s21_log_326)
+{
+    double value = 3161.272;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3282.394) = 8.096328 \f]
+START_TEST(s21_log_327)
+{
+    double value = 3282.394;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3403.516) = 8.132564 \f]
+START_TEST(s21_log_328)
+{
+    double value = 3403.516;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3524.638) = 8.167533 \f]
+START_TEST(s21_log_329)
+{
+    double value = 3524.638;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3645.760) = 8.201320 \f]
+START_TEST(s21_log_330)
+{
+    double value = 3645.760;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3766.882) = 8.234003 \f]
+START_TEST(s21_log_331)
+{
+    double value = 3766.882;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(3888.004) = 8.265651 \f]
+START_TEST(s21_log_332)
+{
+    double value = 3888.004;
+
+    s21_test_log(value);
+}
+
+/// @brief \f[ log(4009.126) = 8.296329 \f]
 START_TEST(s21_log_333)
 {
-    double value = 0.0799;
+    double value = 4009.126;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0822) = -2.498600 \f]
+/// @brief \f[ log(4130.248) = 8.326093 \f]
 START_TEST(s21_log_334)
 {
-    double value = 0.0822;
+    double value = 4130.248;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0845) = -2.471004 \f]
+/// @brief \f[ log(4251.370) = 8.354997 \f]
 START_TEST(s21_log_335)
 {
-    double value = 0.0845;
+    double value = 4251.370;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0868) = -2.444149 \f]
+/// @brief \f[ log(4372.492) = 8.383088 \f]
 START_TEST(s21_log_336)
 {
-    double value = 0.0868;
+    double value = 4372.492;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0891) = -2.417996 \f]
+/// @brief \f[ log(4493.614) = 8.410413 \f]
 START_TEST(s21_log_337)
 {
-    double value = 0.0891;
+    double value = 4493.614;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0914) = -2.392510 \f]
+/// @brief \f[ log(4614.736) = 8.437010 \f]
 START_TEST(s21_log_338)
 {
-    double value = 0.0914;
+    double value = 4614.736;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0937) = -2.367657 \f]
+/// @brief \f[ log(4735.858) = 8.462918 \f]
 START_TEST(s21_log_339)
 {
-    double value = 0.0937;
+    double value = 4735.858;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0960) = -2.343407 \f]
+/// @brief \f[ log(4856.980) = 8.488172 \f]
 START_TEST(s21_log_340)
 {
-    double value = 0.0960;
+    double value = 4856.980;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.0983) = -2.319731 \f]
+/// @brief \f[ log(4978.102) = 8.512804 \f]
 START_TEST(s21_log_341)
 {
-    double value = 0.0983;
+    double value = 4978.102;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1006) = -2.296603 \f]
+/// @brief \f[ log(5099.224) = 8.536844 \f]
 START_TEST(s21_log_342)
 {
-    double value = 0.1006;
+    double value = 5099.224;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1029) = -2.273998 \f]
+/// @brief \f[ log(5220.346) = 8.560319 \f]
 START_TEST(s21_log_343)
 {
-    double value = 0.1029;
+    double value = 5220.346;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1052) = -2.251892 \f]
+/// @brief \f[ log(5341.468) = 8.583256 \f]
 START_TEST(s21_log_344)
 {
-    double value = 0.1052;
+    double value = 5341.468;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1075) = -2.230264 \f]
+/// @brief \f[ log(5462.590) = 8.605678 \f]
 START_TEST(s21_log_345)
 {
-    double value = 0.1075;
+    double value = 5462.590;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1098) = -2.209095 \f]
+/// @brief \f[ log(5583.712) = 8.627609 \f]
 START_TEST(s21_log_346)
 {
-    double value = 0.1098;
+    double value = 5583.712;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1121) = -2.188364 \f]
+/// @brief \f[ log(5704.834) = 8.649069 \f]
 START_TEST(s21_log_347)
 {
-    double value = 0.1121;
+    double value = 5704.834;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1144) = -2.168054 \f]
+/// @brief \f[ log(5825.956) = 8.670078 \f]
 START_TEST(s21_log_348)
 {
-    double value = 0.1144;
+    double value = 5825.956;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1167) = -2.148149 \f]
+/// @brief \f[ log(5947.078) = 8.690655 \f]
 START_TEST(s21_log_349)
 {
-    double value = 0.1167;
+    double value = 5947.078;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1190) = -2.128632 \f]
+/// @brief \f[ log(6068.200) = 8.710817 \f]
 START_TEST(s21_log_350)
 {
-    double value = 0.1190;
+    double value = 6068.200;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1213) = -2.109488 \f]
+/// @brief \f[ log(6189.322) = 8.730581 \f]
 START_TEST(s21_log_351)
 {
-    double value = 0.1213;
+    double value = 6189.322;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1236) = -2.090705 \f]
+/// @brief \f[ log(6310.444) = 8.749961 \f]
 START_TEST(s21_log_352)
 {
-    double value = 0.1236;
+    double value = 6310.444;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1259) = -2.072267 \f]
+/// @brief \f[ log(6431.566) = 8.768973 \f]
 START_TEST(s21_log_353)
 {
-    double value = 0.1259;
+    double value = 6431.566;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1282) = -2.054164 \f]
+/// @brief \f[ log(6552.688) = 8.787631 \f]
 START_TEST(s21_log_354)
 {
-    double value = 0.1282;
+    double value = 6552.688;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1305) = -2.036382 \f]
+/// @brief \f[ log(6673.810) = 8.805946 \f]
 START_TEST(s21_log_355)
 {
-    double value = 0.1305;
+    double value = 6673.810;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1328) = -2.018911 \f]
+/// @brief \f[ log(6794.932) = 8.823932 \f]
 START_TEST(s21_log_356)
 {
-    double value = 0.1328;
+    double value = 6794.932;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1351) = -2.001740 \f]
+/// @brief \f[ log(6916.054) = 8.841601 \f]
 START_TEST(s21_log_357)
 {
-    double value = 0.1351;
+    double value = 6916.054;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1374) = -1.984859 \f]
+/// @brief \f[ log(7037.176) = 8.858962 \f]
 START_TEST(s21_log_358)
 {
-    double value = 0.1374;
+    double value = 7037.176;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1397) = -1.968258 \f]
+/// @brief \f[ log(7158.298) = 8.876028 \f]
 START_TEST(s21_log_359)
 {
-    double value = 0.1397;
+    double value = 7158.298;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1420) = -1.951928 \f]
+/// @brief \f[ log(7279.420) = 8.892806 \f]
 START_TEST(s21_log_360)
 {
-    double value = 0.1420;
+    double value = 7279.420;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1443) = -1.935861 \f]
+/// @brief \f[ log(7400.542) = 8.909309 \f]
 START_TEST(s21_log_361)
 {
-    double value = 0.1443;
+    double value = 7400.542;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1466) = -1.920047 \f]
+/// @brief \f[ log(7521.664) = 8.925543 \f]
 START_TEST(s21_log_362)
 {
-    double value = 0.1466;
+    double value = 7521.664;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1489) = -1.904480 \f]
+/// @brief \f[ log(7642.786) = 8.941517 \f]
 START_TEST(s21_log_363)
 {
-    double value = 0.1489;
+    double value = 7642.786;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1512) = -1.889152 \f]
+/// @brief \f[ log(7763.908) = 8.957241 \f]
 START_TEST(s21_log_364)
 {
-    double value = 0.1512;
+    double value = 7763.908;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1535) = -1.874055 \f]
+/// @brief \f[ log(7885.030) = 8.972721 \f]
 START_TEST(s21_log_365)
 {
-    double value = 0.1535;
+    double value = 7885.030;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1558) = -1.859182 \f]
+/// @brief \f[ log(8006.152) = 8.987966 \f]
 START_TEST(s21_log_366)
 {
-    double value = 0.1558;
+    double value = 8006.152;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1581) = -1.844528 \f]
+/// @brief \f[ log(8127.274) = 9.002981 \f]
 START_TEST(s21_log_367)
 {
-    double value = 0.1581;
+    double value = 8127.274;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1604) = -1.830085 \f]
+/// @brief \f[ log(8248.396) = 9.017774 \f]
 START_TEST(s21_log_368)
 {
-    double value = 0.1604;
+    double value = 8248.396;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1627) = -1.815847 \f]
+/// @brief \f[ log(8369.518) = 9.032352 \f]
 START_TEST(s21_log_369)
 {
-    double value = 0.1627;
+    double value = 8369.518;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1650) = -1.801810 \f]
+/// @brief \f[ log(8490.640) = 9.046720 \f]
 START_TEST(s21_log_370)
 {
-    double value = 0.1650;
+    double value = 8490.640;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1673) = -1.787967 \f]
+/// @brief \f[ log(8611.762) = 9.060884 \f]
 START_TEST(s21_log_371)
 {
-    double value = 0.1673;
+    double value = 8611.762;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1696) = -1.774313 \f]
+/// @brief \f[ log(8732.884) = 9.074851 \f]
 START_TEST(s21_log_372)
 {
-    double value = 0.1696;
+    double value = 8732.884;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1719) = -1.760842 \f]
+/// @brief \f[ log(8854.006) = 9.088625 \f]
 START_TEST(s21_log_373)
 {
-    double value = 0.1719;
+    double value = 8854.006;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1742) = -1.747551 \f]
+/// @brief \f[ log(8975.128) = 9.102212 \f]
 START_TEST(s21_log_374)
 {
-    double value = 0.1742;
+    double value = 8975.128;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1765) = -1.734434 \f]
+/// @brief \f[ log(9096.250) = 9.115618 \f]
 START_TEST(s21_log_375)
 {
-    double value = 0.1765;
+    double value = 9096.250;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1788) = -1.721487 \f]
+/// @brief \f[ log(9217.372) = 9.128845 \f]
 START_TEST(s21_log_376)
 {
-    double value = 0.1788;
+    double value = 9217.372;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1811) = -1.708706 \f]
+/// @brief \f[ log(9338.494) = 9.141900 \f]
 START_TEST(s21_log_377)
 {
-    double value = 0.1811;
+    double value = 9338.494;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1834) = -1.696086 \f]
+/// @brief \f[ log(9459.616) = 9.154787 \f]
 START_TEST(s21_log_378)
 {
-    double value = 0.1834;
+    double value = 9459.616;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1857) = -1.683623 \f]
+/// @brief \f[ log(9580.738) = 9.167510 \f]
 START_TEST(s21_log_379)
 {
-    double value = 0.1857;
+    double value = 9580.738;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1880) = -1.671313 \f]
+/// @brief \f[ log(9701.860) = 9.180073 \f]
 START_TEST(s21_log_380)
 {
-    double value = 0.1880;
+    double value = 9701.860;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1903) = -1.659154 \f]
+/// @brief \f[ log(9822.982) = 9.192480 \f]
 START_TEST(s21_log_381)
 {
-    double value = 0.1903;
+    double value = 9822.982;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1926) = -1.647140 \f]
+/// @brief \f[ log(9944.104) = 9.204735 \f]
 START_TEST(s21_log_382)
 {
-    double value = 0.1926;
+    double value = 9944.104;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1949) = -1.635269 \f]
+/// @brief \f[ log(10065.226) = 9.216842 \f]
 START_TEST(s21_log_383)
 {
-    double value = 0.1949;
+    double value = 10065.226;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1972) = -1.623537 \f]
+/// @brief \f[ log(10186.348) = 9.228804 \f]
 START_TEST(s21_log_384)
 {
-    double value = 0.1972;
+    double value = 10186.348;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.1995) = -1.611941 \f]
+/// @brief \f[ log(10307.470) = 9.240624 \f]
 START_TEST(s21_log_385)
 {
-    double value = 0.1995;
+    double value = 10307.470;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2018) = -1.600478 \f]
+/// @brief \f[ log(10428.592) = 9.252307 \f]
 START_TEST(s21_log_386)
 {
-    double value = 0.2018;
+    double value = 10428.592;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2041) = -1.589145 \f]
+/// @brief \f[ log(10549.714) = 9.263854 \f]
 START_TEST(s21_log_387)
 {
-    double value = 0.2041;
+    double value = 10549.714;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2064) = -1.577939 \f]
+/// @brief \f[ log(10670.836) = 9.275270 \f]
 START_TEST(s21_log_388)
 {
-    double value = 0.2064;
+    double value = 10670.836;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2087) = -1.566857 \f]
+/// @brief \f[ log(10791.958) = 9.286557 \f]
 START_TEST(s21_log_389)
 {
-    double value = 0.2087;
+    double value = 10791.958;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2110) = -1.555897 \f]
+/// @brief \f[ log(10913.080) = 9.297717 \f]
 START_TEST(s21_log_390)
 {
-    double value = 0.2110;
+    double value = 10913.080;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2133) = -1.545056 \f]
+/// @brief \f[ log(11034.202) = 9.308755 \f]
 START_TEST(s21_log_391)
 {
-    double value = 0.2133;
+    double value = 11034.202;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2156) = -1.534330 \f]
+/// @brief \f[ log(11155.324) = 9.319672 \f]
 START_TEST(s21_log_392)
 {
-    double value = 0.2156;
+    double value = 11155.324;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2179) = -1.523719 \f]
+/// @brief \f[ log(11276.446) = 9.330471 \f]
 START_TEST(s21_log_393)
 {
-    double value = 0.2179;
+    double value = 11276.446;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2202) = -1.513219 \f]
+/// @brief \f[ log(11397.568) = 9.341155 \f]
 START_TEST(s21_log_394)
 {
-    double value = 0.2202;
+    double value = 11397.568;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2225) = -1.502828 \f]
+/// @brief \f[ log(11518.690) = 9.351726 \f]
 START_TEST(s21_log_395)
 {
-    double value = 0.2225;
+    double value = 11518.690;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2248) = -1.492544 \f]
+/// @brief \f[ log(11639.812) = 9.362187 \f]
 START_TEST(s21_log_396)
 {
-    double value = 0.2248;
+    double value = 11639.812;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2271) = -1.482365 \f]
+/// @brief \f[ log(11760.934) = 9.372539 \f]
 START_TEST(s21_log_397)
 {
-    double value = 0.2271;
+    double value = 11760.934;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2294) = -1.472288 \f]
+/// @brief \f[ log(11882.056) = 9.382785 \f]
 START_TEST(s21_log_398)
 {
-    double value = 0.2294;
+    double value = 11882.056;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(0.2317) = -1.462312 \f]
+/// @brief \f[ log(12003.178) = 9.392927 \f]
 START_TEST(s21_log_399)
 {
-    double value = 0.2317;
+    double value = 12003.178;
 
     s21_test_log(value);
 }
@@ -4811,802 +4811,802 @@ START_TEST(s21_log_599)
     s21_test_log(value);
 }
 
-/// @brief \f[ log(1.0) = 0.000000 \f]
+/// @brief \f[ log(1.0212) = 0.020978 \f]
 START_TEST(s21_log_600)
 {
-    double value = 1.0;
+    double value = 1.0212;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.0) = 0.693147 \f]
+/// @brief \f[ log(2.2342) = 0.803883 \f]
 START_TEST(s21_log_601)
 {
-    double value = 2.0;
+    double value = 2.2342;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.0) = 1.098612 \f]
+/// @brief \f[ log(3.4472) = 1.237562 \f]
 START_TEST(s21_log_602)
 {
-    double value = 3.0;
+    double value = 3.4472;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.0) = 1.386294 \f]
+/// @brief \f[ log(4.6602) = 1.539058 \f]
 START_TEST(s21_log_603)
 {
-    double value = 4.0;
+    double value = 4.6602;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.0) = 1.609438 \f]
+/// @brief \f[ log(5.8732) = 1.770400 \f]
 START_TEST(s21_log_604)
 {
-    double value = 5.0;
+    double value = 5.8732;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.0) = 1.791759 \f]
+/// @brief \f[ log(7.0862) = 1.958149 \f]
 START_TEST(s21_log_605)
 {
-    double value = 6.0;
+    double value = 7.0862;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.0) = 1.945910 \f]
+/// @brief \f[ log(8.2992) = 2.116159 \f]
 START_TEST(s21_log_606)
 {
-    double value = 7.0;
+    double value = 8.2992;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.0) = 2.079442 \f]
+/// @brief \f[ log(9.5122) = 2.252575 \f]
 START_TEST(s21_log_607)
 {
-    double value = 8.0;
+    double value = 9.5122;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.0) = 2.197225 \f]
+/// @brief \f[ log(10.7252) = 2.372596 \f]
 START_TEST(s21_log_608)
 {
-    double value = 9.0;
+    double value = 10.7252;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.0) = 2.302585 \f]
+/// @brief \f[ log(11.9382) = 2.479743 \f]
 START_TEST(s21_log_609)
 {
-    double value = 10.0;
+    double value = 11.9382;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.0) = 2.397895 \f]
+/// @brief \f[ log(13.1512) = 2.576513 \f]
 START_TEST(s21_log_610)
 {
-    double value = 11.0;
+    double value = 13.1512;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.0) = 2.484907 \f]
+/// @brief \f[ log(14.3642) = 2.664739 \f]
 START_TEST(s21_log_611)
 {
-    double value = 12.0;
+    double value = 14.3642;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.0) = 2.564949 \f]
+/// @brief \f[ log(15.5772) = 2.745808 \f]
 START_TEST(s21_log_612)
 {
-    double value = 13.0;
+    double value = 15.5772;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.0) = 2.639057 \f]
+/// @brief \f[ log(16.7902) = 2.820795 \f]
 START_TEST(s21_log_613)
 {
-    double value = 14.0;
+    double value = 16.7902;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(15.0) = 2.708050 \f]
+/// @brief \f[ log(18.0032) = 2.890550 \f]
 START_TEST(s21_log_614)
 {
-    double value = 15.0;
+    double value = 18.0032;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(16.0) = 2.772589 \f]
+/// @brief \f[ log(19.2162) = 2.955754 \f]
 START_TEST(s21_log_615)
 {
-    double value = 16.0;
+    double value = 19.2162;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(17.0) = 2.833213 \f]
+/// @brief \f[ log(20.4292) = 3.016965 \f]
 START_TEST(s21_log_616)
 {
-    double value = 17.0;
+    double value = 20.4292;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(18.0) = 2.890372 \f]
+/// @brief \f[ log(21.6422) = 3.074645 \f]
 START_TEST(s21_log_617)
 {
-    double value = 18.0;
+    double value = 21.6422;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(19.0) = 2.944439 \f]
+/// @brief \f[ log(22.8552) = 3.129179 \f]
 START_TEST(s21_log_618)
 {
-    double value = 19.0;
+    double value = 22.8552;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(20.0) = 2.995732 \f]
+/// @brief \f[ log(24.0682) = 3.180891 \f]
 START_TEST(s21_log_619)
 {
-    double value = 20.0;
+    double value = 24.0682;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(21.0) = 3.044522 \f]
+/// @brief \f[ log(25.2812) = 3.230061 \f]
 START_TEST(s21_log_620)
 {
-    double value = 21.0;
+    double value = 25.2812;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(22.0) = 3.091042 \f]
+/// @brief \f[ log(26.4942) = 3.276926 \f]
 START_TEST(s21_log_621)
 {
-    double value = 22.0;
+    double value = 26.4942;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(23.0) = 3.135494 \f]
+/// @brief \f[ log(27.7072) = 3.321692 \f]
 START_TEST(s21_log_622)
 {
-    double value = 23.0;
+    double value = 27.7072;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(24.0) = 3.178054 \f]
+/// @brief \f[ log(28.9202) = 3.364540 \f]
 START_TEST(s21_log_623)
 {
-    double value = 24.0;
+    double value = 28.9202;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(25.0) = 3.218876 \f]
+/// @brief \f[ log(30.1332) = 3.405628 \f]
 START_TEST(s21_log_624)
 {
-    double value = 25.0;
+    double value = 30.1332;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(26.0) = 3.258097 \f]
+/// @brief \f[ log(31.3462) = 3.445093 \f]
 START_TEST(s21_log_625)
 {
-    double value = 26.0;
+    double value = 31.3462;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(27.0) = 3.295837 \f]
+/// @brief \f[ log(32.5592) = 3.483060 \f]
 START_TEST(s21_log_626)
 {
-    double value = 27.0;
+    double value = 32.5592;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(28.0) = 3.332205 \f]
+/// @brief \f[ log(33.7722) = 3.519638 \f]
 START_TEST(s21_log_627)
 {
-    double value = 28.0;
+    double value = 33.7722;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(29.0) = 3.367296 \f]
+/// @brief \f[ log(34.9852) = 3.554925 \f]
 START_TEST(s21_log_628)
 {
-    double value = 29.0;
+    double value = 34.9852;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(30.0) = 3.401197 \f]
+/// @brief \f[ log(36.1982) = 3.589009 \f]
 START_TEST(s21_log_629)
 {
-    double value = 30.0;
+    double value = 36.1982;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(31.0) = 3.433987 \f]
+/// @brief \f[ log(37.4112) = 3.621970 \f]
 START_TEST(s21_log_630)
 {
-    double value = 31.0;
+    double value = 37.4112;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(32.0) = 3.465736 \f]
+/// @brief \f[ log(38.6242) = 3.653879 \f]
 START_TEST(s21_log_631)
 {
-    double value = 32.0;
+    double value = 38.6242;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(33.0) = 3.496508 \f]
+/// @brief \f[ log(39.8372) = 3.684801 \f]
 START_TEST(s21_log_632)
 {
-    double value = 33.0;
+    double value = 39.8372;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(34.0) = 3.526361 \f]
+/// @brief \f[ log(41.0502) = 3.714796 \f]
 START_TEST(s21_log_633)
 {
-    double value = 34.0;
+    double value = 41.0502;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(35.0) = 3.555348 \f]
+/// @brief \f[ log(42.2632) = 3.743917 \f]
 START_TEST(s21_log_634)
 {
-    double value = 35.0;
+    double value = 42.2632;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(36.0) = 3.583519 \f]
+/// @brief \f[ log(43.4762) = 3.772214 \f]
 START_TEST(s21_log_635)
 {
-    double value = 36.0;
+    double value = 43.4762;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(37.0) = 3.610918 \f]
+/// @brief \f[ log(44.6892) = 3.799732 \f]
 START_TEST(s21_log_636)
 {
-    double value = 37.0;
+    double value = 44.6892;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(38.0) = 3.637586 \f]
+/// @brief \f[ log(45.9022) = 3.826513 \f]
 START_TEST(s21_log_637)
 {
-    double value = 38.0;
+    double value = 45.9022;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(39.0) = 3.663562 \f]
+/// @brief \f[ log(47.1152) = 3.852596 \f]
 START_TEST(s21_log_638)
 {
-    double value = 39.0;
+    double value = 47.1152;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(40.0) = 3.688879 \f]
+/// @brief \f[ log(48.3282) = 3.878015 \f]
 START_TEST(s21_log_639)
 {
-    double value = 40.0;
+    double value = 48.3282;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(41.0) = 3.713572 \f]
+/// @brief \f[ log(49.5412) = 3.902805 \f]
 START_TEST(s21_log_640)
 {
-    double value = 41.0;
+    double value = 49.5412;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(42.0) = 3.737670 \f]
+/// @brief \f[ log(50.7542) = 3.926994 \f]
 START_TEST(s21_log_641)
 {
-    double value = 42.0;
+    double value = 50.7542;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(43.0) = 3.761200 \f]
+/// @brief \f[ log(51.9672) = 3.950613 \f]
 START_TEST(s21_log_642)
 {
-    double value = 43.0;
+    double value = 51.9672;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(44.0) = 3.784190 \f]
+/// @brief \f[ log(53.1802) = 3.973686 \f]
 START_TEST(s21_log_643)
 {
-    double value = 44.0;
+    double value = 53.1802;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(45.0) = 3.806662 \f]
+/// @brief \f[ log(54.3932) = 3.996239 \f]
 START_TEST(s21_log_644)
 {
-    double value = 45.0;
+    double value = 54.3932;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(46.0) = 3.828641 \f]
+/// @brief \f[ log(55.6062) = 4.018295 \f]
 START_TEST(s21_log_645)
 {
-    double value = 46.0;
+    double value = 55.6062;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(47.0) = 3.850148 \f]
+/// @brief \f[ log(56.8192) = 4.039874 \f]
 START_TEST(s21_log_646)
 {
-    double value = 47.0;
+    double value = 56.8192;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(48.0) = 3.871201 \f]
+/// @brief \f[ log(58.0322) = 4.060998 \f]
 START_TEST(s21_log_647)
 {
-    double value = 48.0;
+    double value = 58.0322;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(49.0) = 3.891820 \f]
+/// @brief \f[ log(59.2452) = 4.081685 \f]
 START_TEST(s21_log_648)
 {
-    double value = 49.0;
+    double value = 59.2452;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(50.0) = 3.912023 \f]
+/// @brief \f[ log(60.4582) = 4.101952 \f]
 START_TEST(s21_log_649)
 {
-    double value = 50.0;
+    double value = 60.4582;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(51.0) = 3.931826 \f]
+/// @brief \f[ log(61.6712) = 4.121817 \f]
 START_TEST(s21_log_650)
 {
-    double value = 51.0;
+    double value = 61.6712;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(52.0) = 3.951244 \f]
+/// @brief \f[ log(62.8842) = 4.141295 \f]
 START_TEST(s21_log_651)
 {
-    double value = 52.0;
+    double value = 62.8842;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(53.0) = 3.970292 \f]
+/// @brief \f[ log(64.0972) = 4.160401 \f]
 START_TEST(s21_log_652)
 {
-    double value = 53.0;
+    double value = 64.0972;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(54.0) = 3.988984 \f]
+/// @brief \f[ log(65.3102) = 4.179148 \f]
 START_TEST(s21_log_653)
 {
-    double value = 54.0;
+    double value = 65.3102;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(55.0) = 4.007333 \f]
+/// @brief \f[ log(66.5232) = 4.197551 \f]
 START_TEST(s21_log_654)
 {
-    double value = 55.0;
+    double value = 66.5232;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(56.0) = 4.025352 \f]
+/// @brief \f[ log(67.7362) = 4.215621 \f]
 START_TEST(s21_log_655)
 {
-    double value = 56.0;
+    double value = 67.7362;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(57.0) = 4.043051 \f]
+/// @brief \f[ log(68.9492) = 4.233370 \f]
 START_TEST(s21_log_656)
 {
-    double value = 57.0;
+    double value = 68.9492;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(58.0) = 4.060443 \f]
+/// @brief \f[ log(70.1622) = 4.250810 \f]
 START_TEST(s21_log_657)
 {
-    double value = 58.0;
+    double value = 70.1622;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(59.0) = 4.077537 \f]
+/// @brief \f[ log(71.3752) = 4.267950 \f]
 START_TEST(s21_log_658)
 {
-    double value = 59.0;
+    double value = 71.3752;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(60.0) = 4.094345 \f]
+/// @brief \f[ log(72.5882) = 4.284802 \f]
 START_TEST(s21_log_659)
 {
-    double value = 60.0;
+    double value = 72.5882;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(61.0) = 4.110874 \f]
+/// @brief \f[ log(73.8012) = 4.301375 \f]
 START_TEST(s21_log_660)
 {
-    double value = 61.0;
+    double value = 73.8012;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(62.0) = 4.127134 \f]
+/// @brief \f[ log(75.0142) = 4.317677 \f]
 START_TEST(s21_log_661)
 {
-    double value = 62.0;
+    double value = 75.0142;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(63.0) = 4.143135 \f]
+/// @brief \f[ log(76.2272) = 4.333718 \f]
 START_TEST(s21_log_662)
 {
-    double value = 63.0;
+    double value = 76.2272;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(64.0) = 4.158883 \f]
+/// @brief \f[ log(77.4402) = 4.349506 \f]
 START_TEST(s21_log_663)
 {
-    double value = 64.0;
+    double value = 77.4402;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(65.0) = 4.174387 \f]
+/// @brief \f[ log(78.6532) = 4.365048 \f]
 START_TEST(s21_log_664)
 {
-    double value = 65.0;
+    double value = 78.6532;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(66.0) = 4.189655 \f]
+/// @brief \f[ log(79.8662) = 4.380353 \f]
 START_TEST(s21_log_665)
 {
-    double value = 66.0;
+    double value = 79.8662;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(67.0) = 4.204693 \f]
+/// @brief \f[ log(81.0792) = 4.395426 \f]
 START_TEST(s21_log_666)
 {
-    double value = 67.0;
+    double value = 81.0792;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(68.0) = 4.219508 \f]
+/// @brief \f[ log(82.2922) = 4.410276 \f]
 START_TEST(s21_log_667)
 {
-    double value = 68.0;
+    double value = 82.2922;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(69.0) = 4.234107 \f]
+/// @brief \f[ log(83.5052) = 4.424909 \f]
 START_TEST(s21_log_668)
 {
-    double value = 69.0;
+    double value = 83.5052;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(70.0) = 4.248495 \f]
+/// @brief \f[ log(84.7182) = 4.439330 \f]
 START_TEST(s21_log_669)
 {
-    double value = 70.0;
+    double value = 84.7182;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(71.0) = 4.262680 \f]
+/// @brief \f[ log(85.9312) = 4.453547 \f]
 START_TEST(s21_log_670)
 {
-    double value = 71.0;
+    double value = 85.9312;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(72.0) = 4.276666 \f]
+/// @brief \f[ log(87.1442) = 4.467564 \f]
 START_TEST(s21_log_671)
 {
-    double value = 72.0;
+    double value = 87.1442;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(73.0) = 4.290459 \f]
+/// @brief \f[ log(88.3572) = 4.481388 \f]
 START_TEST(s21_log_672)
 {
-    double value = 73.0;
+    double value = 88.3572;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(74.0) = 4.304065 \f]
+/// @brief \f[ log(89.5702) = 4.495023 \f]
 START_TEST(s21_log_673)
 {
-    double value = 74.0;
+    double value = 89.5702;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(75.0) = 4.317488 \f]
+/// @brief \f[ log(90.7832) = 4.508474 \f]
 START_TEST(s21_log_674)
 {
-    double value = 75.0;
+    double value = 90.7832;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(76.0) = 4.330733 \f]
+/// @brief \f[ log(91.9962) = 4.521747 \f]
 START_TEST(s21_log_675)
 {
-    double value = 76.0;
+    double value = 91.9962;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(77.0) = 4.343805 \f]
+/// @brief \f[ log(93.2092) = 4.534846 \f]
 START_TEST(s21_log_676)
 {
-    double value = 77.0;
+    double value = 93.2092;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(78.0) = 4.356709 \f]
+/// @brief \f[ log(94.4222) = 4.547776 \f]
 START_TEST(s21_log_677)
 {
-    double value = 78.0;
+    double value = 94.4222;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(79.0) = 4.369448 \f]
+/// @brief \f[ log(95.6352) = 4.560541 \f]
 START_TEST(s21_log_678)
 {
-    double value = 79.0;
+    double value = 95.6352;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(80.0) = 4.382027 \f]
+/// @brief \f[ log(96.8482) = 4.573145 \f]
 START_TEST(s21_log_679)
 {
-    double value = 80.0;
+    double value = 96.8482;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(81.0) = 4.394449 \f]
+/// @brief \f[ log(98.0612) = 4.585592 \f]
 START_TEST(s21_log_680)
 {
-    double value = 81.0;
+    double value = 98.0612;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(82.0) = 4.406719 \f]
+/// @brief \f[ log(99.2742) = 4.597886 \f]
 START_TEST(s21_log_681)
 {
-    double value = 82.0;
+    double value = 99.2742;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(83.0) = 4.418841 \f]
+/// @brief \f[ log(100.4872) = 4.610030 \f]
 START_TEST(s21_log_682)
 {
-    double value = 83.0;
+    double value = 100.4872;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(84.0) = 4.430817 \f]
+/// @brief \f[ log(101.7002) = 4.622029 \f]
 START_TEST(s21_log_683)
 {
-    double value = 84.0;
+    double value = 101.7002;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(85.0) = 4.442651 \f]
+/// @brief \f[ log(102.9132) = 4.633886 \f]
 START_TEST(s21_log_684)
 {
-    double value = 85.0;
+    double value = 102.9132;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(86.0) = 4.454347 \f]
+/// @brief \f[ log(104.1262) = 4.645604 \f]
 START_TEST(s21_log_685)
 {
-    double value = 86.0;
+    double value = 104.1262;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(87.0) = 4.465908 \f]
+/// @brief \f[ log(105.3392) = 4.657186 \f]
 START_TEST(s21_log_686)
 {
-    double value = 87.0;
+    double value = 105.3392;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(88.0) = 4.477337 \f]
+/// @brief \f[ log(106.5522) = 4.668635 \f]
 START_TEST(s21_log_687)
 {
-    double value = 88.0;
+    double value = 106.5522;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(89.0) = 4.488636 \f]
+/// @brief \f[ log(107.7652) = 4.679955 \f]
 START_TEST(s21_log_688)
 {
-    double value = 89.0;
+    double value = 107.7652;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(90.0) = 4.499810 \f]
+/// @brief \f[ log(108.9782) = 4.691148 \f]
 START_TEST(s21_log_689)
 {
-    double value = 90.0;
+    double value = 108.9782;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(91.0) = 4.510860 \f]
+/// @brief \f[ log(110.1912) = 4.702217 \f]
 START_TEST(s21_log_690)
 {
-    double value = 91.0;
+    double value = 110.1912;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(92.0) = 4.521789 \f]
+/// @brief \f[ log(111.4042) = 4.713165 \f]
 START_TEST(s21_log_691)
 {
-    double value = 92.0;
+    double value = 111.4042;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(93.0) = 4.532599 \f]
+/// @brief \f[ log(112.6172) = 4.723994 \f]
 START_TEST(s21_log_692)
 {
-    double value = 93.0;
+    double value = 112.6172;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(94.0) = 4.543295 \f]
+/// @brief \f[ log(113.8302) = 4.734708 \f]
 START_TEST(s21_log_693)
 {
-    double value = 94.0;
+    double value = 113.8302;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(95.0) = 4.553877 \f]
+/// @brief \f[ log(115.0432) = 4.745308 \f]
 START_TEST(s21_log_694)
 {
-    double value = 95.0;
+    double value = 115.0432;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(96.0) = 4.564348 \f]
+/// @brief \f[ log(116.2562) = 4.755796 \f]
 START_TEST(s21_log_695)
 {
-    double value = 96.0;
+    double value = 116.2562;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(97.0) = 4.574711 \f]
+/// @brief \f[ log(117.4692) = 4.766176 \f]
 START_TEST(s21_log_696)
 {
-    double value = 97.0;
+    double value = 117.4692;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(98.0) = 4.584967 \f]
+/// @brief \f[ log(118.6822) = 4.776449 \f]
 START_TEST(s21_log_697)
 {
-    double value = 98.0;
+    double value = 118.6822;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(99.0) = 4.595120 \f]
+/// @brief \f[ log(119.8952) = 4.786618 \f]
 START_TEST(s21_log_698)
 {
-    double value = 99.0;
+    double value = 119.8952;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(100.0) = 4.605170 \f]
+/// @brief \f[ log(121.1082) = 4.796684 \f]
 START_TEST(s21_log_699)
 {
-    double value = 100.0;
+    double value = 121.1082;
 
     s21_test_log(value);
 }
@@ -5619,794 +5619,794 @@ START_TEST(s21_log_700)
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.73) = 1.004302 \f]
+/// @brief \f[ log(2.751312) = 1.012078 \f]
 START_TEST(s21_log_701)
 {
-    double value = 2.73;
+    double value = 2.751312;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.23) = 1.442202 \f]
+/// @brief \f[ log(4.272624) = 1.452228 \f]
 START_TEST(s21_log_702)
 {
-    double value = 4.23;
+    double value = 4.272624;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.73) = 1.745716 \f]
+/// @brief \f[ log(5.793936) = 1.756812 \f]
 START_TEST(s21_log_703)
 {
-    double value = 5.73;
+    double value = 5.793936;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.23) = 1.978239 \f]
+/// @brief \f[ log(7.315248) = 1.989961 \f]
 START_TEST(s21_log_704)
 {
-    double value = 7.23;
+    double value = 7.315248;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.73) = 2.166765 \f]
+/// @brief \f[ log(8.836560) = 2.178898 \f]
 START_TEST(s21_log_705)
 {
-    double value = 8.73;
+    double value = 8.836560;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.23) = 2.325325 \f]
+/// @brief \f[ log(10.357872) = 2.337747 \f]
 START_TEST(s21_log_706)
 {
-    double value = 10.23;
+    double value = 10.357872;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.73) = 2.462150 \f]
+/// @brief \f[ log(11.879184) = 2.474788 \f]
 START_TEST(s21_log_707)
 {
-    double value = 11.73;
+    double value = 11.879184;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.23) = 2.582487 \f]
+/// @brief \f[ log(13.400496) = 2.595292 \f]
 START_TEST(s21_log_708)
 {
-    double value = 13.23;
+    double value = 13.400496;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.73) = 2.689886 \f]
+/// @brief \f[ log(14.921808) = 2.702824 \f]
 START_TEST(s21_log_709)
 {
-    double value = 14.73;
+    double value = 14.921808;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(16.23) = 2.786861 \f]
+/// @brief \f[ log(16.443120) = 2.799907 \f]
 START_TEST(s21_log_710)
 {
-    double value = 16.23;
+    double value = 16.443120;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(17.73) = 2.875258 \f]
+/// @brief \f[ log(17.964432) = 2.888394 \f]
 START_TEST(s21_log_711)
 {
-    double value = 17.73;
+    double value = 17.964432;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(19.23) = 2.956472 \f]
+/// @brief \f[ log(19.485744) = 2.969683 \f]
 START_TEST(s21_log_712)
 {
-    double value = 19.23;
+    double value = 19.485744;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(20.73) = 3.031582 \f]
+/// @brief \f[ log(21.007056) = 3.044858 \f]
 START_TEST(s21_log_713)
 {
-    double value = 20.73;
+    double value = 21.007056;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(22.23) = 3.101443 \f]
+/// @brief \f[ log(22.528368) = 3.114775 \f]
 START_TEST(s21_log_714)
 {
-    double value = 22.23;
+    double value = 22.528368;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(23.73) = 3.166740 \f]
+/// @brief \f[ log(24.049680) = 3.180122 \f]
 START_TEST(s21_log_715)
 {
-    double value = 23.73;
+    double value = 24.049680;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(25.23) = 3.228034 \f]
+/// @brief \f[ log(25.570992) = 3.241459 \f]
 START_TEST(s21_log_716)
 {
-    double value = 25.23;
+    double value = 25.570992;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(26.73) = 3.285787 \f]
+/// @brief \f[ log(27.092304) = 3.299250 \f]
 START_TEST(s21_log_717)
 {
-    double value = 26.73;
+    double value = 27.092304;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(28.23) = 3.340385 \f]
+/// @brief \f[ log(28.613616) = 3.353883 \f]
 START_TEST(s21_log_718)
 {
-    double value = 28.23;
+    double value = 28.613616;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(29.73) = 3.392157 \f]
+/// @brief \f[ log(30.134928) = 3.405685 \f]
 START_TEST(s21_log_719)
 {
-    double value = 29.73;
+    double value = 30.134928;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(31.23) = 3.441379 \f]
+/// @brief \f[ log(31.656240) = 3.454935 \f]
 START_TEST(s21_log_720)
 {
-    double value = 31.23;
+    double value = 31.656240;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(32.73) = 3.488292 \f]
+/// @brief \f[ log(33.177552) = 3.501874 \f]
 START_TEST(s21_log_721)
 {
-    double value = 32.73;
+    double value = 33.177552;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(34.23) = 3.533102 \f]
+/// @brief \f[ log(34.698864) = 3.546707 \f]
 START_TEST(s21_log_722)
 {
-    double value = 34.23;
+    double value = 34.698864;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(35.73) = 3.575991 \f]
+/// @brief \f[ log(36.220176) = 3.589616 \f]
 START_TEST(s21_log_723)
 {
-    double value = 35.73;
+    double value = 36.220176;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(37.23) = 3.617115 \f]
+/// @brief \f[ log(37.741488) = 3.630760 \f]
 START_TEST(s21_log_724)
 {
-    double value = 37.23;
+    double value = 37.741488;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(38.73) = 3.656614 \f]
+/// @brief \f[ log(39.262800) = 3.670278 \f]
 START_TEST(s21_log_725)
 {
-    double value = 38.73;
+    double value = 39.262800;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(40.23) = 3.694613 \f]
+/// @brief \f[ log(40.784112) = 3.708293 \f]
 START_TEST(s21_log_726)
 {
-    double value = 40.23;
+    double value = 40.784112;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(41.73) = 3.731220 \f]
+/// @brief \f[ log(42.305424) = 3.744915 \f]
 START_TEST(s21_log_727)
 {
-    double value = 41.73;
+    double value = 42.305424;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(43.23) = 3.766535 \f]
+/// @brief \f[ log(43.826736) = 3.780244 \f]
 START_TEST(s21_log_728)
 {
-    double value = 43.23;
+    double value = 43.826736;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(44.73) = 3.800644 \f]
+/// @brief \f[ log(45.348048) = 3.814367 \f]
 START_TEST(s21_log_729)
 {
-    double value = 44.73;
+    double value = 45.348048;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(46.23) = 3.833629 \f]
+/// @brief \f[ log(46.869360) = 3.847364 \f]
 START_TEST(s21_log_730)
 {
-    double value = 46.23;
+    double value = 46.869360;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(47.73) = 3.865560 \f]
+/// @brief \f[ log(48.390672) = 3.879307 \f]
 START_TEST(s21_log_731)
 {
-    double value = 47.73;
+    double value = 48.390672;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(49.23) = 3.896503 \f]
+/// @brief \f[ log(49.911984) = 3.910261 \f]
 START_TEST(s21_log_732)
 {
-    double value = 49.23;
+    double value = 49.911984;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(50.73) = 3.926517 \f]
+/// @brief \f[ log(51.433296) = 3.940286 \f]
 START_TEST(s21_log_733)
 {
-    double value = 50.73;
+    double value = 51.433296;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(52.23) = 3.955657 \f]
+/// @brief \f[ log(52.954608) = 3.969435 \f]
 START_TEST(s21_log_734)
 {
-    double value = 52.23;
+    double value = 52.954608;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(53.73) = 3.983972 \f]
+/// @brief \f[ log(54.475920) = 3.997759 \f]
 START_TEST(s21_log_735)
 {
-    double value = 53.73;
+    double value = 54.475920;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(55.23) = 4.011506 \f]
+/// @brief \f[ log(55.997232) = 4.025302 \f]
 START_TEST(s21_log_736)
 {
-    double value = 55.23;
+    double value = 55.997232;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(56.73) = 4.038303 \f]
+/// @brief \f[ log(57.518544) = 4.052107 \f]
 START_TEST(s21_log_737)
 {
-    double value = 56.73;
+    double value = 57.518544;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(58.23) = 4.064401 \f]
+/// @brief \f[ log(59.039856) = 4.078213 \f]
 START_TEST(s21_log_738)
 {
-    double value = 58.23;
+    double value = 59.039856;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(59.73) = 4.089834 \f]
+/// @brief \f[ log(60.561168) = 4.103654 \f]
 START_TEST(s21_log_739)
 {
-    double value = 59.73;
+    double value = 60.561168;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(61.23) = 4.114637 \f]
+/// @brief \f[ log(62.082480) = 4.128464 \f]
 START_TEST(s21_log_740)
 {
-    double value = 61.23;
+    double value = 62.082480;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(62.73) = 4.138840 \f]
+/// @brief \f[ log(63.603792) = 4.152673 \f]
 START_TEST(s21_log_741)
 {
-    double value = 62.73;
+    double value = 63.603792;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(64.23) = 4.162470 \f]
+/// @brief \f[ log(65.125104) = 4.176310 \f]
 START_TEST(s21_log_742)
 {
-    double value = 64.23;
+    double value = 65.125104;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(65.73) = 4.185555 \f]
+/// @brief \f[ log(66.646416) = 4.199401 \f]
 START_TEST(s21_log_743)
 {
-    double value = 65.73;
+    double value = 66.646416;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(67.23) = 4.208120 \f]
+/// @brief \f[ log(68.167728) = 4.221971 \f]
 START_TEST(s21_log_744)
 {
-    double value = 67.23;
+    double value = 68.167728;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(68.73) = 4.230186 \f]
+/// @brief \f[ log(69.689040) = 4.244043 \f]
 START_TEST(s21_log_745)
 {
-    double value = 68.73;
+    double value = 69.689040;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(70.23) = 4.251776 \f]
+/// @brief \f[ log(71.210352) = 4.265638 \f]
 START_TEST(s21_log_746)
 {
-    double value = 70.23;
+    double value = 71.210352;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(71.73) = 4.272909 \f]
+/// @brief \f[ log(72.731664) = 4.286777 \f]
 START_TEST(s21_log_747)
 {
-    double value = 71.73;
+    double value = 72.731664;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(73.23) = 4.293605 \f]
+/// @brief \f[ log(74.252976) = 4.307478 \f]
 START_TEST(s21_log_748)
 {
-    double value = 73.23;
+    double value = 74.252976;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(74.73) = 4.313882 \f]
+/// @brief \f[ log(75.774288) = 4.327759 \f]
 START_TEST(s21_log_749)
 {
-    double value = 74.73;
+    double value = 75.774288;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(76.23) = 4.333755 \f]
+/// @brief \f[ log(77.295600) = 4.347637 \f]
 START_TEST(s21_log_750)
 {
-    double value = 76.23;
+    double value = 77.295600;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(77.73) = 4.353241 \f]
+/// @brief \f[ log(78.816912) = 4.367128 \f]
 START_TEST(s21_log_751)
 {
-    double value = 77.73;
+    double value = 78.816912;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(79.23) = 4.372355 \f]
+/// @brief \f[ log(80.338224) = 4.386246 \f]
 START_TEST(s21_log_752)
 {
-    double value = 79.23;
+    double value = 80.338224;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(80.73) = 4.391110 \f]
+/// @brief \f[ log(81.859536) = 4.405005 \f]
 START_TEST(s21_log_753)
 {
-    double value = 80.73;
+    double value = 81.859536;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(82.23) = 4.409520 \f]
+/// @brief \f[ log(83.380848) = 4.423419 \f]
 START_TEST(s21_log_754)
 {
-    double value = 82.23;
+    double value = 83.380848;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(83.73) = 4.427597 \f]
+/// @brief \f[ log(84.902160) = 4.441500 \f]
 START_TEST(s21_log_755)
 {
-    double value = 83.73;
+    double value = 84.902160;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(85.23) = 4.445353 \f]
+/// @brief \f[ log(86.423472) = 4.459259 \f]
 START_TEST(s21_log_756)
 {
-    double value = 85.23;
+    double value = 86.423472;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(86.73) = 4.462800 \f]
+/// @brief \f[ log(87.944784) = 4.476709 \f]
 START_TEST(s21_log_757)
 {
-    double value = 86.73;
+    double value = 87.944784;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(88.23) = 4.479947 \f]
+/// @brief \f[ log(89.466096) = 4.493860 \f]
 START_TEST(s21_log_758)
 {
-    double value = 88.23;
+    double value = 89.466096;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(89.73) = 4.496805 \f]
+/// @brief \f[ log(90.987408) = 4.510721 \f]
 START_TEST(s21_log_759)
 {
-    double value = 89.73;
+    double value = 90.987408;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(91.23) = 4.513384 \f]
+/// @brief \f[ log(92.508720) = 4.527303 \f]
 START_TEST(s21_log_760)
 {
-    double value = 91.23;
+    double value = 92.508720;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(92.73) = 4.529692 \f]
+/// @brief \f[ log(94.030032) = 4.543614 \f]
 START_TEST(s21_log_761)
 {
-    double value = 92.73;
+    double value = 94.030032;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(94.23) = 4.545739 \f]
+/// @brief \f[ log(95.551344) = 4.559664 \f]
 START_TEST(s21_log_762)
 {
-    double value = 94.23;
+    double value = 95.551344;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(95.73) = 4.561532 \f]
+/// @brief \f[ log(97.072656) = 4.575460 \f]
 START_TEST(s21_log_763)
 {
-    double value = 95.73;
+    double value = 97.072656;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(97.23) = 4.577079 \f]
+/// @brief \f[ log(98.593968) = 4.591010 \f]
 START_TEST(s21_log_764)
 {
-    double value = 97.23;
+    double value = 98.593968;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(98.73) = 4.592389 \f]
+/// @brief \f[ log(100.115280) = 4.606322 \f]
 START_TEST(s21_log_765)
 {
-    double value = 98.73;
+    double value = 100.115280;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(100.23) = 4.607468 \f]
+/// @brief \f[ log(101.636592) = 4.621404 \f]
 START_TEST(s21_log_766)
 {
-    double value = 100.23;
+    double value = 101.636592;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(101.73) = 4.622322 \f]
+/// @brief \f[ log(103.157904) = 4.636261 \f]
 START_TEST(s21_log_767)
 {
-    double value = 101.73;
+    double value = 103.157904;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(103.23) = 4.636960 \f]
+/// @brief \f[ log(104.679216) = 4.650901 \f]
 START_TEST(s21_log_768)
 {
-    double value = 103.23;
+    double value = 104.679216;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(104.73) = 4.651386 \f]
+/// @brief \f[ log(106.200528) = 4.665329 \f]
 START_TEST(s21_log_769)
 {
-    double value = 104.73;
+    double value = 106.200528;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(106.23) = 4.665607 \f]
+/// @brief \f[ log(107.721840) = 4.679552 \f]
 START_TEST(s21_log_770)
 {
-    double value = 106.23;
+    double value = 107.721840;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(107.73) = 4.679628 \f]
+/// @brief \f[ log(109.243152) = 4.693576 \f]
 START_TEST(s21_log_771)
 {
-    double value = 107.73;
+    double value = 109.243152;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(109.23) = 4.693456 \f]
+/// @brief \f[ log(110.764464) = 4.707406 \f]
 START_TEST(s21_log_772)
 {
-    double value = 109.23;
+    double value = 110.764464;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(110.73) = 4.707095 \f]
+/// @brief \f[ log(112.285776) = 4.721047 \f]
 START_TEST(s21_log_773)
 {
-    double value = 110.73;
+    double value = 112.285776;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(112.23) = 4.720550 \f]
+/// @brief \f[ log(113.807088) = 4.734505 \f]
 START_TEST(s21_log_774)
 {
-    double value = 112.23;
+    double value = 113.807088;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(113.73) = 4.733827 \f]
+/// @brief \f[ log(115.328400) = 4.747784 \f]
 START_TEST(s21_log_775)
 {
-    double value = 113.73;
+    double value = 115.328400;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(115.23) = 4.746930 \f]
+/// @brief \f[ log(116.849712) = 4.760889 \f]
 START_TEST(s21_log_776)
 {
-    double value = 115.23;
+    double value = 116.849712;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(116.73) = 4.759864 \f]
+/// @brief \f[ log(118.371024) = 4.773824 \f]
 START_TEST(s21_log_777)
 {
-    double value = 116.73;
+    double value = 118.371024;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(118.23) = 4.772632 \f]
+/// @brief \f[ log(119.892336) = 4.786594 \f]
 START_TEST(s21_log_778)
 {
-    double value = 118.23;
+    double value = 119.892336;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(119.73) = 4.785239 \f]
+/// @brief \f[ log(121.413648) = 4.799203 \f]
 START_TEST(s21_log_779)
 {
-    double value = 119.73;
+    double value = 121.413648;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(121.23) = 4.797690 \f]
+/// @brief \f[ log(122.934960) = 4.811655 \f]
 START_TEST(s21_log_780)
 {
-    double value = 121.23;
+    double value = 122.934960;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(122.73) = 4.809987 \f]
+/// @brief \f[ log(124.456272) = 4.823954 \f]
 START_TEST(s21_log_781)
 {
-    double value = 122.73;
+    double value = 124.456272;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(124.23) = 4.822135 \f]
+/// @brief \f[ log(125.977584) = 4.836104 \f]
 START_TEST(s21_log_782)
 {
-    double value = 124.23;
+    double value = 125.977584;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(125.73) = 4.834137 \f]
+/// @brief \f[ log(127.498896) = 4.848108 \f]
 START_TEST(s21_log_783)
 {
-    double value = 125.73;
+    double value = 127.498896;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(127.23) = 4.845996 \f]
+/// @brief \f[ log(129.020208) = 4.859969 \f]
 START_TEST(s21_log_784)
 {
-    double value = 127.23;
+    double value = 129.020208;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(128.73) = 4.857717 \f]
+/// @brief \f[ log(130.541520) = 4.871691 \f]
 START_TEST(s21_log_785)
 {
-    double value = 128.73;
+    double value = 130.541520;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(130.23) = 4.869302 \f]
+/// @brief \f[ log(132.062832) = 4.883278 \f]
 START_TEST(s21_log_786)
 {
-    double value = 130.23;
+    double value = 132.062832;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(131.73) = 4.880754 \f]
+/// @brief \f[ log(133.584144) = 4.894732 \f]
 START_TEST(s21_log_787)
 {
-    double value = 131.73;
+    double value = 133.584144;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(133.23) = 4.892077 \f]
+/// @brief \f[ log(135.105456) = 4.906056 \f]
 START_TEST(s21_log_788)
 {
-    double value = 133.23;
+    double value = 135.105456;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(134.73) = 4.903273 \f]
+/// @brief \f[ log(136.626768) = 4.917253 \f]
 START_TEST(s21_log_789)
 {
-    double value = 134.73;
+    double value = 136.626768;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(136.23) = 4.914345 \f]
+/// @brief \f[ log(138.148080) = 4.928326 \f]
 START_TEST(s21_log_790)
 {
-    double value = 136.23;
+    double value = 138.148080;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(137.73) = 4.925295 \f]
+/// @brief \f[ log(139.669392) = 4.939278 \f]
 START_TEST(s21_log_791)
 {
-    double value = 137.73;
+    double value = 139.669392;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(139.23) = 4.936127 \f]
+/// @brief \f[ log(141.190704) = 4.950111 \f]
 START_TEST(s21_log_792)
 {
-    double value = 139.23;
+    double value = 141.190704;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(140.73) = 4.946843 \f]
+/// @brief \f[ log(142.712016) = 4.960829 \f]
 START_TEST(s21_log_793)
 {
-    double value = 140.73;
+    double value = 142.712016;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(142.23) = 4.957445 \f]
+/// @brief \f[ log(144.233328) = 4.971432 \f]
 START_TEST(s21_log_794)
 {
-    double value = 142.23;
+    double value = 144.233328;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(143.73) = 4.967937 \f]
+/// @brief \f[ log(145.754640) = 4.981925 \f]
 START_TEST(s21_log_795)
 {
-    double value = 143.73;
+    double value = 145.754640;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(145.23) = 4.978319 \f]
+/// @brief \f[ log(147.275952) = 4.992308 \f]
 START_TEST(s21_log_796)
 {
-    double value = 145.23;
+    double value = 147.275952;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(146.73) = 4.988594 \f]
+/// @brief \f[ log(148.797264) = 5.002585 \f]
 START_TEST(s21_log_797)
 {
-    double value = 146.73;
+    double value = 148.797264;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(148.23) = 4.998765 \f]
+/// @brief \f[ log(150.318576) = 5.012757 \f]
 START_TEST(s21_log_798)
 {
-    double value = 148.23;
+    double value = 150.318576;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(149.73) = 5.008834 \f]
+/// @brief \f[ log(151.839888) = 5.022827 \f]
 START_TEST(s21_log_799)
 {
-    double value = 149.73;
+    double value = 151.839888;
 
     s21_test_log(value);
 }
@@ -6419,1594 +6419,1594 @@ START_TEST(s21_log_800)
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.6) = 1.280934 \f]
+/// @brief \f[ log(3.61111) = 1.284015 \f]
 START_TEST(s21_log_801)
 {
-    double value = 3.6;
+    double value = 3.61111;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.1) = 1.629241 \f]
+/// @brief \f[ log(5.12222) = 1.633588 \f]
 START_TEST(s21_log_802)
 {
-    double value = 5.1;
+    double value = 5.12222;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.6) = 1.887070 \f]
+/// @brief \f[ log(6.63333) = 1.892107 \f]
 START_TEST(s21_log_803)
 {
-    double value = 6.6;
+    double value = 6.63333;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.1) = 2.091864 \f]
+/// @brief \f[ log(8.14444) = 2.097335 \f]
 START_TEST(s21_log_804)
 {
-    double value = 8.1;
+    double value = 8.14444;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.6) = 2.261763 \f]
+/// @brief \f[ log(9.65555) = 2.267533 \f]
 START_TEST(s21_log_805)
 {
-    double value = 9.6;
+    double value = 9.65555;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.1) = 2.406945 \f]
+/// @brief \f[ log(11.16666) = 2.412933 \f]
 START_TEST(s21_log_806)
 {
-    double value = 11.1;
+    double value = 11.16666;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.6) = 2.533697 \f]
+/// @brief \f[ log(12.67777) = 2.539850 \f]
 START_TEST(s21_log_807)
 {
-    double value = 12.6;
+    double value = 12.67777;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.1) = 2.646175 \f]
+/// @brief \f[ log(14.18888) = 2.652459 \f]
 START_TEST(s21_log_808)
 {
-    double value = 14.1;
+    double value = 14.18888;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(15.6) = 2.747271 \f]
+/// @brief \f[ log(15.69999) = 2.753660 \f]
 START_TEST(s21_log_809)
 {
-    double value = 15.6;
+    double value = 15.69999;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(17.1) = 2.839078 \f]
+/// @brief \f[ log(17.21110) = 2.845555 \f]
 START_TEST(s21_log_810)
 {
-    double value = 17.1;
+    double value = 17.21110;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(18.6) = 2.923162 \f]
+/// @brief \f[ log(18.72221) = 2.929711 \f]
 START_TEST(s21_log_811)
 {
-    double value = 18.6;
+    double value = 18.72221;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(20.1) = 3.000720 \f]
+/// @brief \f[ log(20.23332) = 3.007331 \f]
 START_TEST(s21_log_812)
 {
-    double value = 20.1;
+    double value = 20.23332;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(21.6) = 3.072693 \f]
+/// @brief \f[ log(21.74443) = 3.079358 \f]
 START_TEST(s21_log_813)
 {
-    double value = 21.6;
+    double value = 21.74443;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(23.1) = 3.139833 \f]
+/// @brief \f[ log(23.25554) = 3.146543 \f]
 START_TEST(s21_log_814)
 {
-    double value = 23.1;
+    double value = 23.25554;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(24.6) = 3.202746 \f]
+/// @brief \f[ log(24.76665) = 3.209498 \f]
 START_TEST(s21_log_815)
 {
-    double value = 24.6;
+    double value = 24.76665;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(26.1) = 3.261935 \f]
+/// @brief \f[ log(26.27776) = 3.268723 \f]
 START_TEST(s21_log_816)
 {
-    double value = 26.1;
+    double value = 26.27776;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(27.6) = 3.317816 \f]
+/// @brief \f[ log(27.78887) = 3.324636 \f]
 START_TEST(s21_log_817)
 {
-    double value = 27.6;
+    double value = 27.78887;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(29.1) = 3.370738 \f]
+/// @brief \f[ log(29.29998) = 3.377587 \f]
 START_TEST(s21_log_818)
 {
-    double value = 29.1;
+    double value = 29.29998;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(30.6) = 3.421000 \f]
+/// @brief \f[ log(30.81109) = 3.427875 \f]
 START_TEST(s21_log_819)
 {
-    double value = 30.6;
+    double value = 30.81109;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(32.1) = 3.468856 \f]
+/// @brief \f[ log(32.32220) = 3.475754 \f]
 START_TEST(s21_log_820)
 {
-    double value = 32.1;
+    double value = 32.32220;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(33.6) = 3.514526 \f]
+/// @brief \f[ log(33.83331) = 3.521446 \f]
 START_TEST(s21_log_821)
 {
-    double value = 33.6;
+    double value = 33.83331;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(35.1) = 3.558201 \f]
+/// @brief \f[ log(35.34442) = 3.565141 \f]
 START_TEST(s21_log_822)
 {
-    double value = 35.1;
+    double value = 35.34442;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(36.6) = 3.600048 \f]
+/// @brief \f[ log(36.85553) = 3.607006 \f]
 START_TEST(s21_log_823)
 {
-    double value = 36.6;
+    double value = 36.85553;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(38.1) = 3.640214 \f]
+/// @brief \f[ log(38.36664) = 3.647188 \f]
 START_TEST(s21_log_824)
 {
-    double value = 38.1;
+    double value = 38.36664;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(39.6) = 3.678829 \f]
+/// @brief \f[ log(39.87775) = 3.685819 \f]
 START_TEST(s21_log_825)
 {
-    double value = 39.6;
+    double value = 39.87775;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(41.1) = 3.716008 \f]
+/// @brief \f[ log(41.38886) = 3.723012 \f]
 START_TEST(s21_log_826)
 {
-    double value = 41.1;
+    double value = 41.38886;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(42.6) = 3.751854 \f]
+/// @brief \f[ log(42.89997) = 3.758871 \f]
 START_TEST(s21_log_827)
 {
-    double value = 42.6;
+    double value = 42.89997;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(44.1) = 3.786460 \f]
+/// @brief \f[ log(44.41108) = 3.793489 \f]
 START_TEST(s21_log_828)
 {
-    double value = 44.1;
+    double value = 44.41108;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(45.6) = 3.819908 \f]
+/// @brief \f[ log(45.92219) = 3.826948 \f]
 START_TEST(s21_log_829)
 {
-    double value = 45.6;
+    double value = 45.92219;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(47.1) = 3.852273 \f]
+/// @brief \f[ log(47.43330) = 3.859325 \f]
 START_TEST(s21_log_830)
 {
-    double value = 47.1;
+    double value = 47.43330;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(48.6) = 3.883624 \f]
+/// @brief \f[ log(48.94441) = 3.890685 \f]
 START_TEST(s21_log_831)
 {
-    double value = 48.6;
+    double value = 48.94441;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(50.1) = 3.914021 \f]
+/// @brief \f[ log(50.45552) = 3.921092 \f]
 START_TEST(s21_log_832)
 {
-    double value = 50.1;
+    double value = 50.45552;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(51.6) = 3.943522 \f]
+/// @brief \f[ log(51.96663) = 3.950602 \f]
 START_TEST(s21_log_833)
 {
-    double value = 51.6;
+    double value = 51.96663;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(53.1) = 3.972177 \f]
+/// @brief \f[ log(53.47774) = 3.979265 \f]
 START_TEST(s21_log_834)
 {
-    double value = 53.1;
+    double value = 53.47774;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(54.6) = 4.000034 \f]
+/// @brief \f[ log(54.98885) = 4.007130 \f]
 START_TEST(s21_log_835)
 {
-    double value = 54.6;
+    double value = 54.98885;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(56.1) = 4.027136 \f]
+/// @brief \f[ log(56.49996) = 4.034240 \f]
 START_TEST(s21_log_836)
 {
-    double value = 56.1;
+    double value = 56.49996;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(57.6) = 4.053523 \f]
+/// @brief \f[ log(58.01107) = 4.060634 \f]
 START_TEST(s21_log_837)
 {
-    double value = 57.6;
+    double value = 58.01107;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(59.1) = 4.079231 \f]
+/// @brief \f[ log(59.52218) = 4.086349 \f]
 START_TEST(s21_log_838)
 {
-    double value = 59.1;
+    double value = 59.52218;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(60.6) = 4.104295 \f]
+/// @brief \f[ log(61.03329) = 4.111419 \f]
 START_TEST(s21_log_839)
 {
-    double value = 60.6;
+    double value = 61.03329;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(62.1) = 4.128746 \f]
+/// @brief \f[ log(62.54440) = 4.135877 \f]
 START_TEST(s21_log_840)
 {
-    double value = 62.1;
+    double value = 62.54440;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(63.6) = 4.152613 \f]
+/// @brief \f[ log(64.05551) = 4.159750 \f]
 START_TEST(s21_log_841)
 {
-    double value = 63.6;
+    double value = 64.05551;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(65.1) = 4.175925 \f]
+/// @brief \f[ log(65.56662) = 4.183067 \f]
 START_TEST(s21_log_842)
 {
-    double value = 65.1;
+    double value = 65.56662;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(66.6) = 4.198705 \f]
+/// @brief \f[ log(67.07773) = 4.205852 \f]
 START_TEST(s21_log_843)
 {
-    double value = 66.6;
+    double value = 67.07773;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(68.1) = 4.220977 \f]
+/// @brief \f[ log(68.58884) = 4.228130 \f]
 START_TEST(s21_log_844)
 {
-    double value = 68.1;
+    double value = 68.58884;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(69.6) = 4.242765 \f]
+/// @brief \f[ log(70.09995) = 4.249922 \f]
 START_TEST(s21_log_845)
 {
-    double value = 69.6;
+    double value = 70.09995;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(71.1) = 4.264087 \f]
+/// @brief \f[ log(71.61106) = 4.271250 \f]
 START_TEST(s21_log_846)
 {
-    double value = 71.1;
+    double value = 71.61106;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(72.6) = 4.284965 \f]
+/// @brief \f[ log(73.12217) = 4.292132 \f]
 START_TEST(s21_log_847)
 {
-    double value = 72.6;
+    double value = 73.12217;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(74.1) = 4.305416 \f]
+/// @brief \f[ log(74.63328) = 4.312587 \f]
 START_TEST(s21_log_848)
 {
-    double value = 74.1;
+    double value = 74.63328;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(75.6) = 4.325456 \f]
+/// @brief \f[ log(76.14439) = 4.332631 \f]
 START_TEST(s21_log_849)
 {
-    double value = 75.6;
+    double value = 76.14439;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(77.1) = 4.345103 \f]
+/// @brief \f[ log(77.65550) = 4.352282 \f]
 START_TEST(s21_log_850)
 {
-    double value = 77.1;
+    double value = 77.65550;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(78.6) = 4.364372 \f]
+/// @brief \f[ log(79.16661) = 4.371555 \f]
 START_TEST(s21_log_851)
 {
-    double value = 78.6;
+    double value = 79.16661;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(80.1) = 4.383276 \f]
+/// @brief \f[ log(80.67772) = 4.390462 \f]
 START_TEST(s21_log_852)
 {
-    double value = 80.1;
+    double value = 80.67772;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(81.6) = 4.401829 \f]
+/// @brief \f[ log(82.18883) = 4.409019 \f]
 START_TEST(s21_log_853)
 {
-    double value = 81.6;
+    double value = 82.18883;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(83.1) = 4.420045 \f]
+/// @brief \f[ log(83.69994) = 4.427238 \f]
 START_TEST(s21_log_854)
 {
-    double value = 83.1;
+    double value = 83.69994;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(84.6) = 4.437934 \f]
+/// @brief \f[ log(85.21105) = 4.445131 \f]
 START_TEST(s21_log_855)
 {
-    double value = 84.6;
+    double value = 85.21105;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(86.1) = 4.455509 \f]
+/// @brief \f[ log(86.72216) = 4.462709 \f]
 START_TEST(s21_log_856)
 {
-    double value = 86.1;
+    double value = 86.72216;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(87.6) = 4.472781 \f]
+/// @brief \f[ log(88.23327) = 4.479984 \f]
 START_TEST(s21_log_857)
 {
-    double value = 87.6;
+    double value = 88.23327;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(89.1) = 4.489759 \f]
+/// @brief \f[ log(89.74438) = 4.496965 \f]
 START_TEST(s21_log_858)
 {
-    double value = 89.1;
+    double value = 89.74438;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(90.6) = 4.506454 \f]
+/// @brief \f[ log(91.25549) = 4.513663 \f]
 START_TEST(s21_log_859)
 {
-    double value = 90.6;
+    double value = 91.25549;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(92.1) = 4.522875 \f]
+/// @brief \f[ log(92.76660) = 4.530087 \f]
 START_TEST(s21_log_860)
 {
-    double value = 92.1;
+    double value = 92.76660;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(93.6) = 4.539030 \f]
+/// @brief \f[ log(94.27771) = 4.546245 \f]
 START_TEST(s21_log_861)
 {
-    double value = 93.6;
+    double value = 94.27771;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(95.1) = 4.554929 \f]
+/// @brief \f[ log(95.78882) = 4.562146 \f]
 START_TEST(s21_log_862)
 {
-    double value = 95.1;
+    double value = 95.78882;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(96.6) = 4.570579 \f]
+/// @brief \f[ log(97.29993) = 4.577798 \f]
 START_TEST(s21_log_863)
 {
-    double value = 96.6;
+    double value = 97.29993;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(98.1) = 4.585987 \f]
+/// @brief \f[ log(98.81104) = 4.593209 \f]
 START_TEST(s21_log_864)
 {
-    double value = 98.1;
+    double value = 98.81104;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(99.6) = 4.601162 \f]
+/// @brief \f[ log(100.32215) = 4.608387 \f]
 START_TEST(s21_log_865)
 {
-    double value = 99.6;
+    double value = 100.32215;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(101.1) = 4.616110 \f]
+/// @brief \f[ log(101.83326) = 4.623337 \f]
 START_TEST(s21_log_866)
 {
-    double value = 101.1;
+    double value = 101.83326;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(102.6) = 4.630838 \f]
+/// @brief \f[ log(103.34437) = 4.638067 \f]
 START_TEST(s21_log_867)
 {
-    double value = 102.6;
+    double value = 103.34437;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(104.1) = 4.645352 \f]
+/// @brief \f[ log(104.85548) = 4.652583 \f]
 START_TEST(s21_log_868)
 {
-    double value = 104.1;
+    double value = 104.85548;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(105.6) = 4.659658 \f]
+/// @brief \f[ log(106.36659) = 4.666892 \f]
 START_TEST(s21_log_869)
 {
-    double value = 105.6;
+    double value = 106.36659;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(107.1) = 4.673763 \f]
+/// @brief \f[ log(107.87770) = 4.680998 \f]
 START_TEST(s21_log_870)
 {
-    double value = 107.1;
+    double value = 107.87770;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(108.6) = 4.687671 \f]
+/// @brief \f[ log(109.38881) = 4.694909 \f]
 START_TEST(s21_log_871)
 {
-    double value = 108.6;
+    double value = 109.38881;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(110.1) = 4.701389 \f]
+/// @brief \f[ log(110.89992) = 4.708628 \f]
 START_TEST(s21_log_872)
 {
-    double value = 110.1;
+    double value = 110.89992;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(111.6) = 4.714921 \f]
+/// @brief \f[ log(112.41103) = 4.722162 \f]
 START_TEST(s21_log_873)
 {
-    double value = 111.6;
+    double value = 112.41103;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(113.1) = 4.728272 \f]
+/// @brief \f[ log(113.92214) = 4.735515 \f]
 START_TEST(s21_log_874)
 {
-    double value = 113.1;
+    double value = 113.92214;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(114.6) = 4.741448 \f]
+/// @brief \f[ log(115.43325) = 4.748692 \f]
 START_TEST(s21_log_875)
 {
-    double value = 114.6;
+    double value = 115.43325;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(116.1) = 4.754452 \f]
+/// @brief \f[ log(116.94436) = 4.761698 \f]
 START_TEST(s21_log_876)
 {
-    double value = 116.1;
+    double value = 116.94436;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(117.6) = 4.767289 \f]
+/// @brief \f[ log(118.45547) = 4.774537 \f]
 START_TEST(s21_log_877)
 {
-    double value = 117.6;
+    double value = 118.45547;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(119.1) = 4.779963 \f]
+/// @brief \f[ log(119.96658) = 4.787213 \f]
 START_TEST(s21_log_878)
 {
-    double value = 119.1;
+    double value = 119.96658;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(120.6) = 4.792479 \f]
+/// @brief \f[ log(121.47769) = 4.799731 \f]
 START_TEST(s21_log_879)
 {
-    double value = 120.6;
+    double value = 121.47769;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(122.1) = 4.804840 \f]
+/// @brief \f[ log(122.98880) = 4.812093 \f]
 START_TEST(s21_log_880)
 {
-    double value = 122.1;
+    double value = 122.98880;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(123.6) = 4.817051 \f]
+/// @brief \f[ log(124.49991) = 4.824305 \f]
 START_TEST(s21_log_881)
 {
-    double value = 123.6;
+    double value = 124.49991;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(125.1) = 4.829113 \f]
+/// @brief \f[ log(126.01102) = 4.836369 \f]
 START_TEST(s21_log_882)
 {
-    double value = 125.1;
+    double value = 126.01102;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(126.6) = 4.841033 \f]
+/// @brief \f[ log(127.52213) = 4.848290 \f]
 START_TEST(s21_log_883)
 {
-    double value = 126.6;
+    double value = 127.52213;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(128.1) = 4.852811 \f]
+/// @brief \f[ log(129.03324) = 4.860070 \f]
 START_TEST(s21_log_884)
 {
-    double value = 128.1;
+    double value = 129.03324;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(129.6) = 4.864453 \f]
+/// @brief \f[ log(130.54435) = 4.871713 \f]
 START_TEST(s21_log_885)
 {
-    double value = 129.6;
+    double value = 130.54435;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(131.1) = 4.875960 \f]
+/// @brief \f[ log(132.05546) = 4.883222 \f]
 START_TEST(s21_log_886)
 {
-    double value = 131.1;
+    double value = 132.05546;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(132.6) = 4.887337 \f]
+/// @brief \f[ log(133.56657) = 4.894600 \f]
 START_TEST(s21_log_887)
 {
-    double value = 132.6;
+    double value = 133.56657;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(134.1) = 4.898586 \f]
+/// @brief \f[ log(135.07768) = 4.905850 \f]
 START_TEST(s21_log_888)
 {
-    double value = 134.1;
+    double value = 135.07768;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(135.6) = 4.909709 \f]
+/// @brief \f[ log(136.58879) = 4.916975 \f]
 START_TEST(s21_log_889)
 {
-    double value = 135.6;
+    double value = 136.58879;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(137.1) = 4.920711 \f]
+/// @brief \f[ log(138.09990) = 4.927977 \f]
 START_TEST(s21_log_890)
 {
-    double value = 137.1;
+    double value = 138.09990;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(138.6) = 4.931592 \f]
+/// @brief \f[ log(139.61101) = 4.938860 \f]
 START_TEST(s21_log_891)
 {
-    double value = 138.6;
+    double value = 139.61101;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(140.1) = 4.942356 \f]
+/// @brief \f[ log(141.12212) = 4.949626 \f]
 START_TEST(s21_log_892)
 {
-    double value = 140.1;
+    double value = 141.12212;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(141.6) = 4.953006 \f]
+/// @brief \f[ log(142.63323) = 4.960277 \f]
 START_TEST(s21_log_893)
 {
-    double value = 141.6;
+    double value = 142.63323;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(143.1) = 4.963544 \f]
+/// @brief \f[ log(144.14434) = 4.970815 \f]
 START_TEST(s21_log_894)
 {
-    double value = 143.1;
+    double value = 144.14434;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(144.6) = 4.973971 \f]
+/// @brief \f[ log(145.65545) = 4.981244 \f]
 START_TEST(s21_log_895)
 {
-    double value = 144.6;
+    double value = 145.65545;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(146.1) = 4.984291 \f]
+/// @brief \f[ log(147.16656) = 4.991565 \f]
 START_TEST(s21_log_896)
 {
-    double value = 146.1;
+    double value = 147.16656;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(147.6) = 4.994506 \f]
+/// @brief \f[ log(148.67767) = 5.001781 \f]
 START_TEST(s21_log_897)
 {
-    double value = 147.6;
+    double value = 148.67767;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(149.1) = 5.004617 \f]
+/// @brief \f[ log(150.18878) = 5.011893 \f]
 START_TEST(s21_log_898)
 {
-    double value = 149.1;
+    double value = 150.18878;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(150.6) = 5.014627 \f]
+/// @brief \f[ log(151.69989) = 5.021904 \f]
 START_TEST(s21_log_899)
 {
-    double value = 150.6;
+    double value = 151.69989;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.321) = 0.841998 \f]
+/// @brief \f[ log(11122.321) = 9.316709 \f]
 START_TEST(s21_log_900)
 {
-    double value = 2.321;
+    double value = 11122.321;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.4441) = 0.893677 \f]
+/// @brief \f[ log(1242245.44491) = 14.032431 \f]
 START_TEST(s21_log_901)
 {
-    double value = 2.4441;
+    double value = 1242245.44491;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.5672) = 0.942816 \f]
+/// @brief \f[ log(2473368.56882) = 14.721092 \f]
 START_TEST(s21_log_902)
 {
-    double value = 2.5672;
+    double value = 2473368.56882;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.6903) = 0.989653 \f]
+/// @brief \f[ log(3704491.69273) = 15.125057 \f]
 START_TEST(s21_log_903)
 {
-    double value = 2.6903;
+    double value = 3704491.69273;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.8134) = 1.034394 \f]
+/// @brief \f[ log(4935614.81664) = 15.411988 \f]
 START_TEST(s21_log_904)
 {
-    double value = 2.8134;
+    double value = 4935614.81664;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(2.9365) = 1.077218 \f]
+/// @brief \f[ log(6166737.94055) = 15.634681 \f]
 START_TEST(s21_log_905)
 {
-    double value = 2.9365;
+    double value = 6166737.94055;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.0596) = 1.118284 \f]
+/// @brief \f[ log(7397861.06446) = 15.816701 \f]
 START_TEST(s21_log_906)
 {
-    double value = 3.0596;
+    double value = 7397861.06446;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.1827) = 1.157730 \f]
+/// @brief \f[ log(8628984.18837) = 15.970637 \f]
 START_TEST(s21_log_907)
 {
-    double value = 3.1827;
+    double value = 8628984.18837;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.3058) = 1.195679 \f]
+/// @brief \f[ log(9860107.31228) = 16.104008 \f]
 START_TEST(s21_log_908)
 {
-    double value = 3.3058;
+    double value = 9860107.31228;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.4289) = 1.232240 \f]
+/// @brief \f[ log(11091230.43619) = 16.221665 \f]
 START_TEST(s21_log_909)
 {
-    double value = 3.4289;
+    double value = 11091230.43619;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.5520) = 1.267511 \f]
+/// @brief \f[ log(12322353.56010) = 16.326926 \f]
 START_TEST(s21_log_910)
 {
-    double value = 3.5520;
+    double value = 12322353.56010;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.6751) = 1.301580 \f]
+/// @brief \f[ log(13553476.68401) = 16.422154 \f]
 START_TEST(s21_log_911)
 {
-    double value = 3.6751;
+    double value = 13553476.68401;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.7982) = 1.334527 \f]
+/// @brief \f[ log(14784599.80792) = 16.509097 \f]
 START_TEST(s21_log_912)
 {
-    double value = 3.7982;
+    double value = 14784599.80792;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(3.9213) = 1.366423 \f]
+/// @brief \f[ log(16015722.93183) = 16.589081 \f]
 START_TEST(s21_log_913)
 {
-    double value = 3.9213;
+    double value = 16015722.93183;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.0444) = 1.397333 \f]
+/// @brief \f[ log(17246846.05574) = 16.663140 \f]
 START_TEST(s21_log_914)
 {
-    double value = 4.0444;
+    double value = 17246846.05574;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.1675) = 1.427316 \f]
+/// @brief \f[ log(18477969.17965) = 16.732090 \f]
 START_TEST(s21_log_915)
 {
-    double value = 4.1675;
+    double value = 18477969.17965;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.2906) = 1.456427 \f]
+/// @brief \f[ log(19709092.30356) = 16.796591 \f]
 START_TEST(s21_log_916)
 {
-    double value = 4.2906;
+    double value = 19709092.30356;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.4137) = 1.484713 \f]
+/// @brief \f[ log(20940215.42747) = 16.857182 \f]
 START_TEST(s21_log_917)
 {
-    double value = 4.4137;
+    double value = 20940215.42747;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.5368) = 1.512222 \f]
+/// @brief \f[ log(22171338.55138) = 16.914311 \f]
 START_TEST(s21_log_918)
 {
-    double value = 4.5368;
+    double value = 22171338.55138;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.6599) = 1.538994 \f]
+/// @brief \f[ log(23402461.67529) = 16.968352 \f]
 START_TEST(s21_log_919)
 {
-    double value = 4.6599;
+    double value = 23402461.67529;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.7830) = 1.565068 \f]
+/// @brief \f[ log(24633584.79920) = 17.019621 \f]
 START_TEST(s21_log_920)
 {
-    double value = 4.7830;
+    double value = 24633584.79920;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(4.9061) = 1.590479 \f]
+/// @brief \f[ log(25864707.92311) = 17.068390 \f]
 START_TEST(s21_log_921)
 {
-    double value = 4.9061;
+    double value = 25864707.92311;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.0292) = 1.615261 \f]
+/// @brief \f[ log(27095831.04702) = 17.114890 \f]
 START_TEST(s21_log_922)
 {
-    double value = 5.0292;
+    double value = 27095831.04702;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.1523) = 1.639443 \f]
+/// @brief \f[ log(28326954.17093) = 17.159324 \f]
 START_TEST(s21_log_923)
 {
-    double value = 5.1523;
+    double value = 28326954.17093;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.2754) = 1.663055 \f]
+/// @brief \f[ log(29558077.29484) = 17.201868 \f]
 START_TEST(s21_log_924)
 {
-    double value = 5.2754;
+    double value = 29558077.29484;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.3985) = 1.686121 \f]
+/// @brief \f[ log(30789200.41875) = 17.242675 \f]
 START_TEST(s21_log_925)
 {
-    double value = 5.3985;
+    double value = 30789200.41875;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.5216) = 1.708668 \f]
+/// @brief \f[ log(32020323.54266) = 17.281881 \f]
 START_TEST(s21_log_926)
 {
-    double value = 5.5216;
+    double value = 32020323.54266;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.6447) = 1.730717 \f]
+/// @brief \f[ log(33251446.66657) = 17.319609 \f]
 START_TEST(s21_log_927)
 {
-    double value = 5.6447;
+    double value = 33251446.66657;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.7678) = 1.752291 \f]
+/// @brief \f[ log(34482569.79048) = 17.355965 \f]
 START_TEST(s21_log_928)
 {
-    double value = 5.7678;
+    double value = 34482569.79048;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(5.8909) = 1.773409 \f]
+/// @brief \f[ log(35713692.91439) = 17.391045 \f]
 START_TEST(s21_log_929)
 {
-    double value = 5.8909;
+    double value = 35713692.91439;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.0140) = 1.794090 \f]
+/// @brief \f[ log(36944816.03830) = 17.424936 \f]
 START_TEST(s21_log_930)
 {
-    double value = 6.0140;
+    double value = 36944816.03830;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.1371) = 1.814352 \f]
+/// @brief \f[ log(38175939.16221) = 17.457716 \f]
 START_TEST(s21_log_931)
 {
-    double value = 6.1371;
+    double value = 38175939.16221;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.2602) = 1.834212 \f]
+/// @brief \f[ log(39407062.28612) = 17.489456 \f]
 START_TEST(s21_log_932)
 {
-    double value = 6.2602;
+    double value = 39407062.28612;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.3833) = 1.853685 \f]
+/// @brief \f[ log(40638185.41003) = 17.520219 \f]
 START_TEST(s21_log_933)
 {
-    double value = 6.3833;
+    double value = 40638185.41003;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.5064) = 1.872786 \f]
+/// @brief \f[ log(41869308.53394) = 17.550064 \f]
 START_TEST(s21_log_934)
 {
-    double value = 6.5064;
+    double value = 41869308.53394;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.6295) = 1.891529 \f]
+/// @brief \f[ log(43100431.65785) = 17.579044 \f]
 START_TEST(s21_log_935)
 {
-    double value = 6.6295;
+    double value = 43100431.65785;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.7526) = 1.909928 \f]
+/// @brief \f[ log(44331554.78176) = 17.607207 \f]
 START_TEST(s21_log_936)
 {
-    double value = 6.7526;
+    double value = 44331554.78176;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.8757) = 1.927993 \f]
+/// @brief \f[ log(45562677.90567) = 17.634599 \f]
 START_TEST(s21_log_937)
 {
-    double value = 6.8757;
+    double value = 45562677.90567;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(6.9988) = 1.945739 \f]
+/// @brief \f[ log(46793801.02958) = 17.661261 \f]
 START_TEST(s21_log_938)
 {
-    double value = 6.9988;
+    double value = 46793801.02958;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.1219) = 1.963175 \f]
+/// @brief \f[ log(48024924.15349) = 17.687231 \f]
 START_TEST(s21_log_939)
 {
-    double value = 7.1219;
+    double value = 48024924.15349;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.2450) = 1.980312 \f]
+/// @brief \f[ log(49256047.27740) = 17.712543 \f]
 START_TEST(s21_log_940)
 {
-    double value = 7.2450;
+    double value = 49256047.27740;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.3681) = 1.997160 \f]
+/// @brief \f[ log(50487170.40131) = 17.737230 \f]
 START_TEST(s21_log_941)
 {
-    double value = 7.3681;
+    double value = 50487170.40131;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.4912) = 2.013729 \f]
+/// @brief \f[ log(51718293.52522) = 17.761322 \f]
 START_TEST(s21_log_942)
 {
-    double value = 7.4912;
+    double value = 51718293.52522;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.6143) = 2.030028 \f]
+/// @brief \f[ log(52949416.64913) = 17.784848 \f]
 START_TEST(s21_log_943)
 {
-    double value = 7.6143;
+    double value = 52949416.64913;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.7374) = 2.046066 \f]
+/// @brief \f[ log(54180539.77304) = 17.807832 \f]
 START_TEST(s21_log_944)
 {
-    double value = 7.7374;
+    double value = 54180539.77304;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.8605) = 2.061850 \f]
+/// @brief \f[ log(55411662.89695) = 17.830301 \f]
 START_TEST(s21_log_945)
 {
-    double value = 7.8605;
+    double value = 55411662.89695;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(7.9836) = 2.077389 \f]
+/// @brief \f[ log(56642786.02086) = 17.852275 \f]
 START_TEST(s21_log_946)
 {
-    double value = 7.9836;
+    double value = 56642786.02086;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.1067) = 2.092691 \f]
+/// @brief \f[ log(57873909.14477) = 17.873777 \f]
 START_TEST(s21_log_947)
 {
-    double value = 8.1067;
+    double value = 57873909.14477;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.2298) = 2.107762 \f]
+/// @brief \f[ log(59105032.26868) = 17.894827 \f]
 START_TEST(s21_log_948)
 {
-    double value = 8.2298;
+    double value = 59105032.26868;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.3529) = 2.122609 \f]
+/// @brief \f[ log(60336155.39259) = 17.915442 \f]
 START_TEST(s21_log_949)
 {
-    double value = 8.3529;
+    double value = 60336155.39259;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.4760) = 2.137239 \f]
+/// @brief \f[ log(61567278.51650) = 17.935641 \f]
 START_TEST(s21_log_950)
 {
-    double value = 8.4760;
+    double value = 61567278.51650;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.5991) = 2.151658 \f]
+/// @brief \f[ log(62798401.64041) = 17.955440 \f]
 START_TEST(s21_log_951)
 {
-    double value = 8.5991;
+    double value = 62798401.64041;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.7222) = 2.165871 \f]
+/// @brief \f[ log(64029524.76432) = 17.974855 \f]
 START_TEST(s21_log_952)
 {
-    double value = 8.7222;
+    double value = 64029524.76432;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.8453) = 2.179886 \f]
+/// @brief \f[ log(65260647.88823) = 17.993900 \f]
 START_TEST(s21_log_953)
 {
-    double value = 8.8453;
+    double value = 65260647.88823;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(8.9684) = 2.193707 \f]
+/// @brief \f[ log(66491771.01214) = 18.012589 \f]
 START_TEST(s21_log_954)
 {
-    double value = 8.9684;
+    double value = 66491771.01214;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.0915) = 2.207340 \f]
+/// @brief \f[ log(67722894.13605) = 18.030935 \f]
 START_TEST(s21_log_955)
 {
-    double value = 9.0915;
+    double value = 67722894.13605;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.2146) = 2.220789 \f]
+/// @brief \f[ log(68954017.25996) = 18.048950 \f]
 START_TEST(s21_log_956)
 {
-    double value = 9.2146;
+    double value = 68954017.25996;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.3377) = 2.234060 \f]
+/// @brief \f[ log(70185140.38387) = 18.066647 \f]
 START_TEST(s21_log_957)
 {
-    double value = 9.3377;
+    double value = 70185140.38387;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.4608) = 2.247157 \f]
+/// @brief \f[ log(71416263.50778) = 18.084036 \f]
 START_TEST(s21_log_958)
 {
-    double value = 9.4608;
+    double value = 71416263.50778;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.5839) = 2.260085 \f]
+/// @brief \f[ log(72647386.63169) = 18.101128 \f]
 START_TEST(s21_log_959)
 {
-    double value = 9.5839;
+    double value = 72647386.63169;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.7070) = 2.272847 \f]
+/// @brief \f[ log(73878509.75560) = 18.117933 \f]
 START_TEST(s21_log_960)
 {
-    double value = 9.7070;
+    double value = 73878509.75560;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.8301) = 2.285449 \f]
+/// @brief \f[ log(75109632.87951) = 18.134459 \f]
 START_TEST(s21_log_961)
 {
-    double value = 9.8301;
+    double value = 75109632.87951;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(9.9532) = 2.297894 \f]
+/// @brief \f[ log(76340756.00342) = 18.150718 \f]
 START_TEST(s21_log_962)
 {
-    double value = 9.9532;
+    double value = 76340756.00342;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.0763) = 2.310186 \f]
+/// @brief \f[ log(77571879.12733) = 18.166716 \f]
 START_TEST(s21_log_963)
 {
-    double value = 10.0763;
+    double value = 77571879.12733;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.1994) = 2.322329 \f]
+/// @brief \f[ log(78803002.25124) = 18.182462 \f]
 START_TEST(s21_log_964)
 {
-    double value = 10.1994;
+    double value = 78803002.25124;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.3225) = 2.334326 \f]
+/// @brief \f[ log(80034125.37515) = 18.197964 \f]
 START_TEST(s21_log_965)
 {
-    double value = 10.3225;
+    double value = 80034125.37515;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.4456) = 2.346181 \f]
+/// @brief \f[ log(81265248.49906) = 18.213229 \f]
 START_TEST(s21_log_966)
 {
-    double value = 10.4456;
+    double value = 81265248.49906;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.5687) = 2.357897 \f]
+/// @brief \f[ log(82496371.62297) = 18.228265 \f]
 START_TEST(s21_log_967)
 {
-    double value = 10.5687;
+    double value = 82496371.62297;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.6918) = 2.369477 \f]
+/// @brief \f[ log(83727494.74688) = 18.243078 \f]
 START_TEST(s21_log_968)
 {
-    double value = 10.6918;
+    double value = 83727494.74688;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.8149) = 2.380925 \f]
+/// @brief \f[ log(84958617.87079) = 18.257675 \f]
 START_TEST(s21_log_969)
 {
-    double value = 10.8149;
+    double value = 84958617.87079;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(10.9380) = 2.392243 \f]
+/// @brief \f[ log(86189740.99470) = 18.272062 \f]
 START_TEST(s21_log_970)
 {
-    double value = 10.9380;
+    double value = 86189740.99470;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.0611) = 2.403434 \f]
+/// @brief \f[ log(87420864.11861) = 18.286245 \f]
 START_TEST(s21_log_971)
 {
-    double value = 11.0611;
+    double value = 87420864.11861;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.1842) = 2.414502 \f]
+/// @brief \f[ log(88651987.24252) = 18.300229 \f]
 START_TEST(s21_log_972)
 {
-    double value = 11.1842;
+    double value = 88651987.24252;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.3073) = 2.425449 \f]
+/// @brief \f[ log(89883110.36643) = 18.314021 \f]
 START_TEST(s21_log_973)
 {
-    double value = 11.3073;
+    double value = 89883110.36643;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.4304) = 2.436276 \f]
+/// @brief \f[ log(91114233.49034) = 18.327625 \f]
 START_TEST(s21_log_974)
 {
-    double value = 11.4304;
+    double value = 91114233.49034;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.5535) = 2.446988 \f]
+/// @brief \f[ log(92345356.61425) = 18.341046 \f]
 START_TEST(s21_log_975)
 {
-    double value = 11.5535;
+    double value = 92345356.61425;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.6766) = 2.457587 \f]
+/// @brief \f[ log(93576479.73816) = 18.354290 \f]
 START_TEST(s21_log_976)
 {
-    double value = 11.6766;
+    double value = 93576479.73816;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.7997) = 2.468074 \f]
+/// @brief \f[ log(94807602.86207) = 18.367360 \f]
 START_TEST(s21_log_977)
 {
-    double value = 11.7997;
+    double value = 94807602.86207;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(11.9228) = 2.478453 \f]
+/// @brief \f[ log(96038725.98598) = 18.380262 \f]
 START_TEST(s21_log_978)
 {
-    double value = 11.9228;
+    double value = 96038725.98598;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.0459) = 2.488724 \f]
+/// @brief \f[ log(97269849.10989) = 18.393000 \f]
 START_TEST(s21_log_979)
 {
-    double value = 12.0459;
+    double value = 97269849.10989;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.1690) = 2.498892 \f]
+/// @brief \f[ log(98500972.23380) = 18.405577 \f]
 START_TEST(s21_log_980)
 {
-    double value = 12.1690;
+    double value = 98500972.23380;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.2921) = 2.508957 \f]
+/// @brief \f[ log(99732095.35771) = 18.417998 \f]
 START_TEST(s21_log_981)
 {
-    double value = 12.2921;
+    double value = 99732095.35771;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.4152) = 2.518922 \f]
+/// @brief \f[ log(100963218.48162) = 18.430267 \f]
 START_TEST(s21_log_982)
 {
-    double value = 12.4152;
+    double value = 100963218.48162;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.5383) = 2.528788 \f]
+/// @brief \f[ log(102194341.60553) = 18.442387 \f]
 START_TEST(s21_log_983)
 {
-    double value = 12.5383;
+    double value = 102194341.60553;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.6614) = 2.538558 \f]
+/// @brief \f[ log(103425464.72944) = 18.454362 \f]
 START_TEST(s21_log_984)
 {
-    double value = 12.6614;
+    double value = 103425464.72944;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.7845) = 2.548233 \f]
+/// @brief \f[ log(104656587.85335) = 18.466195 \f]
 START_TEST(s21_log_985)
 {
-    double value = 12.7845;
+    double value = 104656587.85335;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(12.9076) = 2.557816 \f]
+/// @brief \f[ log(105887710.97726) = 18.477890 \f]
 START_TEST(s21_log_986)
 {
-    double value = 12.9076;
+    double value = 105887710.97726;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.0307) = 2.567308 \f]
+/// @brief \f[ log(107118834.10117) = 18.489449 \f]
 START_TEST(s21_log_987)
 {
-    double value = 13.0307;
+    double value = 107118834.10117;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.1538) = 2.576711 \f]
+/// @brief \f[ log(108349957.22508) = 18.500877 \f]
 START_TEST(s21_log_988)
 {
-    double value = 13.1538;
+    double value = 108349957.22508;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.2769) = 2.586026 \f]
+/// @brief \f[ log(109581080.34899) = 18.512175 \f]
 START_TEST(s21_log_989)
 {
-    double value = 13.2769;
+    double value = 109581080.34899;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.4000) = 2.595255 \f]
+/// @brief \f[ log(110812203.47290) = 18.523347 \f]
 START_TEST(s21_log_990)
 {
-    double value = 13.4000;
+    double value = 110812203.47290;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.5231) = 2.604399 \f]
+/// @brief \f[ log(112043326.59681) = 18.534396 \f]
 START_TEST(s21_log_991)
 {
-    double value = 13.5231;
+    double value = 112043326.59681;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.6462) = 2.613461 \f]
+/// @brief \f[ log(113274449.72072) = 18.545324 \f]
 START_TEST(s21_log_992)
 {
-    double value = 13.6462;
+    double value = 113274449.72072;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.7693) = 2.622441 \f]
+/// @brief \f[ log(114505572.84463) = 18.556134 \f]
 START_TEST(s21_log_993)
 {
-    double value = 13.7693;
+    double value = 114505572.84463;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(13.8924) = 2.631342 \f]
+/// @brief \f[ log(115736695.96854) = 18.566828 \f]
 START_TEST(s21_log_994)
 {
-    double value = 13.8924;
+    double value = 115736695.96854;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.0155) = 2.640164 \f]
+/// @brief \f[ log(116967819.09245) = 18.577409 \f]
 START_TEST(s21_log_995)
 {
-    double value = 14.0155;
+    double value = 116967819.09245;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.1386) = 2.648909 \f]
+/// @brief \f[ log(118198942.21636) = 18.587880 \f]
 START_TEST(s21_log_996)
 {
-    double value = 14.1386;
+    double value = 118198942.21636;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.2617) = 2.657578 \f]
+/// @brief \f[ log(119430065.34027) = 18.598242 \f]
 START_TEST(s21_log_997)
 {
-    double value = 14.2617;
+    double value = 119430065.34027;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.3848) = 2.666172 \f]
+/// @brief \f[ log(120661188.46418) = 18.608497 \f]
 START_TEST(s21_log_998)
 {
-    double value = 14.3848;
+    double value = 120661188.46418;
 
     s21_test_log(value);
 }
 
-/// @brief \f[ log(14.5079) = 2.674693 \f]
+/// @brief \f[ log(121892311.58809) = 18.618649 \f]
 START_TEST(s21_log_999)
 {
-    double value = 14.5079;
+    double value = 121892311.58809;
 
     s21_test_log(value);
 }
@@ -9161,6 +9161,7 @@ Suite *s21_log_tenth_case(void)
 
     return math;
 }
+
 
 
 //------------------------------------------------------------------------------
