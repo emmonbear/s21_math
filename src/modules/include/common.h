@@ -15,7 +15,8 @@
 #include <ieee754.h>
 #include <stdint.h>
 
-#define PI 3.1415926535897932
+#define PI 3.14159265358979323846
+#define EULER 2.71828182845904523536
 
 #define S21_NAN 0.0 / 0.0  ///< Value is Not a Number (NaN).
 #define S21_INF 1.0 / 0.0  ///< Value is infinity (inf).

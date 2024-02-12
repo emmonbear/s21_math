@@ -20,10 +20,10 @@
  */
 int main()
 {
-    double value = S21_INF;
+    double value = -92345678901;
 
-    long double original_func = fabs(value);
-    long double implementation = s21_fabs(value);
+    long double original_func = sin(value);
+    long double implementation = s21_sin(value);
 
     printf("original function  = %Lf\n", original_func);
     printf("our implementation = %Lf\n", implementation);

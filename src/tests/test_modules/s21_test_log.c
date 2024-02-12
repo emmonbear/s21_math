@@ -9201,7 +9201,7 @@ void s21_test_log(double value) {
     printf("Test result: \033[0;32mTEST PASSED!\033[0m\n\n");
   }
 
-  // s21_test_print(original_func, implementation);
+  s21_test_print(original_func, implementation);
 
   ck_assert_double_eq_tol(first, second, COMPARE_ACCURACY);
 }

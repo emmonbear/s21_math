@@ -12,8 +12,8 @@
 #ifndef S21_TESTS_H_
 #define S21_TESTS_H_
 
-#define ALL_TESTS
 #ifdef ALL_TESTS
+#define ALL_TESTS
 
 #define ABS_TEST
 #define FABS_TEST

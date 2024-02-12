@@ -11,6 +11,8 @@
 
 #include "./include/s21_log.h"
 
+// #define s21_EPS 1e-100
+
 /**
  * @brief Computes natural logarithm.
  *
@@ -22,23 +24,34 @@
  * @param[in] x a value used in the calculation of the logarithm of x to the
  * base of e.
  * @return long double - result of calculation.
- *
- *
- * @todo Изучить синтаксис LaTex
- * @todo Добавить формулу вычисления log через ряды Тейлора
  */
 long double s21_log(double x) {
-  double result;
-  if (!x) {
-    result = S21_INF_NEG;
-  } else if (x < 0 || S21_IS_NAN(x) || x == S21_INF_NEG) {
+  long double result = 0.0;
+  double_int bits = {{x}};
+
+  if (x == 0.0) {
+    result = -S21_INF;
+  } else if (x < 0.0 || BITS_NAN(bits) || BITS_NEG_INF(bits)) {
     result = S21_NAN;
-  } else if (x == 1.0) {
-    result = 0.0;
-  } else if (x == S21_INF_POS) {
-    result = S21_INF_POS;
+  } else if (BITS_POS_INF(bits)) {
+    result = S21_INF;
   } else {
-    result = x;
+    long double current = x;
+    long double approach = 1;
+
+    while (current < 1.0 / EULER || current > EULER || s21_fabs(approach) > PRECISION) {
+      if (current > EULER) {
+        current /= EULER;
+        result += approach;
+      } else if (current < 1.0 / EULER) {
+        current *= EULER;
+        result -= approach;
+      } else {
+        current *= current;
+        approach /= 2.0;
+      }
+    }
   }
+
   return result;
 }

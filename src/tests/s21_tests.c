@@ -105,8 +105,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef LOG_TEST
 #define LOG_TEST
+#ifdef LOG_TEST
   Suite *(*s21_log[])(void) = {
     s21_log_first_case,
     s21_log_second_case,
