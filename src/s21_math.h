@@ -21,5 +21,6 @@
 #include "./modules/include/s21_sqrt.h"
 #include "./modules/include/s21_sin.h"
 #include "./modules/include/s21_cos.h"
+#include "./modules/include/s21_tan.h"
 
 #endif  // S21_MATH_H_
