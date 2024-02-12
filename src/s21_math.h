@@ -12,6 +12,7 @@
 #define S21_MATH_H_
 
 #include "./modules/include/s21_abs.h"
+#include "./modules/include/s21_asin.h"
 #include "./modules/include/s21_ceil.h"
 #include "./modules/include/s21_cos.h"
 #include "./modules/include/s21_exp.h"

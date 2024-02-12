@@ -26,7 +26,7 @@ long double s21_cos(double x) {
   if (BITS_INF(num) || BITS_NAN(num)) {
     result = S21_NAN;
   } else {
-    num.dbl.d = fmod(num.dbl.d, S21_PI);
+    num.dbl.d = fmod(num.dbl.d, 2 * PI);
 
     long double member = num.dbl.d;
     int sign = -1;
