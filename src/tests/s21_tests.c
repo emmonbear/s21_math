@@ -105,8 +105,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define LOG_TEST
 #ifdef LOG_TEST
+#define LOG_TEST
   Suite *(*s21_log[])(void) = {
     s21_log_first_case,
     s21_log_second_case,
@@ -145,14 +145,24 @@ int main(void) {
 #ifdef SIN_TEST
 #define SIN_TEST
   Suite *(*s21_sin[])(void) = {
-      s21_sin_first_case,
-  };
+    s21_sin_first_case,
+    s21_sin_second_case,
+    s21_sin_third_case,
+    s21_sin_fourth_case,
+    s21_sin_fifth_case,
+    s21_sin_sixth_case,
+    s21_sin_seventh_case,
+    s21_sin_eighth_case,
+    s21_sin_ninth_case,
+    s21_sin_tenth_case,
+};
+
   test_function(s21_sin, sizeof(s21_sin) / sizeof(s21_sin[0]), "S21_SIN",
                 &passed_count, &failed_count);
 #endif
 
-#ifdef COS_TEST
 #define COS_TEST
+#ifdef COS_TEST
   Suite *(*s21_cos[])(void) = {
       s21_cos_first_case,
   };
