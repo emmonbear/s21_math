@@ -1,13 +1,11 @@
 ################################################################################
-#                ____    _                               _     _               #
-#          ___  |___ \  / |          _ __ ___     __ _  | |_  | |__            #
-#         / __|   __) | | |         | '_ ` _ \   / _` | | __| | '_ \           #
-#         \__ \  / __/  | |  _____  | | | | | | | (_| | | |_  | | | |          #
-#         |___/ |_____| |_| |_____| |_| |_| |_|  \__,_|  \__| |_| |_|          #
-#                                                                              # 
+#                  ____   _                           _    _                   #
+#             ___ |___ \ / |        _ __ ___    __ _ | |_ | |__                #
+#            / __|  __) || |       | '_ ` _ \  / _` || __|| '_ \               #
+#            \__ \ / __/ | | _____ | | | | | || (_| || |_ | | | |              #
+#            |___/|_____||_||_____||_| |_| |_| \__,_| \__||_| |_|              #
+#                                                                              #
 ################################################################################
-
-
 
 
 ################################################################################
@@ -21,6 +19,7 @@
 #                                                                              #
 ################################################################################
 
+
 #================================== COMPILER ==================================#
 PROJECT_NAME = s21_math
 CC = gcc
@@ -29,8 +28,6 @@ CC = gcc
 
 #=============================== DIRECTORY NAMES ==============================#
 OBJ_DIR = ./obj
-GCOV_OBJ_DIR = ./obj/gcov
-TEST_OBJ_DIR = ./obj/tests
 MODULES_DIR = ./modules
 TEST_DIR = ./tests
 REPORT_DIR = ./report
@@ -72,7 +69,7 @@ MAIN_H = $(shell find ./ -maxdepth 1 -name "*.h")
 
 #====================== LIST OF FILE AND DIRS IN MODULES ======================#
 MODULES_DIRS = $(shell find $(MODULES_DIR) -type d)
-MODULES_C = $(notdir $(shell find $(MODULES_DIR) -type f -name "*.c"))
+MODULES_C = $(shell find $(MODULES_DIR) -type f -name "*.c")
 MODULES_H = $(shell find $(MODULES_DIR) -type f -name "*.h")
 MODULES_O = $(MODULES_C:%.c=%.o)
 #==============================================================================#
@@ -80,9 +77,9 @@ MODULES_O = $(MODULES_C:%.c=%.o)
 
 #==================== LIST OF FILE AND DIRS IN TEST MODULES ===================#
 TEST_DIRS = $(shell find $(TEST_DIR) -type d)
-TEST_C = $(notdir $(shell find $(TEST_DIR) -type f -name "*.c"))
+TEST_C = $(shell find $(TEST_DIR) -type f -name "*.c")
 TEST_H = $(shell find $(TEST_DIR) -type f -name "*.h")
-TEST_O = $(addprefix $(TEST_OBJ_DIR)/, $(notdir $(TEST_C:%.c=%.o)))
+TEST_O = $(TEST_C:%.c=%.o)
 #==============================================================================#
 
 #================= LIST OF FILES TO CLANG-FORMAT AND CPPCHECK =================#
@@ -98,8 +95,6 @@ vpath %.o $(OBJ_DIR)
 #==============================================================================#
 
 
-
-
 ################################################################################
 #                      _                       _                               #
 #                     | |                     | |                              #
@@ -111,19 +106,20 @@ vpath %.o $(OBJ_DIR)
 #                                   |___/                                      #
 ################################################################################
 
+
 #================================= MAIN TARGETS ===============================#
-all: dvi $(TARGET)
+all: $(TARGET) dvi
 
 $(LIBRARY): $(OBJ_DIR) $(MODULES_O) $(MODULES_H) $(MAIN_H)
-	ar rcs $@ $(addprefix $(OBJ_DIR)/, $(MODULES_O))
+	ar rcs $@ $(addprefix $(OBJ_DIR)/, $(notdir $(MODULES_O)))
 	ranlib $@
 
-$(TARGET): $(LIBRARY) $(TEST_OBJ_DIR) $(TEST_O)
-	$(CC) $(TEST_O) $(LIBRARY) $(LDFLAGS) -o $@
+$(TARGET): $(LIBRARY) $(TEST_O)
+	$(CC) $(addprefix $(OBJ_DIR)/, $(notdir $(TEST_O))) $(LIBRARY) $(LDFLAGS) -o $@
 	./$@
 
-$(GCOV): $(REPORT_DIR) $(TEST_OBJ_DIR) $(TEST_O)
-	$(CC) $(TEST_O) $(addprefix $(MODULES_DIR)/,$(MODULES_C)) $(LDFLAGS) $(GCOV_FLAGS) -o $(TARGET)
+$(GCOV): $(OBJ_DIR) $(TEST_O)
+	$(CC) $(addprefix $(OBJ_DIR)/, $(notdir $(TEST_O))) $(MODULES_C) $(LDFLAGS) $(GCOV_FLAGS) -o $(TARGET)
 	./$(TARGET)
 	gcovr -r . --html --html-details -o $(REPORT_DIR)/coverage.html
 	xdg-open $(REPORT_DIR)/coverage.html
@@ -152,9 +148,6 @@ rebuild: clean all
 $(OBJ_DIR):
 	mkdir -p $(OBJ_DIR)
 
-$(TEST_OBJ_DIR):
-	mkdir -p $(TEST_OBJ_DIR)
-
 $(REPORT_DIR):
 	mkdir -p $(REPORT_DIR)
 #==============================================================================#
@@ -162,18 +155,11 @@ $(REPORT_DIR):
 
 #============================== OBJECTIVE TARGETS =============================#
 %.o: %.c $(H_FILES)
-	$(CC) $(CFLAGS) -c -o $(addprefix $(OBJ_DIR)/, $@) $<
-
-$(TEST_OBJ_DIR)/%.o : %.c $(TEST_H)
-	$(CC) $(CFLAGS) -c -o $@ $<
+	$(CC) $(CFLAGS) -c -o $(addprefix $(OBJ_DIR)/, $(notdir $@)) $<
 #==============================================================================#
 
 
 #=============================== CHECKS TARGETS ===============================#
-debug: $(LIBRARY)
-	@$(CC) main.c $(LIBRARY) tests/debug/*.c -o main -lm
-	@./main
-
 clang_check:
 	clang-format -style=Google -n $(ALL_FILES)
 
@@ -206,7 +192,11 @@ valgrind: $(TARGET)
 
 
 #============================= ADDITIONAL TARGETS =============================#
-install:
+debug: $(LIBRARY)
+	@$(CC) main.c $(LIBRARY) tests/debug/*.c -o main -lm
+	@./main
+
+dependencies:
 	sudo apt install cppcheck
 	sudo apt install clang-format
 	sudo apt-get install check
