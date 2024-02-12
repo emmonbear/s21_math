@@ -15,6 +15,9 @@
 #include <ieee754.h>
 #include <stdint.h>
 
+#define PI 3.1415926535897932
+#define S21_PI 6.2831853071795864  ///< The exact value of pi.
+
 #define S21_NAN 0.0 / 0.0  ///< Value is Not a Number (NaN).
 #define S21_INF 1.0 / 0.0  ///< Value is infinity (inf).
 
@@ -40,7 +43,7 @@
 #define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)      ///< Check value is -inf.
 #define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)      ///< Check value is +inf.
 
-#define TAYLOR_PRECISION 1.0e-17  ///< Limit accuracy of member Taylor series.
+#define PRECISION 1.0e-17  ///< Limit accuracy of member Taylor series.
 
 /**
  * @brief Union structure assigned to work with double bits.
