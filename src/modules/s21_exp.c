@@ -11,8 +11,6 @@
 
 #include "./include/s21_exp.h"
 
-#include "./include/s21_fabs.h"
-
 /**
  * @brief Returns e raised to the given power.
  *

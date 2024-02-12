@@ -12,7 +12,9 @@
 #ifndef S21_TAN_H_
 #define S21_TAN_H_
 
-#include "./../common.h"
+#include "./common.h"
+#include "./s21_cos.h"
+#include "./s21_sin.h"
 
 long double s21_tan(double x);
 

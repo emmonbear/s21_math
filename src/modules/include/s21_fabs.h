@@ -12,7 +12,7 @@
 #ifndef S21_FABS_H_
 #define S21_FABS_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 long double s21_fabs(double x);
 

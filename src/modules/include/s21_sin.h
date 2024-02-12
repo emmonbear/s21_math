@@ -12,7 +12,8 @@
 #ifndef S21_SIN_H_
 #define S21_SIN_H_
 
-#include "./../common.h"
+#include "./common.h"
+#include "./s21_fabs.h"
 
 long double s21_sin(double x);
 

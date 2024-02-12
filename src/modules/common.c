@@ -9,7 +9,7 @@
  *
  */
 
-#include "./common.h"
+#include "./include/common.h"
 
 /**
  * @brief Calculate the factorial of n and immediately divides the member of the

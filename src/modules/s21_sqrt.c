@@ -11,8 +11,6 @@
 
 #include "./include/s21_sqrt.h"
 
-#include "./include/s21_pow.h"
-
 /**
  * @brief Calculates the square root of a floating point number.
  *

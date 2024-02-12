@@ -12,7 +12,8 @@
 #ifndef S21_SQRT_H_
 #define S21_SQRT_H_
 
-#include "./../common.h"
+#include "./common.h"
+#include "./s21_pow.h"
 
 long double s21_sqrt(double x);
 

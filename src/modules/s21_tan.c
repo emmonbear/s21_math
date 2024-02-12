@@ -10,8 +10,6 @@
  */
 
 #include "./include/s21_tan.h"
-#include "./include/s21_sin.h"
-#include "./include/s21_cos.h"
 
 /**
  * @brief Calculates the tangent of a floating point number.
@@ -19,6 +17,4 @@
  * @param[in] x number whose tangent needs to be calculated.
  * @return long double - result of calculation.
  */
-long double s21_tan(double x) {
-  return s21_sin(x)/s21_cos(x);
-}
+long double s21_tan(double x) { return s21_sin(x) / s21_cos(x); }

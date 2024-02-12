@@ -12,7 +12,8 @@
 #ifndef S21_COS_H_
 #define S21_COS_H_
 
-#include "./../common.h"
+#include "./common.h"
+#include "./s21_fabs.h"
 
 long double s21_cos(double x);
 

@@ -12,7 +12,9 @@
 #ifndef S21_POW_H_
 #define S21_POW_H_
 
-#include "./../common.h"
+#include "./common.h"
+#include "./s21_exp.h"
+#include "./s21_fabs.h"
 
 long double s21_pow(double base, double exp);
 

@@ -12,7 +12,7 @@
 #ifndef S21_FLOOR_H_
 #define S21_FLOOR_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 long double s21_floor(double x);
 

@@ -13,9 +13,6 @@
 
 #include <math.h>
 
-#include "./include/s21_exp.h"
-#include "./include/s21_fabs.h"
-
 /**
  * @brief Raises a number to a given power.
  *

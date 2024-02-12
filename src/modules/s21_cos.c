@@ -13,8 +13,6 @@
 
 #include <math.h>
 
-#include "./include/s21_fabs.h"
-
 /**
  * @brief Calculates the cosine of a floating point number.
  *

@@ -12,7 +12,7 @@
 #ifndef S21_ABS_H_
 #define S21_ABS_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 int s21_abs(int x);
 

@@ -13,14 +13,14 @@
 
 #include "./modules/include/s21_abs.h"
 #include "./modules/include/s21_ceil.h"
+#include "./modules/include/s21_cos.h"
 #include "./modules/include/s21_exp.h"
 #include "./modules/include/s21_fabs.h"
 #include "./modules/include/s21_floor.h"
 #include "./modules/include/s21_log.h"
 #include "./modules/include/s21_pow.h"
-#include "./modules/include/s21_sqrt.h"
 #include "./modules/include/s21_sin.h"
-#include "./modules/include/s21_cos.h"
+#include "./modules/include/s21_sqrt.h"
 #include "./modules/include/s21_tan.h"
 
 #endif  // S21_MATH_H_

@@ -13,8 +13,6 @@
 
 #include <math.h>
 
-#include "./include/s21_fabs.h"
-
 /**
  * @brief Calculates the sine of a floating point number.
  *
