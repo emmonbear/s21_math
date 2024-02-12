@@ -108,9 +108,18 @@ int main(void) {
 #ifdef LOG_TEST
 #define LOG_TEST
   Suite *(*s21_log[])(void) = {
-      s21_log_edge_case,
-      // s21_log_second_case,
-  };
+    s21_log_first_case,
+    s21_log_second_case,
+    s21_log_third_case,
+    s21_log_fourth_case,
+    s21_log_fifth_case,
+    s21_log_sixth_case,
+    s21_log_seventh_case,
+    s21_log_eighth_case,
+    s21_log_ninth_case,
+    s21_log_tenth_case,
+};
+
   test_function(s21_log, sizeof(s21_log) / sizeof(s21_log[0]), "S21_LOG",
                 &passed_count, &failed_count);
 #endif
