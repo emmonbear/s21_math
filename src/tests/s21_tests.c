@@ -78,11 +78,19 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef EXP_TEST
 #define EXP_TEST
+#ifdef EXP_TEST
   Suite *(*s21_exp[])(void) = {
-      s21_exp_first_case,  s21_exp_second_case, s21_exp_third_case,
-      s21_exp_fourth_case, s21_exp_fifth_case,  s21_exp_edge_case,
+      s21_exp_first_case,
+s21_exp_second_case,
+s21_exp_third_case,
+s21_exp_forth_case,
+s21_exp_fifth_case,
+s21_exp_sixth_case,
+s21_exp_seventh_case,
+s21_exp_eighth_case,
+s21_exp_ninth_case,
+s21_exp_tenth_case,
   };
   test_function(s21_exp, sizeof(s21_exp) / sizeof(s21_exp[0]), "S21_EXP",
                 &passed_count, &failed_count);
@@ -116,8 +124,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define POW_TEST
 #ifdef POW_TEST
+#define POW_TEST
   Suite *(*s21_pow[])(void) = {
       s21_pow_first_case,
   };
