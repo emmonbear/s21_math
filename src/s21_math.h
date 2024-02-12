@@ -18,7 +18,8 @@
 #include "./modules/include/s21_floor.h"
 #include "./modules/include/s21_log.h"
 #include "./modules/include/s21_pow.h"
-#include "./modules/include/s21_sin.h"
 #include "./modules/include/s21_sqrt.h"
+#include "./modules/include/s21_sin.h"
+#include "./modules/include/s21_cos.h"
 
 #endif  // S21_MATH_H_
