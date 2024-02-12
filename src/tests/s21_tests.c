@@ -161,8 +161,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define COS_TEST
 #ifdef COS_TEST
+#define COS_TEST
   Suite *(*s21_cos[])(void) = {
     s21_cos_first_case,
     s21_cos_second_case,
@@ -180,11 +180,21 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef TAN_TEST
 #define TAN_TEST
+#ifdef TAN_TEST
   Suite *(*s21_tan[])(void) = {
-      s21_tan_first_case,
-  };
+    s21_tan_first_case,
+    s21_tan_second_case,
+    s21_tan_third_case,
+    s21_tan_fourth_case,
+    s21_tan_fifth_case,
+    s21_tan_sixth_case,
+    s21_tan_seventh_case,
+    s21_tan_eighth_case,
+    s21_tan_ninth_case,
+    s21_tan_tenth_case,
+};
+
   test_function(s21_tan, sizeof(s21_tan) / sizeof(s21_tan[0]), "S21_TAN",
                 &passed_count, &failed_count);
 #endif
