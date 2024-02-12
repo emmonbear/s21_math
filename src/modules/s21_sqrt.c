@@ -1,7 +1,7 @@
 /**
  * @file s21_sqrt.c
  * @author emmonbea (moskaleviluak@icloud.com)
- * @brief Implementation of function log from math.h library
+ * @brief Implementation of function sqrt from math.h library
  * @version 1.0
  * @date 2024-02-12
  *
@@ -19,4 +19,4 @@
  * @param[in] x number whose root needs to be extracted.
  * @return long double - result of calculation.
  */
-long double s21_sqrt(double x) {}
+long double s21_sqrt(double x) { return s21_pow(x, 0.5); }
