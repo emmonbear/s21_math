@@ -4,9 +4,9 @@
  * @brief debug header
  * @version 1.0
  * @date 2024-01-23
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 #ifndef S21_DEBUG_H_
 #define S21_DEBUG_H_
@@ -18,4 +18,4 @@ void print_bits_double(double x);
 void print_bits(unsigned int x, int size);
 void s21_test_print(long double original_func, long double implementation);
 
-#endif // S21_DEBUG_H_
+#endif  // S21_DEBUG_H_

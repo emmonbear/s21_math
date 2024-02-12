@@ -12,15 +12,15 @@
 #ifndef COMMON_H_
 #define COMMON_H_
 
-#define DEBUG ///< Uncomment to display the bits
+#define DEBUG  ///< Uncomment to display the bits
 // #define DEBUG_ERRORS ///< Uncomment to display bits of unsuccessful tests
 
 #include <check.h>
 #include <math.h>
 #include <stdlib.h>
 
-#include "./../../s21_math.h"
 #include "./../../debug/debug.h"
+#include "./../../s21_math.h"
 
 #define COMPARE_ACCURACY \
   1.0e-6  ///< Comparable accuracy of calculation results during testing.

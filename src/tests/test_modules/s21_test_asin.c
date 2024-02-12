@@ -4,9 +4,9 @@
  * @brief A set of tests to check the functionality of s21_asin
  * @version 1.0
  * @date 2024-01-21
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #include "./test_include/s21_test_asin.h"
@@ -63,25 +63,24 @@
 
 /**
  * @brief First set of tests.
- * 
- * @return Suite* 
+ *
+ * @return Suite*
  */
-Suite *s21_asin_first_case(void)
-{
-    Suite *math = suite_create("s21_math (s21_asin first case)");
+Suite *s21_asin_first_case(void) {
+  Suite *math = suite_create("s21_math (s21_asin first case)");
 
-    TCase *tc_asin = tcase_create("test_asin");
-    // tcase_add_test(tc_asin, s21_asin_1);
-    // tcase_add_test(tc_asin, s21_asin_2);
-    // tcase_add_test(tc_asin, s21_asin_3);
-    // tcase_add_test(tc_asin, s21_asin_4);
-    // tcase_add_test(tc_asin, s21_asin_5);
-    // tcase_add_test(tc_asin, s21_asin_6);
-    // tcase_add_test(tc_asin, s21_asin_7);
-    // tcase_add_test(tc_asin, s21_asin_8);
-    // tcase_add_test(tc_asin, s21_asin_9);
-    // tcase_add_test(tc_asin, s21_asin_10);
-    suite_add_tcase(math, tc_asin);
+  TCase *tc_asin = tcase_create("test_asin");
+  // tcase_add_test(tc_asin, s21_asin_1);
+  // tcase_add_test(tc_asin, s21_asin_2);
+  // tcase_add_test(tc_asin, s21_asin_3);
+  // tcase_add_test(tc_asin, s21_asin_4);
+  // tcase_add_test(tc_asin, s21_asin_5);
+  // tcase_add_test(tc_asin, s21_asin_6);
+  // tcase_add_test(tc_asin, s21_asin_7);
+  // tcase_add_test(tc_asin, s21_asin_8);
+  // tcase_add_test(tc_asin, s21_asin_9);
+  // tcase_add_test(tc_asin, s21_asin_10);
+  suite_add_tcase(math, tc_asin);
 
-    return math;
+  return math;
 }

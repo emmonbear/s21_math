@@ -4,9 +4,9 @@
  * @brief Header file for s21_pow module
  * @version 1.0
  * @date 2024-01-26
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #ifndef S21_POW_H_
@@ -16,4 +16,4 @@
 
 long double s21_pow(double base, double exp);
 
-#endif // S21_POW_H_
+#endif  // S21_POW_H_

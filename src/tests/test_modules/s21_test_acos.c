@@ -4,9 +4,9 @@
  * @brief A set of tests to check the functionality of s21_acos
  * @version 1.0
  * @date 2024-01-21
- * 
+ *
  * @copyright Copyright (c) 2024
- * 
+ *
  */
 
 #include "./test_include/s21_test_acos.h"
@@ -63,25 +63,24 @@
 
 /**
  * @brief First set of tests.
- * 
- * @return Suite* 
+ *
+ * @return Suite*
  */
-Suite *s21_acos_first_case(void)
-{
-    Suite *math = suite_create("s21_math (s21_acos first case)");
+Suite *s21_acos_first_case(void) {
+  Suite *math = suite_create("s21_math (s21_acos first case)");
 
-    TCase *tc_acos = tcase_create("test_acos");
-    // tcase_add_test(tc_acos, s21_acos_1);
-    // tcase_add_test(tc_acos, s21_acos_2);
-    // tcase_add_test(tc_acos, s21_acos_3);
-    // tcase_add_test(tc_acos, s21_acos_4);
-    // tcase_add_test(tc_acos, s21_acos_5);
-    // tcase_add_test(tc_acos, s21_acos_6);
-    // tcase_add_test(tc_acos, s21_acos_7);
-    // tcase_add_test(tc_acos, s21_acos_8);
-    // tcase_add_test(tc_acos, s21_acos_9);
-    // tcase_add_test(tc_acos, s21_acos_10);
-    suite_add_tcase(math, tc_acos);
+  TCase *tc_acos = tcase_create("test_acos");
+  // tcase_add_test(tc_acos, s21_acos_1);
+  // tcase_add_test(tc_acos, s21_acos_2);
+  // tcase_add_test(tc_acos, s21_acos_3);
+  // tcase_add_test(tc_acos, s21_acos_4);
+  // tcase_add_test(tc_acos, s21_acos_5);
+  // tcase_add_test(tc_acos, s21_acos_6);
+  // tcase_add_test(tc_acos, s21_acos_7);
+  // tcase_add_test(tc_acos, s21_acos_8);
+  // tcase_add_test(tc_acos, s21_acos_9);
+  // tcase_add_test(tc_acos, s21_acos_10);
+  suite_add_tcase(math, tc_acos);
 
-    return math;
+  return math;
 }
