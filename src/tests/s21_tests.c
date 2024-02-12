@@ -164,8 +164,18 @@ int main(void) {
 #define COS_TEST
 #ifdef COS_TEST
   Suite *(*s21_cos[])(void) = {
-      s21_cos_first_case,
-  };
+    s21_cos_first_case,
+    s21_cos_second_case,
+    s21_cos_third_case,
+    s21_cos_fourth_case,
+    s21_cos_fifth_case,
+    s21_cos_sixth_case,
+    s21_cos_seventh_case,
+    s21_cos_eighth_case,
+    s21_cos_ninth_case,
+    s21_cos_tenth_case,
+};
+
   test_function(s21_cos, sizeof(s21_cos) / sizeof(s21_cos[0]), "S21_COS",
                 &passed_count, &failed_count);
 #endif
