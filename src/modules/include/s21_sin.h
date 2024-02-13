@@ -14,6 +14,7 @@
 
 #include "./common.h"
 #include "./s21_fabs.h"
+#include "./s21_fmod.h"
 
 long double s21_sin(double x);
 

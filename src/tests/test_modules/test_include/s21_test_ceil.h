@@ -28,5 +28,4 @@ Suite *s21_ceil_ninth_case(void);
 Suite *s21_ceil_tenth_case(void);
 Suite *s21_ceil_edge_case(void);
 
-
 #endif  // S21_TESTS_CEIL_H_

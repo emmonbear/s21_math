@@ -20,7 +20,7 @@
  * @return long double - result of calculation.
  */
 long double factorial(long double value, unsigned int n) {
-  for (unsigned int i = 1; i <= n; i++) {
+  for (uint32_t i = 1; i <= n; i++) {
     value /= i;
   }
 

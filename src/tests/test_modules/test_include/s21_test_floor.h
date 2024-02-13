@@ -27,5 +27,4 @@ Suite *s21_floor_eighth_case(void);
 Suite *s21_floor_ninth_case(void);
 Suite *s21_floor_tenth_case(void);
 
-
 #endif  // S21_TESTS_FLOOR_H_

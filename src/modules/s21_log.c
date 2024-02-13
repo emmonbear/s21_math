@@ -11,8 +11,6 @@
 
 #include "./include/s21_log.h"
 
-// #define s21_EPS 1e-100
-
 /**
  * @brief Computes natural logarithm.
  *
@@ -37,7 +35,7 @@ long double s21_log(double x) {
     result = S21_INF;
   } else {
     long double current = x;
-    long double approach = 1;
+    long double approach = 1.0;
 
     while (current < 1.0 / EULER || current > EULER ||
            s21_fabs(approach) > PRECISION) {

@@ -18,7 +18,7 @@
  * @return int - result of calculation.
  */
 int s21_abs(int x) {
-  int shift = GET_SHIFT(x);
+  uint8_t shift = GET_SHIFT(x);
 
   if (x >> shift) {
     x = ~x + 1;

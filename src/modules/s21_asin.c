@@ -11,8 +11,6 @@
 
 #include "./include/s21_asin.h"
 
-#include <math.h>
-
 /**
  * @brief Calculates the arc sine of a floating point number.
  *
@@ -23,23 +21,23 @@ long double s21_asin(double x) {
   long double result = x;
   double_int bits = {{x}};
 
-  if (BITS_INF(bits) || BITS_NAN(bits) || s21_fabs(x) > 1) {
+  if (BITS_INF(bits) || BITS_NAN(bits) || s21_fabs(x) > 1.0) {
     result = S21_NAN;
-  } else if (s21_fabs(x) == 1) {
-    result = PI / 2 * x;
+  } else if (s21_fabs(x) == 1.0) {
+    result = PI / 2.0 * x;
   } else {
     long double member = x;
-    long double numerator = 1;
-    long double denumerator = 2;
-    long double factor = 1;
+    long double numerator = 1.0;
+    long double denumerator = 2.0;
+    long double factor = 1.0;
 
-    for (int cnt = 3; s21_fabs(member) > PRECISION;
-         cnt += 2, numerator += 2, denumerator += 2) {
+    for (uint32_t cnt = 3; s21_fabs(member) > PRECISION;
+         cnt += 2, numerator += 2.0, denumerator += 2.0) {
       factor *= numerator / denumerator;
       member = factor * (fast_pow(x, cnt) / cnt);
       result += member;
-      if (numerator > 5000000) {
-        member = 0;
+      if (numerator > 5000000.0) {
+        member = 0.0;
       }
     }
   }

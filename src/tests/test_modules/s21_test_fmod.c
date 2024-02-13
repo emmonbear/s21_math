@@ -11,232 +11,203 @@
 
 #include "./test_include/s21_test_fmod.h"
 
-START_TEST(s21_fmod_0)
-{
+START_TEST(s21_fmod_0) {
   double x = -99.9;
   double y = 5.23;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_1)
-{
+START_TEST(s21_fmod_1) {
   double x = -0.4349;
   double y = 0.1123;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_2)
-{
+START_TEST(s21_fmod_2) {
   double x = 4325.5435;
   double y = 115.23;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_3)
-{
+START_TEST(s21_fmod_3) {
   double x = 0.543;
   double y = 1.6547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_4)
-{
+START_TEST(s21_fmod_4) {
   double x = 5.231478243;
   double y = 0.09453757;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_5)
-{
+START_TEST(s21_fmod_5) {
   double x = -1.543;
   double y = -0.6547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_6)
-{
+START_TEST(s21_fmod_6) {
   double x = 3425345345.12423;
   double y = 0.465447;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_7)
-{
+START_TEST(s21_fmod_7) {
   double x = 10.543;
   double y = -11.6547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_8)
-{
+START_TEST(s21_fmod_8) {
   double x = -0.543;
   double y = 1.6547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_9)
-{
+START_TEST(s21_fmod_9) {
   double x = 999999.99999;
   double y = 9.99999;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_10)
-{
+START_TEST(s21_fmod_10) {
   double x = 1111.543;
   double y = 111.1116547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_11)
-{
+START_TEST(s21_fmod_11) {
   double x = 1111.543;
   double y = 0;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_12)
-{
+START_TEST(s21_fmod_12) {
   double x = 0;
   double y = 111.1116547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_13)
-{
+START_TEST(s21_fmod_13) {
   double x = S21_NAN;
   double y = 111.1116547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_14)
-{
+START_TEST(s21_fmod_14) {
   double x = 1111.543;
   double y = S21_NAN;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_15)
-{
+START_TEST(s21_fmod_15) {
   double x = S21_NAN;
   double y = S21_NAN;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_16)
-{
+START_TEST(s21_fmod_16) {
   double x = S21_INF;
   double y = 111.1116547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_17)
-{
+START_TEST(s21_fmod_17) {
   double x = 1111.543;
   double y = S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_18)
-{
+START_TEST(s21_fmod_18) {
   double x = S21_INF;
   double y = S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_19)
-{
+START_TEST(s21_fmod_19) {
   double x = -S21_INF;
   double y = 111.1116547;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_20)
-{
+START_TEST(s21_fmod_20) {
   double x = 1111.543;
   double y = -S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_21)
-{
+START_TEST(s21_fmod_21) {
   double x = -S21_INF;
   double y = -S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_22)
-{
+START_TEST(s21_fmod_22) {
   double x = S21_INF;
   double y = 0;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_23)
-{
+START_TEST(s21_fmod_23) {
   double x = -S21_INF;
   double y = 0;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_24)
-{
+START_TEST(s21_fmod_24) {
   double x = S21_INF;
   double y = -43234.222;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_25)
-{
+START_TEST(s21_fmod_25) {
   double x = -43234.222;
   double y = S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_26)
-{
+START_TEST(s21_fmod_26) {
   double x = S21_NAN;
   double y = S21_INF;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_27)
-{
+START_TEST(s21_fmod_27) {
   double x = S21_INF;
   double y = S21_NAN;
 
   s21_test_fmod(x, y);
 }
 
-START_TEST(s21_fmod_28)
-{
+START_TEST(s21_fmod_28) {
   double x = 0.0000234;
   double y = 0.000003424;
 
@@ -325,4 +296,3 @@ void s21_test_fmod(double x, double y) {
 
   ck_assert_double_eq_tol(first, second, COMPARE_ACCURACY);
 }
-

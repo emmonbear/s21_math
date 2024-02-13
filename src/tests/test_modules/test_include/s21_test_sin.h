@@ -27,5 +27,4 @@ Suite *s21_sin_eighth_case(void);
 Suite *s21_sin_ninth_case(void);
 Suite *s21_sin_tenth_case(void);
 
-
 #endif  // S21_TESTS_SIN_H_

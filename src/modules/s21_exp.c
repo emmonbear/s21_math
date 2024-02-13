@@ -18,23 +18,23 @@
  * @return long double - result of calculation.
  */
 long double s21_exp(double x) {
-  long double result = 1;
+  long double result = 1.0;
   double_int bits = {{x}};
 
   if (bits.ulong == NAN_MASK) {
     result = S21_NAN;
   } else if (bits.dbl.ieee.exponent == INF_BITS) {
     if (bits.dbl.ieee.negative) {
-      result = ZERO;
+      result = 0.0;
     } else {
       result = x;
     }
   } else if (x < -27.0) {
-    result = 0;
+    result = 0.0;
   } else {
     long double member = x;
 
-    for (int cnt = 1; s21_fabs(member) > PRECISION; ++cnt) {
+    for (int32_t cnt = 1; s21_fabs(member) > PRECISION; cnt++) {
       member = factorial(fast_pow(x, cnt), cnt);
       result += member;
     }

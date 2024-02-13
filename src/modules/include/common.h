@@ -15,35 +15,26 @@
 #include <ieee754.h>
 #include <stdint.h>
 
-#define PI 3.14159265358979323846
-#define EULER 2.71828182845904523536
-
+#define PI 3.14159265358979323846     ///< Exact value of Pi.
+#define EULER 2.71828182845904523536  ///< Exact value of Euler number.
+#define NEGATIVE_ZERO -0.0            ///< Zero whose sign bit is set.
+#define PRECISION 1.0e-17  ///< Limit accuracy of member Taylor series.
 #define S21_NAN 0.0 / 0.0  ///< Value is Not a Number (NaN).
 #define S21_INF 1.0 / 0.0  ///< Value is infinity (inf).
 
-#define S21_INF_POS 1.0 / 0.0   ///< Value is infinity (inf).
-#define S21_INF_NEG -1.0 / 0.0  ///< Value is infinity (-inf).
-
-#define S21_IS_NAN(x) (x != x)  ///< Check value is Not a Number (NaN).
-#define S21_IS_INF(x) (x == S21_INF || x == -S21_INF)  ///< Check value for inf.
-#define GET_SHIFT(x) (sizeof(x) * 8 - 1);  ///< Number of bits of the any type.
-
-#define ZERO 0.0                         ///< Zero value.
-#define NEGATIVE_ZERO -0.0               ///< Zero whose sign bit is set.
-#define EXP_MASK 0x7fffffffffffffff      ///< Mask for exponent bits for double.
-#define MANTISS_MASK 0xfffffffffffff     ///< Mask for mantissa bits for double.
-#define OVERFLOW_MASK 0x10000000000000   ///< Number overflow check mask.
-#define INF_BITS 0x7FF                   ///< Mask checks exponent for inf.
-#define NAN_MASK 0xFFF8000000000000      ///< Mask checks double for NaN.
-#define NEG_INF_MASK 0xFFF0000000000000  ///< Mask checks double for -inf.
 #define POS_INF_MASK 0x7FF0000000000000  ///< Mask checks double for +inf.
+#define NEG_INF_MASK 0xFFF0000000000000  ///< Mask checks double for -inf.
+#define OVERFLOW_MASK 0x10000000000000   ///< Number overflow check mask.
+#define MANTISS_MASK 0xfffffffffffff     ///< Mask for mantissa bits for double.
+#define NAN_MASK 0xFFF8000000000000      ///< Mask checks double for NaN.
+#define EXP_MASK 0x7fffffffffffffff      ///< Mask for exponent bits for double.
+#define INF_BITS 0x7FF                   ///< Mask checks exponent for inf.
 
-#define BITS_NAN(x) (x.ulong == NAN_MASK)              ///< Check value is NaN
+#define GET_SHIFT(x) (sizeof(x) * 8 - 1);  ///< Number of bits of the any type.
+#define BITS_NAN(x) (x.ulong == NAN_MASK)  ///< Check value is NaN
 #define BITS_INF(x) (x.dbl.ieee.exponent == INF_BITS)  ///< Check value is inf.
 #define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)      ///< Check value is -inf.
 #define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)      ///< Check value is +inf.
-
-#define PRECISION 1.0e-17  ///< Limit accuracy of member Taylor series.
 
 /**
  * @brief Union structure assigned to work with double bits.

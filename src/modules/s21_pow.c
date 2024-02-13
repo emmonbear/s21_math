@@ -11,8 +11,6 @@
 
 #include "./include/s21_pow.h"
 
-#include <math.h>
-
 /**
  * @brief Raises a number to a given power.
  *
@@ -21,32 +19,31 @@
  * @return long double - result of calculation.
  */
 long double s21_pow(double base, double exp) {
-  double_int base_bits = {{base}};
-  double_int exp_bits = {{exp}};
-  long double result = 0;
+  double_int base_b = {{base}};
+  double_int exp_b = {{exp}};
+  long double result = base;
 
-  if (BITS_NAN(base_bits) || BITS_NAN(exp_bits)) {
-    result = S21_NAN;
-  } else if (s21_fabs(base) < 1.0 && BITS_INF(exp_bits)) {
-    if (BITS_NEG_INF(exp_bits)) {
-      result = S21_INF;
-    } else {
-      result = 0.0;
-    }
-  } else if (s21_fabs(base) == 1.0 && BITS_INF(exp_bits)) {
-    result = 1.0;
-  } else if (BITS_NEG_INF(exp_bits)) {
+  if (BITS_INF(base_b) && BITS_INF(exp_b)) {
     result = 0.0;
-  } else if (BITS_POS_INF(exp_bits)) {
+  } else if (BITS_INF(exp_b)) {
     result = S21_INF;
-  } else if (BITS_NEG_INF(base_bits)) {
-    if (exp_bits.dbl.ieee.negative) {
-      result = 0.0;
-    } else {
-      result = S21_INF;
-    }
+  } else if (base_b.dbl.ieee.negative &&
+             s21_ceil(s21_fabs(exp)) != s21_fabs(exp)) {
+    result = S21_NAN;
+  } else if (BITS_NAN(base_b)) {
+    result = S21_NAN;
+  } else if (!base) {
+    result = (!exp) ? 1.0 : base;
   } else {
-    result = s21_exp(s21_fabs(log(base) * exp));
+    if (((s21_ceil(exp) == exp)) && !exp_b.dbl.ieee.negative) {
+      result = fast_pow(base, exp);
+    } else {
+      result = s21_exp(exp * s21_log(s21_fabs(base)));
+
+      if ((uint64_t)(exp) % 2 != 0 && base_b.dbl.ieee.negative) {
+        result *= -1.0;
+      }
+    }
   }
 
   return result;

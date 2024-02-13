@@ -12,7 +12,8 @@
 #include "./include/s21_fmod.h"
 
 static void normalize_denormal(uint64_t *exp_x, uint64_t *num);
-static int compare_scale(uint64_t *exp_x, uint64_t *exp_y, uint64_t *x_long, uint64_t *y_long);
+static int compare_scale(uint64_t *exp_x, uint64_t *exp_y, uint64_t *x_long,
+                         uint64_t *y_long);
 
 /**
  * @brief Remainder of the floating-point division operation.
@@ -22,7 +23,7 @@ static int compare_scale(uint64_t *exp_x, uint64_t *exp_y, uint64_t *x_long, uin
  * @return long double - result of calculation.
  */
 long double s21_fmod(double x, double y) {
-  long double result = 0;
+  long double result = 0.0;
   double_int bits_x = {{x}};
   double_int bits_y = {{y}};
 
@@ -45,7 +46,7 @@ long double s21_fmod(double x, double y) {
 
     uint8_t edge = compare_scale(&exp_x, &exp_y, &x_long, &bits_y.ulong);
 
-    if(edge) {
+    if (edge) {
       result = 0;
     } else {
       for (; (x_long >> MANTISS_SIZE) == 0; x_long <<= 1) {
@@ -65,12 +66,13 @@ long double s21_fmod(double x, double y) {
       result = bits_x.dbl.d;
     }
   }
-  
+
   return result;
 }
 
-static int compare_scale(uint64_t *exp_x, uint64_t *exp_y, uint64_t *x_long, uint64_t *y_long) {
-  int edge = 0;
+static int compare_scale(uint64_t *exp_x, uint64_t *exp_y, uint64_t *x_long,
+                         uint64_t *y_long) {
+  uint8_t edge = 0;
 
   uint64_t iter = 0;
   for (; *exp_x > *exp_y; (*exp_x)--) {

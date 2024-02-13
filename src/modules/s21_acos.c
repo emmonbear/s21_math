@@ -17,4 +17,4 @@
  * @param[in] x number whose arc cosine needs to be calculated.
  * @return long double - result of calculation.
  */
-long double s21_acos(double x) { return PI / 2 - s21_asin(x); }
+long double s21_acos(double x) { return PI / 2.0 - s21_asin(x); }
