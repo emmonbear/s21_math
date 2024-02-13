@@ -45,12 +45,20 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef FABS_TEST
 #define FABS_TEST
+#ifdef FABS_TEST
   Suite *(*s21_fabs[])(void) = {
-      s21_fabs_first_case,
-      s21_fabs_second_case,
-      s21_fabs_edge_case,
+    s21_fabs_first_case,
+    s21_fabs_second_case,
+    s21_fabs_third_case,
+    s21_fabs_fourth_case,
+    s21_fabs_fifth_case,
+    s21_fabs_sixth_case,
+    s21_fabs_seventh_case,
+    s21_fabs_eighth_case,
+    s21_fabs_ninth_case,
+    s21_fabs_tenth_case,
+    s21_fabs_edge_case,
   };
   test_function(s21_fabs, sizeof(s21_fabs) / sizeof(s21_fabs[0]), "S21_FABS",
                 &passed_count, &failed_count);
@@ -59,10 +67,18 @@ int main(void) {
 #ifdef FLOOR_TEST
 #define FLOOR_TEST
   Suite *(*s21_floor[])(void) = {
-      s21_floor_first_case,
-      s21_floor_second_case,
-      s21_floor_edge_case,
-  };
+    s21_floor_first_case,
+    s21_floor_second_case,
+    s21_floor_third_case,
+    s21_floor_fourth_case,
+    s21_floor_fifth_case,
+    s21_floor_sixth_case,
+    s21_floor_seventh_case,
+    s21_floor_eighth_case,
+    s21_floor_ninth_case,
+    s21_floor_tenth_case,
+};
+
   test_function(s21_floor, sizeof(s21_floor) / sizeof(s21_floor[0]),
                 "S21_FLOOR", &passed_count, &failed_count);
 #endif
@@ -237,8 +253,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define ATAN_TEST
 #ifdef ATAN_TEST
+#define ATAN_TEST
   Suite *(*s21_atan[])(void) = {
     s21_atan_first_case,
     s21_atan_second_case,
