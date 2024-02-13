@@ -11,802 +11,802 @@
 
 #include "./test_include/s21_test_tan.h"
 
-/// @brief \f[ tan(-9876412345.123456789) = -0.061434 \f]
+/// @brief \f[ tan(-9876412.123456789) = 0.364973 \f]
 START_TEST(s21_tan_0)
 {
-    double value = -9876412345.123456789;
+    double value = -9876412.123456789;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9864066667.000000000) = 0.966927 \f]
+/// @brief \f[ tan(-9875178.000000000) = -0.780872 \f]
 START_TEST(s21_tan_1)
 {
-    double value = -9864066667.000000000;
+    double value = -9875178.000000000;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9851720988.876543211) = -0.545747 \f]
+/// @brief \f[ tan(-9873943.876543211) = 0.988428 \f]
 START_TEST(s21_tan_2)
 {
-    double value = -9851720988.876543211;
+    double value = -9873943.876543211;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9839375310.753086422) = -0.624225 \f]
+/// @brief \f[ tan(-9872709.753086422) = -0.932264 \f]
 START_TEST(s21_tan_3)
 {
-    double value = -9839375310.753086422;
+    double value = -9872709.753086422;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9827029632.629629633) = 0.937729 \f]
+/// @brief \f[ tan(-9871475.629629633) = 0.627365 \f]
 START_TEST(s21_tan_4)
 {
-    double value = -9827029632.629629633;
+    double value = -9871475.629629633;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9814683954.506172844) = 0.035379 \f]
+/// @brief \f[ tan(-9870241.506172844) = -0.155080 \f]
 START_TEST(s21_tan_5)
 {
-    double value = -9814683954.506172844;
+    double value = -9870241.506172844;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9802338276.382716055) = -0.959945 \f]
+/// @brief \f[ tan(-9869007.382716055) = -0.358581 \f]
 START_TEST(s21_tan_6)
 {
-    double value = -9802338276.382716055;
+    double value = -9869007.382716055;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9789992598.259259266) = 0.567420 \f]
+/// @brief \f[ tan(-9867773.259259266) = 0.776570 \f]
 START_TEST(s21_tan_7)
 {
-    double value = -9789992598.259259266;
+    double value = -9867773.259259266;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9777646920.135802477) = 0.603634 \f]
+/// @brief \f[ tan(-9866539.135802477) = -0.987364 \f]
 START_TEST(s21_tan_8)
 {
-    double value = -9777646920.135802477;
+    double value = -9866539.135802477;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9765301242.012345688) = -0.946471 \f]
+/// @brief \f[ tan(-9865305.012345688) = 0.934722 \f]
 START_TEST(s21_tan_9)
 {
-    double value = -9765301242.012345688;
+    double value = -9865305.012345688;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9752955563.888888899) = -0.009298 \f]
+/// @brief \f[ tan(-9864070.888888899) = -0.632689 \f]
 START_TEST(s21_tan_10)
 {
-    double value = -9752955563.888888899;
+    double value = -9864070.888888899;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9740609885.765432110) = 0.952310 \f]
+/// @brief \f[ tan(-9862836.765432110) = 0.161850 \f]
 START_TEST(s21_tan_11)
 {
-    double value = -9740609885.765432110;
+    double value = -9862836.765432110;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9728264207.641975321) = -0.588704 \f]
+/// @brief \f[ tan(-9861602.641975321) = 0.352172 \f]
 START_TEST(s21_tan_12)
 {
-    double value = -9728264207.641975321;
+    double value = -9861602.641975321;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9715918529.518518532) = -0.582633 \f]
+/// @brief \f[ tan(-9860368.518518532) = -0.772232 \f]
 START_TEST(s21_tan_13)
 {
-    double value = -9715918529.518518532;
+    double value = -9860368.518518532;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9703572851.395061743) = 0.954568 \f]
+/// @brief \f[ tan(-9859134.395061743) = 0.986255 \f]
 START_TEST(s21_tan_14)
 {
-    double value = -9703572851.395061743;
+    double value = -9859134.395061743;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9691227173.271604954) = -0.016787 \f]
+/// @brief \f[ tan(-9857900.271604954) = -0.937137 \f]
 START_TEST(s21_tan_15)
 {
-    double value = -9691227173.271604954;
+    double value = -9857900.271604954;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9678881495.148148165) = -0.944027 \f]
+/// @brief \f[ tan(-9856666.148148165) = 0.637984 \f]
 START_TEST(s21_tan_16)
 {
-    double value = -9678881495.148148165;
+    double value = -9856666.148148165;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9666535817.024691376) = 0.609588 \f]
+/// @brief \f[ tan(-9855432.024691376) = -0.168612 \f]
 START_TEST(s21_tan_17)
 {
-    double value = -9666535817.024691376;
+    double value = -9855432.024691376;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9654190138.901234587) = 0.561236 \f]
+/// @brief \f[ tan(-9854197.901234587) = -0.345747 \f]
 START_TEST(s21_tan_18)
 {
-    double value = -9654190138.901234587;
+    double value = -9854197.901234587;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9641844460.777777798) = -0.962017 \f]
+/// @brief \f[ tan(-9852963.777777798) = 0.767858 \f]
 START_TEST(s21_tan_19)
 {
-    double value = -9641844460.777777798;
+    double value = -9852963.777777798;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9629498782.654321009) = 0.042863 \f]
+/// @brief \f[ tan(-9851729.654321009) = -0.985099 \f]
 START_TEST(s21_tan_20)
 {
-    double value = -9629498782.654321009;
+    double value = -9851729.654321009;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9617153104.530864220) = 0.935101 \f]
+/// @brief \f[ tan(-9850495.530864220) = 0.939507 \f]
 START_TEST(s21_tan_21)
 {
-    double value = -9617153104.530864220;
+    double value = -9850495.530864220;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9604807426.407407431) = -0.630059 \f]
+/// @brief \f[ tan(-9849261.407407431) = -0.643248 \f]
 START_TEST(s21_tan_22)
 {
-    double value = -9604807426.407407431;
+    double value = -9849261.407407431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9592461748.283950642) = -0.539456 \f]
+/// @brief \f[ tan(-9848027.283950642) = 0.175366 \f]
 START_TEST(s21_tan_23)
 {
-    double value = -9592461748.283950642;
+    double value = -9848027.283950642;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9580116070.160493853) = 0.968810 \f]
+/// @brief \f[ tan(-9846793.160493853) = 0.339306 \f]
 START_TEST(s21_tan_24)
 {
-    double value = -9580116070.160493853;
+    double value = -9846793.160493853;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9567770392.037037064) = -0.068908 \f]
+/// @brief \f[ tan(-9845559.037037064) = -0.763448 \f]
 START_TEST(s21_tan_25)
 {
-    double value = -9567770392.037037064;
+    double value = -9845559.037037064;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9555424713.913580275) = -0.925539 \f]
+/// @brief \f[ tan(-9844324.913580275) = 0.983896 \f]
 START_TEST(s21_tan_26)
 {
-    double value = -9555424713.913580275;
+    double value = -9844324.913580275;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9543079035.790123486) = 0.650100 \f]
+/// @brief \f[ tan(-9843090.790123486) = -0.941834 \f]
 START_TEST(s21_tan_27)
 {
-    double value = -9543079035.790123486;
+    double value = -9843090.790123486;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9530733357.666666697) = 0.517310 \f]
+/// @brief \f[ tan(-9841856.666666697) = 0.648483 \f]
 START_TEST(s21_tan_28)
 {
-    double value = -9530733357.666666697;
+    double value = -9841856.666666697;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9518387679.543209908) = -0.974944 \f]
+/// @brief \f[ tan(-9840622.543209908) = -0.182112 \f]
 START_TEST(s21_tan_29)
 {
-    double value = -9518387679.543209908;
+    double value = -9840622.543209908;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9506042001.419753119) = 0.094908 \f]
+/// @brief \f[ tan(-9839388.419753119) = -0.332848 \f]
 START_TEST(s21_tan_30)
 {
-    double value = -9506042001.419753119;
+    double value = -9839388.419753119;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9493696323.296296330) = 0.915347 \f]
+/// @brief \f[ tan(-9838154.296296330) = 0.759002 \f]
 START_TEST(s21_tan_31)
 {
-    double value = -9493696323.296296330;
+    double value = -9838154.296296330;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9481350645.172839541) = -0.669699 \f]
+/// @brief \f[ tan(-9836920.172839541) = -0.982648 \f]
 START_TEST(s21_tan_32)
 {
-    double value = -9481350645.172839541;
+    double value = -9836920.172839541;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9469004967.049382752) = -0.494810 \f]
+/// @brief \f[ tan(-9835686.049382752) = 0.944116 \f]
 START_TEST(s21_tan_33)
 {
-    double value = -9469004967.049382752;
+    double value = -9835686.049382752;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9456659288.925925963) = 0.980415 \f]
+/// @brief \f[ tan(-9834451.925925963) = -0.653687 \f]
 START_TEST(s21_tan_34)
 {
-    double value = -9456659288.925925963;
+    double value = -9834451.925925963;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9444313610.802469174) = -0.120841 \f]
+/// @brief \f[ tan(-9833217.802469174) = 0.188849 \f]
 START_TEST(s21_tan_35)
 {
-    double value = -9444313610.802469174;
+    double value = -9833217.802469174;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9431967932.679012385) = -0.904533 \f]
+/// @brief \f[ tan(-9831983.679012385) = 0.326375 \f]
 START_TEST(s21_tan_36)
 {
-    double value = -9431967932.679012385;
+    double value = -9831983.679012385;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9419622254.555555596) = 0.688842 \f]
+/// @brief \f[ tan(-9830749.555555596) = -0.754520 \f]
 START_TEST(s21_tan_37)
 {
-    double value = -9419622254.555555596;
+    double value = -9830749.555555596;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9407276576.432098807) = 0.471975 \f]
+/// @brief \f[ tan(-9829515.432098807) = 0.981353 \f]
 START_TEST(s21_tan_38)
 {
-    double value = -9407276576.432098807;
+    double value = -9829515.432098807;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9394930898.308642018) = -0.985218 \f]
+/// @brief \f[ tan(-9828281.308642018) = -0.946354 \f]
 START_TEST(s21_tan_39)
 {
-    double value = -9394930898.308642018;
+    double value = -9828281.308642018;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9382585220.185185229) = 0.146692 \f]
+/// @brief \f[ tan(-9827047.185185229) = 0.658860 \f]
 START_TEST(s21_tan_40)
 {
-    double value = -9382585220.185185229;
+    double value = -9827047.185185229;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9370239542.061728440) = 0.893103 \f]
+/// @brief \f[ tan(-9825813.061728440) = -0.195577 \f]
 START_TEST(s21_tan_41)
 {
-    double value = -9370239542.061728440;
+    double value = -9825813.061728440;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9357893863.938271651) = -0.707517 \f]
+/// @brief \f[ tan(-9824578.938271651) = -0.319887 \f]
 START_TEST(s21_tan_42)
 {
-    double value = -9357893863.938271651;
+    double value = -9824578.938271651;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9345548185.814814862) = -0.448818 \f]
+/// @brief \f[ tan(-9823344.814814862) = 0.750003 \f]
 START_TEST(s21_tan_43)
 {
-    double value = -9345548185.814814862;
+    double value = -9823344.814814862;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9333202507.691358073) = 0.989351 \f]
+/// @brief \f[ tan(-9822110.691358073) = -0.980012 \f]
 START_TEST(s21_tan_44)
 {
-    double value = -9333202507.691358073;
+    double value = -9822110.691358073;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9320856829.567901284) = -0.172445 \f]
+/// @brief \f[ tan(-9820876.567901284) = 0.948547 \f]
 START_TEST(s21_tan_45)
 {
-    double value = -9320856829.567901284;
+    double value = -9820876.567901284;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9308511151.444444495) = -0.881065 \f]
+/// @brief \f[ tan(-9819642.444444495) = -0.664002 \f]
 START_TEST(s21_tan_46)
 {
-    double value = -9308511151.444444495;
+    double value = -9819642.444444495;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9296165473.320987706) = 0.725709 \f]
+/// @brief \f[ tan(-9818408.320987706) = 0.202296 \f]
 START_TEST(s21_tan_47)
 {
-    double value = -9296165473.320987706;
+    double value = -9818408.320987706;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9283819795.197530917) = 0.425356 \f]
+/// @brief \f[ tan(-9817174.197530917) = 0.313383 \f]
 START_TEST(s21_tan_48)
 {
-    double value = -9283819795.197530917;
+    double value = -9817174.197530917;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9271474117.074074128) = -0.992811 \f]
+/// @brief \f[ tan(-9815940.074074128) = -0.745450 \f]
 START_TEST(s21_tan_49)
 {
-    double value = -9271474117.074074128;
+    double value = -9815940.074074128;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9259128438.950617339) = 0.198079 \f]
+/// @brief \f[ tan(-9814705.950617339) = 0.978625 \f]
 START_TEST(s21_tan_50)
 {
-    double value = -9259128438.950617339;
+    double value = -9814705.950617339;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9246782760.827160550) = 0.868428 \f]
+/// @brief \f[ tan(-9813471.827160550) = -0.950695 \f]
 START_TEST(s21_tan_51)
 {
-    double value = -9246782760.827160550;
+    double value = -9813471.827160550;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9234437082.703703761) = -0.743407 \f]
+/// @brief \f[ tan(-9812237.703703761) = 0.669113 \f]
 START_TEST(s21_tan_52)
 {
-    double value = -9234437082.703703761;
+    double value = -9812237.703703761;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9222091404.580246972) = -0.401604 \f]
+/// @brief \f[ tan(-9811003.580246972) = -0.209006 \f]
 START_TEST(s21_tan_53)
 {
-    double value = -9222091404.580246972;
+    double value = -9811003.580246972;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9209745726.456790183) = 0.995596 \f]
+/// @brief \f[ tan(-9809769.456790183) = -0.306865 \f]
 START_TEST(s21_tan_54)
 {
-    double value = -9209745726.456790183;
+    double value = -9809769.456790183;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9197400048.333333394) = -0.223580 \f]
+/// @brief \f[ tan(-9808535.333333394) = 0.740863 \f]
 START_TEST(s21_tan_55)
 {
-    double value = -9197400048.333333394;
+    double value = -9808535.333333394;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9185054370.209876605) = -0.855199 \f]
+/// @brief \f[ tan(-9807301.209876605) = -0.977192 \f]
 START_TEST(s21_tan_56)
 {
-    double value = -9185054370.209876605;
+    double value = -9807301.209876605;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9172708692.086419816) = 0.760601 \f]
+/// @brief \f[ tan(-9806067.086419816) = 0.952799 \f]
 START_TEST(s21_tan_57)
 {
-    double value = -9172708692.086419816;
+    double value = -9806067.086419816;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9160363013.962963027) = 0.377580 \f]
+/// @brief \f[ tan(-9804832.962963027) = -0.674192 \f]
 START_TEST(s21_tan_58)
 {
-    double value = -9160363013.962963027;
+    double value = -9804832.962963027;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9148017335.839506238) = -0.997702 \f]
+/// @brief \f[ tan(-9803598.839506238) = 0.215706 \f]
 START_TEST(s21_tan_59)
 {
-    double value = -9148017335.839506238;
+    double value = -9803598.839506238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9135671657.716049449) = 0.248927 \f]
+/// @brief \f[ tan(-9802364.716049449) = 0.300333 \f]
 START_TEST(s21_tan_60)
 {
-    double value = -9135671657.716049449;
+    double value = -9802364.716049449;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9123325979.592592660) = 0.841389 \f]
+/// @brief \f[ tan(-9801130.592592660) = -0.736240 \f]
 START_TEST(s21_tan_61)
 {
-    double value = -9123325979.592592660;
+    double value = -9801130.592592660;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9110980301.469135871) = -0.777276 \f]
+/// @brief \f[ tan(-9799896.469135871) = 0.975713 \f]
 START_TEST(s21_tan_62)
 {
-    double value = -9110980301.469135871;
+    double value = -9799896.469135871;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9098634623.345679082) = -0.353299 \f]
+/// @brief \f[ tan(-9798662.345679082) = -0.954858 \f]
 START_TEST(s21_tan_63)
 {
-    double value = -9098634623.345679082;
+    double value = -9798662.345679082;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9086288945.222222293) = 0.999130 \f]
+/// @brief \f[ tan(-9797428.222222293) = 0.679240 \f]
 START_TEST(s21_tan_64)
 {
-    double value = -9086288945.222222293;
+    double value = -9797428.222222293;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9073943267.098765504) = -0.274106 \f]
+/// @brief \f[ tan(-9796194.098765504) = -0.222396 \f]
 START_TEST(s21_tan_65)
 {
-    double value = -9073943267.098765504;
+    double value = -9796194.098765504;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9061597588.975308715) = -0.827005 \f]
+/// @brief \f[ tan(-9794959.975308715) = -0.293786 \f]
 START_TEST(s21_tan_66)
 {
-    double value = -9061597588.975308715;
+    double value = -9794959.975308715;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9049251910.851851926) = 0.793424 \f]
+/// @brief \f[ tan(-9793725.851851926) = 0.731583 \f]
 START_TEST(s21_tan_67)
 {
-    double value = -9049251910.851851926;
+    double value = -9793725.851851926;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9036906232.728395137) = 0.328775 \f]
+/// @brief \f[ tan(-9792491.728395137) = -0.974188 \f]
 START_TEST(s21_tan_68)
 {
-    double value = -9036906232.728395137;
+    double value = -9792491.728395137;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9024560554.604938348) = -0.999878 \f]
+/// @brief \f[ tan(-9791257.604938348) = 0.956873 \f]
 START_TEST(s21_tan_69)
 {
-    double value = -9024560554.604938348;
+    double value = -9791257.604938348;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-9012214876.481481559) = 0.299097 \f]
+/// @brief \f[ tan(-9790023.481481559) = -0.684256 \f]
 START_TEST(s21_tan_70)
 {
-    double value = -9012214876.481481559;
+    double value = -9790023.481481559;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8999869198.358024770) = 0.812060 \f]
+/// @brief \f[ tan(-9788789.358024770) = 0.229075 \f]
 START_TEST(s21_tan_71)
 {
-    double value = -8999869198.358024770;
+    double value = -9788789.358024770;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8987523520.234567981) = -0.809030 \f]
+/// @brief \f[ tan(-9787555.234567981) = 0.287225 \f]
 START_TEST(s21_tan_72)
 {
-    double value = -8987523520.234567981;
+    double value = -9787555.234567981;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8975177842.111111192) = -0.304030 \f]
+/// @brief \f[ tan(-9786321.111111192) = -0.726892 \f]
 START_TEST(s21_tan_73)
 {
-    double value = -8975177842.111111192;
+    double value = -9786321.111111192;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8962832163.987654403) = 0.999945 \f]
+/// @brief \f[ tan(-9785086.987654403) = 0.972618 \f]
 START_TEST(s21_tan_74)
 {
-    double value = -8962832163.987654403;
+    double value = -9785086.987654403;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8950486485.864197614) = -0.323885 \f]
+/// @brief \f[ tan(-9783852.864197614) = -0.958842 \f]
 START_TEST(s21_tan_75)
 {
-    double value = -8950486485.864197614;
+    double value = -9783852.864197614;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8938140807.740740825) = -0.796561 \f]
+/// @brief \f[ tan(-9782618.740740825) = 0.689240 \f]
 START_TEST(s21_tan_76)
 {
-    double value = -8938140807.740740825;
+    double value = -9782618.740740825;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8925795129.617284036) = 0.824086 \f]
+/// @brief \f[ tan(-9781384.617284036) = -0.235743 \f]
 START_TEST(s21_tan_77)
 {
-    double value = -8925795129.617284036;
+    double value = -9781384.617284036;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8913449451.493827247) = 0.279076 \f]
+/// @brief \f[ tan(-9780150.493827247) = -0.280651 \f]
 START_TEST(s21_tan_78)
 {
-    double value = -8913449451.493827247;
+    double value = -9780150.493827247;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8901103773.370370458) = -0.999332 \f]
+/// @brief \f[ tan(-9778916.370370458) = 0.722166 \f]
 START_TEST(s21_tan_79)
 {
-    double value = -8901103773.370370458;
+    double value = -9778916.370370458;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8888758095.246913669) = 0.348454 \f]
+/// @brief \f[ tan(-9777682.246913669) = -0.971002 \f]
 START_TEST(s21_tan_80)
 {
-    double value = -8888758095.246913669;
+    double value = -9777682.246913669;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8876412417.123456880) = 0.780521 \f]
+/// @brief \f[ tan(-9776448.123456880) = 0.960766 \f]
 START_TEST(s21_tan_81)
 {
-    double value = -8876412417.123456880;
+    double value = -9776448.123456880;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8864066739.000000091) = -0.838581 \f]
+/// @brief \f[ tan(-9775214.000000091) = -0.694191 \f]
 START_TEST(s21_tan_82)
 {
-    double value = -8864066739.000000091;
+    double value = -9775214.000000091;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8851721060.876543302) = -0.253934 \f]
+/// @brief \f[ tan(-9773979.876543302) = 0.242401 \f]
 START_TEST(s21_tan_83)
 {
-    double value = -8851721060.876543302;
+    double value = -9773979.876543302;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8839375382.753086513) = 0.998039 \f]
+/// @brief \f[ tan(-9772745.753086513) = 0.274064 \f]
 START_TEST(s21_tan_84)
 {
-    double value = -8839375382.753086513;
+    double value = -9772745.753086513;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8827029704.629629724) = -0.372784 \f]
+/// @brief \f[ tan(-9771511.629629724) = -0.717407 \f]
 START_TEST(s21_tan_85)
 {
-    double value = -8827029704.629629724;
+    double value = -9771511.629629724;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8814684026.506172935) = -0.763950 \f]
+/// @brief \f[ tan(-9770277.506172935) = 0.969340 \f]
 START_TEST(s21_tan_86)
 {
-    double value = -8814684026.506172935;
+    double value = -9770277.506172935;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8802338348.382716146) = 0.852506 \f]
+/// @brief \f[ tan(-9769043.382716146) = -0.962645 \f]
 START_TEST(s21_tan_87)
 {
-    double value = -8802338348.382716146;
+    double value = -9769043.382716146;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8789992670.259259357) = 0.228618 \f]
+/// @brief \f[ tan(-9767809.259259357) = 0.699110 \f]
 START_TEST(s21_tan_88)
 {
-    double value = -8789992670.259259357;
+    double value = -9767809.259259357;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8777646992.135802568) = -0.996067 \f]
+/// @brief \f[ tan(-9766575.135802568) = -0.249047 \f]
 START_TEST(s21_tan_89)
 {
-    double value = -8777646992.135802568;
+    double value = -9766575.135802568;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8765301314.012345779) = 0.396862 \f]
+/// @brief \f[ tan(-9765341.012345779) = -0.267464 \f]
 START_TEST(s21_tan_90)
 {
-    double value = -8765301314.012345779;
+    double value = -9765341.012345779;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8752955635.888888990) = 0.746858 \f]
+/// @brief \f[ tan(-9764106.888888990) = 0.712613 \f]
 START_TEST(s21_tan_91)
 {
-    double value = -8752955635.888888990;
+    double value = -9764106.888888990;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8740609957.765432201) = -0.865851 \f]
+/// @brief \f[ tan(-9762872.765432201) = -0.967632 \f]
 START_TEST(s21_tan_92)
 {
-    double value = -8740609957.765432201;
+    double value = -9762872.765432201;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8728264279.641975412) = -0.203148 \f]
+/// @brief \f[ tan(-9761638.641975412) = 0.964479 \f]
 START_TEST(s21_tan_93)
 {
-    double value = -8728264279.641975412;
+    double value = -9761638.641975412;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8715918601.518518623) = 0.993417 \f]
+/// @brief \f[ tan(-9760404.518518623) = -0.703996 \f]
 START_TEST(s21_tan_94)
 {
-    double value = -8715918601.518518623;
+    double value = -9760404.518518623;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8703572923.395061834) = -0.420668 \f]
+/// @brief \f[ tan(-9759170.395061834) = 0.255681 \f]
 START_TEST(s21_tan_95)
 {
-    double value = -8703572923.395061834;
+    double value = -9759170.395061834;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8691227245.271605045) = -0.729259 \f]
+/// @brief \f[ tan(-9757936.271605045) = 0.260851 \f]
 START_TEST(s21_tan_96)
 {
-    double value = -8691227245.271605045;
+    double value = -9757936.271605045;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8678881567.148148256) = 0.878606 \f]
+/// @brief \f[ tan(-9756702.148148256) = -0.707787 \f]
 START_TEST(s21_tan_97)
 {
-    double value = -8678881567.148148256;
+    double value = -9756702.148148256;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8666535889.024691467) = 0.177539 \f]
+/// @brief \f[ tan(-9755468.024691467) = 0.965879 \f]
 START_TEST(s21_tan_98)
 {
-    double value = -8666535889.024691467;
+    double value = -9755468.024691467;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(-8654190210.901234678) = -0.990091 \f]
+/// @brief \f[ tan(-9754233.901234678) = -0.966268 \f]
 START_TEST(s21_tan_99)
 {
-    double value = -8654190210.901234678;
+    double value = -9754233.901234678;
 
     s21_test_tan(value);
 }
@@ -1411,10 +1411,10 @@ START_TEST(s21_tan_174)
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9142878.132338769) = 0.007235 \f]
+/// @brief \f[ tan(9142870.132338769) = 0.007235 \f]
 START_TEST(s21_tan_175)
 {
-    double value = 9142878.132338769;
+    double value = 9142870.132338769;
 
     s21_test_tan(value);
 }
@@ -4019,3998 +4019,3997 @@ START_TEST(s21_tan_500)
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(24624.4238) = 0.813541 \f]
+/// @brief \f[ tan(12357.4238) = -0.030898 \f]
 START_TEST(s21_tan_501)
 {
-    double value = 24624.4238;
+    double value = 12357.4238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(36936.6363) = -0.596654 \f]
+/// @brief \f[ tan(12402.6363) = 0.931785 \f]
 START_TEST(s21_tan_502)
 {
-    double value = 36936.6363;
+    double value = 12402.6363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(49248.8488) = 0.322561 \f]
+/// @brief \f[ tan(12447.8488) = 0.653417 \f]
 START_TEST(s21_tan_503)
 {
-    double value = 49248.8488;
+    double value = 12447.8488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(61561.0613) = -0.017543 \f]
+/// @brief \f[ tan(12493.0613) = -0.495242 \f]
 START_TEST(s21_tan_504)
 {
-    double value = 61561.0613;
+    double value = 12493.0613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(73873.2738) = -0.289158 \f]
+/// @brief \f[ tan(12538.2738) = -0.984285 \f]
 START_TEST(s21_tan_505)
 {
-    double value = 73873.2738;
+    double value = 12538.2738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(86185.4863) = 0.568135 \f]
+/// @brief \f[ tan(12583.4863) = -0.162352 \f]
 START_TEST(s21_tan_506)
 {
-    double value = 86185.4863;
+    double value = 12583.4863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(98497.6988) = -0.792641 \f]
+/// @brief \f[ tan(12628.6988) = 0.875818 \f]
 START_TEST(s21_tan_507)
 {
-    double value = 98497.6988;
+    double value = 12628.6988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(110809.9113) = 0.941151 \f]
+/// @brief \f[ tan(12673.9113) = 0.747480 \f]
 START_TEST(s21_tan_508)
 {
-    double value = 110809.9113;
+    double value = 12673.9113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(123122.1238) = -0.999426 \f]
+/// @brief \f[ tan(12719.1238) = -0.376432 \f]
 START_TEST(s21_tan_509)
 {
-    double value = 123122.1238;
+    double value = 12719.1238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(135434.3363) = 0.961879 \f]
+/// @brief \f[ tan(12764.3363) = -0.998972 \f]
 START_TEST(s21_tan_510)
 {
-    double value = 135434.3363;
+    double value = 12764.3363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(147746.5488) = -0.832110 \f]
+/// @brief \f[ tan(12809.5488) = -0.290974 \f]
 START_TEST(s21_tan_511)
 {
-    double value = 147746.5488;
+    double value = 12809.5488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(160058.7613) = 0.622561 \f]
+/// @brief \f[ tan(12854.7613) = 0.804574 \f]
 START_TEST(s21_tan_512)
 {
-    double value = 160058.7613;
+    double value = 12854.7613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(172370.9738) = -0.353323 \f]
+/// @brief \f[ tan(12899.9738) = 0.828505 \f]
 START_TEST(s21_tan_513)
 {
-    double value = 172370.9738;
+    double value = 12899.9738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(184683.1863) = 0.050209 \f]
+/// @brief \f[ tan(12945.1863) = -0.251056 \f]
 START_TEST(s21_tan_514)
 {
-    double value = 184683.1863;
+    double value = 12945.1863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(196995.3988) = 0.257719 \f]
+/// @brief \f[ tan(12990.3988) = -0.996233 \f]
 START_TEST(s21_tan_515)
 {
-    double value = 196995.3988;
+    double value = 12990.3988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(209307.6113) = -0.540937 \f]
+/// @brief \f[ tan(13035.6113) = -0.414521 \f]
 START_TEST(s21_tan_516)
 {
-    double value = 209307.6113;
+    double value = 13035.6113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(221619.8238) = 0.772292 \f]
+/// @brief \f[ tan(13080.8238) = 0.719295 \f]
 START_TEST(s21_tan_517)
 {
-    double value = 221619.8238;
+    double value = 13080.8238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(233932.0363) = -0.929602 \f]
+/// @brief \f[ tan(13126.0363) = 0.895077 \f]
 START_TEST(s21_tan_518)
 {
-    double value = 233932.0363;
+    double value = 13126.0363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(246244.2488) = 0.997785 \f]
+/// @brief \f[ tan(13171.2488) = -0.121300 \f]
 START_TEST(s21_tan_519)
 {
-    double value = 246244.2488;
+    double value = 13171.2488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(258556.4613) = -0.970303 \f]
+/// @brief \f[ tan(13216.4613) = -0.976117 \f]
 START_TEST(s21_tan_520)
 {
-    double value = 258556.4613;
+    double value = 13216.4613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(270868.6738) = 0.849791 \f]
+/// @brief \f[ tan(13261.6738) = -0.530836 \f]
 START_TEST(s21_tan_521)
 {
-    double value = 270868.6738;
+    double value = 13261.6738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(283180.8863) = -0.647804 \f]
+/// @brief \f[ tan(13306.8863) = 0.621468 \f]
 START_TEST(s21_tan_522)
 {
-    double value = 283180.8863;
+    double value = 13306.8863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(295493.0988) = 0.383707 \f]
+/// @brief \f[ tan(13352.0988) = 0.946035 \f]
 START_TEST(s21_tan_523)
 {
-    double value = 295493.0988;
+    double value = 13352.0988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(307805.3113) = -0.082822 \f]
+/// @brief \f[ tan(13397.3113) = 0.010571 \f]
 START_TEST(s21_tan_524)
 {
-    double value = 307805.3113;
+    double value = 13397.3113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(320117.5238) = -0.226004 \f]
+/// @brief \f[ tan(13442.5238) = -0.938973 \f]
 START_TEST(s21_tan_525)
 {
-    double value = 320117.5238;
+    double value = 13442.5238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(332429.7363) = 0.513161 \f]
+/// @brief \f[ tan(13487.7363) = -0.637892 \f]
 START_TEST(s21_tan_526)
 {
-    double value = 332429.7363;
+    double value = 13487.7363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(344741.9488) = -0.751118 \f]
+/// @brief \f[ tan(13532.9488) = 0.512801 \f]
 START_TEST(s21_tan_527)
 {
-    double value = 344741.9488;
+    double value = 13532.9488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(357054.1613) = 0.917061 \f]
+/// @brief \f[ tan(13578.1613) = 0.980491 \f]
 START_TEST(s21_tan_528)
 {
-    double value = 357054.1613;
+    double value = 13578.1613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(369366.3738) = -0.995078 \f]
+/// @brief \f[ tan(13623.3738) = 0.142258 \f]
 START_TEST(s21_tan_529)
 {
-    double value = 369366.3738;
+    double value = 13623.3738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(381678.5863) = 0.977690 \f]
+/// @brief \f[ tan(13668.5863) = -0.885450 \f]
 START_TEST(s21_tan_530)
 {
-    double value = 381678.5863;
+    double value = 13668.5863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(393990.7988) = -0.866564 \f]
+/// @brief \f[ tan(13713.7988) = -0.733821 \f]
 START_TEST(s21_tan_531)
 {
-    double value = 393990.7988;
+    double value = 13713.7988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(406303.0113) = 0.672355 \f]
+/// @brief \f[ tan(13759.0113) = 0.395189 \f]
 START_TEST(s21_tan_532)
 {
-    double value = 406303.0113;
+    double value = 13759.0113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(418615.2238) = -0.413682 \f]
+/// @brief \f[ tan(13804.2238) = 0.997844 \f]
 START_TEST(s21_tan_533)
 {
-    double value = 418615.2238;
+    double value = 13804.2238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(430927.4363) = 0.115347 \f]
+/// @brief \f[ tan(13849.4363) = 0.271464 \f]
 START_TEST(s21_tan_534)
 {
-    double value = 430927.4363;
+    double value = 13849.4363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(443239.6488) = 0.194048 \f]
+/// @brief \f[ tan(13894.6488) = -0.816481 \f]
 START_TEST(s21_tan_535)
 {
-    double value = 443239.6488;
+    double value = 13894.6488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(455551.8613) = -0.484837 \f]
+/// @brief \f[ tan(13939.8613) = -0.816949 \f]
 START_TEST(s21_tan_536)
 {
-    double value = 455551.8613;
+    double value = 13939.8613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(467864.0738) = 0.729142 \f]
+/// @brief \f[ tan(13985.0738) = 0.270683 \f]
 START_TEST(s21_tan_537)
 {
-    double value = 467864.0738;
+    double value = 13985.0738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(480176.2863) = -0.903539 \f]
+/// @brief \f[ tan(14030.2863) = 0.997790 \f]
 START_TEST(s21_tan_538)
 {
-    double value = 480176.2863;
+    double value = 14030.2863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(492488.4988) = 0.991308 \f]
+/// @brief \f[ tan(14075.4988) = 0.395934 \f]
 START_TEST(s21_tan_539)
 {
-    double value = 492488.4988;
+    double value = 14075.4988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(504800.7113) = -0.984032 \f]
+/// @brief \f[ tan(14120.7113) = -0.733270 \f]
 START_TEST(s21_tan_540)
 {
-    double value = 504800.7113;
+    double value = 14120.7113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(517112.9238) = 0.882411 \f]
+/// @brief \f[ tan(14165.9238) = -0.885826 \f]
 START_TEST(s21_tan_541)
 {
-    double value = 517112.9238;
+    double value = 14165.9238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(529425.1363) = -0.696187 \f]
+/// @brief \f[ tan(14211.1363) = 0.141455 \f]
 START_TEST(s21_tan_542)
 {
-    double value = 529425.1363;
+    double value = 14211.1363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(541737.3488) = 0.443214 \f]
+/// @brief \f[ tan(14256.3488) = 0.980332 \f]
 START_TEST(s21_tan_543)
 {
-    double value = 541737.3488;
+    double value = 14256.3488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(554049.5613) = -0.147748 \f]
+/// @brief \f[ tan(14301.5613) = 0.513497 \f]
 START_TEST(s21_tan_544)
 {
-    double value = 554049.5613;
+    double value = 14301.5613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(566361.7738) = -0.161884 \f]
+/// @brief \f[ tan(14346.7738) = -0.637268 \f]
 START_TEST(s21_tan_545)
 {
-    double value = 566361.7738;
+    double value = 14346.7738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(578673.9863) = 0.455995 \f]
+/// @brief \f[ tan(14391.9863) = -0.939251 \f]
 START_TEST(s21_tan_546)
 {
-    double value = 578673.9863;
+    double value = 14391.9863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(590986.1988) = -0.706387 \f]
+/// @brief \f[ tan(14437.1988) = 0.009760 \f]
 START_TEST(s21_tan_547)
 {
-    double value = 590986.1988;
+    double value = 14437.1988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(603298.4113) = 0.889053 \f]
+/// @brief \f[ tan(14482.4113) = 0.945772 \f]
 START_TEST(s21_tan_548)
 {
-    double value = 603298.4113;
+    double value = 14482.4113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(615610.6238) = -0.986478 \f]
+/// @brief \f[ tan(14527.6238) = 0.622103 \f]
 START_TEST(s21_tan_549)
 {
-    double value = 615610.6238;
+    double value = 14527.6238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(627922.8363) = 0.989324 \f]
+/// @brief \f[ tan(14572.8363) = -0.530149 \f]
 START_TEST(s21_tan_550)
 {
-    double value = 627922.8363;
+    double value = 14572.8363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(640235.0488) = -0.897315 \f]
+/// @brief \f[ tan(14618.0488) = -0.976292 \f]
 START_TEST(s21_tan_551)
 {
-    double value = 640235.0488;
+    double value = 14618.0488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(652547.2613) = 0.719275 \f]
+/// @brief \f[ tan(14663.2613) = -0.122105 \f]
 START_TEST(s21_tan_552)
 {
-    double value = 652547.2613;
+    double value = 14663.2613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(664859.4738) = -0.472273 \f]
+/// @brief \f[ tan(14708.4738) = 0.894715 \f]
 START_TEST(s21_tan_553)
 {
-    double value = 664859.4738;
+    double value = 14708.4738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(677171.6863) = 0.179991 \f]
+/// @brief \f[ tan(14753.6863) = 0.719858 \f]
 START_TEST(s21_tan_554)
 {
-    double value = 677171.6863;
+    double value = 14753.6863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(689483.8988) = 0.129548 \f]
+/// @brief \f[ tan(14798.8988) = -0.413783 \f]
 START_TEST(s21_tan_555)
 {
-    double value = 689483.8988;
+    double value = 14798.8988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(701796.1113) = -0.426666 \f]
+/// @brief \f[ tan(14844.1113) = -0.996303 \f]
 START_TEST(s21_tan_556)
 {
-    double value = 701796.1113;
+    double value = 14844.1113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(714108.3238) = 0.682877 \f]
+/// @brief \f[ tan(14889.3238) = -0.251841 \f]
 START_TEST(s21_tan_557)
 {
-    double value = 714108.3238;
+    double value = 14889.3238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(726420.5363) = -0.873616 \f]
+/// @brief \f[ tan(14934.5363) = 0.828050 \f]
 START_TEST(s21_tan_558)
 {
-    double value = 726420.5363;
+    double value = 14934.5363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(738732.7488) = 0.980595 \f]
+/// @brief \f[ tan(14979.7488) = 0.805055 \f]
 START_TEST(s21_tan_559)
 {
-    double value = 738732.7488;
+    double value = 14979.7488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(751044.9613) = -0.993558 \f]
+/// @brief \f[ tan(15024.9613) = -0.290198 \f]
 START_TEST(s21_tan_560)
 {
-    double value = 751044.9613;
+    double value = 15024.9613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(763357.1738) = 0.911261 \f]
+/// @brief \f[ tan(15070.1738) = -0.998935 \f]
 START_TEST(s21_tan_561)
 {
-    double value = 763357.1738;
+    double value = 15070.1738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(775669.3863) = -0.741596 \f]
+/// @brief \f[ tan(15115.3863) = -0.377183 \f]
 START_TEST(s21_tan_562)
 {
-    double value = 775669.3863;
+    double value = 15115.3863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(787981.5988) = 0.500828 \f]
+/// @brief \f[ tan(15160.5988) = 0.746941 \f]
 START_TEST(s21_tan_563)
 {
-    double value = 787981.5988;
+    double value = 15160.5988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(800293.8113) = -0.212042 \f]
+/// @brief \f[ tan(15205.8113) = 0.876209 \f]
 START_TEST(s21_tan_564)
 {
-    double value = 800293.8113;
+    double value = 15205.8113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(812606.0238) = -0.097073 \f]
+/// @brief \f[ tan(15251.0238) = -0.161552 \f]
 START_TEST(s21_tan_565)
 {
-    double value = 812606.0238;
+    double value = 15251.0238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(824918.2363) = 0.396881 \f]
+/// @brief \f[ tan(15296.2363) = -0.984141 \f]
 START_TEST(s21_tan_566)
 {
-    double value = 824918.2363;
+    double value = 15296.2363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(837230.4488) = -0.658638 \f]
+/// @brief \f[ tan(15341.4488) = -0.495946 \f]
 START_TEST(s21_tan_567)
 {
-    double value = 837230.4488;
+    double value = 15341.4488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(849542.6613) = 0.857246 \f]
+/// @brief \f[ tan(15386.6613) = 0.652803 \f]
 START_TEST(s21_tan_568)
 {
-    double value = 849542.6613;
+    double value = 15386.6613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(861854.8738) = -0.973665 \f]
+/// @brief \f[ tan(15431.8738) = 0.932079 \f]
 START_TEST(s21_tan_569)
 {
-    double value = 861854.8738;
+    double value = 15431.8738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(874167.0863) = 0.996731 \f]
+/// @brief \f[ tan(15477.0863) = -0.030088 \f]
 START_TEST(s21_tan_570)
 {
-    double value = 874167.0863;
+    double value = 15477.0863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(886479.2988) = -0.924233 \f]
+/// @brief \f[ tan(15522.2988) = -0.952180 \f]
 START_TEST(s21_tan_571)
 {
-    double value = 886479.2988;
+    double value = 15522.2988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(898791.5113) = 0.763123 \f]
+/// @brief \f[ tan(15567.5113) = -0.606058 \f]
 START_TEST(s21_tan_572)
 {
-    double value = 898791.5113;
+    double value = 15567.5113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(911103.7238) = -0.528847 \f]
+/// @brief \f[ tan(15612.7238) = 0.547278 \f]
 START_TEST(s21_tan_573)
 {
-    double value = 911103.7238;
+    double value = 15612.7238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(923415.9363) = 0.243867 \f]
+/// @brief \f[ tan(15657.9363) = 0.971690 \f]
 START_TEST(s21_tan_574)
 {
-    double value = 923415.9363;
+    double value = 15657.9363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(935728.1488) = 0.064495 \f]
+/// @brief \f[ tan(15703.1488) = 0.101902 \f]
 START_TEST(s21_tan_575)
 {
-    double value = 935728.1488;
+    double value = 15703.1488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(948040.3613) = -0.366673 \f]
+/// @brief \f[ tan(15748.3613) = -0.903610 \f]
 START_TEST(s21_tan_576)
 {
-    double value = 948040.3613;
+    double value = 15748.3613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(960352.5738) = 0.633695 \f]
+/// @brief \f[ tan(15793.5738) = -0.705597 \f]
 START_TEST(s21_tan_577)
 {
-    double value = 960352.5738;
+    double value = 15793.5738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(972664.7863) = -0.839961 \f]
+/// @brief \f[ tan(15838.7863) = 0.432205 \f]
 START_TEST(s21_tan_578)
 {
-    double value = 972664.7863;
+    double value = 15838.7863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(984976.9988) = 0.965694 \f]
+/// @brief \f[ tan(15883.9988) = 0.994351 \f]
 START_TEST(s21_tan_579)
 {
-    double value = 984976.9988;
+    double value = 15883.9988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(997289.2113) = -0.998839 \f]
+/// @brief \f[ tan(15929.2113) = 0.232114 \f]
 START_TEST(s21_tan_580)
 {
-    double value = 997289.2113;
+    double value = 15929.2113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1009601.4238) = 0.936218 \f]
+/// @brief \f[ tan(15974.4238) = -0.839277 \f]
 START_TEST(s21_tan_581)
 {
-    double value = 1009601.4238;
+    double value = 15974.4238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1021913.6363) = -0.783836 \f]
+/// @brief \f[ tan(16019.6363) = -0.792829 \f]
 START_TEST(s21_tan_582)
 {
-    double value = 1021913.6363;
+    double value = 16019.6363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1034225.8488) = 0.556302 \f]
+/// @brief \f[ tan(16064.8488) = 0.309594 \f]
 START_TEST(s21_tan_583)
 {
-    double value = 1034225.8488;
+    double value = 16064.8488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1046538.0613) = -0.275431 \f]
+/// @brief \f[ tan(16110.0613) = 0.999666 \f]
 START_TEST(s21_tan_584)
 {
-    double value = 1046538.0613;
+    double value = 16110.0613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1058850.2738) = -0.031847 \f]
+/// @brief \f[ tan(16155.2738) = 0.358276 \f]
 START_TEST(s21_tan_585)
 {
-    double value = 1058850.2738;
+    double value = 16155.2738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1071162.4863) = 0.336072 \f]
+/// @brief \f[ tan(16200.4863) = -0.760305 \f]
 START_TEST(s21_tan_586)
 {
-    double value = 1071162.4863;
+    double value = 16200.4863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1083474.6988) = -0.608075 \f]
+/// @brief \f[ tan(16245.6988) = -0.866231 \f]
 START_TEST(s21_tan_587)
 {
-    double value = 1083474.6988;
+    double value = 16245.6988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1095786.9113) = 0.821778 \f]
+/// @brief \f[ tan(16290.9113) = 0.181582 \f]
 START_TEST(s21_tan_588)
 {
-    double value = 1095786.9113;
+    double value = 16290.9113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1108099.1238) = -0.956691 \f]
+/// @brief \f[ tan(16336.1238) = 0.987544 \f]
 START_TEST(s21_tan_589)
 {
-    double value = 1108099.1238;
+    double value = 16336.1238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1120411.3363) = 0.999880 \f]
+/// @brief \f[ tan(16381.3363) = 0.478190 \f]
 START_TEST(s21_tan_590)
 {
-    double value = 1120411.3363;
+    double value = 16381.3363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1132723.5488) = -0.947203 \f]
+/// @brief \f[ tan(16426.5488) = -0.668069 \f]
 START_TEST(s21_tan_591)
 {
-    double value = 1132723.5488;
+    double value = 16426.5488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1145035.7613) = 0.803711 \f]
+/// @brief \f[ tan(16471.7613) = -0.924522 \f]
 START_TEST(s21_tan_592)
 {
-    double value = 1145035.7613;
+    double value = 16471.7613;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1157347.9738) = -0.583162 \f]
+/// @brief \f[ tan(16516.9738) = 0.050402 \f]
 START_TEST(s21_tan_593)
 {
-    double value = 1157347.9738;
+    double value = 16516.9738;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1169660.1863) = 0.306701 \f]
+/// @brief \f[ tan(16562.1863) = 0.958195 \f]
 START_TEST(s21_tan_594)
 {
-    double value = 1169660.1863;
+    double value = 16562.1863;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1181972.3988) = -0.000834 \f]
+/// @brief \f[ tan(16607.3988) = 0.589761 \f]
 START_TEST(s21_tan_595)
 {
-    double value = 1181972.3988;
+    double value = 16607.3988;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1194284.6113) = -0.305112 \f]
+/// @brief \f[ tan(16652.6113) = -0.564180 \f]
 START_TEST(s21_tan_596)
 {
-    double value = 1194284.6113;
+    double value = 16652.6113;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1206596.8238) = 0.581805 \f]
+/// @brief \f[ tan(16697.8238) = -0.966686 \f]
 START_TEST(s21_tan_597)
 {
-    double value = 1206596.8238;
+    double value = 16697.8238;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1218909.0363) = -0.802717 \f]
+/// @brief \f[ tan(16743.0363) = -0.081656 \f]
 START_TEST(s21_tan_598)
 {
-    double value = 1218909.0363;
+    double value = 16743.0363;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1231221.2488) = 0.946667 \f]
+/// @brief \f[ tan(16788.2488) = 0.912132 \f]
 START_TEST(s21_tan_599)
 {
-    double value = 1231221.2488;
+    double value = 16788.2488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4343535341.0212) = 0.993706 \f]
+/// @brief \f[ tan(434.0212) = 0.886341 \f]
 START_TEST(s21_tan_600)
 {
-    double value = 4343535341.0212;
+    double value = 434.0212;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4487069573.2342) = -0.883871 \f]
+/// @brief \f[ tan(448.4342) = -0.686923 \f]
 START_TEST(s21_tan_601)
 {
-    double value = 4487069573.2342;
+    double value = 448.4342;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4630603805.4472) = 0.651533 \f]
+/// @brief \f[ tan(462.8472) = -0.512176 \f]
 START_TEST(s21_tan_602)
 {
-    double value = 4630603805.4472;
+    double value = 462.8472;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4774138037.6602) = -0.328894 \f]
+/// @brief \f[ tan(477.2602) = 0.965904 \f]
 START_TEST(s21_tan_603)
 {
-    double value = 4774138037.6602;
+    double value = 477.2602;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4917672269.8732) = -0.039329 \f]
+/// @brief \f[ tan(491.6732) = -0.013949 \f]
 START_TEST(s21_tan_604)
 {
-    double value = 4917672269.8732;
+    double value = 491.6732;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5061206502.0862) = 0.402100 \f]
+/// @brief \f[ tan(506.0862) = -0.958306 \f]
 START_TEST(s21_tan_605)
 {
-    double value = 5061206502.0862;
+    double value = 506.0862;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5204740734.2992) = -0.709142 \f]
+/// @brief \f[ tan(520.4992) = 0.535936 \f]
 START_TEST(s21_tan_606)
 {
-    double value = 5204740734.2992;
+    double value = 520.4992;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5348274966.5122) = 0.917898 \f]
+/// @brief \f[ tan(534.9122) = 0.666383 \f]
 START_TEST(s21_tan_607)
 {
-    double value = 5348274966.5122;
+    double value = 534.9122;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5491809198.7252) = -0.999436 \f]
+/// @brief \f[ tan(549.3252) = -0.898913 \f]
 START_TEST(s21_tan_608)
 {
-    double value = 5491809198.7252;
+    double value = 549.3252;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5635343430.9382) = 0.942455 \f]
+/// @brief \f[ tan(563.7382) = -0.176748 \f]
 START_TEST(s21_tan_609)
 {
-    double value = 5635343430.9382;
+    double value = 563.7382;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5778877663.1512) = -0.754852 \f]
+/// @brief \f[ tan(578.1512) = 0.995187 \f]
 START_TEST(s21_tan_610)
 {
-    double value = 5778877663.1512;
+    double value = 578.1512;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5922411895.3642) = 0.462629 \f]
+/// @brief \f[ tan(592.5642) = -0.365328 \f]
 START_TEST(s21_tan_611)
 {
-    double value = 5922411895.3642;
+    double value = 592.5642;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6065946127.5772) = -0.106285 \f]
+/// @brief \f[ tan(606.9772) = -0.796194 \f]
 START_TEST(s21_tan_612)
 {
-    double value = 6065946127.5772;
+    double value = 606.9772;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6209480359.7902) = -0.264789 \f]
+/// @brief \f[ tan(621.3902) = 0.799012 \f]
 START_TEST(s21_tan_613)
 {
-    double value = 6209480359.7902;
+    double value = 621.3902;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6353014592.0032) = 0.599163 \f]
+/// @brief \f[ tan(635.8032) = 0.360974 \f]
 START_TEST(s21_tan_614)
 {
-    double value = 6353014592.0032;
+    double value = 635.8032;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6496548824.2162) = -0.850495 \f]
+/// @brief \f[ tan(650.2162) = -0.995634 \f]
 START_TEST(s21_tan_615)
 {
-    double value = 6496548824.2162;
+    double value = 650.2162;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6640083056.4292) = 0.983951 \f]
+/// @brief \f[ tan(664.6292) = 0.181345 \f]
 START_TEST(s21_tan_616)
 {
-    double value = 6640083056.4292;
+    double value = 664.6292;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6783617288.6422) = -0.981034 \f]
+/// @brief \f[ tan(679.0422) = 0.896856 \f]
 START_TEST(s21_tan_617)
 {
-    double value = 6783617288.6422;
+    double value = 679.0422;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6927151520.8552) = 0.842148 \f]
+/// @brief \f[ tan(693.4552) = -0.669860 \f]
 START_TEST(s21_tan_618)
 {
-    double value = 6927151520.8552;
+    double value = 693.4552;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7070685753.0682) = -0.586542 \f]
+/// @brief \f[ tan(707.8682) = -0.531985 \f]
 START_TEST(s21_tan_619)
 {
-    double value = 7070685753.0682;
+    double value = 707.8682;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7214219985.2812) = 0.249642 \f]
+/// @brief \f[ tan(722.2812) = 0.959631 \f]
 START_TEST(s21_tan_620)
 {
-    double value = 7214219985.2812;
+    double value = 722.2812;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7357754217.4942) = 0.121856 \f]
+/// @brief \f[ tan(736.6942) = 0.009277 \f]
 START_TEST(s21_tan_621)
 {
-    double value = 7357754217.4942;
+    double value = 736.6942;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7501288449.7072) = -0.476466 \f]
+/// @brief \f[ tan(751.1072) = -0.964684 \f]
 START_TEST(s21_tan_622)
 {
-    double value = 7501288449.7072;
+    double value = 751.1072;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7644822681.9202) = 0.765039 \f]
+/// @brief \f[ tan(765.5202) = 0.516183 \f]
 START_TEST(s21_tan_623)
 {
-    double value = 7644822681.9202;
+    double value = 765.5202;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7788356914.1332) = -0.947579 \f]
+/// @brief \f[ tan(779.9332) = 0.683520 \f]
 START_TEST(s21_tan_624)
 {
-    double value = 7788356914.1332;
+    double value = 779.9332;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7931891146.3462) = 0.998788 \f]
+/// @brief \f[ tan(794.3462) = -0.888495 \f]
 START_TEST(s21_tan_625)
 {
-    double value = 7931891146.3462;
+    double value = 794.3462;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8075425378.5592) = -0.911566 \f]
+/// @brief \f[ tan(808.7592) = -0.199559 \f]
 START_TEST(s21_tan_626)
 {
-    double value = 8075425378.5592;
+    double value = 808.7592;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8218959610.7722) = 0.698005 \f]
+/// @brief \f[ tan(823.1722) = 0.997194 \f]
 START_TEST(s21_tan_627)
 {
-    double value = 8218959610.7722;
+    double value = 823.1722;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8362493842.9852) = -0.387701 \f]
+/// @brief \f[ tan(837.5852) = -0.343610 \f]
 START_TEST(s21_tan_628)
 {
-    double value = 8362493842.9852;
+    double value = 837.5852;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8506028075.1982) = 0.023663 \f]
+/// @brief \f[ tan(851.9982) = -0.810031 \f]
 START_TEST(s21_tan_629)
 {
-    double value = 8506028075.1982;
+    double value = 851.9982;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8649562307.4112) = 0.343654 \f]
+/// @brief \f[ tan(866.4112) = 0.784831 \f]
 START_TEST(s21_tan_630)
 {
-    double value = 8649562307.4112;
+    double value = 866.4112;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8793096539.6242) = -0.663343 \f]
+/// @brief \f[ tan(880.8242) = 0.382536 \f]
 START_TEST(s21_tan_631)
 {
-    double value = 8793096539.6242;
+    double value = 880.8242;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8936630771.8372) = 0.891093 \f]
+/// @brief \f[ tan(895.2372) = -0.993198 \f]
 START_TEST(s21_tan_632)
 {
-    double value = 8936630771.8372;
+    double value = 895.2372;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9080165004.0502) = -0.995340 \f]
+/// @brief \f[ tan(909.6502) = 0.158456 \f]
 START_TEST(s21_tan_633)
 {
-    double value = 9080165004.0502;
+    double value = 909.6502;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9223699236.2632) = 0.961635 \f]
+/// @brief \f[ tan(924.0632) = 0.906887 \f]
 START_TEST(s21_tan_634)
 {
-    double value = 9223699236.2632;
+    double value = 924.0632;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9367233468.4762) = -0.794651 \f]
+/// @brief \f[ tan(938.4762) = -0.652435 \f]
 START_TEST(s21_tan_635)
 {
-    double value = 9367233468.4762;
+    double value = 938.4762;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9510767700.6892) = 0.517530 \f]
+/// @brief \f[ tan(952.8892) = -0.551508 \f]
 START_TEST(s21_tan_636)
 {
-    double value = 9510767700.6892;
+    double value = 952.8892;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9654301932.9022) = -0.168679 \f]
+/// @brief \f[ tan(967.3022) = 0.952839 \f]
 START_TEST(s21_tan_637)
 {
-    double value = 9654301932.9022;
+    double value = 967.3022;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9797836165.1152) = -0.203548 \f]
+/// @brief \f[ tan(981.7152) = 0.032499 \f]
 START_TEST(s21_tan_638)
 {
-    double value = 9797836165.1152;
+    double value = 981.7152;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9941370397.3282) = 0.547565 \f]
+/// @brief \f[ tan(996.1282) = -0.970541 \f]
 START_TEST(s21_tan_639)
 {
-    double value = 9941370397.3282;
+    double value = 996.1282;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10084904629.5412) = -0.815691 \f]
+/// @brief \f[ tan(1010.5412) = 0.496153 \f]
 START_TEST(s21_tan_640)
 {
-    double value = 10084904629.5412;
+    double value = 1010.5412;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10228438861.7542) = 0.970764 \f]
+/// @brief \f[ tan(1024.9542) = 0.700288 \f]
 START_TEST(s21_tan_641)
 {
-    double value = 10228438861.7542;
+    double value = 1024.9542;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10371973093.9672) = -0.991292 \f]
+/// @brief \f[ tan(1039.3672) = -0.877598 \f]
 START_TEST(s21_tan_642)
 {
-    double value = 10371973093.9672;
+    double value = 1039.3672;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10515507326.1802) = 0.874428 \f]
+/// @brief \f[ tan(1053.7802) = -0.222263 \f]
 START_TEST(s21_tan_643)
 {
-    double value = 10515507326.1802;
+    double value = 1053.7802;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10659041558.3932) = -0.636372 \f]
+/// @brief \f[ tan(1068.1932) = 0.998664 \f]
 START_TEST(s21_tan_644)
 {
-    double value = 10659041558.3932;
+    double value = 1068.1932;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10802575790.6062) = 0.310117 \f]
+/// @brief \f[ tan(1082.6062) = -0.321706 \f]
 START_TEST(s21_tan_645)
 {
-    double value = 10802575790.6062;
+    double value = 1082.6062;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10946110022.8192) = 0.059122 \f]
+/// @brief \f[ tan(1097.0192) = -0.823432 \f]
 START_TEST(s21_tan_646)
 {
-    double value = 10946110022.8192;
+    double value = 1097.0192;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11089644255.0322) = -0.420164 \f]
+/// @brief \f[ tan(1111.4322) = 0.770227 \f]
 START_TEST(s21_tan_647)
 {
-    double value = 11089644255.0322;
+    double value = 1111.4322;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11233178487.2452) = 0.722974 \f]
+/// @brief \f[ tan(1125.8452) = 0.403891 \f]
 START_TEST(s21_tan_648)
 {
-    double value = 11233178487.2452;
+    double value = 1125.8452;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11376712719.4582) = -0.925582 \f]
+/// @brief \f[ tan(1140.2582) = -0.990225 \f]
 START_TEST(s21_tan_649)
 {
-    double value = 11376712719.4582;
+    double value = 1140.2582;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11520246951.6712) = 0.999905 \f]
+/// @brief \f[ tan(1154.6712) = 0.135482 \f]
 START_TEST(s21_tan_650)
 {
-    double value = 11520246951.6712;
+    double value = 1154.6712;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11663781183.8842) = -0.935645 \f]
+/// @brief \f[ tan(1169.0842) = 0.916429 \f]
 START_TEST(s21_tan_651)
 {
-    double value = 11663781183.8842;
+    double value = 1169.0842;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11807315416.0972) = 0.741706 \f]
+/// @brief \f[ tan(1183.4972) = -0.634658 \f]
 START_TEST(s21_tan_652)
 {
-    double value = 11807315416.0972;
+    double value = 1183.4972;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11950849648.3102) = -0.444970 \f]
+/// @brief \f[ tan(1197.9102) = -0.570732 \f]
 START_TEST(s21_tan_653)
 {
-    double value = 11950849648.3102;
+    double value = 1197.9102;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12094383880.5232) = 0.086562 \f]
+/// @brief \f[ tan(1212.3232) = 0.945534 \f]
 START_TEST(s21_tan_654)
 {
-    double value = 12094383880.5232;
+    double value = 1212.3232;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12237918112.7362) = 0.283845 \f]
+/// @brief \f[ tan(1226.7362) = 0.055702 \f]
 START_TEST(s21_tan_655)
 {
-    double value = 12237918112.7362;
+    double value = 1226.7362;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12381452344.9492) = -0.614910 \f]
+/// @brief \f[ tan(1241.1492) = -0.975875 \f]
 START_TEST(s21_tan_656)
 {
-    double value = 12381452344.9492;
+    double value = 1241.1492;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12524986577.1622) = 0.860752 \f]
+/// @brief \f[ tan(1255.5622) = 0.475854 \f]
 START_TEST(s21_tan_657)
 {
-    double value = 12524986577.1622;
+    double value = 1255.5622;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12668520809.3752) = -0.987294 \f]
+/// @brief \f[ tan(1269.9752) = 0.716679 \f]
 START_TEST(s21_tan_658)
 {
-    double value = 12668520809.3752;
+    double value = 1269.9752;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12812055041.5882) = 0.977000 \f]
+/// @brief \f[ tan(1284.3882) = -0.866227 \f]
 START_TEST(s21_tan_659)
 {
-    double value = 12812055041.5882;
+    double value = 1284.3882;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12955589273.8012) = -0.831296 \f]
+/// @brief \f[ tan(1298.8012) = -0.244847 \f]
 START_TEST(s21_tan_660)
 {
-    double value = 12955589273.8012;
+    double value = 1298.8012;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13099123506.0142) = 0.570377 \f]
+/// @brief \f[ tan(1313.2142) = 0.999595 \f]
 START_TEST(s21_tan_661)
 {
-    double value = 13099123506.0142;
+    double value = 1313.2142;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13242657738.2272) = -0.230406 \f]
+/// @brief \f[ tan(1327.6272) = -0.299629 \f]
 START_TEST(s21_tan_662)
 {
-    double value = 13242657738.2272;
+    double value = 1327.6272;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13386191970.4402) = -0.141501 \f]
+/// @brief \f[ tan(1342.0402) = -0.836388 \f]
 START_TEST(s21_tan_663)
 {
-    double value = 13386191970.4402;
+    double value = 1342.0402;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13529726202.6532) = 0.493795 \f]
+/// @brief \f[ tan(1356.4532) = 0.755207 \f]
 START_TEST(s21_tan_664)
 {
-    double value = 13529726202.6532;
+    double value = 1356.4532;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13673260434.8662) = -0.777649 \f]
+/// @brief \f[ tan(1370.8662) = 0.425028 \f]
 START_TEST(s21_tan_665)
 {
-    double value = 13673260434.8662;
+    double value = 1370.8662;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13816794667.0792) = 0.953725 \f]
+/// @brief \f[ tan(1385.2792) = -0.986719 \f]
 START_TEST(s21_tan_666)
 {
-    double value = 13816794667.0792;
+    double value = 1385.2792;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13960328899.2922) = -0.997616 \f]
+/// @brief \f[ tan(1399.6922) = 0.112435 \f]
 START_TEST(s21_tan_667)
 {
-    double value = 13960328899.2922;
+    double value = 1399.6922;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14103863131.5052) = 0.903240 \f]
+/// @brief \f[ tan(1414.1052) = 0.925476 \f]
 START_TEST(s21_tan_668)
 {
-    double value = 14103863131.5052;
+    double value = 1414.1052;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14247397363.7182) = -0.683677 \f]
+/// @brief \f[ tan(1428.5182) = -0.616539 \f]
 START_TEST(s21_tan_669)
 {
-    double value = 14247397363.7182;
+    double value = 1428.5182;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14390931595.9312) = 0.369359 \f]
+/// @brief \f[ tan(1442.9312) = -0.589649 \f]
 START_TEST(s21_tan_670)
 {
-    double value = 14390931595.9312;
+    double value = 1442.9312;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14534465828.1442) = -0.003849 \f]
+/// @brief \f[ tan(1457.3442) = 0.937719 \f]
 START_TEST(s21_tan_671)
 {
-    double value = 14534465828.1442;
+    double value = 1457.3442;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14678000060.3572) = -0.362197 \f]
+/// @brief \f[ tan(1471.7572) = 0.078876 \f]
 START_TEST(s21_tan_672)
 {
-    double value = 14678000060.3572;
+    double value = 1471.7572;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14821534292.5702) = 0.678041 \f]
+/// @brief \f[ tan(1486.1702) = -0.980683 \f]
 START_TEST(s21_tan_673)
 {
-    double value = 14821534292.5702;
+    double value = 1486.1702;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14965068524.7832) = -0.899910 \f]
+/// @brief \f[ tan(1500.5832) = 0.455299 \f]
 START_TEST(s21_tan_674)
 {
-    double value = 14965068524.7832;
+    double value = 1500.5832;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15108602756.9962) = 0.997055 \f]
+/// @brief \f[ tan(1514.9962) = 0.732683 \f]
 START_TEST(s21_tan_675)
 {
-    double value = 15108602756.9962;
+    double value = 1514.9962;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15252136989.2092) = -0.956011 \f]
+/// @brief \f[ tan(1529.4092) = -0.854389 \f]
 START_TEST(s21_tan_676)
 {
-    double value = 15252136989.2092;
+    double value = 1529.4092;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15395671221.4222) = 0.782466 \f]
+/// @brief \f[ tan(1543.8222) = -0.267299 \f]
 START_TEST(s21_tan_677)
 {
-    double value = 15395671221.4222;
+    double value = 1543.8222;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15539205453.6352) = -0.500472 \f]
+/// @brief \f[ tan(1558.2352) = 0.999986 \f]
 START_TEST(s21_tan_678)
 {
-    double value = 15539205453.6352;
+    double value = 1558.2352;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15682739685.8482) = 0.149115 \f]
+/// @brief \f[ tan(1572.6482) = -0.277390 \f]
 START_TEST(s21_tan_679)
 {
-    double value = 15682739685.8482;
+    double value = 1572.6482;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15826273918.0612) = 0.222909 \f]
+/// @brief \f[ tan(1587.0612) = -0.848892 \f]
 START_TEST(s21_tan_680)
 {
-    double value = 15826273918.0612;
+    double value = 1587.0612;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15969808150.2742) = -0.564039 \f]
+/// @brief \f[ tan(1601.4742) = 0.739780 \f]
 START_TEST(s21_tan_681)
 {
-    double value = 15969808150.2742;
+    double value = 1601.4742;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16113342382.4872) = 0.826994 \f]
+/// @brief \f[ tan(1615.8872) = 0.445936 \f]
 START_TEST(s21_tan_682)
 {
-    double value = 16113342382.4872;
+    double value = 1615.8872;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16256876614.7002) = -0.975330 \f]
+/// @brief \f[ tan(1630.3002) = -0.982680 \f]
 START_TEST(s21_tan_683)
 {
-    double value = 16256876614.7002;
+    double value = 1630.3002;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16400410846.9132) = 0.988487 \f]
+/// @brief \f[ tan(1644.7132) = 0.089327 \f]
 START_TEST(s21_tan_684)
 {
-    double value = 16400410846.9132;
+    double value = 1644.7132;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16543945079.1262) = -0.864643 \f]
+/// @brief \f[ tan(1659.1262) = 0.934024 \f]
 START_TEST(s21_tan_685)
 {
-    double value = 16543945079.1262;
+    double value = 1659.1262;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16687479311.3392) = 0.620962 \f]
+/// @brief \f[ tan(1673.5392) = -0.598087 \f]
 START_TEST(s21_tan_686)
 {
-    double value = 16687479311.3392;
+    double value = 1673.5392;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16831013543.5522) = -0.291216 \f]
+/// @brief \f[ tan(1687.9522) = -0.608248 \f]
 START_TEST(s21_tan_687)
 {
-    double value = 16831013543.5522;
+    double value = 1687.9522;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16974547775.7652) = -0.078891 \f]
+/// @brief \f[ tan(1702.3652) = 0.929398 \f]
 START_TEST(s21_tan_688)
 {
-    double value = 16974547775.7652;
+    double value = 1702.3652;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17118082007.9782) = 0.438065 \f]
+/// @brief \f[ tan(1716.7782) = 0.102007 \f]
 START_TEST(s21_tan_689)
 {
-    double value = 17118082007.9782;
+    double value = 1716.7782;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17261616240.1912) = -0.736523 \f]
+/// @brief \f[ tan(1731.1912) = -0.984961 \f]
 START_TEST(s21_tan_690)
 {
-    double value = 17261616240.1912;
+    double value = 1731.1912;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17405150472.4042) = 0.932902 \f]
+/// @brief \f[ tan(1745.6042) = 0.434498 \f]
 START_TEST(s21_tan_691)
 {
-    double value = 17405150472.4042;
+    double value = 1745.6042;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17548684704.6172) = -0.999982 \f]
+/// @brief \f[ tan(1760.0172) = 0.748291 \f]
 START_TEST(s21_tan_692)
 {
-    double value = 17548684704.6172;
+    double value = 1760.0172;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17692218936.8302) = 0.928467 \f]
+/// @brief \f[ tan(1774.4302) = -0.842090 \f]
 START_TEST(s21_tan_693)
 {
-    double value = 17692218936.8302;
+    double value = 1774.4302;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17835753169.0432) = -0.728269 \f]
+/// @brief \f[ tan(1788.8432) = -0.289607 \f]
 START_TEST(s21_tan_694)
 {
-    double value = 17835753169.0432;
+    double value = 1788.8432;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17979287401.2562) = 0.427137 \f]
+/// @brief \f[ tan(1803.2562) = 0.999838 \f]
 START_TEST(s21_tan_695)
 {
-    double value = 17979287401.2562;
+    double value = 1803.2562;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18122821633.4692) = -0.066802 \f]
+/// @brief \f[ tan(1817.6692) = -0.255002 \f]
 START_TEST(s21_tan_696)
 {
-    double value = 18122821633.4692;
+    double value = 1817.6692;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18266355865.6822) = -0.302792 \f]
+/// @brief \f[ tan(1832.0822) = -0.860939 \f]
 START_TEST(s21_tan_697)
 {
-    double value = 18266355865.6822;
+    double value = 1832.0822;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18409890097.8952) = 0.630416 \f]
+/// @brief \f[ tan(1846.4952) = 0.723953 \f]
 START_TEST(s21_tan_698)
 {
-    double value = 18409890097.8952;
+    double value = 1846.4952;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18553424330.1082) = -0.870669 \f]
+/// @brief \f[ tan(1860.9082) = 0.466604 \f]
 START_TEST(s21_tan_699)
 {
-    double value = 18553424330.1082;
+    double value = 1860.9082;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(98234764.23) = -0.372044 \f]
+/// @brief \f[ tan(98234.23) = -0.973510 \f]
 START_TEST(s21_tan_700)
 {
-    double value = 98234764.23;
+    double value = 98234.23;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(185890529.751312) = -0.403525 \f]
+/// @brief \f[ tan(103999.751312) = 0.892424 \f]
 START_TEST(s21_tan_701)
 {
-    double value = 185890529.751312;
+    double value = 103999.751312;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(273546295.272624) = 0.936300 \f]
+/// @brief \f[ tan(109765.272624) = -0.393004 \f]
 START_TEST(s21_tan_702)
 {
-    double value = 273546295.272624;
+    double value = 109765.272624;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(361202060.793936) = -0.905719 \f]
+/// @brief \f[ tan(115530.793936) = -0.290641 \f]
 START_TEST(s21_tan_703)
 {
-    double value = 361202060.793936;
+    double value = 115530.793936;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(448857826.315248) = 0.330182 \f]
+/// @brief \f[ tan(121296.315248) = 0.838045 \f]
 START_TEST(s21_tan_704)
 {
-    double value = 448857826.315248;
+    double value = 121296.315248;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(536513591.836560) = 0.444019 \f]
+/// @brief \f[ tan(127061.836560) = -0.992605 \f]
 START_TEST(s21_tan_705)
 {
-    double value = 536513591.836560;
+    double value = 127061.836560;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(624169357.357872) = -0.951062 \f]
+/// @brief \f[ tan(132827.357872) = 0.681871 \f]
 START_TEST(s21_tan_706)
 {
-    double value = 624169357.357872;
+    double value = 132827.357872;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(711825122.879184) = 0.885867 \f]
+/// @brief \f[ tan(138592.879184) = -0.051503 \f]
 START_TEST(s21_tan_707)
 {
-    double value = 711825122.879184;
+    double value = 138592.879184;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(799480888.400496) = -0.287661 \f]
+/// @brief \f[ tan(144358.400496) = -0.603009 \f]
 START_TEST(s21_tan_708)
 {
-    double value = 799480888.400496;
+    double value = 144358.400496;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(887136653.921808) = -0.483626 \f]
+/// @brief \f[ tan(150123.921808) = 0.974853 \f]
 START_TEST(s21_tan_709)
 {
-    double value = 887136653.921808;
+    double value = 150123.921808;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(974792419.443120) = 0.963923 \f]
+/// @brief \f[ tan(155889.443120) = -0.889724 \f]
 START_TEST(s21_tan_710)
 {
-    double value = 974792419.443120;
+    double value = 155889.443120;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1062448184.964432) = -0.864245 \f]
+/// @brief \f[ tan(161654.964432) = 0.387527 \f]
 START_TEST(s21_tan_711)
 {
-    double value = 1062448184.964432;
+    double value = 161654.964432;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1150103950.485744) = 0.244565 \f]
+/// @brief \f[ tan(167420.485744) = 0.296328 \f]
 START_TEST(s21_tan_712)
 {
-    double value = 1150103950.485744;
+    double value = 167420.485744;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1237759716.007056) = 0.522265 \f]
+/// @brief \f[ tan(173186.007056) = -0.841275 \f]
 START_TEST(s21_tan_713)
 {
-    double value = 1237759716.007056;
+    double value = 173186.007056;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1325415481.528368) = -0.974858 \f]
+/// @brief \f[ tan(178951.528368) = 0.991866 \f]
 START_TEST(s21_tan_714)
 {
-    double value = 1325415481.528368;
+    double value = 178951.528368;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1413071247.049680) = 0.840895 \f]
+/// @brief \f[ tan(184717.049680) = -0.677508 \f]
 START_TEST(s21_tan_715)
 {
-    double value = 1413071247.049680;
+    double value = 184717.049680;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1500727012.570992) = -0.200980 \f]
+/// @brief \f[ tan(190482.570992) = 0.045561 \f]
 START_TEST(s21_tan_716)
 {
-    double value = 1500727012.570992;
+    double value = 190482.570992;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1588382778.092304) = -0.559861 \f]
+/// @brief \f[ tan(196248.092304) = 0.607743 \f]
 START_TEST(s21_tan_717)
 {
-    double value = 1588382778.092304;
+    double value = 196248.092304;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1676038543.613616) = 0.983843 \f]
+/// @brief \f[ tan(202013.613616) = -0.976161 \f]
 START_TEST(s21_tan_718)
 {
-    double value = 1676038543.613616;
+    double value = 202013.613616;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1763694309.134928) = -0.815864 \f]
+/// @brief \f[ tan(207779.134928) = 0.886993 \f]
 START_TEST(s21_tan_719)
 {
-    double value = 1763694309.134928;
+    double value = 207779.134928;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1851350074.656240) = 0.156993 \f]
+/// @brief \f[ tan(213544.656240) = -0.382036 \f]
 START_TEST(s21_tan_720)
 {
-    double value = 1851350074.656240;
+    double value = 213544.656240;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1939005840.177552) = 0.596338 \f]
+/// @brief \f[ tan(219310.177552) = -0.302004 \f]
 START_TEST(s21_tan_721)
 {
-    double value = 1939005840.177552;
+    double value = 219310.177552;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2026661605.698864) = -0.990862 \f]
+/// @brief \f[ tan(225075.698864) = 0.844476 \f]
 START_TEST(s21_tan_722)
 {
-    double value = 2026661605.698864;
+    double value = 225075.698864;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2114317371.220176) = 0.789202 \f]
+/// @brief \f[ tan(230841.220176) = -0.991091 \f]
 START_TEST(s21_tan_723)
 {
-    double value = 2114317371.220176;
+    double value = 230841.220176;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2201973136.741488) = -0.112693 \f]
+/// @brief \f[ tan(236606.741488) = 0.673121 \f]
 START_TEST(s21_tan_724)
 {
-    double value = 2201973136.741488;
+    double value = 236606.741488;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2289628902.262800) = -0.631622 \f]
+/// @brief \f[ tan(242372.262800) = -0.039618 \f]
 START_TEST(s21_tan_725)
 {
-    double value = 2289628902.262800;
+    double value = 242372.262800;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2377284667.784112) = 0.995901 \f]
+/// @brief \f[ tan(248137.784112) = -0.612457 \f]
 START_TEST(s21_tan_726)
 {
-    double value = 2377284667.784112;
+    double value = 248137.784112;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2464940433.305424) = -0.760963 \f]
+/// @brief \f[ tan(253903.305424) = 0.977435 \f]
 START_TEST(s21_tan_727)
 {
-    double value = 2464940433.305424;
+    double value = 253903.305424;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2552596198.826736) = 0.068167 \f]
+/// @brief \f[ tan(259668.826736) = -0.884230 \f]
 START_TEST(s21_tan_728)
 {
-    double value = 2552596198.826736;
+    double value = 259668.826736;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2640251964.348048) = 0.665644 \f]
+/// @brief \f[ tan(265434.348048) = 0.376532 \f]
 START_TEST(s21_tan_729)
 {
-    double value = 2640251964.348048;
+    double value = 265434.348048;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2727907729.869360) = -0.998948 \f]
+/// @brief \f[ tan(271199.869360) = 0.307669 \f]
 START_TEST(s21_tan_730)
 {
-    double value = 2727907729.869360;
+    double value = 271199.869360;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2815563495.390672) = 0.731203 \f]
+/// @brief \f[ tan(276965.390672) = -0.847647 \f]
 START_TEST(s21_tan_731)
 {
-    double value = 2815563495.390672;
+    double value = 276965.390672;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2903219260.911984) = -0.023505 \f]
+/// @brief \f[ tan(282730.911984) = 0.990281 \f]
 START_TEST(s21_tan_732)
 {
-    double value = 2903219260.911984;
+    double value = 282730.911984;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2990875026.433296) = -0.698335 \f]
+/// @brief \f[ tan(288496.433296) = -0.668710 \f]
 START_TEST(s21_tan_733)
 {
-    double value = 2990875026.433296;
+    double value = 288496.433296;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3078530791.954608) = 0.999999 \f]
+/// @brief \f[ tan(294261.954608) = 0.033673 \f]
 START_TEST(s21_tan_734)
 {
-    double value = 3078530791.954608;
+    double value = 294261.954608;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3166186557.475920) = -0.699981 \f]
+/// @brief \f[ tan(300027.475920) = 0.617148 \f]
 START_TEST(s21_tan_735)
 {
-    double value = 3166186557.475920;
+    double value = 300027.475920;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3253842322.997232) = -0.021204 \f]
+/// @brief \f[ tan(305792.997232) = -0.978674 \f]
 START_TEST(s21_tan_736)
 {
-    double value = 3253842322.997232;
+    double value = 305792.997232;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3341498088.518544) = 0.729631 \f]
+/// @brief \f[ tan(311558.518544) = 0.881436 \f]
 START_TEST(s21_tan_737)
 {
-    double value = 3341498088.518544;
+    double value = 311558.518544;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3429153854.039856) = -0.999051 \f]
+/// @brief \f[ tan(317324.039856) = -0.371015 \f]
 START_TEST(s21_tan_738)
 {
-    double value = 3429153854.039856;
+    double value = 317324.039856;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3516809619.561168) = 0.667360 \f]
+/// @brief \f[ tan(323089.561168) = -0.313324 \f]
 START_TEST(s21_tan_739)
 {
-    double value = 3516809619.561168;
+    double value = 323089.561168;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3604465385.082480) = 0.065871 \f]
+/// @brief \f[ tan(328855.082480) = 0.850788 \f]
 START_TEST(s21_tan_740)
 {
-    double value = 3604465385.082480;
+    double value = 328855.082480;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3692121150.603792) = -0.759468 \f]
+/// @brief \f[ tan(334620.603792) = -0.989436 \f]
 START_TEST(s21_tan_741)
 {
-    double value = 3692121150.603792;
+    double value = 334620.603792;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3779776916.125104) = 0.996106 \f]
+/// @brief \f[ tan(340386.125104) = 0.664275 \f]
 START_TEST(s21_tan_742)
 {
-    double value = 3779776916.125104;
+    double value = 340386.125104;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3867432681.646416) = -0.633405 \f]
+/// @brief \f[ tan(346151.646416) = -0.027727 \f]
 START_TEST(s21_tan_743)
 {
-    double value = 3867432681.646416;
+    double value = 346151.646416;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3955088447.167728) = -0.110406 \f]
+/// @brief \f[ tan(351917.167728) = -0.621818 \f]
 START_TEST(s21_tan_744)
 {
-    double value = 3955088447.167728;
+    double value = 351917.167728;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4042744212.689040) = 0.787787 \f]
+/// @brief \f[ tan(357682.689040) = 0.979879 \f]
 START_TEST(s21_tan_745)
 {
-    double value = 4042744212.689040;
+    double value = 357682.689040;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4130399978.210352) = -0.991170 \f]
+/// @brief \f[ tan(363448.210352) = -0.878611 \f]
 START_TEST(s21_tan_746)
 {
-    double value = 4130399978.210352;
+    double value = 363448.210352;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4218055743.731664) = 0.598183 \f]
+/// @brief \f[ tan(369213.731664) = 0.365484 \f]
 START_TEST(s21_tan_747)
 {
-    double value = 4218055743.731664;
+    double value = 369213.731664;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4305711509.252976) = 0.154720 \f]
+/// @brief \f[ tan(374979.252976) = 0.318967 \f]
 START_TEST(s21_tan_748)
 {
-    double value = 4305711509.252976;
+    double value = 374979.252976;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4393367274.774288) = -0.814531 \f]
+/// @brief \f[ tan(380744.774288) = -0.853899 \f]
 START_TEST(s21_tan_749)
 {
-    double value = 4393367274.774288;
+    double value = 380744.774288;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4481023040.295600) = 0.984253 \f]
+/// @brief \f[ tan(386510.295600) = 0.988557 \f]
 START_TEST(s21_tan_750)
 {
-    double value = 4481023040.295600;
+    double value = 386510.295600;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4568678805.816912) = -0.561766 \f]
+/// @brief \f[ tan(392275.816912) = -0.659817 \f]
 START_TEST(s21_tan_751)
 {
-    double value = 4568678805.816912;
+    double value = 392275.816912;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4656334571.338224) = -0.198725 \f]
+/// @brief \f[ tan(398041.338224) = 0.021780 \f]
 START_TEST(s21_tan_752)
 {
-    double value = 4656334571.338224;
+    double value = 398041.338224;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4743990336.859536) = 0.839647 \f]
+/// @brief \f[ tan(403806.859536) = 0.626466 \f]
 START_TEST(s21_tan_753)
 {
-    double value = 4743990336.859536;
+    double value = 403806.859536;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4831646102.380848) = -0.975368 \f]
+/// @brief \f[ tan(409572.380848) = -0.981049 \f]
 START_TEST(s21_tan_754)
 {
-    double value = 4831646102.380848;
+    double value = 409572.380848;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4919301867.902160) = 0.524226 \f]
+/// @brief \f[ tan(415337.902160) = 0.875755 \f]
 START_TEST(s21_tan_755)
 {
-    double value = 4919301867.902160;
+    double value = 415337.902160;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5006957633.423472) = 0.242333 \f]
+/// @brief \f[ tan(421103.423472) = -0.359941 \f]
 START_TEST(s21_tan_756)
 {
-    double value = 5006957633.423472;
+    double value = 421103.423472;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5094613398.944784) = -0.863085 \f]
+/// @brief \f[ tan(426868.944784) = -0.324600 \f]
 START_TEST(s21_tan_757)
 {
-    double value = 5094613398.944784;
+    double value = 426868.944784;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5182269164.466096) = 0.964533 \f]
+/// @brief \f[ tan(432634.466096) = 0.856980 \f]
 START_TEST(s21_tan_758)
 {
-    double value = 5182269164.466096;
+    double value = 432634.466096;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5269924929.987408) = -0.485638 \f]
+/// @brief \f[ tan(438399.987408) = -0.987642 \f]
 START_TEST(s21_tan_759)
 {
-    double value = 5269924929.987408;
+    double value = 438399.987408;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5357580695.508720) = -0.285456 \f]
+/// @brief \f[ tan(444165.508720) = 0.655335 \f]
 START_TEST(s21_tan_760)
 {
-    double value = 5357580695.508720;
+    double value = 444165.508720;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5445236461.030032) = 0.884797 \f]
+/// @brief \f[ tan(449931.030032) = -0.015833 \f]
 START_TEST(s21_tan_761)
 {
-    double value = 5445236461.030032;
+    double value = 449931.030032;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5532892226.551344) = -0.951771 \f]
+/// @brief \f[ tan(455696.551344) = -0.631091 \f]
 START_TEST(s21_tan_762)
 {
-    double value = 5532892226.551344;
+    double value = 455696.551344;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5620547992.072656) = 0.446080 \f]
+/// @brief \f[ tan(461462.072656) = 0.982184 \f]
 START_TEST(s21_tan_763)
 {
-    double value = 5620547992.072656;
+    double value = 461462.072656;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5708203757.593968) = 0.328009 \f]
+/// @brief \f[ tan(467227.593968) = -0.872867 \f]
 START_TEST(s21_tan_764)
 {
-    double value = 5708203757.593968;
+    double value = 467227.593968;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5795859523.115280) = -0.904741 \f]
+/// @brief \f[ tan(472993.115280) = 0.354384 \f]
 START_TEST(s21_tan_765)
 {
-    double value = 5795859523.115280;
+    double value = 472993.115280;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5883515288.636592) = 0.937106 \f]
+/// @brief \f[ tan(478758.636592) = 0.330220 \f]
 START_TEST(s21_tan_766)
 {
-    double value = 5883515288.636592;
+    double value = 478758.636592;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5971171054.157904) = -0.405630 \f]
+/// @brief \f[ tan(484524.157904) = -0.860031 \f]
 START_TEST(s21_tan_767)
 {
-    double value = 5971171054.157904;
+    double value = 484524.157904;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6058826819.679216) = -0.369906 \f]
+/// @brief \f[ tan(490289.679216) = 0.986692 \f]
 START_TEST(s21_tan_768)
 {
-    double value = 6058826819.679216;
+    double value = 490289.679216;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6146482585.200528) = 0.922877 \f]
+/// @brief \f[ tan(496055.200528) = -0.650830 \f]
 START_TEST(s21_tan_769)
 {
-    double value = 6146482585.200528;
+    double value = 496055.200528;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6234138350.721840) = -0.920568 \f]
+/// @brief \f[ tan(501820.721840) = 0.009885 \f]
 START_TEST(s21_tan_770)
 {
-    double value = 6234138350.721840;
+    double value = 501820.721840;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6321794116.243152) = 0.364369 \f]
+/// @brief \f[ tan(507586.243152) = 0.635694 \f]
 START_TEST(s21_tan_771)
 {
-    double value = 6321794116.243152;
+    double value = 507586.243152;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6409449881.764464) = 0.411064 \f]
+/// @brief \f[ tan(513351.764464) = -0.983285 \f]
 START_TEST(s21_tan_772)
 {
-    double value = 6409449881.764464;
+    double value = 513351.764464;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6497105647.285776) = -0.939167 \f]
+/// @brief \f[ tan(519117.285776) = 0.869949 \f]
 START_TEST(s21_tan_773)
 {
-    double value = 6497105647.285776;
+    double value = 519117.285776;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6584761412.807088) = 0.902189 \f]
+/// @brief \f[ tan(524882.807088) = -0.348815 \f]
 START_TEST(s21_tan_774)
 {
-    double value = 6584761412.807088;
+    double value = 524882.807088;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6672417178.328400) = -0.322379 \f]
+/// @brief \f[ tan(530648.328400) = -0.335830 \f]
 START_TEST(s21_tan_775)
 {
-    double value = 6672417178.328400;
+    double value = 530648.328400;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6760072943.849712) = -0.451400 \f]
+/// @brief \f[ tan(536413.849712) = 0.863051 \f]
 START_TEST(s21_tan_776)
 {
-    double value = 6760072943.849712;
+    double value = 536413.849712;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6847728709.371024) = 0.953581 \f]
+/// @brief \f[ tan(542179.371024) = -0.985707 \f]
 START_TEST(s21_tan_777)
 {
-    double value = 6847728709.371024;
+    double value = 542179.371024;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6935384474.892336) = -0.882008 \f]
+/// @brief \f[ tan(547944.892336) = 0.646302 \f]
 START_TEST(s21_tan_778)
 {
-    double value = 6935384474.892336;
+    double value = 547944.892336;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7023040240.413648) = 0.279745 \f]
+/// @brief \f[ tan(55371.413648) = -0.003936 \f]
 START_TEST(s21_tan_779)
 {
-    double value = 7023040240.413648;
+    double value = 55371.413648;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7110696005.934960) = 0.490834 \f]
+/// @brief \f[ tan(559475.934960) = -0.640275 \f]
 START_TEST(s21_tan_780)
 {
-    double value = 7110696005.934960;
+    double value = 559475.934960;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7198351771.456272) = -0.966088 \f]
+/// @brief \f[ tan(565241.456272) = 0.984350 \f]
 START_TEST(s21_tan_781)
 {
-    double value = 7198351771.456272;
+    double value = 565241.456272;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7286007536.977584) = 0.860063 \f]
+/// @brief \f[ tan(571006.977584) = -0.867000 \f]
 START_TEST(s21_tan_782)
 {
-    double value = 7286007536.977584;
+    double value = 571006.977584;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7373663302.498896) = -0.236552 \f]
+/// @brief \f[ tan(576772.498896) = 0.343234 \f]
 START_TEST(s21_tan_783)
 {
-    double value = 7373663302.498896;
+    double value = 576772.498896;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7461319068.020208) = -0.529287 \f]
+/// @brief \f[ tan(582538.020208) = 0.341427 \f]
 START_TEST(s21_tan_784)
 {
-    double value = 7461319068.020208;
+    double value = 582538.020208;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7548974833.541520) = 0.976664 \f]
+/// @brief \f[ tan(588303.541520) = -0.866040 \f]
 START_TEST(s21_tan_785)
 {
-    double value = 7548974833.541520;
+    double value = 588303.541520;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7636630599.062832) = -0.836399 \f]
+/// @brief \f[ tan(594069.062832) = 0.984688 \f]
 START_TEST(s21_tan_786)
 {
-    double value = 7636630599.062832;
+    double value = 594069.062832;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7724286364.584144) = 0.192887 \f]
+/// @brief \f[ tan(599834.584144) = -0.641752 \f]
 START_TEST(s21_tan_787)
 {
-    double value = 7724286364.584144;
+    double value = 599834.584144;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7811942130.105456) = 0.566681 \f]
+/// @brief \f[ tan(60560.105456) = -0.002012 \f]
 START_TEST(s21_tan_788)
 {
-    double value = 7811942130.105456;
+    double value = 60560.105456;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7899597895.626768) = -0.985288 \f]
+/// @brief \f[ tan(611365.626768) = 0.644833 \f]
 START_TEST(s21_tan_789)
 {
-    double value = 7899597895.626768;
+    double value = 611365.626768;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7987253661.148080) = 0.811063 \f]
+/// @brief \f[ tan(617131.148080) = -0.985381 \f]
 START_TEST(s21_tan_790)
 {
-    double value = 7987253661.148080;
+    double value = 617131.148080;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8074909426.669392) = -0.148835 \f]
+/// @brief \f[ tan(622896.669392) = 0.864021 \f]
 START_TEST(s21_tan_791)
 {
-    double value = 8074909426.669392;
+    double value = 622896.669392;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8162565192.190704) = -0.602943 \f]
+/// @brief \f[ tan(628662.190704) = -0.337641 \f]
 START_TEST(s21_tan_792)
 {
-    double value = 8162565192.190704;
+    double value = 628662.190704;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8250220957.712016) = 0.991942 \f]
+/// @brief \f[ tan(634427.712016) = -0.347012 \f]
 START_TEST(s21_tan_793)
 {
-    double value = 8250220957.712016;
+    double value = 634427.712016;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8337876723.233328) = -0.784106 \f]
+/// @brief \f[ tan(640193.233328) = 0.868999 \f]
 START_TEST(s21_tan_794)
 {
-    double value = 8337876723.233328;
+    double value = 640193.233328;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8425532488.754640) = 0.104486 \f]
+/// @brief \f[ tan(645958.754640) = -0.983633 \f]
 START_TEST(s21_tan_795)
 {
-    double value = 8425532488.754640;
+    double value = 645958.754640;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8513188254.275952) = 0.638000 \f]
+/// @brief \f[ tan(651724.275952) = 0.637178 \f]
 START_TEST(s21_tan_796)
 {
-    double value = 8513188254.275952;
+    double value = 651724.275952;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8600844019.797264) = -0.996613 \f]
+/// @brief \f[ tan(657489.797264) = 0.007961 \f]
 START_TEST(s21_tan_797)
 {
-    double value = 8600844019.797264;
+    double value = 657489.797264;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8688499785.318576) = 0.755582 \f]
+/// @brief \f[ tan(663255.318576) = -0.649369 \f]
 START_TEST(s21_tan_798)
 {
-    double value = 8688499785.318576;
+    double value = 663255.318576;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8776155550.839888) = -0.059929 \f]
+/// @brief \f[ tan(669020.839888) = 0.986377 \f]
 START_TEST(s21_tan_799)
 {
-    double value = 8776155550.839888;
+    double value = 669020.839888;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(213342534.2131231) = 0.777556 \f]
+/// @brief \f[ tan(234.2131231) = -0.163730 \f]
 START_TEST(s21_tan_800)
 {
-    double value = 213342534.2131231;
+    double value = 234.2131231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(444585658.7242331) = 0.225935 \f]
+/// @brief \f[ tan(258.7242331) = 0.441402 \f]
 START_TEST(s21_tan_801)
 {
-    double value = 444585658.7242331;
+    double value = 258.7242331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(675828783.2353431) = -0.974968 \f]
+/// @brief \f[ tan(283.2353431) = 0.881388 \f]
 START_TEST(s21_tan_802)
 {
-    double value = 675828783.2353431;
+    double value = 283.2353431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(907071907.7464531) = 0.625947 \f]
+/// @brief \f[ tan(307.7464531) = 0.991610 \f]
 START_TEST(s21_tan_803)
 {
-    double value = 907071907.7464531;
+    double value = 307.7464531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1138315032.2575631) = 0.428044 \f]
+/// @brief \f[ tan(332.2575631) = 0.730831 \f]
 START_TEST(s21_tan_804)
 {
-    double value = 1138315032.2575631;
+    double value = 332.2575631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1369558156.7686731) = -0.999952 \f]
+/// @brief \f[ tan(356.7686731) = 0.196618 \f]
 START_TEST(s21_tan_805)
 {
-    double value = 1369558156.7686731;
+    double value = 356.7686731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1600801281.2797831) = 0.445669 \f]
+/// @brief \f[ tan(381.2797831) = -0.411158 \f]
 START_TEST(s21_tan_806)
 {
-    double value = 1600801281.2797831;
+    double value = 381.2797831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1832044405.7908931) = 0.610547 \f]
+/// @brief \f[ tan(405.7908931) = -0.865103 \f]
 START_TEST(s21_tan_807)
 {
-    double value = 1832044405.7908931;
+    double value = 405.7908931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2063287530.3020031) = -0.979137 \f]
+/// @brief \f[ tan(430.3020031) = -0.995377 \f]
 START_TEST(s21_tan_808)
 {
-    double value = 2063287530.3020031;
+    double value = 430.3020031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2294530654.8131131) = 0.244978 \f]
+/// @brief \f[ tan(454.8131131) = -0.753240 \f]
 START_TEST(s21_tan_809)
 {
-    double value = 2294530654.8131131;
+    double value = 454.8131131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2525773779.3242231) = 0.765086 \f]
+/// @brief \f[ tan(479.3242231) = -0.229285 \f]
 START_TEST(s21_tan_810)
 {
-    double value = 2525773779.3242231;
+    double value = 479.3242231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2757016903.8353331) = -0.913475 \f]
+/// @brief \f[ tan(503.8353331) = 0.380455 \f]
 START_TEST(s21_tan_811)
 {
-    double value = 2757016903.8353331;
+    double value = 503.8353331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2988260028.3464431) = 0.033067 \f]
+/// @brief \f[ tan(528.3464431) = 0.847851 \f]
 START_TEST(s21_tan_812)
 {
-    double value = 2988260028.3464431;
+    double value = 528.3464431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3219503152.8575531) = 0.884583 \f]
+/// @brief \f[ tan(552.8575531) = 0.998032 \f]
 START_TEST(s21_tan_813)
 {
-    double value = 3219503152.8575531;
+    double value = 552.8575531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3450746277.3686631) = -0.805975 \f]
+/// @brief \f[ tan(577.3686631) = 0.774808 \f]
 START_TEST(s21_tan_814)
 {
-    double value = 3450746277.3686631;
+    double value = 577.3686631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3681989401.8797731) = -0.180359 \f]
+/// @brief \f[ tan(601.8797731) = 0.261697 \f]
 START_TEST(s21_tan_815)
 {
-    double value = 3681989401.8797731;
+    double value = 601.8797731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3913232526.3908831) = 0.963565 \f]
+/// @brief \f[ tan(626.3908831) = -0.349326 \f]
 START_TEST(s21_tan_816)
 {
-    double value = 3913232526.3908831;
+    double value = 626.3908831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4144475650.9019931) = -0.661560 \f]
+/// @brief \f[ tan(650.9019931) = -0.829651 \f]
 START_TEST(s21_tan_817)
 {
-    double value = 4144475650.9019931;
+    double value = 650.9019931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4375718775.4131031) = -0.385524 \f]
+/// @brief \f[ tan(675.4131031) = -0.999570 \f]
 START_TEST(s21_tan_818)
 {
-    double value = 4375718775.4131031;
+    double value = 675.4131031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4606961899.9242131) = 0.998413 \f]
+/// @brief \f[ tan(699.9242131) = -0.795509 \f]
 START_TEST(s21_tan_819)
 {
-    double value = 4606961899.9242131;
+    double value = 699.9242131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4838205024.4353231) = -0.486843 \f]
+/// @brief \f[ tan(724.4353231) = -0.293816 \f]
 START_TEST(s21_tan_820)
 {
-    double value = 4838205024.4353231;
+    double value = 724.4353231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5069448148.9464331) = -0.573031 \f]
+/// @brief \f[ tan(748.9464331) = 0.317806 \f]
 START_TEST(s21_tan_821)
 {
-    double value = 5069448148.9464331;
+    double value = 748.9464331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5300691273.4575431) = 0.987532 \f]
+/// @brief \f[ tan(773.4575431) = 0.810524 \f]
 START_TEST(s21_tan_822)
 {
-    double value = 5300691273.4575431;
+    double value = 773.4575431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5531934397.9686531) = -0.289829 \f]
+/// @brief \f[ tan(797.9686531) = 0.999992 \f]
 START_TEST(s21_tan_823)
 {
-    double value = 5531934397.9686531;
+    double value = 797.9686531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5763177522.4797631) = -0.734292 \f]
+/// @brief \f[ tan(822.4797631) = 0.815321 \f]
 START_TEST(s21_tan_824)
 {
-    double value = 5763177522.4797631;
+    double value = 822.4797631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5994420646.9908731) = 0.931421 \f]
+/// @brief \f[ tan(846.9908731) = 0.325606 \f]
 START_TEST(s21_tan_825)
 {
-    double value = 5994420646.9908731;
+    double value = 846.9908731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6225663771.5019831) = -0.079540 \f]
+/// @brief \f[ tan(871.5019831) = -0.285931 \f]
 START_TEST(s21_tan_826)
 {
-    double value = 6225663771.5019831;
+    double value = 871.5019831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6456906896.0130931) = -0.861922 \f]
+/// @brief \f[ tan(896.0130931) = -0.790491 \f]
 START_TEST(s21_tan_827)
 {
-    double value = 6456906896.0130931;
+    double value = 896.0130931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6688150020.5242031) = 0.832648 \f]
+/// @brief \f[ tan(920.5242031) = -0.999295 \f]
 START_TEST(s21_tan_828)
 {
-    double value = 6688150020.5242031;
+    double value = 920.5242031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6919393145.0353131) = 0.134392 \f]
+/// @brief \f[ tan(945.0353131) = -0.834222 \f]
 START_TEST(s21_tan_829)
 {
-    double value = 6919393145.0353131;
+    double value = 945.0353131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7150636269.5464231) = -0.950074 \f]
+/// @brief \f[ tan(969.5464231) = -0.357033 \f]
 START_TEST(s21_tan_830)
 {
-    double value = 7150636269.5464231;
+    double value = 969.5464231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7381879394.0575331) = 0.695739 \f]
+/// @brief \f[ tan(994.0575331) = 0.253737 \f]
 START_TEST(s21_tan_831)
 {
-    double value = 7381879394.0575331;
+    double value = 994.0575331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7613122518.5686431) = 0.342168 \f]
+/// @brief \f[ tan(1018.5686431) = 0.769574 \f]
 START_TEST(s21_tan_832)
 {
-    double value = 7613122518.5686431;
+    double value = 1018.5686431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7844365643.0797531) = -0.994710 \f]
+/// @brief \f[ tan(1043.0797531) = 0.997481 \f]
 START_TEST(s21_tan_833)
 {
-    double value = 7844365643.0797531;
+    double value = 1043.0797531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8075608767.5908631) = 0.526964 \f]
+/// @brief \f[ tan(1067.5908631) = 0.852190 \f]
 START_TEST(s21_tan_834)
 {
-    double value = 8075608767.5908631;
+    double value = 1067.5908631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8306851892.1019731) = 0.534273 \f]
+/// @brief \f[ tan(1092.1019731) = 0.388060 \f]
 START_TEST(s21_tan_835)
 {
-    double value = 8306851892.1019731;
+    double value = 1092.1019731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8538095016.6130831) = -0.993788 \f]
+/// @brief \f[ tan(1116.6130831) = -0.221259 \f]
 START_TEST(s21_tan_836)
 {
-    double value = 8538095016.6130831;
+    double value = 1116.6130831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8769338141.1241931) = 0.334053 \f]
+/// @brief \f[ tan(1141.1241931) = -0.747796 \f]
 START_TEST(s21_tan_837)
 {
-    double value = 8769338141.1241931;
+    double value = 1141.1241931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9000581265.6353031) = 0.701907 \f]
+/// @brief \f[ tan(1165.6353031) = -0.994552 \f]
 START_TEST(s21_tan_838)
 {
-    double value = 9000581265.6353031;
+    double value = 1165.6353031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9231824390.1464131) = -0.947348 \f]
+/// @brief \f[ tan(1190.1464131) = -0.869206 \f]
 START_TEST(s21_tan_839)
 {
-    double value = 9231824390.1464131;
+    double value = 1190.1464131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9463067514.6575231) = 0.125840 \f]
+/// @brief \f[ tan(1214.6575231) = -0.418654 \f]
 START_TEST(s21_tan_840)
 {
-    double value = 9463067514.6575231;
+    double value = 1214.6575231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9694310639.1686331) = 0.837393 \f]
+/// @brief \f[ tan(1239.1686331) = 0.188534 \f]
 START_TEST(s21_tan_841)
 {
-    double value = 9694310639.1686331;
+    double value = 1239.1686331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9925553763.6797431) = -0.857517 \f]
+/// @brief \f[ tan(1263.6797431) = 0.725183 \f]
 START_TEST(s21_tan_842)
 {
-    double value = 9925553763.6797431;
+    double value = 1263.6797431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10156796888.1908531) = -0.088134 \f]
+/// @brief \f[ tan(1288.1908531) = 0.990512 \f]
 START_TEST(s21_tan_843)
 {
-    double value = 10156796888.1908531;
+    double value = 1288.1908531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10388040012.7019631) = 0.934524 \f]
+/// @brief \f[ tan(1312.7019631) = 0.885250 \f]
 START_TEST(s21_tan_844)
 {
-    double value = 10388040012.7019631;
+    double value = 1312.7019631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10619283137.2130731) = -0.728411 \f]
+/// @brief \f[ tan(1337.2130731) = 0.448779 \f]
 START_TEST(s21_tan_845)
 {
-    double value = 10619283137.2130731;
+    double value = 1337.2130731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10850526261.7241831) = -0.298071 \f]
+/// @brief \f[ tan(1361.7241831) = -0.155597 \f]
 START_TEST(s21_tan_846)
 {
-    double value = 10850526261.7241831;
+    double value = 1361.7241831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11081769386.2352931) = 0.988853 \f]
+/// @brief \f[ tan(1386.2352931) = -0.701759 \f]
 START_TEST(s21_tan_847)
 {
-    double value = 11081769386.2352931;
+    double value = 1386.2352931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11313012510.7464031) = -0.565942 \f]
+/// @brief \f[ tan(1410.7464031) = -0.985364 \f]
 START_TEST(s21_tan_848)
 {
-    double value = 11313012510.7464031;
+    double value = 1410.7464031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11544255635.2575131) = -0.494358 \f]
+/// @brief \f[ tan(1435.2575131) = -0.900304 \f]
 START_TEST(s21_tan_849)
 {
-    double value = 11544255635.2575131;
+    double value = 1435.2575131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11775498759.7686231) = 0.997890 \f]
+/// @brief \f[ tan(1459.7686231) = -0.478403 \f]
 START_TEST(s21_tan_850)
 {
-    double value = 11775498759.7686231;
+    double value = 1459.7686231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12006741884.2797331) = -0.377553 \f]
+/// @brief \f[ tan(1484.2797331) = 0.122487 \f]
 START_TEST(s21_tan_851)
 {
-    double value = 12006741884.2797331;
+    double value = 1484.2797331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12237985008.7908431) = -0.668001 \f]
+/// @brief \f[ tan(1508.7908431) = 0.677550 \f]
 START_TEST(s21_tan_852)
 {
-    double value = 12237985008.7908431;
+    double value = 1508.7908431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12469228133.3019531) = 0.961222 \f]
+/// @brief \f[ tan(1533.3019531) = 0.979114 \f]
 START_TEST(s21_tan_853)
 {
-    double value = 12469228133.3019531;
+    double value = 1533.3019531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12700471257.8130631) = -0.171869 \f]
+/// @brief \f[ tan(1557.8130631) = 0.914351 \f]
 START_TEST(s21_tan_854)
 {
-    double value = 12700471257.8130631;
+    double value = 1557.8130631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12931714382.3241731) = -0.811050 \f]
+/// @brief \f[ tan(1582.3241731) = 0.507492 \f]
 START_TEST(s21_tan_855)
 {
-    double value = 12931714382.3241731;
+    double value = 1582.3241731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13162957506.8352831) = 0.880528 \f]
+/// @brief \f[ tan(1606.8352831) = -0.089240 \f]
 START_TEST(s21_tan_856)
 {
-    double value = 13162957506.8352831;
+    double value = 1606.8352831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13394200631.3463931) = 0.041684 \f]
+/// @brief \f[ tan(1631.3463931) = -0.652585 \f]
 START_TEST(s21_tan_857)
 {
-    double value = 13394200631.3463931;
+    double value = 1631.3463931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13625443755.8575031) = -0.916950 \f]
+/// @brief \f[ tan(1655.8575031) = -0.971770 \f]
 START_TEST(s21_tan_858)
 {
-    double value = 13625443755.8575031;
+    double value = 1655.8575031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13856686880.3686131) = 0.759504 \f]
+/// @brief \f[ tan(1680.3686131) = -0.927377 \f]
 START_TEST(s21_tan_859)
 {
-    double value = 13856686880.3686131;
+    double value = 1680.3686131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14087930004.8797231) = 0.253330 \f]
+/// @brief \f[ tan(1704.8797231) = -0.536014 \f]
 START_TEST(s21_tan_860)
 {
-    double value = 14087930004.8797231;
+    double value = 1704.8797231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14319173129.3908331) = -0.980853 \f]
+/// @brief \f[ tan(1729.3908331) = 0.055894 \f]
 START_TEST(s21_tan_861)
 {
-    double value = 14319173129.3908331;
+    double value = 1729.3908331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14550416253.9019431) = 0.603695 \f]
+/// @brief \f[ tan(1753.9019431) = 0.626889 \f]
 START_TEST(s21_tan_862)
 {
-    double value = 14550416253.9019431;
+    double value = 1753.9019431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(14781659378.4130531) = 0.453372 \f]
+/// @brief \f[ tan(1778.4130531) = 0.963340 \f]
 START_TEST(s21_tan_863)
 {
-    double value = 14781659378.4130531;
+    double value = 1778.4130531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15012902502.9241631) = -0.999830 \f]
+/// @brief \f[ tan(1802.9241631) = 0.939366 \f]
 START_TEST(s21_tan_864)
 {
-    double value = 15012902502.9241631;
+    double value = 1802.9241631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15244145627.4352731) = 0.420233 \f]
+/// @brief \f[ tan(1827.4352731) = 0.563937 \f]
 START_TEST(s21_tan_865)
 {
-    double value = 15244145627.4352731;
+    double value = 1827.4352731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15475388751.9463831) = 0.632650 \f]
+/// @brief \f[ tan(1851.9463831) = -0.022484 \f]
 START_TEST(s21_tan_866)
 {
-    double value = 15475388751.9463831;
+    double value = 1851.9463831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15706631876.4574931) = -0.973014 \f]
+/// @brief \f[ tan(1876.4574931) = -0.600493 \f]
 START_TEST(s21_tan_867)
 {
-    double value = 15706631876.4574931;
+    double value = 1876.4574931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(15937875000.9686031) = 0.217526 \f]
+/// @brief \f[ tan(1900.9686031) = -0.953833 \f]
 START_TEST(s21_tan_868)
 {
-    double value = 15937875000.9686031;
+    double value = 1900.9686031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16169118125.4797131) = 0.782949 \f]
+/// @brief \f[ tan(1925.4797131) = -0.950305 \f]
 START_TEST(s21_tan_869)
 {
-    double value = 16169118125.4797131;
+    double value = 1925.4797131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16400361249.9908231) = -0.901632 \f]
+/// @brief \f[ tan(1949.9908231) = -0.591229 \f]
 START_TEST(s21_tan_870)
 {
-    double value = 16400361249.9908231;
+    double value = 1949.9908231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16631604374.5019331) = 0.004856 \f]
+/// @brief \f[ tan(1974.5019331) = -0.010950 \f]
 START_TEST(s21_tan_871)
 {
-    double value = 16631604374.5019331;
+    double value = 1974.5019331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(16862847499.0130431) = 0.897390 \f]
+/// @brief \f[ tan(1999.0130431) = 0.573425 \f]
 START_TEST(s21_tan_872)
 {
-    double value = 16862847499.0130431;
+    double value = 1999.0130431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17094090623.5241531) = -0.788953 \f]
+/// @brief \f[ tan(2023.5241531) = 0.943259 \f]
 START_TEST(s21_tan_873)
 {
-    double value = 17094090623.5241531;
+    double value = 2023.5241531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17325333748.0352631) = -0.208039 \f]
+/// @brief \f[ tan(2048.0352631) = 0.960181 \f]
 START_TEST(s21_tan_874)
 {
-    double value = 17325333748.0352631;
+    double value = 2048.0352631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17556576872.5463731) = 0.970728 \f]
+/// @brief \f[ tan(2072.5463731) = 0.617860 \f]
 START_TEST(s21_tan_875)
 {
-    double value = 17556576872.5463731;
+    double value = 2072.5463731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(17787819997.0574831) = -0.640139 \f]
+/// @brief \f[ tan(2097.0574831) = 0.044372 \f]
 START_TEST(s21_tan_876)
 {
-    double value = 17787819997.0574831;
+    double value = 2097.0574831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18019063121.5685931) = -0.411404 \f]
+/// @brief \f[ tan(2121.5685931) = -0.545717 \f]
 START_TEST(s21_tan_877)
 {
-    double value = 18019063121.5685931;
+    double value = 2121.5685931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18250306246.0797031) = 0.999604 \f]
+/// @brief \f[ tan(2146.0797031) = -0.931631 \f]
 START_TEST(s21_tan_878)
 {
-    double value = 18250306246.0797031;
+    double value = 2146.0797031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18481549370.5908131) = -0.462005 \f]
+/// @brief \f[ tan(2170.5908131) = -0.968984 \f]
 START_TEST(s21_tan_879)
 {
-    double value = 18481549370.5908131;
+    double value = 2170.5908131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18712792495.1019231) = -0.595924 \f]
+/// @brief \f[ tan(2195.1019231) = -0.643800 \f]
 START_TEST(s21_tan_880)
 {
-    double value = 18712792495.1019231;
+    double value = 2195.1019231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(18944035619.6130331) = 0.982698 \f]
+/// @brief \f[ tan(2219.6130331) = -0.077745 \f]
 START_TEST(s21_tan_881)
 {
-    double value = 18944035619.6130331;
+    double value = 2219.6130331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(19175278744.1241431) = -0.262709 \f]
+/// @brief \f[ tan(2244.1241431) = 0.517398 \f]
 START_TEST(s21_tan_882)
 {
-    double value = 19175278744.1241431;
+    double value = 2244.1241431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(19406521868.6352531) = -0.753152 \f]
+/// @brief \f[ tan(2268.6352531) = 0.918962 \f]
 START_TEST(s21_tan_883)
 {
-    double value = 19406521868.6352531;
+    double value = 2268.6352531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(19637764993.1463631) = 0.920781 \f]
+/// @brief \f[ tan(2293.1463631) = 0.976704 \f]
 START_TEST(s21_tan_884)
 {
-    double value = 19637764993.1463631;
+    double value = 2293.1463631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(19869008117.6574731) = -0.051385 \f]
+/// @brief \f[ tan(2317.6574731) = 0.669021 \f]
 START_TEST(s21_tan_885)
 {
-    double value = 19869008117.6574731;
+    double value = 2317.6574731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(20100251242.1685831) = -0.875885 \f]
+/// @brief \f[ tan(2342.1685831) = 0.111030 \f]
 START_TEST(s21_tan_886)
 {
-    double value = 20100251242.1685831;
+    double value = 2342.1685831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(20331494366.6796931) = 0.816691 \f]
+/// @brief \f[ tan(2366.6796931) = -0.488501 \f]
 START_TEST(s21_tan_887)
 {
-    double value = 20331494366.6796931;
+    double value = 2366.6796931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(20562737491.1908031) = 0.162296 \f]
+/// @brief \f[ tan(2391.1908031) = -0.905265 \f]
 START_TEST(s21_tan_888)
 {
-    double value = 20562737491.1908031;
+    double value = 2391.1908031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(20793980615.7019131) = -0.958499 \f]
+/// @brief \f[ tan(2415.7019131) = -0.983332 \f]
 START_TEST(s21_tan_889)
 {
-    double value = 20793980615.7019131;
+    double value = 2415.7019131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(21025223740.2130231) = 0.675197 \f]
+/// @brief \f[ tan(2440.2130231) = -0.693494 \f]
 START_TEST(s21_tan_890)
 {
-    double value = 21025223740.2130231;
+    double value = 2440.2130231;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(21256466864.7241331) = 0.368544 \f]
+/// @brief \f[ tan(2464.7241331) = -0.144192 \f]
 START_TEST(s21_tan_891)
 {
-    double value = 21256466864.7241331;
+    double value = 2464.7241331;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(21487709989.2352431) = -0.997212 \f]
+/// @brief \f[ tan(2489.2352431) = 0.459058 \f]
 START_TEST(s21_tan_892)
 {
-    double value = 21487709989.2352431;
+    double value = 2489.2352431;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(21718953113.7463531) = 0.502775 \f]
+/// @brief \f[ tan(2513.7463531) = 0.890556 \f]
 START_TEST(s21_tan_893)
 {
-    double value = 21718953113.7463531;
+    double value = 2513.7463531;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(21950196238.2574631) = 0.557912 \f]
+/// @brief \f[ tan(2538.2574631) = 0.988860 \f]
 START_TEST(s21_tan_894)
 {
-    double value = 21950196238.2574631;
+    double value = 2538.2574631;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(22181439362.7685731) = -0.990252 \f]
+/// @brief \f[ tan(2562.7685731) = 0.717192 \f]
 START_TEST(s21_tan_895)
 {
-    double value = 22181439362.7685731;
+    double value = 2562.7685731;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(22412682487.2796831) = 0.307326 \f]
+/// @brief \f[ tan(2587.2796831) = 0.177192 \f]
 START_TEST(s21_tan_896)
 {
-    double value = 22412682487.2796831;
+    double value = 2587.2796831;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(22643925611.7907931) = 0.721723 \f]
+/// @brief \f[ tan(2611.7907931) = -0.429102 \f]
 START_TEST(s21_tan_897)
 {
-    double value = 22643925611.7907931;
+    double value = 2611.7907931;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(22875168736.3019031) = -0.937936 \f]
+/// @brief \f[ tan(2636.3019031) = -0.874852 \f]
 START_TEST(s21_tan_898)
 {
-    double value = 22875168736.3019031;
+    double value = 2636.3019031;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(23106411860.8130131) = 0.097803 \f]
+/// @brief \f[ tan(2660.8130131) = -0.993284 \f]
 START_TEST(s21_tan_899)
 {
-    double value = 23106411860.8130131;
+    double value = 2660.8130131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1132141567.321) = -0.193901 \f]
+/// @brief \f[ tan(113567.321) = 0.312068 \f]
 START_TEST(s21_tan_900)
 {
-    double value = 1132141567.321;
+    double value = 113567.321;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1255254554.44491) = 0.434163 \f]
+/// @brief \f[ tan(113694.44491) = 0.978698 \f]
 START_TEST(s21_tan_901)
 {
-    double value = 1255254554.44491;
+    double value = 113694.44491;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1378367541.56882) = -0.646571 \f]
+/// @brief \f[ tan(113821.56882) = -0.096036 \f]
 START_TEST(s21_tan_902)
 {
-    double value = 1378367541.56882;
+    double value = 113821.56882;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1501480528.69273) = 0.817498 \f]
+/// @brief \f[ tan(113948.69273) = -0.999896 \f]
 START_TEST(s21_tan_903)
 {
-    double value = 1501480528.69273;
+    double value = 113948.69273;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1624593515.81664) = -0.935977 \f]
+/// @brief \f[ tan(114075.81664) = -0.124676 \f]
 START_TEST(s21_tan_904)
 {
-    double value = 1624593515.81664;
+    double value = 114075.81664;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1747706502.94055) = 0.994408 \f]
+/// @brief \f[ tan(114202.94055) = 0.972376 \f]
 START_TEST(s21_tan_905)
 {
-    double value = 1747706502.94055;
+    double value = 114202.94055;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1870819490.06446) = -0.989043 \f]
+/// @brief \f[ tan(114330.06446) = 0.339312 \f]
 START_TEST(s21_tan_906)
 {
-    double value = 1870819490.06446;
+    double value = 114330.06446;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(1993932477.18837) = 0.920224 \f]
+/// @brief \f[ tan(114457.18837) = -0.897478 \f]
 START_TEST(s21_tan_907)
 {
-    double value = 1993932477.18837;
+    double value = 114457.18837;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2117045464.31228) = -0.792368 \f]
+/// @brief \f[ tan(114584.31228) = -0.537417 \f]
 START_TEST(s21_tan_908)
 {
-    double value = 2117045464.31228;
+    double value = 114584.31228;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2240158451.43619) = 0.613677 \f]
+/// @brief \f[ tan(114711.43619) = 0.778852 \f]
 START_TEST(s21_tan_909)
 {
-    double value = 2240158451.43619;
+    double value = 114711.43619;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2363271438.56010) = -0.395616 \f]
+/// @brief \f[ tan(114838.56010) = 0.709336 \f]
 START_TEST(s21_tan_910)
 {
-    double value = 2363271438.56010;
+    double value = 114838.56010;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2486384425.68401) = 0.152173 \f]
+/// @brief \f[ tan(114965.68401) = -0.622277 \f]
 START_TEST(s21_tan_911)
 {
-    double value = 2486384425.68401;
+    double value = 114965.68401;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2609497412.80792) = 0.101033 \f]
+/// @brief \f[ tan(115092.80792) = -0.846694 \f]
 START_TEST(s21_tan_912)
 {
-    double value = 2609497412.80792;
+    double value = 115092.80792;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2732610399.93183) = -0.347757 \f]
+/// @brief \f[ tan(115219.93183) = 0.435383 \f]
 START_TEST(s21_tan_913)
 {
-    double value = 2732610399.93183;
+    double value = 115219.93183;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2855723387.05574) = 0.572170 \f]
+/// @brief \f[ tan(115347.05574) = 0.942798 \f]
 START_TEST(s21_tan_914)
 {
-    double value = 2855723387.05574;
+    double value = 115347.05574;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(2978836374.17965) = -0.759875 \f]
+/// @brief \f[ tan(115474.17965) = -0.227275 \f]
 START_TEST(s21_tan_915)
 {
-    double value = 2978836374.17965;
+    double value = 115474.17965;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3101949361.30356) = 0.898830 \f]
+/// @brief \f[ tan(115601.30356) = -0.992965 \f]
 START_TEST(s21_tan_916)
 {
-    double value = 3101949361.30356;
+    double value = 115601.30356;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3225062348.42747) = -0.980120 \f]
+/// @brief \f[ tan(115728.42747) = 0.008093 \f]
 START_TEST(s21_tan_917)
 {
-    double value = 3225062348.42747;
+    double value = 115728.42747;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3348175335.55138) = 0.998529 \f]
+/// @brief \f[ tan(115855.55138) = 0.994752 \f]
 START_TEST(s21_tan_918)
 {
-    double value = 3348175335.55138;
+    double value = 115855.55138;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3471288322.67529) = -0.952878 \f]
+/// @brief \f[ tan(115982.67529) = 0.211483 \f]
 START_TEST(s21_tan_919)
 {
-    double value = 3471288322.67529;
+    double value = 115982.67529;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3594401309.79920) = 0.846093 \f]
+/// @brief \f[ tan(116109.79920) = -0.948070 \f]
 START_TEST(s21_tan_920)
 {
-    double value = 3594401309.79920;
+    double value = 116109.79920;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3717514296.92311) = -0.685027 \f]
+/// @brief \f[ tan(116236.92311) = -0.420754 \f]
 START_TEST(s21_tan_921)
 {
-    double value = 3717514296.92311;
+    double value = 116236.92311;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3840627284.04702) = 0.480013 \f]
+/// @brief \f[ tan(116364.04702) = 0.855195 \f]
 START_TEST(s21_tan_922)
 {
-    double value = 3840627284.04702;
+    double value = 116364.04702;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(3963740271.17093) = -0.244203 \f]
+/// @brief \f[ tan(116491.17093) = 0.609525 \f]
 START_TEST(s21_tan_923)
 {
-    double value = 3963740271.17093;
+    double value = 116491.17093;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4086853258.29484) = -0.007274 \f]
+/// @brief \f[ tan(116618.29484) = -0.720652 \f]
 START_TEST(s21_tan_924)
 {
-    double value = 4086853258.29484;
+    double value = 116618.29484;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4209966245.41875) = 0.258285 \f]
+/// @brief \f[ tan(116745.41875) = -0.768598 \f]
 START_TEST(s21_tan_925)
 {
-    double value = 4209966245.41875;
+    double value = 116745.41875;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4333079232.54266) = -0.492724 \f]
+/// @brief \f[ tan(116872.54266) = 0.550996 \f]
 START_TEST(s21_tan_926)
 {
-    double value = 4333079232.54266;
+    double value = 116872.54266;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4456192219.66657) = 0.695553 \f]
+/// @brief \f[ tan(116999.66657) = 0.890222 \f]
 START_TEST(s21_tan_927)
 {
-    double value = 4456192219.66657;
+    double value = 116999.66657;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4579305206.79048) = -0.853758 \f]
+/// @brief \f[ tan(117126.79048) = -0.354494 \f]
 START_TEST(s21_tan_928)
 {
-    double value = 4579305206.79048;
+    double value = 117126.79048;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4702418193.91439) = 0.957190 \f]
+/// @brief \f[ tan(117253.91439) = -0.968470 \f]
 START_TEST(s21_tan_929)
 {
-    double value = 4702418193.91439;
+    double value = 117253.91439;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4825531181.03830) = -0.999212 \f]
+/// @brief \f[ tan(117381.03830) = 0.140719 \f]
 START_TEST(s21_tan_930)
 {
-    double value = 4825531181.03830;
+    double value = 117381.03830;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(4948644168.16221) = 0.977130 \f]
+/// @brief \f[ tan(117508.16221) = 0.999532 \f]
 START_TEST(s21_tan_931)
 {
-    double value = 4948644168.16221;
+    double value = 117508.16221;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5071757155.28612) = -0.892359 \f]
+/// @brief \f[ tan(117635.28612) = 0.079912 \f]
 START_TEST(s21_tan_932)
 {
-    double value = 5071757155.28612;
+    double value = 117635.28612;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5194870142.41003) = 0.750338 \f]
+/// @brief \f[ tan(117762.41003) = -0.981893 \f]
 START_TEST(s21_tan_933)
 {
-    double value = 5194870142.41003;
+    double value = 117762.41003;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5317983129.53394) = -0.560179 \f]
+/// @brief \f[ tan(117889.53394) = -0.296649 \f]
 START_TEST(s21_tan_934)
 {
-    double value = 5317983129.53394;
+    double value = 117889.53394;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5441096116.65785) = 0.334080 \f]
+/// @brief \f[ tan(118016.65785) = 0.916412 \f]
 START_TEST(s21_tan_935)
 {
-    double value = 5441096116.65785;
+    double value = 118016.65785;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5564209103.78176) = -0.086549 \f]
+/// @brief \f[ tan(118143.78176) = 0.498933 \f]
 START_TEST(s21_tan_936)
 {
-    double value = 5564209103.78176;
+    double value = 118143.78176;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5687322090.90567) = -0.166535 \f]
+/// @brief \f[ tan(118270.90567) = -0.806280 \f]
 START_TEST(s21_tan_937)
 {
-    double value = 5687322090.90567;
+    double value = 118270.90567;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5810435078.02958) = 0.408934 \f]
+/// @brief \f[ tan(118398.02958) = -0.676907 \f]
 START_TEST(s21_tan_938)
 {
-    double value = 5810435078.02958;
+    double value = 118398.02958;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(5933548065.15349) = -0.625099 \f]
+/// @brief \f[ tan(118525.15349) = 0.656864 \f]
 START_TEST(s21_tan_939)
 {
-    double value = 5933548065.15349;
+    double value = 118525.15349;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6056661052.27740) = 0.801159 \f]
+/// @brief \f[ tan(118652.27740) = 0.821899 \f]
 START_TEST(s21_tan_940)
 {
-    double value = 6056661052.27740;
+    double value = 118652.27740;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6179774039.40131) = -0.925821 \f]
+/// @brief \f[ tan(118779.40131) = -0.475442 \f]
 START_TEST(s21_tan_941)
 {
-    double value = 6179774039.40131;
+    double value = 118779.40131;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6302887026.52522) = 0.991086 \f]
+/// @brief \f[ tan(118906.52522) = -0.926846 \f]
 START_TEST(s21_tan_942)
 {
-    double value = 6302887026.52522;
+    double value = 118906.52522;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6426000013.64913) = -0.992767 \f]
+/// @brief \f[ tan(119033.64913) = 0.270856 \f]
 START_TEST(s21_tan_943)
 {
-    double value = 6426000013.64913;
+    double value = 119033.64913;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6549113000.77304) = 0.930756 \f]
+/// @brief \f[ tan(119160.77304) = 0.986633 \f]
 START_TEST(s21_tan_944)
 {
-    double value = 6549113000.77304;
+    double value = 119160.77304;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6672225987.89695) = -0.809032 \f]
+/// @brief \f[ tan(119287.89695) = -0.053072 \f]
 START_TEST(s21_tan_945)
 {
-    double value = 6672225987.89695;
+    double value = 119287.89695;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6795338975.02086) = 0.635404 \f]
+/// @brief \f[ tan(119415.02086) = -0.998348 \f]
 START_TEST(s21_tan_946)
 {
-    double value = 6795338975.02086;
+    double value = 119415.02086;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(6918451962.14477) = -0.421012 \f]
+/// @brief \f[ tan(119542.14477) = -0.167298 \f]
 START_TEST(s21_tan_947)
 {
-    double value = 6918451962.14477;
+    double value = 119542.14477;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7041564949.26868) = 0.179609 \f]
+/// @brief \f[ tan(119669.26868) = 0.961419 \f]
 START_TEST(s21_tan_948)
 {
-    double value = 7041564949.26868;
+    double value = 119669.26868;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7164677936.39259) = 0.073317 \f]
+/// @brief \f[ tan(119796.39259) = 0.379516 \f]
 START_TEST(s21_tan_949)
 {
-    double value = 7164677936.39259;
+    double value = 119796.39259;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7287790923.51650) = -0.321539 \f]
+/// @brief \f[ tan(119923.51650) = -0.877647 \f]
 START_TEST(s21_tan_950)
 {
-    double value = 7287790923.51650;
+    double value = 119923.51650;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7410903910.64041) = 0.549132 \f]
+/// @brief \f[ tan(120050.64041) = -0.573243 \f]
 START_TEST(s21_tan_951)
 {
-    double value = 7410903910.64041;
+    double value = 120050.64041;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7534016897.76432) = -0.741496 \f]
+/// @brief \f[ tan(120177.76432) = 0.751113 \f]
 START_TEST(s21_tan_952)
 {
-    double value = 7534016897.76432;
+    double value = 120177.76432;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7657129884.88823) = 0.886289 \f]
+/// @brief \f[ tan(120304.88823) = 0.739039 \f]
 START_TEST(s21_tan_953)
 {
-    double value = 7657129884.88823;
+    double value = 120304.88823;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7780242872.01214) = -0.974221 \f]
+/// @brief \f[ tan(120432.01214) = -0.587981 \f]
 START_TEST(s21_tan_954)
 {
-    double value = 7780242872.01214;
+    double value = 120432.01214;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(7903355859.13605) = 0.999651 \f]
+/// @brief \f[ tan(120559.13605) = -0.868827 \f]
 START_TEST(s21_tan_955)
 {
-    double value = 7903355859.13605;
+    double value = 120559.13605;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8026468846.25996) = -0.960948 \f]
+/// @brief \f[ tan(120686.25996) = 0.396201 \f]
 START_TEST(s21_tan_956)
 {
-    double value = 8026468846.25996;
+    double value = 120686.25996;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8149581833.38387) = 0.860595 \f]
+/// @brief \f[ tan(120813.38387) = 0.956282 \f]
 START_TEST(s21_tan_957)
 {
-    double value = 8149581833.38387;
+    double value = 120813.38387;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8272694820.50778) = -0.705029 \f]
+/// @brief \f[ tan(120940.50778) = -0.185117 \f]
 START_TEST(s21_tan_958)
 {
-    double value = 8272694820.50778;
+    double value = 120940.50778;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8395807807.63169) = 0.504232 \f]
+/// @brief \f[ tan(121067.63169) = -0.997144 \f]
 START_TEST(s21_tan_959)
 {
-    double value = 8395807807.63169;
+    double value = 121067.63169;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8518920794.75560) = -0.271085 \f]
+/// @brief \f[ tan(121194.75560) = -0.034987 \f]
 START_TEST(s21_tan_960)
 {
-    double value = 8518920794.75560;
+    double value = 121194.75560;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8642033781.87951) = 0.020548 \f]
+/// @brief \f[ tan(121321.87951) = 0.989421 \f]
 START_TEST(s21_tan_961)
 {
-    double value = 8642033781.87951;
+    double value = 121321.87951;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8765146769.00342) = 0.231309 \f]
+/// @brief \f[ tan(121449.00342) = 0.253386 \f]
 START_TEST(s21_tan_962)
 {
-    double value = 8765146769.00342;
+    double value = 121449.00342;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(8888259756.12733) = -0.468325 \f]
+/// @brief \f[ tan(121576.12733) = -0.933490 \f]
 START_TEST(s21_tan_963)
 {
-    double value = 8888259756.12733;
+    double value = 121576.12733;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9011372743.25124) = 0.675297 \f]
+/// @brief \f[ tan(121703.25124) = -0.459439 \f]
 START_TEST(s21_tan_964)
 {
-    double value = 9011372743.25124;
+    double value = 121703.25124;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9134485730.37515) = -0.838943 \f]
+/// @brief \f[ tan(121830.37515) = 0.832076 \f]
 START_TEST(s21_tan_965)
 {
-    double value = 9134485730.37515;
+    double value = 121830.37515;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9257598717.49906) = 0.948767 \f]
+/// @brief \f[ tan(121957.49906) = 0.643107 \f]
 START_TEST(s21_tan_966)
 {
-    double value = 9257598717.49906;
+    double value = 121957.49906;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9380711704.62297) = -0.997722 \f]
+/// @brief \f[ tan(122084.62297) = -0.690120 \f]
 START_TEST(s21_tan_967)
 {
-    double value = 9380711704.62297;
+    double value = 122084.62297;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9503824691.74688) = 0.982667 \f]
+/// @brief \f[ tan(122211.74688) = -0.795440 \f]
 START_TEST(s21_tan_968)
 {
-    double value = 9503824691.74688;
+    double value = 122211.74688;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9626937678.87079) = -0.904569 \f]
+/// @brief \f[ tan(122338.87079) = 0.514539 \f]
 START_TEST(s21_tan_969)
 {
-    double value = 9626937678.87079;
+    double value = 122338.87079;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9750050665.99470) = 0.768437 \f]
+/// @brief \f[ tan(122465.99470) = 0.909017 \f]
 START_TEST(s21_tan_970)
 {
-    double value = 9750050665.99470;
+    double value = 122465.99470;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9873163653.11861) = -0.583006 \f]
+/// @brief \f[ tan(122593.11861) = -0.313888 \f]
 START_TEST(s21_tan_971)
 {
-    double value = 9873163653.11861;
+    double value = 122593.11861;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(9996276640.24252) = 0.360171 \f]
+/// @brief \f[ tan(122720.24252) = -0.978303 \f]
 START_TEST(s21_tan_972)
 {
-    double value = 9996276640.24252;
+    double value = 122720.24252;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10119389627.36643) = -0.114231 \f]
+/// @brief \f[ tan(122847.36643) = 0.097943 \f]
 START_TEST(s21_tan_973)
 {
-    double value = 10119389627.36643;
+    double value = 122847.36643;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10242502614.49034) = -0.139040 \f]
+/// @brief \f[ tan(122974.49034) = 0.999922 \f]
 START_TEST(s21_tan_974)
 {
-    double value = 10242502614.49034;
+    double value = 122974.49034;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10365615601.61425) = 0.383389 \f]
+/// @brief \f[ tan(123101.61425) = 0.122774 \f]
 START_TEST(s21_tan_975)
 {
-    double value = 10365615601.61425;
+    double value = 123101.61425;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10488728588.73816) = -0.603143 \f]
+/// @brief \f[ tan(123228.73816) = -0.972822 \f]
 START_TEST(s21_tan_976)
 {
-    double value = 10488728588.73816;
+    double value = 123228.73816;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10611841575.86207) = 0.784200 \f]
+/// @brief \f[ tan(123355.86207) = -0.337509 \f]
 START_TEST(s21_tan_977)
 {
-    double value = 10611841575.86207;
+    double value = 123355.86207;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10734954562.98598) = -0.914948 \f]
+/// @brief \f[ tan(123482.98598) = 0.898322 \f]
 START_TEST(s21_tan_978)
 {
-    double value = 10734954562.98598;
+    double value = 123482.98598;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10858067550.10989) = 0.986996 \f]
+/// @brief \f[ tan(123610.10989) = 0.535800 \f]
 START_TEST(s21_tan_979)
 {
-    double value = 10858067550.10989;
+    double value = 123610.10989;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(10981180537.23380) = -0.995723 \f]
+/// @brief \f[ tan(123737.23380) = -0.780052 \f]
 START_TEST(s21_tan_980)
 {
-    double value = 10981180537.23380;
+    double value = 123737.23380;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11104293524.35771) = 0.940568 \f]
+/// @brief \f[ tan(123864.35771) = -0.707984 \f]
 START_TEST(s21_tan_981)
 {
-    double value = 11104293524.35771;
+    double value = 123864.35771;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11227406511.48162) = -0.825071 \f]
+/// @brief \f[ tan(123991.48162) = 0.623776 \f]
 START_TEST(s21_tan_982)
 {
-    double value = 11227406511.48162;
+    double value = 123991.48162;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11350519498.60553) = 0.656640 \f]
+/// @brief \f[ tan(124118.60553) = 0.845673 \f]
 START_TEST(s21_tan_983)
 {
-    double value = 11350519498.60553;
+    double value = 124118.60553;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11473632485.72944) = -0.446083 \f]
+/// @brief \f[ tan(124245.72944) = -0.437107 \f]
 START_TEST(s21_tan_984)
 {
-    double value = 11473632485.72944;
+    double value = 124245.72944;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11596745472.85335) = 0.206906 \f]
+/// @brief \f[ tan(124372.85335) = -0.942157 \f]
 START_TEST(s21_tan_985)
 {
-    double value = 11596745472.85335;
+    double value = 124372.85335;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11719858459.97726) = 0.045543 \f]
+/// @brief \f[ tan(124499.97726) = 0.229140 \f]
 START_TEST(s21_tan_986)
 {
-    double value = 11719858459.97726;
+    double value = 124499.97726;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11842971447.10117) = -0.295073 \f]
+/// @brief \f[ tan(124627.10117) = 0.992736 \f]
 START_TEST(s21_tan_987)
 {
-    double value = 11842971447.10117;
+    double value = 124627.10117;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(11966084434.22508) = 0.525670 \f]
+/// @brief \f[ tan(124754.22508) = -0.010009 \f]
 START_TEST(s21_tan_988)
 {
-    double value = 11966084434.22508;
+    double value = 124754.22508;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12089197421.34899) = -0.722544 \f]
+/// @brief \f[ tan(124881.34899) = -0.994946 \f]
 START_TEST(s21_tan_989)
 {
-    double value = 12089197421.34899;
+    double value = 124881.34899;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12212310408.47290) = 0.873062 \f]
+/// @brief \f[ tan(125008.47290) = -0.209609 \f]
 START_TEST(s21_tan_990)
 {
-    double value = 12212310408.47290;
+    double value = 125008.47290;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12335423395.59681) = -0.967568 \f]
+/// @brief \f[ tan(125135.59681) = 0.948678 \f]
 START_TEST(s21_tan_991)
 {
-    double value = 12335423395.59681;
+    double value = 125135.59681;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12458536382.72072) = 0.999999 \f]
+/// @brief \f[ tan(125262.72072) = 0.419015 \f]
 START_TEST(s21_tan_992)
 {
-    double value = 12458536382.72072;
+    double value = 125262.72072;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12581649369.84463) = -0.968274 \f]
+/// @brief \f[ tan(125389.84463) = -0.856187 \f]
 START_TEST(s21_tan_993)
 {
-    double value = 12581649369.84463;
+    double value = 125389.84463;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12704762356.96854) = 0.874430 \f]
+/// @brief \f[ tan(125516.96854) = -0.608005 \f]
 START_TEST(s21_tan_994)
 {
-    double value = 12704762356.96854;
+    double value = 125516.96854;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12827875344.09245) = -0.724484 \f]
+/// @brief \f[ tan(125644.09245) = 0.721979 \f]
 START_TEST(s21_tan_995)
 {
-    double value = 12827875344.09245;
+    double value = 125644.09245;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(12950988331.21636) = 0.528061 \f]
+/// @brief \f[ tan(125771.21636) = 0.767370 \f]
 START_TEST(s21_tan_996)
 {
-    double value = 12950988331.21636;
+    double value = 125771.21636;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13074101318.34027) = -0.297757 \f]
+/// @brief \f[ tan(125898.34027) = -0.552594 \f]
 START_TEST(s21_tan_997)
 {
-    double value = 13074101318.34027;
+    double value = 125898.34027;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13197214305.46418) = 0.048353 \f]
+/// @brief \f[ tan(126025.46418) = -0.889347 \f]
 START_TEST(s21_tan_998)
 {
-    double value = 13197214305.46418;
+    double value = 126025.46418;
 
     s21_test_tan(value);
 }
 
-/// @brief \f[ tan(13320327292.58809) = 0.204154 \f]
+/// @brief \f[ tan(126152.58809) = 0.356285 \f]
 START_TEST(s21_tan_999)
 {
-    double value = 13320327292.58809;
+    double value = 126152.58809;
 
     s21_test_tan(value);
 }
-
 
 /**
  * @brief first set of tests
