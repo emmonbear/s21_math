@@ -9,9 +9,6 @@
  *
  */
 
-#ifndef S21_TESTS_H_
-#define S21_TESTS_H_
-
 #define ALL_TESTS
 #ifdef ALL_TESTS
 
@@ -30,8 +27,6 @@
 // #define ASIN_TEST
 // #define ACOS_TEST
 // #define ATAN_TEST
-
-#endif  // ALL_TESTS
 
 #include "test_modules/test_include/s21_test_abs.h"
 #include "test_modules/test_include/s21_test_acos.h"

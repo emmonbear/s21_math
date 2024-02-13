@@ -112,7 +112,7 @@ int main(void) {
       s21_log_first_case,   s21_log_second_case, s21_log_third_case,
       s21_log_fourth_case,  s21_log_fifth_case,  s21_log_sixth_case,
       s21_log_seventh_case, s21_log_eighth_case, s21_log_ninth_case,
-      s21_log_tenth_case,
+      s21_log_tenth_case, s21_log_edge_case,
   };
 
   test_function(s21_log, sizeof(s21_log) / sizeof(s21_log[0]), "S21_LOG",
@@ -149,6 +149,7 @@ int main(void) {
       s21_pow_eighth_case,
       s21_pow_ninth_case,
       s21_pow_tenth_case,
+      s21_pow_edge_case,
   };
   test_function(s21_pow, sizeof(s21_pow) / sizeof(s21_pow[0]), "S21_POW",
                 &passed_count, &failed_count);

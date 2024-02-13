@@ -7199,6 +7199,7 @@ START_TEST(s21_log_997) {
 
 /// @brief \f[ log(120661188.46418) = 18.608497 \f]
 START_TEST(s21_log_998) {
+
   double value = 120661188.46418;
 
   s21_test_log(value);
@@ -7206,7 +7207,31 @@ START_TEST(s21_log_998) {
 
 /// @brief \f[ log(121892311.58809) = 18.618649 \f]
 START_TEST(s21_log_999) {
+
   double value = 121892311.58809;
+
+  s21_test_log(value);
+}
+
+/// @brief \f[ -21.0 = S21_NAN \f]
+START_TEST(s21_log_edge_1) {
+
+  double value = -5.0;
+
+  s21_test_log(value);
+}
+
+/// @brief \f[ POS_INF_MASK \f]
+START_TEST(s21_log_edge_2) {
+  double value = 0.0;
+
+  s21_test_log(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_log_edge_3) {
+
+  double value = -S21_INF;
 
   s21_test_log(value);
 }
@@ -8346,6 +8371,23 @@ Suite *s21_log_tenth_case(void) {
   tcase_add_test(tc_log, s21_log_997);
   tcase_add_test(tc_log, s21_log_998);
   tcase_add_test(tc_log, s21_log_999);
+  suite_add_tcase(math, tc_log);
+
+  return math;
+}
+
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_log_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_log edge case)");
+
+  TCase *tc_log = tcase_create("test_log");
+  tcase_add_test(tc_log, s21_log_edge_1);
+  tcase_add_test(tc_log, s21_log_edge_2);
+  tcase_add_test(tc_log, s21_log_edge_3);
   suite_add_tcase(math, tc_log);
 
   return math;

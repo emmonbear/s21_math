@@ -7006,7 +7006,7 @@ START_TEST(s21_exp_998) {
 
 /// @brief \f[ exp(3.179) = 1.156567 \f]
 START_TEST(s21_exp_999) {
-  double value = 3.179;
+  double value = -S21_INF;
 
   s21_test_exp(value);
 }

@@ -24,7 +24,7 @@ long double s21_pow(double base, double exp) {
   long double result = base;
 
   if (BITS_INF(base_b) && BITS_INF(exp_b)) {
-    result = 0.0;
+    result = S21_INF;
   } else if (BITS_INF(exp_b)) {
     result = S21_INF;
   } else if (base_b.dbl.ieee.negative &&

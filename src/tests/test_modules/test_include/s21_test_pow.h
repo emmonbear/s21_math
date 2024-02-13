@@ -26,5 +26,6 @@ Suite *s21_pow_seventh_case(void);
 Suite *s21_pow_eighth_case(void);
 Suite *s21_pow_ninth_case(void);
 Suite *s21_pow_tenth_case(void);
+Suite *s21_pow_edge_case(void);
 
 #endif  // S21_TESTS_POW_H_

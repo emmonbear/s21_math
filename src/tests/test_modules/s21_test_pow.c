@@ -8211,6 +8211,33 @@ START_TEST(s21_pow_999) {
   s21_test_pow(base, exp);
 }
 
+/// @brief \f[\f]
+START_TEST(s21_pow_edge_1) {
+
+  double base = S21_INF;
+  double exp = S21_INF;
+
+  s21_test_pow(base, exp);
+}
+
+/// @brief \f[ POS_INF_MASK \f]
+START_TEST(s21_pow_edge_2) {
+  
+  double base = 2.0;
+  double exp = S21_INF;
+
+  s21_test_pow(base, exp);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_pow_edge_3) {
+
+  double base = S21_NAN;
+  double exp = 2.0;
+
+  s21_test_pow(base, exp);
+}
+
 /**
  * @brief first set of tests
  *
@@ -9346,6 +9373,23 @@ Suite *s21_pow_tenth_case(void) {
   tcase_add_test(tc_pow, s21_pow_997);
   tcase_add_test(tc_pow, s21_pow_998);
   tcase_add_test(tc_pow, s21_pow_999);
+  suite_add_tcase(math, tc_pow);
+
+  return math;
+}
+
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_pow_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_pow edge case)");
+
+  TCase *tc_pow = tcase_create("test_pow");
+  tcase_add_test(tc_pow, s21_pow_edge_1);
+  tcase_add_test(tc_pow, s21_pow_edge_2);
+  tcase_add_test(tc_pow, s21_pow_edge_3);
   suite_add_tcase(math, tc_pow);
 
   return math;
