@@ -36,7 +36,6 @@ int main(void) {
   greetings();
 
 #ifdef ABS_TEST
-#define ABS_TEST
   Suite *(*s21_abs[])(void) = {
       s21_abs_first_case,
       s21_abs_second_case,
@@ -46,7 +45,6 @@ int main(void) {
 #endif
 
 #ifdef FABS_TEST
-#define FABS_TEST
   Suite *(*s21_fabs[])(void) = {
       s21_fabs_first_case,   s21_fabs_second_case, s21_fabs_third_case,
       s21_fabs_fourth_case,  s21_fabs_fifth_case,  s21_fabs_sixth_case,
@@ -58,7 +56,6 @@ int main(void) {
 #endif
 
 #ifdef FLOOR_TEST
-#define FLOOR_TEST
   Suite *(*s21_floor[])(void) = {
       s21_floor_first_case,   s21_floor_second_case, s21_floor_third_case,
       s21_floor_fourth_case,  s21_floor_fifth_case,  s21_floor_sixth_case,
@@ -71,7 +68,6 @@ int main(void) {
 #endif
 
 #ifdef CEIL_TEST
-#define CEIL_TEST
   Suite *(*s21_ceil[])(void) = {
       s21_ceil_first_case,   s21_ceil_second_case, s21_ceil_third_case,
       s21_ceil_fourth_case,  s21_ceil_fifth_case,  s21_ceil_sixth_case,
@@ -83,7 +79,6 @@ int main(void) {
 #endif
 
 #ifdef EXP_TEST
-#define EXP_TEST
   Suite *(*s21_exp[])(void) = {
       s21_exp_first_case,   s21_exp_second_case, s21_exp_third_case,
       s21_exp_forth_case,   s21_exp_fifth_case,  s21_exp_sixth_case,
@@ -95,7 +90,6 @@ int main(void) {
 #endif
 
 #ifdef FMOD_TEST
-#define FMOD_TEST
   Suite *(*s21_fmod[])(void) = {
     s21_fmod_first_case,
     s21_fmod_second_case,
@@ -114,7 +108,6 @@ int main(void) {
 #endif
 
 #ifdef LOG_TEST
-#define LOG_TEST
   Suite *(*s21_log[])(void) = {
       s21_log_first_case,   s21_log_second_case, s21_log_third_case,
       s21_log_fourth_case,  s21_log_fifth_case,  s21_log_sixth_case,
@@ -127,7 +120,6 @@ int main(void) {
 #endif
 
 #ifdef SQRT_TEST
-#define SQRT_TEST
   Suite *(*s21_sqrt[])(void) = {
     s21_sqrt_first_case,
     s21_sqrt_second_case,
@@ -146,7 +138,6 @@ int main(void) {
 #endif
 
 #ifdef POW_TEST
-#define POW_TEST
   Suite *(*s21_pow[])(void) = {
       s21_pow_first_case,   
       s21_pow_second_case, 
@@ -164,7 +155,6 @@ int main(void) {
 #endif
 
 #ifdef SIN_TEST
-#define SIN_TEST
   Suite *(*s21_sin[])(void) = {
       s21_sin_first_case,   s21_sin_second_case, s21_sin_third_case,
       s21_sin_fourth_case,  s21_sin_fifth_case,  s21_sin_sixth_case,
@@ -177,7 +167,6 @@ int main(void) {
 #endif
 
 #ifdef COS_TEST
-#define COS_TEST
   Suite *(*s21_cos[])(void) = {
       s21_cos_first_case,   s21_cos_second_case, s21_cos_third_case,
       s21_cos_fourth_case,  s21_cos_fifth_case,  s21_cos_sixth_case,
@@ -190,7 +179,6 @@ int main(void) {
 #endif
 
 #ifdef TAN_TEST
-#define TAN_TEST
   Suite *(*s21_tan[])(void) = {
       s21_tan_first_case,   s21_tan_second_case, s21_tan_third_case,
       s21_tan_fourth_case,  s21_tan_fifth_case,  s21_tan_sixth_case,
@@ -203,7 +191,6 @@ int main(void) {
 #endif
 
 #ifdef ASIN_TEST
-#define ASIN_TEST
   Suite *(*s21_asin[])(void) = {
       s21_asin_first_case,   s21_asin_second_case, s21_asin_third_case,
       s21_asin_fourth_case,  s21_asin_fifth_case,  s21_asin_sixth_case,
@@ -216,7 +203,6 @@ int main(void) {
 #endif
 
 #ifdef ACOS_TEST
-#define ACOS_TEST
   Suite *(*s21_acos[])(void) = {
       s21_acos_first_case,   s21_acos_second_case, s21_acos_third_case,
       s21_acos_fourth_case,  s21_acos_fifth_case,  s21_acos_sixth_case,
@@ -229,7 +215,6 @@ int main(void) {
 #endif
 
 #ifdef ATAN_TEST
-#define ATAN_TEST
   Suite *(*s21_atan[])(void) = {
       s21_atan_first_case,   s21_atan_second_case, s21_atan_third_case,
       s21_atan_fourth_case,  s21_atan_fifth_case,  s21_atan_sixth_case,
