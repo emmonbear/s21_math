@@ -218,8 +218,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define ACOS_TEST
 #ifdef ACOS_TEST
+#define ACOS_TEST
   Suite *(*s21_acos[])(void) = {
     s21_acos_first_case,
     s21_acos_second_case,
@@ -237,11 +237,21 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef ATAN_TEST
 #define ATAN_TEST
+#ifdef ATAN_TEST
   Suite *(*s21_atan[])(void) = {
-      s21_atan_first_case,
-  };
+    s21_atan_first_case,
+    s21_atan_second_case,
+    s21_atan_third_case,
+    s21_atan_fourth_case,
+    s21_atan_fifth_case,
+    s21_atan_sixth_case,
+    s21_atan_seventh_case,
+    s21_atan_eighth_case,
+    s21_atan_ninth_case,
+    s21_atan_tenth_case,
+};
+
   test_function(s21_atan, sizeof(s21_atan) / sizeof(s21_atan[0]), "S21_ATAN",
                 &passed_count, &failed_count);
 #endif
