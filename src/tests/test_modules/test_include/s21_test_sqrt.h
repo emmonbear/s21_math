@@ -14,6 +14,18 @@
 
 #include "./../common.h"
 
+void s21_test_sqrt(double value);
+
 Suite *s21_sqrt_first_case(void);
+Suite *s21_sqrt_second_case(void);
+Suite *s21_sqrt_third_case(void);
+Suite *s21_sqrt_fourth_case(void);
+Suite *s21_sqrt_fifth_case(void);
+Suite *s21_sqrt_sixth_case(void);
+Suite *s21_sqrt_seventh_case(void);
+Suite *s21_sqrt_eighth_case(void);
+Suite *s21_sqrt_ninth_case(void);
+Suite *s21_sqrt_tenth_case(void);
+
 
 #endif  // S21_TESTS_SQRT_H_

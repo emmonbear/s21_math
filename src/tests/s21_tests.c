@@ -129,8 +129,18 @@ int main(void) {
 #ifdef SQRT_TEST
 #define SQRT_TEST
   Suite *(*s21_sqrt[])(void) = {
-      s21_sqrt_first_case,
-  };
+    s21_sqrt_first_case,
+    s21_sqrt_second_case,
+    s21_sqrt_third_case,
+    s21_sqrt_fourth_case,
+    s21_sqrt_fifth_case,
+    s21_sqrt_sixth_case,
+    s21_sqrt_seventh_case,
+    s21_sqrt_eighth_case,
+    s21_sqrt_ninth_case,
+    s21_sqrt_tenth_case,
+};
+
   test_function(s21_sqrt, sizeof(s21_sqrt) / sizeof(s21_sqrt[0]), "S21_SQRT",
                 &passed_count, &failed_count);
 #endif
