@@ -45,8 +45,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define FABS_TEST
 #ifdef FABS_TEST
+#define FABS_TEST
   Suite *(*s21_fabs[])(void) = {
     s21_fabs_first_case,
     s21_fabs_second_case,
@@ -83,12 +83,20 @@ int main(void) {
                 "S21_FLOOR", &passed_count, &failed_count);
 #endif
 
-#ifdef CEIL_TEST
 #define CEIL_TEST
+#ifdef CEIL_TEST
   Suite *(*s21_ceil[])(void) = {
-      s21_ceil_first_case,
-      s21_ceil_second_case,
-      s21_ceil_edge_case,
+    s21_ceil_first_case,
+    s21_ceil_second_case,
+    s21_ceil_third_case,
+    s21_ceil_fourth_case,
+    s21_ceil_fifth_case,
+    s21_ceil_sixth_case,
+    s21_ceil_seventh_case,
+    s21_ceil_eighth_case,
+    s21_ceil_ninth_case,
+    s21_ceil_tenth_case,
+    s21_ceil_edge_case,
   };
   test_function(s21_ceil, sizeof(s21_ceil) / sizeof(s21_ceil[0]), "S21_CEIL",
                 &passed_count, &failed_count);

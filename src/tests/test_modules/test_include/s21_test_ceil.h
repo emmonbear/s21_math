@@ -18,6 +18,15 @@ void s21_test_ceil(double x);
 
 Suite *s21_ceil_first_case(void);
 Suite *s21_ceil_second_case(void);
+Suite *s21_ceil_third_case(void);
+Suite *s21_ceil_fourth_case(void);
+Suite *s21_ceil_fifth_case(void);
+Suite *s21_ceil_sixth_case(void);
+Suite *s21_ceil_seventh_case(void);
+Suite *s21_ceil_eighth_case(void);
+Suite *s21_ceil_ninth_case(void);
+Suite *s21_ceil_tenth_case(void);
 Suite *s21_ceil_edge_case(void);
+
 
 #endif  // S21_TESTS_CEIL_H_
