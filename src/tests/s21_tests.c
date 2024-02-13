@@ -180,8 +180,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define TAN_TEST
 #ifdef TAN_TEST
+#define TAN_TEST
   Suite *(*s21_tan[])(void) = {
     s21_tan_first_case,
     s21_tan_second_case,
@@ -202,8 +202,18 @@ int main(void) {
 #ifdef ASIN_TEST
 #define ASIN_TEST
   Suite *(*s21_asin[])(void) = {
-      s21_asin_first_case,
-  };
+    s21_asin_first_case,
+    s21_asin_second_case,
+    s21_asin_third_case,
+    s21_asin_fourth_case,
+    s21_asin_fifth_case,
+    s21_asin_sixth_case,
+    s21_asin_seventh_case,
+    s21_asin_eighth_case,
+    s21_asin_ninth_case,
+    s21_asin_tenth_case,
+};
+
   test_function(s21_asin, sizeof(s21_asin) / sizeof(s21_asin[0]), "S21_ASIN",
                 &passed_count, &failed_count);
 #endif
@@ -211,17 +221,37 @@ int main(void) {
 #ifdef ACOS_TEST
 #define ACOS_TEST
   Suite *(*s21_acos[])(void) = {
-      s21_acos_first_case,
-  };
+    s21_acos_first_case,
+    s21_acos_second_case,
+    s21_acos_third_case,
+    s21_acos_fourth_case,
+    s21_acos_fifth_case,
+    s21_acos_sixth_case,
+    s21_acos_seventh_case,
+    s21_acos_eighth_case,
+    s21_acos_ninth_case,
+    s21_acos_tenth_case,
+};
+
   test_function(s21_acos, sizeof(s21_acos) / sizeof(s21_acos[0]), "S21_ACOS",
                 &passed_count, &failed_count);
 #endif
 
-#ifdef ATAN_TEST
 #define ATAN_TEST
+#ifdef ATAN_TEST
   Suite *(*s21_atan[])(void) = {
-      s21_atan_first_case,
-  };
+    s21_atan_first_case,
+    s21_atan_second_case,
+    s21_atan_third_case,
+    s21_atan_fourth_case,
+    s21_atan_fifth_case,
+    s21_atan_sixth_case,
+    s21_atan_seventh_case,
+    s21_atan_eighth_case,
+    s21_atan_ninth_case,
+    s21_atan_tenth_case,
+};
+
   test_function(s21_atan, sizeof(s21_atan) / sizeof(s21_atan[0]), "S21_ATAN",
                 &passed_count, &failed_count);
 #endif
