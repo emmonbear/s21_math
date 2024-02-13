@@ -18,6 +18,15 @@ void s21_test_fabs(double x);
 
 Suite *s21_fabs_first_case(void);
 Suite *s21_fabs_second_case(void);
+Suite *s21_fabs_third_case(void);
+Suite *s21_fabs_fourth_case(void);
+Suite *s21_fabs_fifth_case(void);
+Suite *s21_fabs_sixth_case(void);
+Suite *s21_fabs_seventh_case(void);
+Suite *s21_fabs_eighth_case(void);
+Suite *s21_fabs_ninth_case(void);
+Suite *s21_fabs_tenth_case(void);
+
 Suite *s21_fabs_edge_case(void);
 
 #endif  // S21_TESTS_FABS_H_
