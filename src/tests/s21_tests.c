@@ -97,8 +97,18 @@ int main(void) {
 #ifdef FMOD_TEST
 #define FMOD_TEST
   Suite *(*s21_fmod[])(void) = {
-      s21_fmod_first_case,
-  };
+    s21_fmod_first_case,
+    s21_fmod_second_case,
+    s21_fmod_third_case,
+    s21_fmod_fourth_case,
+    s21_fmod_fifth_case,
+    s21_fmod_sixth_case,
+    s21_fmod_seventh_case,
+    s21_fmod_eighth_case,
+    s21_fmod_ninth_case,
+    s21_fmod_tenth_case,
+};
+
   test_function(s21_fmod, sizeof(s21_fmod) / sizeof(s21_fmod[0]), "S21_FMOD",
                 &passed_count, &failed_count);
 #endif
