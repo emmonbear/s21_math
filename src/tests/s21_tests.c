@@ -180,8 +180,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define TAN_TEST
 #ifdef TAN_TEST
+#define TAN_TEST
   Suite *(*s21_tan[])(void) = {
     s21_tan_first_case,
     s21_tan_second_case,
@@ -199,11 +199,21 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef ASIN_TEST
 #define ASIN_TEST
+#ifdef ASIN_TEST
   Suite *(*s21_asin[])(void) = {
-      s21_asin_first_case,
-  };
+    s21_asin_first_case,
+    s21_asin_second_case,
+    s21_asin_third_case,
+    s21_asin_fourth_case,
+    s21_asin_fifth_case,
+    s21_asin_sixth_case,
+    s21_asin_seventh_case,
+    s21_asin_eighth_case,
+    s21_asin_ninth_case,
+    s21_asin_tenth_case,
+};
+
   test_function(s21_asin, sizeof(s21_asin) / sizeof(s21_asin[0]), "S21_ASIN",
                 &passed_count, &failed_count);
 #endif
