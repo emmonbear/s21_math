@@ -83,8 +83,8 @@ int main(void) {
                 "S21_FLOOR", &passed_count, &failed_count);
 #endif
 
-#define CEIL_TEST
 #ifdef CEIL_TEST
+#define CEIL_TEST
   Suite *(*s21_ceil[])(void) = {
     s21_ceil_first_case,
     s21_ceil_second_case,
@@ -120,8 +120,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef FMOD_TEST
 #define FMOD_TEST
+#ifdef FMOD_TEST
   Suite *(*s21_fmod[])(void) = {
       s21_fmod_first_case,
   };

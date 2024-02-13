@@ -14,6 +14,8 @@
 
 #include "./../common.h"
 
+void s21_test_fmod(double x, double y);
+
 Suite *s21_fmod_first_case(void);
 
 #endif  // S21_TESTS_FMOD_H_
