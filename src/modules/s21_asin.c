@@ -38,7 +38,7 @@ long double s21_asin(double x) {
       factor *= numerator / denumerator;
       member = factor * (fast_pow(x, cnt) / cnt);
       result += member;
-      if (numerator > 10000000) {
+      if (numerator > 5000000) {
         member = 0;
       }
     }

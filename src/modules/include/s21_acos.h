@@ -13,7 +13,7 @@
 #define S21_ACOS_H_
 
 #include "./common.h"
-#include "./s21_fabs.h"
+#include "./s21_asin.h"
 
 long double s21_acos(double x);
 

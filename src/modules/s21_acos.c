@@ -11,8 +11,6 @@
 
 #include "./include/s21_acos.h"
 
-#include <math.h>
-
 /**
  * @brief Calculates the arc cosine of a floating point number.
  *
@@ -20,28 +18,5 @@
  * @return long double - result of calculation.
  */
 long double s21_acos(double x) {
-  long double result = x;
-  double_int num = {{x}};
-
-  if (BITS_INF(num) || BITS_NAN(num) || s21_fabs(x) > 1) {
-    result = S21_NAN;
-  } else if (s21_fabs(x) == 1) {
-    result = PI / 2 * x;
-  } else {
-    long double member = x;
-    long double numerator = 1;
-    long double denumerator = 2;
-    long double factor = 1;
-
-    for (int cnt = 3; s21_fabs(member) > PRECISION;
-         cnt += 2, numerator += 2, denumerator += 2) {
-      factor *= numerator / denumerator;
-      member = factor * (fast_pow(x, cnt) / cnt);
-      result += member;
-      if (numerator > 10000000) {
-        member = 0;
-      }
-    }
-  }
-  return result;
+  return PI / 2 - s21_asin(x);
 }

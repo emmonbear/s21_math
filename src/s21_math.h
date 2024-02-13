@@ -13,6 +13,7 @@
 
 #include "./modules/include/s21_abs.h"
 #include "./modules/include/s21_asin.h"
+#include "./modules/include/s21_acos.h"
 #include "./modules/include/s21_ceil.h"
 #include "./modules/include/s21_cos.h"
 #include "./modules/include/s21_exp.h"
