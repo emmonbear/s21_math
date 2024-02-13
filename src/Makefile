@@ -118,7 +118,7 @@ $(TARGET): $(LIBRARY) $(TEST_O)
 	$(CC) $(addprefix $(OBJ_DIR)/, $(notdir $(TEST_O))) $(LIBRARY) $(LDFLAGS) -o $@
 	./$@
 
-$(GCOV): $(OBJ_DIR) $(TEST_O)
+$(GCOV): $(OBJ_DIR) $(TEST_O) $(REPORT_DIR)
 	$(CC) $(addprefix $(OBJ_DIR)/, $(notdir $(TEST_O))) $(MODULES_C) $(LDFLAGS) $(GCOV_FLAGS) -o $(TARGET)
 	./$(TARGET)
 	gcovr -r . --html --html-details -o $(REPORT_DIR)/coverage.html
