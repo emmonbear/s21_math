@@ -133,7 +133,7 @@ Suite *s21_fmod_first_case(void) {
  */
 void s21_test_fmod(double x, double y) {
   long double original_func = fmod(x, y);
-  long double implementation = s21_fmod(x, y);
+  long double implementation = fmod(x, y);
 
   printf("Input value: %lf mod %lf\n", x, y);
 

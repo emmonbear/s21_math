@@ -22,9 +22,9 @@ long double s21_fmod(double x, double y) {
   double_int bits_x = {{x}};
   double_int bits_y = {{y}};
 
-  int exponent_x = ((bits_x.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
-  int exponent_y = ((bits_y.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
-  int sign_x = bits_x.dbl.ieee.negative;
+  // int exponent_x = ((bits_x.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
+  // int exponent_y = ((bits_y.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
+  // int sign_x = bits_x.dbl.ieee.negative;
 
   if (bits_y.ulong << 1 == 0 || BITS_NAN(bits_y) || BITS_INF(bits_x)) {
     return (x * y) / (x * y);
