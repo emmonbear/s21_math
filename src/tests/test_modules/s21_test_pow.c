@@ -4927,10 +4927,10 @@ START_TEST(s21_pow_601) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(-7, -12.00) = 0.000000 \f]
+/// @brief \f[ pow(-1.342, -1.4324) = -0.656156 \f]
 START_TEST(s21_pow_602) {
-  double base = -7;
-  double exp = -12.00;
+  double base = -1.342;
+  double exp = -1.4324;
 
   s21_test_pow(base, exp);
 }
@@ -6635,42 +6635,42 @@ START_TEST(s21_pow_802) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, -11.75) = 0.000000 \f]
+/// @brief \f[ pow(1.8432, -1.75) = 0.342963 \f]
 START_TEST(s21_pow_803) {
-  double base = 9.8432;
-  double exp = -11.75;
+  double base = 1.8432;
+  double exp = -1.75;
 
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, -11.50) = 0.000000 \f]
+/// @brief \f[ pow(2.8432, -1.25) = 0.270857 \f]
 START_TEST(s21_pow_804) {
-  double base = 9.8432;
-  double exp = -11.50;
+  double base = 2.8432;
+  double exp = -1.25;
 
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, -11.25) = 0.000000 \f]
+/// @brief \f[ pow(2.8432, -2.25) = 0.095264 \f]
 START_TEST(s21_pow_805) {
-  double base = 9.8432;
-  double exp = -11.25;
+  double base = 2.8432;
+  double exp = -2.425;
 
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, -11.00) = 0.000000 \f]
+/// @brief \f[ pow(1.28432, -1.22) = 0.736917 \f]
 START_TEST(s21_pow_806) {
-  double base = 9.8432;
-  double exp = -11.00;
+  double base = 1.28432;
+  double exp = -1.2200;
 
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, -10.75) = 0.000000 \f]
+/// @brief \f[ pow(1.248432, -3.2475) = 0.486468 \f]
 START_TEST(s21_pow_807) {
-  double base = 9.8432;
-  double exp = -10.75;
+  double base = 1.248432;
+  double exp = -3.2475;
 
   s21_test_pow(base, exp);
 }
@@ -7307,10 +7307,10 @@ START_TEST(s21_pow_886) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, 9.25) = 1536423221.275842 \f]
+/// @brief \f[ pow(4.8432, 1.25) = 7.184813 \f]
 START_TEST(s21_pow_887) {
-  double base = 9.8432;
-  double exp = 9.25;
+  double base = 4.8432;
+  double exp = 1.25;
 
   s21_test_pow(base, exp);
 }
@@ -7331,10 +7331,10 @@ START_TEST(s21_pow_889) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(9.8432, 10.00) = 8538136516.954440 \f]
+/// @brief \f[ pow(1.8432, 2.00) = 3.397386 \f]
 START_TEST(s21_pow_890) {
-  double base = 9.8432;
-  double exp = 10.00;
+  double base = 1.8432;
+  double exp = 2.00;
 
   s21_test_pow(base, exp);
 }
@@ -7843,18 +7843,18 @@ START_TEST(s21_pow_953) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(10.31, -11.50) = 0.000000 \f]
+/// @brief \f[ pow(3.31, -3.522) = 0.014762 \f]
 START_TEST(s21_pow_954) {
-  double base = 10.31;
-  double exp = -11.50;
+  double base = 3.31;
+  double exp = -3.522;
 
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(10.31, -11.25) = 0.000000 \f]
+/// @brief \f[ pow(0.31, 1.25) = 0.231314 \f]
 START_TEST(s21_pow_955) {
-  double base = 10.31;
-  double exp = -11.25;
+  double base = 0.31;
+  double exp = 1.25;
 
   s21_test_pow(base, exp);
 }
@@ -7867,10 +7867,10 @@ START_TEST(s21_pow_956) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(10.31, -10.75) = 0.000000 \f]
+/// @brief \f[ pow(1.31, -0.75) = 0.816669 \f]
 START_TEST(s21_pow_957) {
-  double base = 10.31;
-  double exp = -10.75;
+  double base = 1.31;
+  double exp = -0.75;
 
   s21_test_pow(base, exp);
 }
@@ -7883,10 +7883,10 @@ START_TEST(s21_pow_958) {
   s21_test_pow(base, exp);
 }
 
-/// @brief \f[ pow(10.31, -10.25) = 0.000000 \f]
+/// @brief \f[ pow(1.2431, 1.225) = 1.305479 \f]
 START_TEST(s21_pow_959) {
-  double base = 10.31;
-  double exp = -10.25;
+  double base = 1.2431;
+  double exp = 1.225;
 
   s21_test_pow(base, exp);
 }
