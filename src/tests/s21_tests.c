@@ -138,9 +138,15 @@ int main(void) {
 #ifdef POW_TEST
 #define POW_TEST
   Suite *(*s21_pow[])(void) = {
-      s21_pow_first_case,   s21_pow_second_case, s21_pow_third_case,
-      s21_pow_fourth_case,  s21_pow_fifth_case,  s21_pow_sixth_case,
-      s21_pow_seventh_case, s21_pow_eighth_case, s21_pow_ninth_case,
+      s21_pow_first_case,   
+      s21_pow_second_case, 
+      s21_pow_third_case,
+      s21_pow_fourth_case,  
+      s21_pow_fifth_case,
+      s21_pow_sixth_case,
+      s21_pow_seventh_case, 
+      s21_pow_eighth_case,
+      s21_pow_ninth_case,
       s21_pow_tenth_case,
   };
   test_function(s21_pow, sizeof(s21_pow) / sizeof(s21_pow[0]), "S21_POW",
