@@ -26,9 +26,10 @@ long double s21_fmod(double x, double y) {
   double_int bits_x = {{x}};
   double_int bits_y = {{y}};
 
-  int exponent_x = ((bits_x.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
-  int exponent_y = ((bits_y.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
-  int sign_x = bits_x.dbl.ieee.negative;
+  uint64_t sign = bits_x.dbl.ieee.negative;
+  uint64_t exp_x = (bits_x.ulong >> MANTISS_SIZE) & INF_BITS;
+  uint64_t exp_y = (bits_y.ulong >> MANTISS_SIZE) & INF_BITS;
+  uint64_t x_long = bits_x.ulong;
 
   if (bits_y.ulong << 1 == 0 || BITS_NAN(bits_y) || BITS_INF(bits_x)) {
     result = (x * y) / (x * y);
