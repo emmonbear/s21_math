@@ -26,5 +26,6 @@ Suite *s21_log_seventh_case(void);
 Suite *s21_log_eighth_case(void);
 Suite *s21_log_ninth_case(void);
 Suite *s21_log_tenth_case(void);
+Suite *s21_log_edge_case(void);
 
 #endif  // S21_TESTS_LOG_H_
