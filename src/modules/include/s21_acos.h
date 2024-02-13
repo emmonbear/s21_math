@@ -1,7 +1,7 @@
 /**
  * @file s21_acos.h
  * @author emmonbea (moskaleviluak@icloud.com)
- * @brief Header file for s21_sqrt module
+ * @brief Header file for s21_acos module
  * @version 1.0
  * @date 2024-01-26
  *

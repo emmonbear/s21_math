@@ -1,7 +1,7 @@
 /**
  * @file s21_fabs.c
  * @author kossadda (https://github.com/kossadda)
- * @brief Implementation of function abs from math.h library
+ * @brief Implementation of function fabs from math.h library
  * @version 1.0
  * @date 2024-01-23
  *

@@ -39,7 +39,8 @@ long double s21_log(double x) {
     long double current = x;
     long double approach = 1;
 
-    while (current < 1.0 / EULER || current > EULER || s21_fabs(approach) > PRECISION) {
+    while (current < 1.0 / EULER || current > EULER ||
+           s21_fabs(approach) > PRECISION) {
       if (current > EULER) {
         current /= EULER;
         result += approach;
