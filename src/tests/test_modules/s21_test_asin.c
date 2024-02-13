@@ -7011,6 +7011,27 @@ START_TEST(s21_asin_999) {
   s21_test_asin(value);
 }
 
+/// @brief \f[ |NaN| = nan \f]
+START_TEST(s21_asin_edge_1) {
+  double value = 1.1;
+
+  s21_test_asin(value);
+}
+
+/// @brief \f[ |inf| = inf \f]
+START_TEST(s21_asin_edge_2) {
+  double value = S21_NAN;
+
+  s21_test_asin(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_asin_edge_3) {
+  double value = S21_INF;
+
+  s21_test_asin(value);
+}
+
 /**
  * @brief first set of tests
  *
@@ -8147,6 +8168,23 @@ Suite *s21_asin_tenth_case(void) {
   tcase_add_test(tc_asin, s21_asin_998);
   tcase_add_test(tc_asin, s21_asin_999);
   suite_add_tcase(math, tc_asin);
+
+  return math;
+}
+
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_asin_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_fabs edge case)");
+
+  TCase *tc_fabs = tcase_create("test_fabs");
+  tcase_add_test(tc_fabs, s21_asin_edge_1);
+  tcase_add_test(tc_fabs, s21_asin_edge_2);
+  tcase_add_test(tc_fabs, s21_asin_edge_3);
+  suite_add_tcase(math, tc_fabs);
 
   return math;
 }
