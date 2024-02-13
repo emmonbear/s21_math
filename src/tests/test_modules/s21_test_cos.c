@@ -7011,6 +7011,27 @@ START_TEST(s21_cos_999) {
   s21_test_cos(value);
 }
 
+/// @brief \f[ |inf| = inf \f]
+START_TEST(s21_cos_edge_1) {
+  double value = S21_NAN;
+
+  s21_test_cos(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_cos_edge_2) {
+  double value = S21_INF;
+
+  s21_test_cos(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_cos_edge_3) {
+  double value = -S21_INF;
+
+  s21_test_cos(value);
+}
+
 /**
  * @brief first set of tests
  *
@@ -8151,6 +8172,28 @@ Suite *s21_cos_tenth_case(void) {
   return math;
 }
 
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_cos_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_cos edge case)");
+
+  TCase *tc_cos = tcase_create("test_cos");
+  tcase_add_test(tc_cos, s21_cos_edge_1);
+  tcase_add_test(tc_cos, s21_cos_edge_2);
+  tcase_add_test(tc_cos, s21_cos_edge_3);
+  suite_add_tcase(math, tc_cos);
+
+  return math;
+}
+
+/**
+ * @brief Quickly check the functionality of the module s21_cos.
+ *
+ * @param[in] value a value used in cosine calculation
+ */
 void s21_test_cos(double value) {
   long double original_func = cos(value);
   long double implementation = s21_cos(value);

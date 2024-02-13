@@ -26,6 +26,6 @@ Suite *s21_fmod_seventh_case(void);
 Suite *s21_fmod_eighth_case(void);
 Suite *s21_fmod_ninth_case(void);
 Suite *s21_fmod_tenth_case(void);
-
+Suite *s21_fmod_edge_case(void);
 
 #endif  // S21_TESTS_FMOD_H_

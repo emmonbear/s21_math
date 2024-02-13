@@ -7006,6 +7006,27 @@ START_TEST(s21_exp_998) {
 
 /// @brief \f[ exp(3.179) = 1.156567 \f]
 START_TEST(s21_exp_999) {
+  double value = 3.157;
+
+  s21_test_exp(value);
+}
+
+/// @brief \f[ exp(NaN) = nan \f]
+START_TEST(s21_exp_edge_1) {
+  double value = S21_NAN;
+
+  s21_test_exp(value);
+}
+
+/// @brief \f[ exp(inf) = inf \f]
+START_TEST(s21_exp_edge_2) {
+  double value = S21_INF;
+
+  s21_test_exp(value);
+}
+
+/// @brief \f[ exp(-inf) = 0 \f]
+START_TEST(s21_exp_edge_3) {
   double value = -S21_INF;
 
   s21_test_exp(value);
@@ -8151,7 +8172,22 @@ Suite *s21_exp_tenth_case(void) {
   return math;
 }
 
-//------------------------------------------------------------------------------
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_exp_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_exp edge case)");
+
+  TCase *tc_exp = tcase_create("test_exp");
+  tcase_add_test(tc_exp, s21_exp_edge_1);
+  tcase_add_test(tc_exp, s21_exp_edge_2);
+  tcase_add_test(tc_exp, s21_exp_edge_3);
+  suite_add_tcase(math, tc_exp);
+
+  return math;
+}
 
 /**
  * @brief Quickly check the functionality of the module s21_exp.

@@ -26,5 +26,6 @@ Suite *s21_asin_seventh_case(void);
 Suite *s21_asin_eighth_case(void);
 Suite *s21_asin_ninth_case(void);
 Suite *s21_asin_tenth_case(void);
+Suite *s21_asin_edge_case(void);
 
 #endif  // S21_TESTS_ASIN_H_

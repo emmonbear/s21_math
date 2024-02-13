@@ -26,5 +26,6 @@ Suite *s21_tan_seventh_case(void);
 Suite *s21_tan_eighth_case(void);
 Suite *s21_tan_ninth_case(void);
 Suite *s21_tan_tenth_case(void);
+Suite *s21_tan_edge_case(void);
 
 #endif  // S21_TESTS_TAN_H_

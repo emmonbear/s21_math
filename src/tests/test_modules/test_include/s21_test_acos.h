@@ -26,5 +26,6 @@ Suite *s21_acos_seventh_case(void);
 Suite *s21_acos_eighth_case(void);
 Suite *s21_acos_ninth_case(void);
 Suite *s21_acos_tenth_case(void);
+Suite *s21_acos_edge_case(void);
 
 #endif  // S21_TESTS_ACOS_H_

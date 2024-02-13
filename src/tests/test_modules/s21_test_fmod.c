@@ -9011,6 +9011,141 @@ START_TEST(s21_fmod_999)
     s21_test_fmod(x, y);
 }
 
+START_TEST(s21_fmod_edge_1)
+{
+  double x = 1111.543;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_2)
+{
+  double x = 0;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_3)
+{
+  double x = S21_NAN;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_4)
+{
+  double x = 1111.543;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_5)
+{
+  double x = S21_NAN;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_6)
+{
+  double x = S21_INF;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_7)
+{
+  double x = 1111.543;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_8)
+{
+  double x = S21_INF;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_9)
+{
+  double x = -S21_INF;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_10)
+{
+  double x = 1111.543;
+  double y = -S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_11)
+{
+  double x = -S21_INF;
+  double y = -S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_12)
+{
+  double x = S21_INF;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_13)
+{
+  double x = -S21_INF;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_14)
+{
+  double x = S21_INF;
+  double y = -43234.222;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_15)
+{
+  double x = -43234.222;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_16)
+{
+  double x = S21_NAN;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_edge_17)
+{
+  double x = S21_INF;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
 
 /**
  * @brief first set of tests
@@ -10162,6 +10297,36 @@ Suite *s21_fmod_tenth_case(void)
     return math;
 }
 
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_fmod_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_fmod edge case)");
+
+  TCase *tc_fmod = tcase_create("test_fmod");
+  tcase_add_test(tc_fmod, s21_fmod_edge_1);
+  tcase_add_test(tc_fmod, s21_fmod_edge_2);
+  tcase_add_test(tc_fmod, s21_fmod_edge_3);
+  tcase_add_test(tc_fmod, s21_fmod_edge_4);
+  tcase_add_test(tc_fmod, s21_fmod_edge_5);
+  tcase_add_test(tc_fmod, s21_fmod_edge_6);
+  tcase_add_test(tc_fmod, s21_fmod_edge_7);
+  tcase_add_test(tc_fmod, s21_fmod_edge_8);
+  tcase_add_test(tc_fmod, s21_fmod_edge_9);
+  tcase_add_test(tc_fmod, s21_fmod_edge_10);
+  tcase_add_test(tc_fmod, s21_fmod_edge_11);
+  tcase_add_test(tc_fmod, s21_fmod_edge_12);
+  tcase_add_test(tc_fmod, s21_fmod_edge_13);
+  tcase_add_test(tc_fmod, s21_fmod_edge_14);
+  tcase_add_test(tc_fmod, s21_fmod_edge_15);
+  tcase_add_test(tc_fmod, s21_fmod_edge_16);
+  tcase_add_test(tc_fmod, s21_fmod_edge_17);
+  suite_add_tcase(math, tc_fmod);
+
+  return math;
+}
 
 /**
  * @brief Quickly check the functionality of the module s21_fmod.
@@ -10172,7 +10337,7 @@ Suite *s21_fmod_tenth_case(void)
  */
 void s21_test_fmod(double x, double y) {
   long double original_func = fmod(x, y);
-  long double implementation = fmod(x, y);
+  long double implementation = s21_fmod(x, y);
 
   printf("Input value: %lf mod %lf\n", x, y);
 

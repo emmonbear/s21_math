@@ -7011,6 +7011,27 @@ START_TEST(s21_sin_999) {
   s21_test_sin(value);
 }
 
+/// @brief \f[ |inf| = inf \f]
+START_TEST(s21_sin_edge_1) {
+  double value = S21_NAN;
+
+  s21_test_sin(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_sin_edge_2) {
+  double value = S21_INF;
+
+  s21_test_sin(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_sin_edge_3) {
+  double value = -S21_INF;
+
+  s21_test_sin(value);
+}
+
 /**
  * @brief first set of tests
  *
@@ -8151,6 +8172,28 @@ Suite *s21_sin_tenth_case(void) {
   return math;
 }
 
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_sin_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_sin edge case)");
+
+  TCase *tc_sin = tcase_create("test_sin");
+  tcase_add_test(tc_sin, s21_sin_edge_1);
+  tcase_add_test(tc_sin, s21_sin_edge_2);
+  tcase_add_test(tc_sin, s21_sin_edge_3);
+  suite_add_tcase(math, tc_sin);
+
+  return math;
+}
+
+/**
+ * @brief Quickly check the functionality of the module s21_sin.
+ *
+ * @param[in] value a value used in sine calculation
+ */
 void s21_test_sin(double value) {
   long double original_func = sin(value);
   long double implementation = s21_sin(value);

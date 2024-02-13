@@ -83,7 +83,7 @@ int main(void) {
       s21_exp_first_case,   s21_exp_second_case, s21_exp_third_case,
       s21_exp_forth_case,   s21_exp_fifth_case,  s21_exp_sixth_case,
       s21_exp_seventh_case, s21_exp_eighth_case, s21_exp_ninth_case,
-      s21_exp_tenth_case,
+      s21_exp_tenth_case, s21_exp_edge_case,
   };
   test_function(s21_exp, sizeof(s21_exp) / sizeof(s21_exp[0]), "S21_EXP",
                 &passed_count, &failed_count);
@@ -101,6 +101,7 @@ int main(void) {
     s21_fmod_eighth_case,
     s21_fmod_ninth_case,
     s21_fmod_tenth_case,
+    s21_fmod_edge_case,
 };
 
   test_function(s21_fmod, sizeof(s21_fmod) / sizeof(s21_fmod[0]), "S21_FMOD",
@@ -160,7 +161,7 @@ int main(void) {
       s21_sin_first_case,   s21_sin_second_case, s21_sin_third_case,
       s21_sin_fourth_case,  s21_sin_fifth_case,  s21_sin_sixth_case,
       s21_sin_seventh_case, s21_sin_eighth_case, s21_sin_ninth_case,
-      s21_sin_tenth_case,
+      s21_sin_tenth_case, s21_sin_edge_case,
   };
 
   test_function(s21_sin, sizeof(s21_sin) / sizeof(s21_sin[0]), "S21_SIN",
@@ -172,7 +173,7 @@ int main(void) {
       s21_cos_first_case,   s21_cos_second_case, s21_cos_third_case,
       s21_cos_fourth_case,  s21_cos_fifth_case,  s21_cos_sixth_case,
       s21_cos_seventh_case, s21_cos_eighth_case, s21_cos_ninth_case,
-      s21_cos_tenth_case,
+      s21_cos_tenth_case, s21_cos_edge_case,
   };
 
   test_function(s21_cos, sizeof(s21_cos) / sizeof(s21_cos[0]), "S21_COS",
@@ -184,7 +185,7 @@ int main(void) {
       s21_tan_first_case,   s21_tan_second_case, s21_tan_third_case,
       s21_tan_fourth_case,  s21_tan_fifth_case,  s21_tan_sixth_case,
       s21_tan_seventh_case, s21_tan_eighth_case, s21_tan_ninth_case,
-      s21_tan_tenth_case,
+      s21_tan_tenth_case, s21_tan_edge_case,
   };
 
   test_function(s21_tan, sizeof(s21_tan) / sizeof(s21_tan[0]), "S21_TAN",
@@ -196,7 +197,7 @@ int main(void) {
       s21_asin_first_case,   s21_asin_second_case, s21_asin_third_case,
       s21_asin_fourth_case,  s21_asin_fifth_case,  s21_asin_sixth_case,
       s21_asin_seventh_case, s21_asin_eighth_case, s21_asin_ninth_case,
-      s21_asin_tenth_case,
+      s21_asin_tenth_case, s21_asin_edge_case,
   };
 
   test_function(s21_asin, sizeof(s21_asin) / sizeof(s21_asin[0]), "S21_ASIN",
@@ -208,7 +209,7 @@ int main(void) {
       s21_acos_first_case,   s21_acos_second_case, s21_acos_third_case,
       s21_acos_fourth_case,  s21_acos_fifth_case,  s21_acos_sixth_case,
       s21_acos_seventh_case, s21_acos_eighth_case, s21_acos_ninth_case,
-      s21_acos_tenth_case,
+      s21_acos_tenth_case, s21_acos_edge_case,
   };
 
   test_function(s21_acos, sizeof(s21_acos) / sizeof(s21_acos[0]), "S21_ACOS",

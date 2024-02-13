@@ -7011,6 +7011,27 @@ START_TEST(s21_tan_999) {
   s21_test_tan(value);
 }
 
+/// @brief \f[ |inf| = inf \f]
+START_TEST(s21_tan_edge_1) {
+  double value = S21_NAN;
+
+  s21_test_tan(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_tan_edge_2) {
+  double value = S21_INF;
+
+  s21_test_tan(value);
+}
+
+/// @brief \f[ |-inf| = inf \f]
+START_TEST(s21_tan_edge_3) {
+  double value = -S21_INF;
+
+  s21_test_tan(value);
+}
+
 /**
  * @brief first set of tests
  *
@@ -8151,6 +8172,28 @@ Suite *s21_tan_tenth_case(void) {
   return math;
 }
 
+/**
+ * @brief Set of edge tests.
+ *
+ * @return Suite*
+ */
+Suite *s21_tan_edge_case(void) {
+  Suite *math = suite_create("s21_math (s21_tan edge case)");
+
+  TCase *tc_tan = tcase_create("test_tan");
+  tcase_add_test(tc_tan, s21_tan_edge_1);
+  tcase_add_test(tc_tan, s21_tan_edge_2);
+  tcase_add_test(tc_tan, s21_tan_edge_3);
+  suite_add_tcase(math, tc_tan);
+
+  return math;
+}
+
+/**
+ * @brief Quickly check the functionality of the module s21_tan.
+ *
+ * @param[in] value a value used in tangent calculation
+ */
 void s21_test_tan(double value) {
   long double original_func = tan(value);
   long double implementation = s21_tan(value);

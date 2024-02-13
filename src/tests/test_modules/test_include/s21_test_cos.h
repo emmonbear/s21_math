@@ -26,5 +26,6 @@ Suite *s21_cos_seventh_case(void);
 Suite *s21_cos_eighth_case(void);
 Suite *s21_cos_ninth_case(void);
 Suite *s21_cos_tenth_case(void);
+Suite *s21_cos_edge_case(void);
 
 #endif  // S21_TESTS_COS_H_

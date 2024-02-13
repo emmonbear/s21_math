@@ -48,7 +48,7 @@ LDGCOV = $(LDFLAGS) -lgcov
 GCOV_FLAGS = -fprofile-arcs -ftest-coverage
 
 # FLAGS FOR VALGRING TEST
-VAL = --trace-children=yes --track-fds=yes --track-origins=yes --leak-check=full --show-leak-kinds=all -s
+VAL = --tool=memcheck --leak-check=yes
 
 # FLAGS FOR CPPCHECK TEST
 CPPCHECK = --enable=all --suppress=missingIncludeSystem

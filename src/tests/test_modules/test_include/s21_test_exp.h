@@ -26,5 +26,6 @@ Suite *s21_exp_seventh_case(void);
 Suite *s21_exp_eighth_case(void);
 Suite *s21_exp_ninth_case(void);
 Suite *s21_exp_tenth_case(void);
+Suite *s21_exp_edge_case(void);
 
 #endif  // S21_TESTS_EXP_H_

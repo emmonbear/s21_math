@@ -9,24 +9,25 @@
  *
  */
 
-#define ALL_TESTS
-#ifdef ALL_TESTS
+#ifndef S21_TESTS_H_
+#define S21_TESTS_H_
 
-// #define ABS_TEST
-// #define FABS_TEST
-// #define FLOOR_TEST
-// #define CEIL_TEST
-// #define EXP_TEST
-// #define FMOD_TEST
-// #define LOG_TEST
-// #define SQRT_TEST
+#define ABS_TEST
+#define FABS_TEST
+#define FLOOR_TEST
+#define CEIL_TEST
+#define EXP_TEST
+#define FMOD_TEST
+#define LOG_TEST
+#define SQRT_TEST
 #define POW_TEST
-// #define SIN_TEST
-// #define COS_TEST
-// #define TAN_TEST
-// #define ASIN_TEST
-// #define ACOS_TEST
-// #define ATAN_TEST
+#define SIN_TEST
+#define COS_TEST
+#define TAN_TEST
+#define ASIN_TEST
+#define ACOS_TEST
+#define ATAN_TEST
+
 
 #include "test_modules/test_include/s21_test_abs.h"
 #include "test_modules/test_include/s21_test_acos.h"
