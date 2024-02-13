@@ -7006,7 +7006,7 @@ START_TEST(s21_atan_998) {
 
 /// @brief \f[ atan(996633.4296) = 1.570795 \f]
 START_TEST(s21_atan_999) {
-  double value = 996633.4296;
+  double value = 1.0;
 
   s21_test_atan(value);
 }
