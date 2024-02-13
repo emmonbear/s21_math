@@ -199,8 +199,8 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#define ASIN_TEST
 #ifdef ASIN_TEST
+#define ASIN_TEST
   Suite *(*s21_asin[])(void) = {
     s21_asin_first_case,
     s21_asin_second_case,
@@ -218,11 +218,21 @@ int main(void) {
                 &passed_count, &failed_count);
 #endif
 
-#ifdef ACOS_TEST
 #define ACOS_TEST
+#ifdef ACOS_TEST
   Suite *(*s21_acos[])(void) = {
-      s21_acos_first_case,
-  };
+    s21_acos_first_case,
+    s21_acos_second_case,
+    s21_acos_third_case,
+    s21_acos_fourth_case,
+    s21_acos_fifth_case,
+    s21_acos_sixth_case,
+    s21_acos_seventh_case,
+    s21_acos_eighth_case,
+    s21_acos_ninth_case,
+    s21_acos_tenth_case,
+};
+
   test_function(s21_acos, sizeof(s21_acos) / sizeof(s21_acos[0]), "S21_ACOS",
                 &passed_count, &failed_count);
 #endif
