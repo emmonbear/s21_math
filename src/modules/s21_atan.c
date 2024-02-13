@@ -26,8 +26,10 @@ long double s21_atan(double x) {
     result = taylor(x);
   } else if (s21_fabs(x) == 1) {
     result = PI / 4 * x;
-  } else if (s21_fabs(x) > 1) {
+  } else if (x > 1) {
     result = PI / 2 - taylor(1 / x);
+  } else if(x < 1) {
+    result = -PI / 2 - taylor(1 / x);
   }
 
   return result;

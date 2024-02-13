@@ -21,18 +21,18 @@
  */
 long double s21_cos(double x) {
   long double result = 1;
-  double_int num = {{x}};
+  double_int bits = {{x}};
 
-  if (BITS_INF(num) || BITS_NAN(num)) {
+  if (BITS_INF(bits) || BITS_NAN(bits)) {
     result = S21_NAN;
   } else {
-    num.dbl.d = fmod(num.dbl.d, 2 * PI);
+    bits.dbl.d = fmod(bits.dbl.d, 2 * PI);
 
-    long double member = num.dbl.d;
+    long double member = bits.dbl.d;
     int sign = -1;
 
     for (int cnt = 2; s21_fabs(member) > PRECISION; cnt += 2, sign *= -1) {
-      member = factorial((fast_pow(num.dbl.d, cnt)), cnt) * sign;
+      member = factorial((fast_pow(bits.dbl.d, cnt)), cnt) * sign;
       result += member;
     }
   }

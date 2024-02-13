@@ -21,9 +21,9 @@
  */
 long double s21_asin(double x) {
   long double result = x;
-  double_int num = {{x}};
+  double_int bits = {{x}};
 
-  if (BITS_INF(num) || BITS_NAN(num) || s21_fabs(x) > 1) {
+  if (BITS_INF(bits) || BITS_NAN(bits) || s21_fabs(x) > 1) {
     result = S21_NAN;
   } else if (s21_fabs(x) == 1) {
     result = PI / 2 * x;
