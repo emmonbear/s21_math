@@ -62,6 +62,7 @@ enum bit_constants {
   DOUBLE_SHIFT = 63,  ///< Number of bits in double.
   EXP_SHIFT = 1023,   ///< Shift exponent for double.
   MANTISS_SIZE = 52,  ///< Mantissa size for double.
+  EXP_SIZE = 12,      ///< Exponent size for double.
 };
 
 long double factorial(long double value, unsigned int n);

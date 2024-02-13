@@ -25,5 +25,6 @@
 #include "./modules/include/s21_sin.h"
 #include "./modules/include/s21_sqrt.h"
 #include "./modules/include/s21_tan.h"
+#include "./modules/include/s21_fmod.h"
 
 #endif  // S21_MATH_H_

@@ -99,6 +99,150 @@ START_TEST(s21_fmod_10)
   s21_test_fmod(x, y);
 }
 
+START_TEST(s21_fmod_11)
+{
+  double x = 1111.543;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_12)
+{
+  double x = 0;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_13)
+{
+  double x = S21_NAN;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_14)
+{
+  double x = 1111.543;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_15)
+{
+  double x = S21_NAN;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_16)
+{
+  double x = S21_INF;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_17)
+{
+  double x = 1111.543;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_18)
+{
+  double x = S21_INF;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_19)
+{
+  double x = -S21_INF;
+  double y = 111.1116547;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_20)
+{
+  double x = 1111.543;
+  double y = -S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_21)
+{
+  double x = -S21_INF;
+  double y = -S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_22)
+{
+  double x = S21_INF;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_23)
+{
+  double x = -S21_INF;
+  double y = 0;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_24)
+{
+  double x = S21_INF;
+  double y = -43234.222;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_25)
+{
+  double x = -43234.222;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_26)
+{
+  double x = S21_NAN;
+  double y = S21_INF;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_27)
+{
+  double x = S21_INF;
+  double y = S21_NAN;
+
+  s21_test_fmod(x, y);
+}
+
+START_TEST(s21_fmod_28)
+{
+  double x = 0.0000234;
+  double y = 0.000003424;
+
+  s21_test_fmod(x, y);
+}
+
 /**
  * @brief First set of tests.
  *
@@ -119,6 +263,24 @@ Suite *s21_fmod_first_case(void) {
   tcase_add_test(tc_fmod, s21_fmod_8);
   tcase_add_test(tc_fmod, s21_fmod_9);
   tcase_add_test(tc_fmod, s21_fmod_10);
+  tcase_add_test(tc_fmod, s21_fmod_11);
+  tcase_add_test(tc_fmod, s21_fmod_12);
+  tcase_add_test(tc_fmod, s21_fmod_13);
+  tcase_add_test(tc_fmod, s21_fmod_14);
+  tcase_add_test(tc_fmod, s21_fmod_15);
+  tcase_add_test(tc_fmod, s21_fmod_16);
+  tcase_add_test(tc_fmod, s21_fmod_17);
+  tcase_add_test(tc_fmod, s21_fmod_18);
+  tcase_add_test(tc_fmod, s21_fmod_19);
+  tcase_add_test(tc_fmod, s21_fmod_20);
+  tcase_add_test(tc_fmod, s21_fmod_21);
+  tcase_add_test(tc_fmod, s21_fmod_22);
+  tcase_add_test(tc_fmod, s21_fmod_23);
+  tcase_add_test(tc_fmod, s21_fmod_24);
+  tcase_add_test(tc_fmod, s21_fmod_25);
+  tcase_add_test(tc_fmod, s21_fmod_26);
+  tcase_add_test(tc_fmod, s21_fmod_27);
+  tcase_add_test(tc_fmod, s21_fmod_28);
   suite_add_tcase(math, tc_fmod);
 
   return math;
