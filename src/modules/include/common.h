@@ -12,7 +12,6 @@
 #ifndef MAIN_COMMON_H_
 #define MAIN_COMMON_H_
 
-#include <ieee754.h>
 #include <stdint.h>
 
 #define PI 3.14159265358979323846     ///< Exact value of Pi.
@@ -30,17 +29,24 @@
 #define EXP_MASK 0x7fffffffffffffff      ///< Mask for exponent bits for double.
 #define INF_BITS 0x7FF                   ///< Mask checks exponent for inf.
 
-#define BITS_NAN(x) (x.ulong == NAN_MASK)              ///< Check value is NaN
-#define BITS_INF(x) (x.dbl.ieee.exponent == INF_BITS)  ///< Check value is inf.
-#define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)      ///< Check value is -inf.
-#define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)      ///< Check value is +inf.
+#define BITS_NAN(x) (x.ulong == NAN_MASK)          ///< Check value is NaN
+#define BITS_INF(x) (x.ieee.exponent == INF_BITS)  ///< Check value is inf.
+#define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)  ///< Check value is -inf.
+#define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)  ///< Check value is +inf.
 
 /**
  * @brief Union structure assigned to work with double bits.
  */
 typedef union {
-  union ieee754_double dbl;  ///< Union containing double bit fields.
-  uint64_t ulong;            ///< Int having same bit composition as double.
+  double dbl;      ///< Union containing double bit fields.
+  uint64_t ulong;  ///< Int having same bit composition as double.
+  ///@brief Struct contains double fields.
+  struct ieee754 {
+    unsigned int mantissa1 : 32;  ///< Least significant bits of the mantissa.
+    unsigned int mantissa0 : 20;  ///< Significant bits of the mantissa.
+    unsigned int exponent : 11;   ///< Exponent bits.
+    unsigned int sign : 1;        ///< Sign bit.
+  } ieee;
 } double_int;
 
 /**

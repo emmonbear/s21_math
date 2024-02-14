@@ -19,7 +19,7 @@
  */
 long double s21_ceil(double x) {
   long double result = 0;
-  double_int bits = {{x}};
+  double_int bits = {x};
 
   int64_t sign = bits.ulong >> DOUBLE_SHIFT;
   int64_t exponent = ((bits.ulong & EXP_MASK) >> MANTISS_SIZE) - EXP_SHIFT;
@@ -27,19 +27,19 @@ long double s21_ceil(double x) {
 
   if (exponent < 0) {
     if (x > 0.0) {
-      bits.dbl.d = 1.0;
+      bits.dbl = 1.0;
     } else {
       if (sign) {
-        bits.dbl.d = NEGATIVE_ZERO;
+        bits.dbl = NEGATIVE_ZERO;
       } else {
-        bits.dbl.d = 0.0;
+        bits.dbl = 0.0;
       }
     }
   } else {
     uint64_t mask = MANTISS_MASK >> exponent;
 
     if ((mantissa & mask) == BIT_NOT_SET) {
-      bits.dbl.d = x;
+      bits.dbl = x;
     } else {
       if (sign == BIT_NOT_SET) {
         mantissa += (uint64_t)1 << (MANTISS_SIZE - exponent);
@@ -56,7 +56,7 @@ long double s21_ceil(double x) {
     }
   }
 
-  result = bits.dbl.d;
+  result = bits.dbl;
 
   return result;
 }

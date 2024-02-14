@@ -24,10 +24,10 @@ static int compare_scale(uint64_t *exp_x, uint64_t exp_y, uint64_t *x_long,
  */
 long double s21_fmod(double x, double y) {
   long double result = 0.0;
-  double_int bits_x = {{x}};
-  double_int bits_y = {{y}};
+  double_int bits_x = {x};
+  double_int bits_y = {y};
 
-  uint64_t sign = bits_x.dbl.ieee.negative;
+  uint64_t sign = bits_x.ieee.sign;
   uint64_t exp_x = (bits_x.ulong >> MANTISS_SIZE) & INF_BITS;
   uint64_t exp_y = (bits_y.ulong >> MANTISS_SIZE) & INF_BITS;
   uint64_t x_long = bits_x.ulong;
@@ -63,7 +63,7 @@ long double s21_fmod(double x, double y) {
       x_long |= sign << DOUBLE_SHIFT;
       bits_x.ulong = x_long;
 
-      result = bits_x.dbl.d;
+      result = bits_x.dbl;
     }
   }
 

@@ -19,11 +19,11 @@
  */
 long double s21_fabs(double x) {
   long double result = x;
-  double_int bits = {{x}};
+  double_int bits = {x};
 
-  if (bits.dbl.ieee.negative) {
-    bits.dbl.ieee.negative = 0;
-    result = bits.dbl.d;
+  if (bits.ieee.sign) {
+    bits.ieee.sign = 0;
+    result = bits.dbl;
   }
 
   return result;

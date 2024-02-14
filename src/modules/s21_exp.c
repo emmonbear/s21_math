@@ -19,12 +19,12 @@
  */
 long double s21_exp(double x) {
   long double result = 1.0;
-  double_int bits = {{x}};
+  double_int bits = {x};
 
   if (bits.ulong == NAN_MASK) {
     result = S21_NAN;
-  } else if (bits.dbl.ieee.exponent == INF_BITS) {
-    if (bits.dbl.ieee.negative) {
+  } else if (bits.ieee.exponent == INF_BITS) {
+    if (bits.ieee.sign) {
       result = 0.0;
     } else {
       result = x;

@@ -19,7 +19,7 @@
  */
 long double s21_asin(double x) {
   long double result = x;
-  double_int bits = {{x}};
+  double_int bits = {x};
 
   if (BITS_INF(bits) || BITS_NAN(bits) || s21_fabs(x) > 1.0) {
     result = S21_NAN;

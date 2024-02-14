@@ -19,8 +19,8 @@
  * @return long double - result of calculation.
  */
 long double s21_pow(double base, double exp) {
-  double_int base_b = {{base}};
-  double_int exp_b = {{exp}};
+  double_int base_b = {base};
+  double_int exp_b = {exp};
   long double result = 0;
 
   if (!base) {
@@ -29,20 +29,19 @@ long double s21_pow(double base, double exp) {
     result = 1.0;
   } else if (BITS_NAN(base_b) || BITS_NAN(exp_b)) {
     result = S21_NAN;
-  } else if (base_b.dbl.ieee.negative &&
-             s21_ceil(s21_fabs(exp)) != s21_fabs(exp)) {
+  } else if (base_b.ieee.sign && s21_ceil(s21_fabs(exp)) != s21_fabs(exp)) {
     result = S21_NAN;
   } else if (BITS_INF(base_b) && BITS_INF(exp_b)) {
     result = S21_INF;
   } else if (BITS_INF(exp_b)) {
     result = S21_INF;
   } else {
-    if (((s21_ceil(exp) == exp)) && !exp_b.dbl.ieee.negative) {
+    if (((s21_ceil(exp) == exp)) && !exp_b.ieee.sign) {
       result = fast_pow(base, exp);
     } else {
       result = s21_exp(exp * s21_log(s21_fabs(base)));
 
-      if ((uint64_t)(exp) % 2 != 0 && base_b.dbl.ieee.negative) {
+      if ((uint64_t)(exp) % 2 != 0 && base_b.ieee.sign) {
         result *= -1.0;
       }
     }

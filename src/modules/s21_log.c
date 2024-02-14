@@ -25,7 +25,7 @@
  */
 long double s21_log(double x) {
   long double result = 0.0;
-  double_int bits = {{x}};
+  double_int bits = {x};
 
   if (x == 0.0) {
     result = -S21_INF;
