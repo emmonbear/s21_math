@@ -192,10 +192,6 @@ valgrind: $(TARGET)
 
 
 #============================= ADDITIONAL TARGETS =============================#
-debug: $(LIBRARY)
-	@$(CC) main.c $(LIBRARY) tests/debug/*.c -o main -lm
-	@./main
-
 dependencies:
 	sudo apt install cppcheck
 	sudo apt install clang-format
