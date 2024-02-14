@@ -1,122 +1,122 @@
 # s21_math
 
-Реализация s21_math.
+Implementation of the s21_math.h library.
 
-Английскую версию README можно найти в репозитории. 
+The English version of the README can be found in the repository.
 
-## Содержание
-1. [Описание проекта](#описание-проекта)
-2. [Команда разработки](#команда-разработки)
-3. [Сборка проекта](#сборка-проекта)
-4. [Тестирование](#тестирование)
-5. [Обратная связь](#обратная-связь)
+## Content
+1. [About a project](#about-a-project)
+2. [Development team](#development-team)
+3. [Building project](#building-project)
+4. [Testing](#testing)
+5. [Feedback](#feedback)
 
-## Описание проекта 
+## About a project
 
-Цель данного проекта состоит в разработке своей версии стандартной библиотеки math.h на языке программирования Си. Эта библиотека реализует базовые математические операции, которые затем используются в различных алгоритмах. В рамках выполнения этого проекта предполагается знакомство с основами вычислительных методов и закрепление подходов структурного программирования.  
+The goal of this project is to develop its own version of the standard library math.h in the C programming language. This library implements basic mathematical operations, which are then used in various algorithms. As part of this project, it is expected to become familiar with the basics of computational methods and consolidate the approaches of structured programming.
 
-### Обзор реализованных функций "math.h"
+### Overview of implemented functions "math.h"
 
-Математические операции на языке Си представляют собой группу функций в стандартной библиотеке языка программирования Си, реализующих основные математические функции. Все функции так или иначе используют числа с плавающей запятой. Различные стандарты C предоставляют различные, хотя и обратно совместимые, наборы функций. Любые функции, которые работают с углами, используют радианы в качестве единицы измерения угла.  
+Mathematical operations in the C language are a group of functions in the standard library of the C programming language that implement basic mathematical functions. All functions use floating point numbers in one way or another. Different C standards provide different, albeit backward-compatible, sets of functionality. Any functions that work with angles use radians as the angle unit.
 
-| №  | Функция                                    | Описание                                                                             |
-|----|--------------------------------------------|--------------------------------------------------------------------------------------|
-| 1  | `int abs(double x)`                        | Вычисляет абсолютное значение целого числа.                                          |
-| 2  | `long double fabs(double x)`               | Вычисляет абсолютное значение числа с плавающей точкой.                              |
-| 3  | `long double floor(double x)`              | Возвращает ближайшее целое число, не превышающее указанное число с плавающей точкой. |
-| 4  | `long double ceil(double x)`               | Возвращает ближайшее целое число, не меньшее указанного числа с плавающей точкой.    |
-| 5  | `long double exp(double x)`                | Возвращает значение e, возведённое в указанную степень.                              |
-| 6  | `long double fmod(double x, double y)`     | Остаток от операции деления числа с плавающей точкой.                                |
-| 7  | `long double log(double x)`                | Вычисляет натуральный логарифм числа с плавающей точкой.                             |
-| 8  | `long double sqrt(double x)`               | Вычисляет квадратный корень числа с плавающей точкой.                                |
-| 9  | `long double pow(double base, double exp)` | Возводит число в заданную степень.                                                   |
-| 10 | `long double sin(double x)`                | Вычисляет синус числа с плавающей точкой.                                            |
-| 11 | `long double cos(double x)`                | Вычисляет косинус числа с плавающей точкой.                                          |
-| 12 | `long double tan(double x)`                | Вычисляет тангенс числа с плавающей точкой.                                          |
-| 13 | `long double asin(double x)`               | Вычисляет арксинус числа с плавающей точкой.                                         |
-| 14 | `long double atan(double x)`               | Вычисляет арктангенс числа с плавающей точкой.                                       |
-| 15 | `long double acos(double x)`               | Вычисляет арккосинус числа с плавающей точкой.                                       |
+| №  | Function                                   | Description                                                   |
+|----|--------------------------------------------|---------------------------------------------------------------|
+| 1  | `int abs(double x)`                        | Computes absolute value of an integer value                   |
+| 2  | `long double fabs(double x)`               | Computes absolute value of a floating-point value.            |
+| 3  | `long double floor(double x)`              | Returns the nearest integer not greater than the given value. |
+| 4  | `long double ceil(double x)`               | Returns the nearest integer not less than the given value.    |
+| 5  | `long double exp(double x)`                | Returns e raised to the given power.                          |
+| 6  | `long double fmod(double x, double y)`     | Remainder of the floating-point division operation.           |
+| 7  | `long double log(double x)`                | Computes natural logarithm.                                   |
+| 8  | `long double sqrt(double x)`               | Computes square root.                                         |
+| 9  | `long double pow(double base, double exp)` | Raises a number to the given power.                           |
+| 10 | `long double sin(double x)`                | Computes sine.                                                |
+| 11 | `long double cos(double x)`                | Computes cosine.                                              |
+| 12 | `long double tan(double x)`                | Computes tangent.                                             |
+| 13 | `long double asin(double x)`               | Computes arc sine.                                            |
+| 14 | `long double atan(double x)`               | Computes arc cosine.                                          |
+| 15 | `long double acos(double x)`               | Computes arc tangent.                                         |
 
-### Особенности реализации
+### Implementation features
 
-В ходе написания проекта было принято решение произвести реализацию функции при помощи работы с отдельными битами чисел с плавающей точкой. Данный метод нацелен на более плотное изучение архитектуры языка и способа хранения чисел с плавающей точкой в памяти компьютера.
+While writing the project, it was decided to implement the function by working with individual bits of floating point numbers. This method is aimed at a more detailed study of the architecture of the language and the method of storing floating point numbers in computer memory.
 
-> Речь идет про IEEE Standard for Floating-Point Arithmetic (IEEE 754).
+> We are talking about the IEEE Standard for Floating-Point Arithmetic (IEEE 754).
 >
-> Стандарт описывает:
-> - формат чисел с плавающей точкой: мантисса, экспонента (показатель), знак числа;
-> - представление положительного и отрицательного нуля, положительной и отрицательной бесконечностей, а также нечисла́ (англ. Not-a-Number, NaN);
-> - методы, используемые для преобразования числа при выполнении математических операций;
-> - исключительные ситуации: деление на ноль, переполнение, потеря значимости, работа с денормализованными числами и другие;
-> - операции: арифметические и другие.
+> The standard describes:
+> - format of floating point numbers: mantissa, exponent (exponent), number sign;
+> - representation of positive and negative zero, positive and negative infinities, as well as non-number (English: Not-a-Number, NaN);
+> - methods used to convert numbers when performing mathematical operations;
+> - exceptional situations: division by zero, overflow, underflow, working with denormalized numbers and others;
+> - operations: arithmetic and others.
 
-Для работы с битами была применена стандартная библиотека ieee754.h, содержащая union структуру чисел с плавающей точкой (одинарной, двойной и расширенной точности). Данная структура позволяет нам обращаться непосредственно к необходимым полям (знака, мантиссы, экспоненты) и производить необходимые битовые операции для получения необходимых в рамках заданного алгоритма значения чисел.
+To work with bits, the standard library ieee754.h was used, containing the union structure of floating point numbers (single, double and extended precision). This structure allows us to directly access the necessary fields (sign, mantissa, exponent) and perform the necessary bit operations to obtain the number values required within a given algorithm.
 
-### Детали проекта
+### Project details
 
-- Библиотека разработана на языке Си стандарта C11 с использованием компиятора gcc;
-- Код библиотеки находится в папке `src` в ветке `develop`;
-- Не используются устаревшие и выведенные из употребления конструкции языка и библиотечные функции. В реализации обращено внимание на пометки legacy и obsolete в официальной документации по языку и используемым библиотекам. Код ориентируется на стандарт `POSIX.1-2017`;
-- Форматирование кода произведено в соответствии с Google Style;
-- Решение оформлено в виде статической библиотеки (с заголовочным файлом `s21_math.h`);
-- Библиотека разработана в соответствии с принципами структурного программирования, исключено дублирование кода;
-- Перед каждой функцией используется префикс `s21_`;
-- Обеспечено полное покрытие unit-тестами функций библиотеки c помощью библиотеки `Check`;
-- Unit-тесты проверяют результаты работы реализации путём сравнения ее с реализацией стандартной библиотеки math.h;
-- Unit-тесты покрывают не менее 80% каждой функции;
-- В цели gcov_report формируется отчёт gcov в виде html страницы. Для этого unit-тесты запускаются с флагами gcov;  
-- Предусмотрен Makefile для сборки библиотеки и тестов (с целями all, clean, test, s21_math.a, gcov_report);  
-- Исключено копирование реализации и использование стандартной библиотеки math.h везде, кроме unit-тестов;  
-- Соблюдена логика работы стандартной библиотеки;
-- Общая проверяемая точность - 16 значащих цифр;
-- Проверяемая точность дробной части - 6 знаков после запятой.
+- The library was developed in the C language of the C11 standard using the gcc compiler;
+- The library code is located in the `src` folder in the `develop` branch;
+- Outdated and obsolete language constructs and library functions are not used. The implementation pays attention to the legacy and obsolete marks in the official documentation on the language and the libraries used. The code is based on the `POSIX.1-2017` standard;
+- Code formatting is made in accordance with Google Style;
+- The solution is designed as a static library (with a header file `s21_math.h`);
+- The library is developed in accordance with the principles of structured programming, code duplication is excluded;
+- The prefix `s21_` is used before each function;
+- Provided full coverage of library functions by unit tests using the `Check` library;
+- Unit tests check the results of the implementation by comparing it with the implementation of the standard math.h library;
+- Unit tests cover at least 80% of each function;
+- In the gcov_report target, a gcov report is generated in the form of an html page. To do this, unit tests are run with the gcov flags;
+- A Makefile is provided for building the library and tests (with the goals all, clean, test, s21_math.a, gcov_report);
+- Copying of the implementation and use of the standard math.h library is excluded everywhere except for unit tests;
+- The logic of the standard library is observed;
+- Overall verified accuracy - `16` significant figures;
+- The verified accuracy of the fractional part is `6` decimal places.
 
-## Команда разработки
+## Development team
 
-Состав команды, реализовавшей проект: <br>
+Composition of the team that implemented the project: <br>
 **kossadda** (https://github.com/kossadda) <br>
 **emmonbea** (https://github.com/emmonbear) <br>
 
-## Сборка проекта
+## Building project
 
-В Makefile добавлены следующие основные цели для работы с проектом:
+The following main goals for working with the project have been added to the Makefile:
 
 | #  | Цель            | Описание цели                                                                |
 |----|-----------------|------------------------------------------------------------------------------|
-| 1  | `all`           | Формирует документацию к проекту и запускает тестирование модулей.           |
-| 2  | `s21_math`      | Осуществляет сборку модулей в статическую библиотеку.                        |
-| 3  | `test`          | Производит тестирование модулей.                                             |
-| 4  | `gcov_report`   | Производит тестирование модулей и формирует отчет о покрытии в html формате. |
-| 5  | `dvi`           | Формирует документацию в формате html и manual к функционалу.                |
-| 6  | `rebuild`       | Пересборка проекта.                                                          |
-| 7  | `clang_check`   | Тестирование модулей на соответствие Google style.                           |
-| 8  | `valgrind`      | Тестирование модулей на работу с памятью через Valgrind.                     |
-| 9  | `install`       | Производит установку необходимых зависимостей для тестирования проекта.      |
-| 10 | `clean`         | Производит очистку репозитория от сгенерированных файлов.                    |
+| 1  | `all`           | Generates documentation for the project and starts testing modules.           |
+| 2  | `s21_math`      | Builds modules into a static library.                        |
+| 3  | `test`          | Performs module testing.                                             |
+| 4  | `gcov_report`   | Tests modules and generates a coverage report in html format. |
+| 5  | `dvi`           | Generates documentation in html and manual format for the functionality.                |
+| 6  | `rebuild`       | Rebuilding the project.                                                          |
+| 7  | `clang_check`   | Testing modules for compliance with Google style.                           |
+| 8  | `valgrind`      | Testing modules for working with memory via Valgrind.                     |
+| 9  | `install`       | Installs the necessary dependencies for testing the project.      |
+| 10 | `clean`         | Cleans the repository of generated files.                   |
 
-## Тестирование
+## Testing
 
-<!-- Написанный код был протестирован unit-тестами с использованием библиотеки check. <br>
+The written code was tested by unit-tests using the check library.<br>
 
 ![unit_tests](./misc/img/test.gif) <br>
 
-Произведено покрытие кода тестами с выводом в html отчет при помощи gcovr. <br>
+The code was covered with tests and output to an html report using gcovr.<br>
 
 ![gcoverage](./misc/img/gcov.gif) <br>
 
-Код протестирован на наличие ошибок/утечек через valgrind. <br>
+Code tested for errors/leaks via valgrind. <br>
 
-![valgrind_tests](./misc/img/valgrind.gif) <br> -->
+![valgrind_tests](./misc/img/valgrind.gif) <br>
 
-## Обратная связь
+## Feedback
 
-Если имеются вопросы касаемо особенностей или других интересующих вас моментов проекта, то обращайтесь на почту:
+If you have any questions regarding the features or other aspects of the project that interest you, please contact us by email:
 
 moskaleviluak@icloud.com <br>
 gabilov1997@gmail.com <br>
 
-Спасибо за внимание. Надеюсь, что данный проект вам понравится и будет полезен.
+Thank you for your attention. I hope you enjoy this project and find it useful.
 
 <br>
 
-[К оглавлению](#s21_math)
+[Return to contents](#s21_math)
