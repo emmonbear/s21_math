@@ -1,6 +1,6 @@
 /**
  * @file s21_test_acos.c
- * @author kossadda (https://github.com/kossadda)
+ * @author emmonbea (moskaleviluak@icloud.com)
  * @brief A set of tests to check the functionality of s21_acos
  * @version 1.0
  * @date 2024-01-21
