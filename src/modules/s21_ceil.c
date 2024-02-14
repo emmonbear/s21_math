@@ -18,7 +18,7 @@
  * @return long double - result of calculation.
  */
 long double s21_ceil(double x) {
-  long double result = x;
+  long double result = 0;
   double_int bits = {{x}};
 
   int64_t sign = bits.ulong >> DOUBLE_SHIFT;

@@ -22,7 +22,9 @@ static long double taylor(double x);
 long double s21_atan(double x) {
   long double result = 0.0;
 
-  if (s21_fabs(x) < 1.0) {
+  if (x != x) {
+    result = S21_NAN;
+  } else if (s21_fabs(x) < 1.0) {
     result = taylor(x);
   } else if (s21_fabs(x) == 1.0) {
     result = PI / 4.0 * x;

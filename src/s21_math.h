@@ -8,6 +8,7 @@
  * @copyright Copyright (c) 2024
  *
  */
+
 #ifndef S21_MATH_H_
 #define S21_MATH_H_
 

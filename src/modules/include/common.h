@@ -30,8 +30,7 @@
 #define EXP_MASK 0x7fffffffffffffff      ///< Mask for exponent bits for double.
 #define INF_BITS 0x7FF                   ///< Mask checks exponent for inf.
 
-#define GET_SHIFT(x) (sizeof(x) * 8 - 1);  ///< Number of bits of the any type.
-#define BITS_NAN(x) (x.ulong == NAN_MASK)  ///< Check value is NaN
+#define BITS_NAN(x) (x.ulong == NAN_MASK)              ///< Check value is NaN
 #define BITS_INF(x) (x.dbl.ieee.exponent == INF_BITS)  ///< Check value is inf.
 #define BITS_NEG_INF(x) (x.ulong == NEG_INF_MASK)      ///< Check value is -inf.
 #define BITS_POS_INF(x) (x.ulong == POS_INF_MASK)      ///< Check value is +inf.
@@ -50,7 +49,8 @@ typedef union {
 enum bit_constants {
   BIT_NOT_SET = 0,    ///< Signals that bits are not set.
   BIT_SET = 1,        ///< Signals that bits are set.
-  DOUBLE_SHIFT = 63,  ///< Number of bits in double.
+  INT_SHIFT = 31,     ///< Number of max shift in int.
+  DOUBLE_SHIFT = 63,  ///< Number of max shift in double.
   EXP_SHIFT = 1023,   ///< Shift exponent for double.
   MANTISS_SIZE = 52,  ///< Mantissa size for double.
   EXP_SIZE = 12,      ///< Exponent size for double.
