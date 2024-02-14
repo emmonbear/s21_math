@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_ABS_H_
 #define S21_TESTS_ABS_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_abs(int value);
 void s21_test_abs_print(int original_func, int implementation);

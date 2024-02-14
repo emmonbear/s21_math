@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_POW_H_
 #define S21_TESTS_POW_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_pow(double base, double exp);
 

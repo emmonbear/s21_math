@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_CEIL_H_
 #define S21_TESTS_CEIL_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_ceil(double x);
 

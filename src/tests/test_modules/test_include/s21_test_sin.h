@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_SIN_H_
 #define S21_TESTS_SIN_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_sin(double value);
 

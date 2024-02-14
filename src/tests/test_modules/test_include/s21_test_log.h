@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_LOG_H_
 #define S21_TESTS_LOG_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_log(double x);
 

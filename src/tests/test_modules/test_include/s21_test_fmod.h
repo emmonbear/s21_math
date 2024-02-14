@@ -12,7 +12,7 @@
 #ifndef S21_TESTS_FMOD_H_
 #define S21_TESTS_FMOD_H_
 
-#include "./../common.h"
+#include "./common.h"
 
 void s21_test_fmod(double x, double y);
 

@@ -11,6 +11,8 @@
 #ifndef S21_DEBUG_H_
 #define S21_DEBUG_H_
 
+#define DEBUG  ///< Uncomment to display the bits.
+
 #include <ieee754.h>
 #include <stdio.h>
 
