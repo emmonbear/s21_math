@@ -12,8 +12,7 @@
 #ifndef COMMON_H_
 #define COMMON_H_
 
-#define DEBUG  ///< Uncomment to display the bits
-// #define DEBUG_ERRORS ///< Uncomment to display bits of unsuccessful tests
+#define DEBUG  ///< Uncomment to display the bits.
 
 #include <check.h>
 #include <math.h>

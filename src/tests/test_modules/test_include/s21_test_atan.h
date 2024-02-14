@@ -26,5 +26,6 @@ Suite *s21_atan_seventh_case(void);
 Suite *s21_atan_eighth_case(void);
 Suite *s21_atan_ninth_case(void);
 Suite *s21_atan_tenth_case(void);
+Suite *s21_atan_edge_case(void);
 
 #endif  // S21_TESTS_ATAN_H_

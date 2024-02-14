@@ -28,7 +28,6 @@
 #define ACOS_TEST
 #define ATAN_TEST
 
-
 #include "test_modules/test_include/s21_test_abs.h"
 #include "test_modules/test_include/s21_test_acos.h"
 #include "test_modules/test_include/s21_test_asin.h"

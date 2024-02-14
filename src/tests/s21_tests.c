@@ -60,7 +60,7 @@ int main(void) {
       s21_floor_first_case,   s21_floor_second_case, s21_floor_third_case,
       s21_floor_fourth_case,  s21_floor_fifth_case,  s21_floor_sixth_case,
       s21_floor_seventh_case, s21_floor_eighth_case, s21_floor_ninth_case,
-      s21_floor_tenth_case,
+      s21_floor_tenth_case,   s21_floor_edge_case,
   };
 
   test_function(s21_floor, sizeof(s21_floor) / sizeof(s21_floor[0]),
@@ -83,7 +83,7 @@ int main(void) {
       s21_exp_first_case,   s21_exp_second_case, s21_exp_third_case,
       s21_exp_forth_case,   s21_exp_fifth_case,  s21_exp_sixth_case,
       s21_exp_seventh_case, s21_exp_eighth_case, s21_exp_ninth_case,
-      s21_exp_tenth_case, s21_exp_edge_case,
+      s21_exp_tenth_case,   s21_exp_edge_case,
   };
   test_function(s21_exp, sizeof(s21_exp) / sizeof(s21_exp[0]), "S21_EXP",
                 &passed_count, &failed_count);
@@ -91,19 +91,11 @@ int main(void) {
 
 #ifdef FMOD_TEST
   Suite *(*s21_fmod[])(void) = {
-    s21_fmod_first_case,
-    s21_fmod_second_case,
-    s21_fmod_third_case,
-    s21_fmod_fourth_case,
-    s21_fmod_fifth_case,
-    s21_fmod_sixth_case,
-    s21_fmod_seventh_case,
-    s21_fmod_eighth_case,
-    s21_fmod_ninth_case,
-    s21_fmod_tenth_case,
-    s21_fmod_edge_case,
-};
-
+      s21_fmod_first_case,   s21_fmod_second_case, s21_fmod_third_case,
+      s21_fmod_fourth_case,  s21_fmod_fifth_case,  s21_fmod_sixth_case,
+      s21_fmod_seventh_case, s21_fmod_eighth_case, s21_fmod_ninth_case,
+      s21_fmod_tenth_case,   s21_fmod_edge_case,
+  };
   test_function(s21_fmod, sizeof(s21_fmod) / sizeof(s21_fmod[0]), "S21_FMOD",
                 &passed_count, &failed_count);
 #endif
@@ -113,7 +105,7 @@ int main(void) {
       s21_log_first_case,   s21_log_second_case, s21_log_third_case,
       s21_log_fourth_case,  s21_log_fifth_case,  s21_log_sixth_case,
       s21_log_seventh_case, s21_log_eighth_case, s21_log_ninth_case,
-      s21_log_tenth_case, s21_log_edge_case,
+      s21_log_tenth_case,   s21_log_edge_case,
   };
 
   test_function(s21_log, sizeof(s21_log) / sizeof(s21_log[0]), "S21_LOG",
@@ -122,35 +114,21 @@ int main(void) {
 
 #ifdef SQRT_TEST
   Suite *(*s21_sqrt[])(void) = {
-    s21_sqrt_first_case,
-    s21_sqrt_second_case,
-    s21_sqrt_third_case,
-    s21_sqrt_fourth_case,
-    s21_sqrt_fifth_case,
-    s21_sqrt_sixth_case,
-    s21_sqrt_seventh_case,
-    s21_sqrt_eighth_case,
-    s21_sqrt_ninth_case,
-    s21_sqrt_tenth_case,
-};
-
+      s21_sqrt_first_case,   s21_sqrt_second_case, s21_sqrt_third_case,
+      s21_sqrt_fourth_case,  s21_sqrt_fifth_case,  s21_sqrt_sixth_case,
+      s21_sqrt_seventh_case, s21_sqrt_eighth_case, s21_sqrt_ninth_case,
+      s21_sqrt_tenth_case,   s21_sqrt_edge_case,
+  };
   test_function(s21_sqrt, sizeof(s21_sqrt) / sizeof(s21_sqrt[0]), "S21_SQRT",
                 &passed_count, &failed_count);
 #endif
 
 #ifdef POW_TEST
   Suite *(*s21_pow[])(void) = {
-      s21_pow_first_case,   
-      s21_pow_second_case, 
-      s21_pow_third_case,
-      s21_pow_fourth_case,  
-      s21_pow_fifth_case,
-      s21_pow_sixth_case,
-      s21_pow_seventh_case, 
-      s21_pow_eighth_case,
-      s21_pow_ninth_case,
-      s21_pow_tenth_case,
-      s21_pow_edge_case,
+      s21_pow_first_case,   s21_pow_second_case, s21_pow_third_case,
+      s21_pow_fourth_case,  s21_pow_fifth_case,  s21_pow_sixth_case,
+      s21_pow_seventh_case, s21_pow_eighth_case, s21_pow_ninth_case,
+      s21_pow_tenth_case,   s21_pow_edge_case,
   };
   test_function(s21_pow, sizeof(s21_pow) / sizeof(s21_pow[0]), "S21_POW",
                 &passed_count, &failed_count);
@@ -161,9 +139,8 @@ int main(void) {
       s21_sin_first_case,   s21_sin_second_case, s21_sin_third_case,
       s21_sin_fourth_case,  s21_sin_fifth_case,  s21_sin_sixth_case,
       s21_sin_seventh_case, s21_sin_eighth_case, s21_sin_ninth_case,
-      s21_sin_tenth_case, s21_sin_edge_case,
+      s21_sin_tenth_case,   s21_sin_edge_case,
   };
-
   test_function(s21_sin, sizeof(s21_sin) / sizeof(s21_sin[0]), "S21_SIN",
                 &passed_count, &failed_count);
 #endif
@@ -173,9 +150,8 @@ int main(void) {
       s21_cos_first_case,   s21_cos_second_case, s21_cos_third_case,
       s21_cos_fourth_case,  s21_cos_fifth_case,  s21_cos_sixth_case,
       s21_cos_seventh_case, s21_cos_eighth_case, s21_cos_ninth_case,
-      s21_cos_tenth_case, s21_cos_edge_case,
+      s21_cos_tenth_case,   s21_cos_edge_case,
   };
-
   test_function(s21_cos, sizeof(s21_cos) / sizeof(s21_cos[0]), "S21_COS",
                 &passed_count, &failed_count);
 #endif
@@ -185,9 +161,8 @@ int main(void) {
       s21_tan_first_case,   s21_tan_second_case, s21_tan_third_case,
       s21_tan_fourth_case,  s21_tan_fifth_case,  s21_tan_sixth_case,
       s21_tan_seventh_case, s21_tan_eighth_case, s21_tan_ninth_case,
-      s21_tan_tenth_case, s21_tan_edge_case,
+      s21_tan_tenth_case,   s21_tan_edge_case,
   };
-
   test_function(s21_tan, sizeof(s21_tan) / sizeof(s21_tan[0]), "S21_TAN",
                 &passed_count, &failed_count);
 #endif
@@ -197,9 +172,8 @@ int main(void) {
       s21_asin_first_case,   s21_asin_second_case, s21_asin_third_case,
       s21_asin_fourth_case,  s21_asin_fifth_case,  s21_asin_sixth_case,
       s21_asin_seventh_case, s21_asin_eighth_case, s21_asin_ninth_case,
-      s21_asin_tenth_case, s21_asin_edge_case,
+      s21_asin_tenth_case,   s21_asin_edge_case,
   };
-
   test_function(s21_asin, sizeof(s21_asin) / sizeof(s21_asin[0]), "S21_ASIN",
                 &passed_count, &failed_count);
 #endif
@@ -209,9 +183,8 @@ int main(void) {
       s21_acos_first_case,   s21_acos_second_case, s21_acos_third_case,
       s21_acos_fourth_case,  s21_acos_fifth_case,  s21_acos_sixth_case,
       s21_acos_seventh_case, s21_acos_eighth_case, s21_acos_ninth_case,
-      s21_acos_tenth_case, s21_acos_edge_case,
+      s21_acos_tenth_case,   s21_acos_edge_case,
   };
-
   test_function(s21_acos, sizeof(s21_acos) / sizeof(s21_acos[0]), "S21_ACOS",
                 &passed_count, &failed_count);
 #endif
@@ -221,7 +194,7 @@ int main(void) {
       s21_atan_first_case,   s21_atan_second_case, s21_atan_third_case,
       s21_atan_fourth_case,  s21_atan_fifth_case,  s21_atan_sixth_case,
       s21_atan_seventh_case, s21_atan_eighth_case, s21_atan_ninth_case,
-      s21_atan_tenth_case,
+      s21_atan_tenth_case,   s21_atan_edge_case,
   };
 
   test_function(s21_atan, sizeof(s21_atan) / sizeof(s21_atan[0]), "S21_ATAN",

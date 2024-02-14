@@ -11,145 +11,149 @@
 
 #include "./test_include/s21_test_abs.h"
 
-/// @brief \f[ |0| = 0 \f]
+/// @brief |0| = 0
 START_TEST(s21_abs_1) {
   int value = 0;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |1| = 1 \f]
+/// @brief |1| = 1
 START_TEST(s21_abs_2) {
   int value = 1;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-1| = 1 \f]
+/// @brief |-1| = 1
 START_TEST(s21_abs_3) {
   int value = -1;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |123| = 123 \f]
+/// @brief |123| = 123
 START_TEST(s21_abs_4) {
   int value = 123;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-123| = 123 \f]
+/// @brief |-123| = 123
 START_TEST(s21_abs_5) {
   int value = -123;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |5231| = 5231 \f]
+/// @brief |5231| = 5231
 START_TEST(s21_abs_6) {
   int value = 5231;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-5231| = 5231 \f]
+/// @brief |-5231| = 5231
 START_TEST(s21_abs_7) {
   int value = -5231;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |65622| = 65622 \f]
+/// @brief |65622| = 65622
 START_TEST(s21_abs_8) {
   int value = 65622;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-65622| = 65622 \f]
+/// @brief |-65622| = 65622
 START_TEST(s21_abs_9) {
   int value = -65622;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |1765222| = 1765222 \f]
+/// @brief |1765222| = 1765222
 START_TEST(s21_abs_10) {
   int value = 1765222;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-1765222| = 1765222 \f]
+/// @brief |-1765222| = 1765222
 START_TEST(s21_abs_11) {
   int value = -1765222;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |99999999| = 99999999 \f]
+/// @brief |99999999| = 99999999
 START_TEST(s21_abs_12) {
   int value = 99999999;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-99999999| = 99999999 \f]
+/// @brief |-99999999| = 99999999
 START_TEST(s21_abs_13) {
   int value = -99999999;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |895251111| = 895251111 \f]
+/// @brief |895251111| = 895251111
 START_TEST(s21_abs_14) {
   int value = 895251111;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-895251111| = 895251111 \f]
+/// @brief |-895251111| = 895251111
 START_TEST(s21_abs_15) {
   int value = -895251111;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |786256151| = 786256151 \f]
+/// @brief |786256151| = 786256151
 START_TEST(s21_abs_16) {
   int value = 786256151;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-786256151| = 786256151 \f]
+/// @brief |-786256151| = 786256151
 START_TEST(s21_abs_17) {
   int value = -786256151;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-2000000000| = 2000000000 \f]
+/// @brief |-2000000000| = 2000000000
 START_TEST(s21_abs_18) {
   int value = -2000000000;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |2147483647| = 2147483647 \f]
+/// @brief |2147483647| = 2147483647
 START_TEST(s21_abs_19) {
   int value = INT32_MAX;
 
   s21_test_abs(value);
 }
 
-/// @brief \f[ |-2147483648| = 2147483648 \f]
+/// @brief |-2147483648| = 2147483648
 START_TEST(s21_abs_20) {
   int value = INT32_MIN;
 
   s21_test_abs(value);
 }
+
+//##############################################################################
+//##############################################################################
+//##############################################################################
 
 /**
  * @brief First set of tests.
@@ -157,7 +161,7 @@ START_TEST(s21_abs_20) {
  * @return Suite*
  */
 Suite *s21_abs_first_case(void) {
-  Suite *math = suite_create("\ns21_math (s21_abs first case)\n");
+  Suite *math = suite_create("\ns21_abs first case\n");
 
   TCase *tc_abs = tcase_create("test_abs");
   tcase_add_test(tc_abs, s21_abs_1);
@@ -181,7 +185,7 @@ Suite *s21_abs_first_case(void) {
  * @return Suite*
  */
 Suite *s21_abs_second_case(void) {
-  Suite *math = suite_create("\ns21_math (s21_abs second case)\n");
+  Suite *math = suite_create("\ns21_abs second case\n");
 
   TCase *tc_abs = tcase_create("test_abs");
   tcase_add_test(tc_abs, s21_abs_11);
@@ -199,8 +203,6 @@ Suite *s21_abs_second_case(void) {
   return math;
 }
 
-//------------------------------------------------------------------------------
-
 /**
  * @brief Quickly check the functionality of the module s21_abs.
  *
@@ -210,6 +212,7 @@ void s21_test_abs(int value) {
   int original_func = abs(value);
   int implementation = s21_abs(value);
 
+#ifdef DEBUG
   printf("Input value: %d\n", value);
 
   if (original_func == implementation) {
@@ -218,7 +221,6 @@ void s21_test_abs(int value) {
     printf("Test result: \033[0;31mTEST FAILED!\033[0m\n\n");
   }
 
-#ifdef DEBUG
   s21_test_abs_print(original_func, implementation);
 #endif
 

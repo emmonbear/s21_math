@@ -26,6 +26,6 @@ Suite *s21_sqrt_seventh_case(void);
 Suite *s21_sqrt_eighth_case(void);
 Suite *s21_sqrt_ninth_case(void);
 Suite *s21_sqrt_tenth_case(void);
-
+Suite *s21_sqrt_edge_case(void);
 
 #endif  // S21_TESTS_SQRT_H_
