@@ -15,19 +15,17 @@
 
 /**
  * @brief Debug file
- * @author emmonbea
  * @return int 
  */
 int main()
 {
-    double value = 66;
-    double v = 2;
+  double value = 1;
 
-    long double original_func = pow(value, v);
-    long double implementation = s21_pow(value, v);
+  long double original_func = asin(value);
+  long double implementation = s21_asin(value);
 
-    printf("original function  = %Lf\n", original_func);
-    printf("our implementation = %Lf\n", implementation);
-    
-    return 0;
+  printf("original function  = %Lf\n", original_func);
+  printf("our implementation = %Lf\n", implementation);
+  
+  return 0;
 }

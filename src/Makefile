@@ -167,7 +167,7 @@ clang_fix:
 	clang-format -style=Google -i $(ALL_FILES)
 
 cppcheck:
-	$@ $(CPPCHECK) $(ALL_FILES)
+	$@ $(CPPCHECK) $(MODULES_C) $(MODULES_H)
 
 valgrind: $(TARGET)
 	@printf '\033[33m\n                   _            _           _   _            _   _             \n'
