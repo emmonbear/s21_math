@@ -1,0 +1,14 @@
+{
+    "files.associations": {
+        "s21_test_abs.h": "c",
+        "s21_tests.h": "c",
+        "s21_test_fabs.h": "c",
+        "common.h": "c",
+        "check.h": "c",
+        "s21_math.h": "c",
+        "math.h": "c",
+        "s21_log.h": "c",
+        "debug.h": "c",
+        "s21_abs.h": "c"
+    }
+}
