@@ -29,7 +29,7 @@ long double s21_exp(double x) {
     } else {
       result = x;
     }
-  } else if (x < -27.0) {
+  } else if (x < EXP_PRECISION) {
     result = 0.0;
   } else {
     long double member = x;

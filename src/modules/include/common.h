@@ -53,13 +53,14 @@ typedef union {
  * @brief Constants for working with bits.
  */
 enum bit_constants {
-  BIT_NOT_SET = 0,    ///< Signals that bits are not set.
-  BIT_SET = 1,        ///< Signals that bits are set.
-  INT_SHIFT = 31,     ///< Number of max shift in int.
-  DOUBLE_SHIFT = 63,  ///< Number of max shift in double.
-  EXP_SHIFT = 1023,   ///< Shift exponent for double.
-  MANTISS_SIZE = 52,  ///< Mantissa size for double.
-  EXP_SIZE = 12,      ///< Exponent size for double.
+  EXP_PRECISION = -27,  ///< Smallest input value processed for s21_exp.
+  BIT_NOT_SET = 0,      ///< Signals that bits are not set.
+  BIT_SET = 1,          ///< Signals that bits are set.
+  INT_SHIFT = 31,       ///< Number of max shift in int.
+  DOUBLE_SHIFT = 63,    ///< Number of max shift in double.
+  EXP_SHIFT = 1023,     ///< Shift exponent for double.
+  MANTISS_SIZE = 52,    ///< Mantissa size for double.
+  EXP_SIZE = 12,        ///< Exponent size for double.
 };
 
 long double factorial(long double value, unsigned int n);
